@@ -10,7 +10,7 @@ import (
 func main() {
 	fmt.Println("Starting server")
 
-	training.LoadTrainings("test.yaml")
+	training.LoadAllTrainings("./data/")
 	cmd.Start()
 	// Date string in the format day/month/year
 	dateString := "2022/01/01"

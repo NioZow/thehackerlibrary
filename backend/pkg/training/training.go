@@ -105,18 +105,18 @@ var (
 	Trainings *[]Training = new([]Training)
 
 	Types map[string]byte = map[string]byte{
-		"BLOGPOST":    TYPE_BLOGPOST,
-		"COURSE":      TYPE_COURSE,
-		"LAB":         TYPE_LAB,
-		"WEBSITE":     TYPE_WEBSITE,
-		"SOURCE CODE": TYPE_SOURCE_CODE,
+		"blogpost":   TYPE_BLOGPOST,
+		"course:":    TYPE_COURSE,
+		"lab":        TYPE_LAB,
+		"website":    TYPE_WEBSITE,
+		"sourcecode": TYPE_SOURCE_CODE,
 	}
 
 	Difficulties map[string]byte = map[string]byte{
-		"EASY":   DIFFICULTY_EASY,
-		"MEDIUM": DIFFICULTY_MEDIUM,
-		"HARD":   DIFFICULTY_HARD,
-		"INSANE": DIFFICULTY_INSANE,
+		"easy":   DIFFICULTY_EASY,
+		"medium": DIFFICULTY_MEDIUM,
+		"hard":   DIFFICULTY_HARD,
+		"insane": DIFFICULTY_INSANE,
 	}
 
 	Tags    []string
@@ -135,7 +135,7 @@ func LoadTrainings(path string) {
 	)
 
 	// Read YAML file
-	yamlFile, err := os.ReadFile("test.yaml")
+	yamlFile, err := os.ReadFile(path)
 	if err != nil {
 		log.Fatalf("Error reading YAML file: %v", err)
 	}
@@ -162,7 +162,7 @@ func LoadTrainings(path string) {
 		}
 
 		// Convert the type to a byte
-		if training.Type, ok = Types[strings.ToUpper(trainingYaml.Type)]; !ok {
+		if training.Type, ok = Types[strings.ToLower(trainingYaml.Type)]; !ok {
 			// the type is unknow generate an error
 			log.Fatalf("Unknown training type '%s' for training '%s' from '%s'", trainingYaml.Type, trainingYaml.Name, path)
 		}
@@ -198,7 +198,7 @@ func LoadTrainings(path string) {
 		}
 
 		// Convert the difficulty to a byte
-		if training.Difficulty, ok = Difficulties[strings.ToUpper(trainingYaml.Difficulty)]; !ok {
+		if training.Difficulty, ok = Difficulties[strings.ToLower(trainingYaml.Difficulty)]; !ok {
 			// the difficulty is unknow generate an error
 			log.Fatalf("Unknown training difficulty '%s' for training '%s' from '%s'", trainingYaml.Difficulty, trainingYaml.Name, path)
 		}
@@ -217,5 +217,53 @@ func LoadTrainings(path string) {
 		*/
 
 		*Trainings = append(*Trainings, training)
+	}
+}
+
+func LoadAllTrainings(path string) {
+
+	// list all files and directories of the specified dir
+	dirs, err := os.ReadDir(path)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// loop through all files and directories
+	// will ignore files and just process directories
+	for _, dir := range dirs {
+
+		// get info on the file/dir
+		dirInfo, err := os.Stat(path + "/" + dir.Name())
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		// check if it's a dir or not
+		if dirInfo.IsDir() {
+
+			// list the content of that new dir
+			// only interested by files there
+			files, err := os.ReadDir(path + "/" + dir.Name())
+			if err != nil {
+				log.Fatal(err)
+			}
+
+			// loop through the files
+			for _, file := range files {
+				// get the info the files/dirs
+				fileInfo, err := os.Stat(path + "/" + dir.Name() + "/" + file.Name())
+				if err != nil {
+					log.Fatal(err)
+				}
+
+				// check its a yaml file
+				if !fileInfo.IsDir() &&
+					((len(file.Name()) >= 5 && file.Name()[len(file.Name())-4:] == ".yml") ||
+						(len(file.Name()) >= 6 && file.Name()[len(file.Name())-5:] == ".yaml")) {
+
+					LoadTrainings(path + "/" + dir.Name() + "/" + file.Name())
+				}
+			}
+		}
 	}
 }
