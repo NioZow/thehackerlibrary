@@ -15,6 +15,8 @@ const (
 	TYPE_WEBSITE     = 0x03
 	TYPE_LAB         = 0x04
 	TYPE_SOURCE_CODE = 0x05
+	TYPE_CHEATSHEET  = 0x06
+	TYPE_VIDEO       = 0x07
 
 	DIFFICULTY_EASY   = 0x01
 	DIFFICULTY_MEDIUM = 0x02
@@ -106,10 +108,12 @@ var (
 
 	Types map[string]byte = map[string]byte{
 		"blogpost":   TYPE_BLOGPOST,
-		"course:":    TYPE_COURSE,
+		"course":     TYPE_COURSE,
 		"lab":        TYPE_LAB,
 		"website":    TYPE_WEBSITE,
 		"sourcecode": TYPE_SOURCE_CODE,
+		"cheatsheet": TYPE_CHEATSHEET,
+		"video":      TYPE_VIDEO,
 	}
 
 	Difficulties map[string]byte = map[string]byte{

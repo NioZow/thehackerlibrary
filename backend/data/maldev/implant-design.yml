@@ -1,18 +1,7 @@
 - Type: "blogpost"
   Tags:
     - "Malware Development"
-    - "Shellcode writing"
-  Price: 0
-  Url: "https://steve-s.gitbook.io/0xtriboulet/just-malicious/from-c-with-inline-assembly-to-shellcode"
-  Authors:
-    - 0xTriboulet
-  Name: "From C, with inline assembly, to shellcode"
-  Difficulty: "hard"
-  Time: 0
-  Date: "11/08/2023" 
-- Type: "blogpost"
-  Tags:
-    - "Malware Development"
+    - "Implant Design"
     - "Shellcode writing"
   Price: 0
   Url: "https://5pider.net/blog/2024/01/27/modern-shellcode-implant-design/"
@@ -22,3 +11,15 @@
   Difficulty: "hard"
   Time: 20
   Date: "27/01/2024"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Implant Design"
+  Price: 0
+  Url: "https://medium.com/@sapientflow/finding-pastures-new-an-alternate-approach-for-implant-design-644611c526ca"
+  Authors:
+    - Sapientflow
+  Name: "Finding pastures new: An alternate approach for implant design"
+  Difficulty: "hard"
+  Time: 9
+  Date: "17/03/2024"

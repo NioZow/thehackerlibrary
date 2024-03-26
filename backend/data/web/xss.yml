@@ -1,0 +1,12 @@
+- Type: "course"
+  Tags:
+    - "Web"
+    - "Client side"
+  Price: 0
+  Url: "https://portswigger.net/web-security/cross-site-scripting"
+  Authors:
+    - Portswigger
+  Name: "Cross-site scripting"
+  Difficulty: "medium"
+  Time: 0
+  Date: "" 
