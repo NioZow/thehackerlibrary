@@ -1,0 +1,20 @@
+- Type: "cheatsheet"
+  Tags:
+    - "Active Directory"
+    - "SCCM"
+  Url: "https://www.thehacker.recipes/ad/movement/sccm-mecm"
+  Authors:
+    - "Shutdown"
+  Name: "SCCM / MECM"
+  Difficulty: "medium"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "SCCM"
+  Url: "https://posts.specterops.io/the-phantom-credentials-of-sccm-why-the-naa-wont-die-332ac7aa1ab9"
+  Authors:
+    - "Duane Michael"
+  Name: "The Phantom Credentials of SCCM: Why the NAA Won't Die"
+  Difficulty: "medium"
+  Date: "28/06/2022"
+  Time: 7

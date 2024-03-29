@@ -53,6 +53,11 @@
     font-size: 3rem;
   }
 
+  p {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
   #root {
     @apply flex justify-center items-center;
   }

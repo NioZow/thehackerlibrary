@@ -2,85 +2,61 @@
   Tags:
     - "Active Directory"
     - "NTLM Relay"
-  Price: 0
   Url: "https://www.thehacker.recipes/a-d/movement/ntlm/relay"
   Authors:
     - Shutdown
   Name: "Relay"
   Difficulty: "medium"
-  Time: 0
-  Date: "" 
 - Type: "blogpost"
   Tags:
     - "Active Directory"
     - "NTLM Relay"
-  Price: 0
-  Url: "https://luemmelsec.github.io/Relaying-101/"
-  Authors:
-    - LuemmelSec
-  Name: "Relaying 101"
-  Difficulty: "medium"
-  Time: 0
-  Date: "" 
-- Type: "blogpost"
-  Tags:
-    - "Active Directory"
-    - "NTLM Relay"
-  Price: 0
   Url: "https://www.trustedsec.com/blog/a-comprehensive-guide-on-relaying-anno-2022/"
   Authors:
     - "Jean-François Maes"
   Name: "I'm bringing relaying back: A comprehensive guide on relaying anno 2022"
   Difficulty: "medium"
-  Time: 0
   Date: "03/02/2022" 
 - Type: "blogpost"
   Tags:
     - "Active Directory"
     - "NTLM Relay"
     - "NTLMv1"
-  Price: 0
   Url: "https://www.n00py.io/2022/10/practical-attacks-against-ntlmv1/"
   Authors:
     - "n00py"
   Name: "Practical Attacks against NTLMv1"
   Difficulty: "medium"
-  Time: 0
   Date: "16/10/2022" 
 - Type: "blogpost"
   Tags:
     - "Active Directory"
     - "NTLM Relay"
     - "NTLMv1"
-  Price: 0
   Url: "https://github.com/alexdhital/Pentesting-Notes/blob/main/Stealing%20NTLM%20hashes.md"
   Authors:
     - "alexdhital"
   Name: "Stealing netNTLM hashes in windows"
   Difficulty: "medium"
-  Time: 0
   Date: "01/04/2023" 
 - Type: "video"
   Tags:
     - "Active Directory"
     - "NTLM Relay"
-  Price: 0
   Url: "https://www.youtube.com/watch?v=qwTTaUkKH5w"
   Authors:
     - "Evil Mog"
   Name: "G1234! - Anatomy of NTLMv1/NTLMv1-SSP"
   Difficulty: "medium"
-  Time: 0
   Date: "07/08/2018" 
+  Time: 26
 - Type: "blogpost"
   Tags:
     - "Active Directory"
     - "NTLM Relay"
-  Price: 26
-  Url: "https://www.mdsec.co.uk/2021/02/farming-for-red-teams-harvesting-netntlm/"
+  Url: "https://cube0x0.github.io/Relaying-for-gMSA/"
   Authors:
-    - "Domunic Chell"
-  Name: "Farming for Red Teams: Harvesting NetNTLM"
+    - "cube0x0"
+  Name: "NTLM Relaying for gMSA Passwords"
   Difficulty: "medium"
-  Time: 0
-  Date: "01/02/2021"
+  Time: 3

@@ -1,0 +1,35 @@
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "adcs"
+  Url: "https://posts.specterops.io/certified-pre-owned-d95910965cd2"
+  Authors:
+    - "Will Schroeder"
+    - "Lee Christensen"
+  Name: "Certified Pre-Owned"
+  Difficulty: "medium"
+  Date: "17/06/2021"
+  Time: 22
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "adcs"
+  Url: "https://posts.specterops.io/certificates-and-pwnage-and-patches-oh-my-8ae0f4304c1d"
+  Authors:
+    - "Will Schroeder"
+    - "Lee Christensen"
+  Name: "Certificates and Pwnage and Patches, Oh My!"
+  Difficulty: "medium"
+  Date: "09/11/2022"
+  Time: 16
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "adcs"
+  Url: "https://research.ifcr.dk/certipy-4-0-esc9-esc10-bloodhound-gui-new-authentication-and-request-methods-and-more-7237d88061f7"
+  Authors:
+    - "Oliver Lyak"
+  Name: "Certipy 4.0: ESC9 & ESC10, BloodHound GUI, New Authentication and Request Methods — and more!"
+  Difficulty: "medium"
+  Date: "30/01/2023"
+  Time: 20

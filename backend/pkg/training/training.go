@@ -47,9 +47,6 @@ type (
 		// Name of blog post or course...
 		Name string `yaml:"Name"`
 
-		// Short description about it
-		Description string `yaml:"Description"`
-
 		// Difficulty of understanding
 		// Values can be EASY, MEDIUM, HARD, INSANE
 		Difficulty string `yaml:"Difficulty"`
@@ -87,9 +84,6 @@ type (
 
 		// Name of blog post or course...
 		Name string `yaml:"Name"`
-
-		// Short description about it
-		Description string `yaml:"Description"`
 
 		// Difficulty of understanding
 		// Values can be EASY, MEDIUM, HARD, INSANE
@@ -157,12 +151,11 @@ func LoadTrainings(path string) {
 
 		// transfer info
 		training = Training{
-			Price:       trainingYaml.Price,
-			Url:         trainingYaml.Url,
-			Name:        trainingYaml.Name,
-			Description: trainingYaml.Description,
-			Time:        trainingYaml.Time,
-			Date:        trainingYaml.Date,
+			Price: trainingYaml.Price,
+			Url:   trainingYaml.Url,
+			Name:  trainingYaml.Name,
+			Time:  trainingYaml.Time,
+			Date:  trainingYaml.Date,
 		}
 
 		// Convert the type to a byte

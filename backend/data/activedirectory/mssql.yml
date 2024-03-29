@@ -1,0 +1,10 @@
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "mssql"
+  Url: "https://www.tarlogic.com/blog/linked-servers-adsi-passwords/"
+  Authors:
+    - "Pablo Martinez"
+  Name: "MSSQL linked servers: abusing ADSI for password retrieval"
+  Difficulty: "medium"
+  Date: "07/06/2023"

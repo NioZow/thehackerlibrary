@@ -1,3 +1,6 @@
+
+"use client"
+
 import {
   Command,
   CommandEmpty,
@@ -9,9 +12,10 @@ import {
 
 import { useState, useEffect } from 'react';
 import { Bug, Server, Globe } from 'lucide-react';
-import { Filters } from '@/components/elements/filter';
 
-const TrainingType: Record<number,string> = {
+let Filters: string = "option-none"
+
+const TYPES_TRAINING: Record<number,string> = {
   1 : "BLOGPOST",
   2 : "COURSE",
   3 : "WEBSITE",
@@ -30,18 +34,20 @@ function Searchbar() {
     .then(setData)
   }, [])
 
-  return (
+  const [click, setClick] = useState(false);
+
+  return click? (
     <Command className="rounded-lg border shadow-md">
-      <CommandInput placeholder="Search for a blog, course, lab..." />
+      <CommandInput onClick={() => {
+        setClick(!click);
+      }} placeholder="Search for a blog, course, lab..." />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
         {
           // Sort the data, and iterate through it
           data.sort((a, b) => a.Name.localeCompare(b.Name)).map((training, i) => { 
-            let info: string = `${training.Authors} - ${TrainingType[training.Type]}`
-
-            console.log(Filters === "option-none")
-          
+            let info: string = `${training.Authors} - ${TYPES_TRAINING[training.Type]}`
+ 
             if (training.Tags.includes("Malware Development") && (training.Tags.includes(Filters) || Filters === "option-none")) {
               return <CommandItem key={i}>
                 <Bug color="red" className="mr-2 h-4 w-4" size={20} />
@@ -56,7 +62,7 @@ function Searchbar() {
               </CommandItem>
             } else if (training.Tags.includes("Web") && (training.Tags.includes(Filters) || Filters === "option-none")) {
               return <CommandItem key={i}>
-                <Globe color="white" className="mr-2 h-4 w-4" size={20} />
+                <Globe color="#0099E6" className="mr-2 h-4 w-4" size={20} />
                 <span>{training.Name}</span>
                 <CommandShortcut>{info}</CommandShortcut>
               </CommandItem>
@@ -64,6 +70,12 @@ function Searchbar() {
           })
         }
       </CommandList>
+    </Command>
+  ) : (
+    <Command className="rounded-lg border shadow-md">
+      <CommandInput onClick={() => {
+        setClick(!click);
+      }} placeholder="Search for a blog, course, lab..." />
     </Command>
   )
 }

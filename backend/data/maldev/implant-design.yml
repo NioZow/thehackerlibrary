@@ -3,7 +3,6 @@
     - "Malware Development"
     - "Implant Design"
     - "Shellcode writing"
-  Price: 0
   Url: "https://5pider.net/blog/2024/01/27/modern-shellcode-implant-design/"
   Authors:
     - 5pider
@@ -15,7 +14,6 @@
   Tags:
     - "Malware Development"
     - "Implant Design"
-  Price: 0
   Url: "https://medium.com/@sapientflow/finding-pastures-new-an-alternate-approach-for-implant-design-644611c526ca"
   Authors:
     - Sapientflow

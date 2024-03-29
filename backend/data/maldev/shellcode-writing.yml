@@ -3,11 +3,9 @@
     - "Malware Development"
     - "Implant Design"
     - "Shellcode writing"
-  Price: 0
   Url: "https://steve-s.gitbook.io/0xtriboulet/just-malicious/from-c-with-inline-assembly-to-shellcode"
   Authors:
     - 0xTriboulet
   Name: "From C, with inline assembly, to shellcode"
   Difficulty: "hard"
-  Time: 0
   Date: "11/08/2023" 
