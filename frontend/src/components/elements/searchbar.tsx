@@ -34,13 +34,11 @@ function Searchbar() {
     .then(setData)
   }, [])
 
-  const [click, setClick] = useState(false);
+  const [training, setTraining] = useState('none')
 
-  return click? (
+  return (
     <Command className="rounded-lg border shadow-md">
-      <CommandInput onClick={() => {
-        setClick(!click);
-      }} placeholder="Search for a blog, course, lab..." />
+      <CommandInput placeholder="Search for a blog, course, lab..." />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
         {
@@ -49,7 +47,9 @@ function Searchbar() {
             let info: string = `${training.Authors} - ${TYPES_TRAINING[training.Type]}`
  
             if (training.Tags.includes("Malware Development") && (training.Tags.includes(Filters) || Filters === "option-none")) {
-              return <CommandItem key={i}>
+              return <CommandItem key={i} onSelect={() => {
+                console.log("hey")
+              }}>
                 <Bug color="red" className="mr-2 h-4 w-4" size={20} />
                 <span className="noOverflow">{training.Name}</span>
                 <CommandShortcut>{info}</CommandShortcut>
@@ -71,13 +71,7 @@ function Searchbar() {
         }
       </CommandList>
     </Command>
-  ) : (
-    <Command className="rounded-lg border shadow-md">
-      <CommandInput onClick={() => {
-        setClick(!click);
-      }} placeholder="Search for a blog, course, lab..." />
-    </Command>
-  )
+  ) 
 }
 
 export default Searchbar

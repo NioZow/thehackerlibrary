@@ -38,7 +38,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 function Header() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="p-4">
       <NavigationMenuList>
 
         <NavigationMenuItem>
@@ -51,7 +51,6 @@ function Header() {
               <ListItem href="/docs/installation" title="Documentation">
                 Read the documentation
               </ListItem>
-
               <ListItem href="/docs/installation" title="Roadmap / Path">
                 See some optimized path to gradually learn hacking
               </ListItem>
@@ -82,13 +81,10 @@ function Header() {
             </NavigationMenuLink>
         </NavigationMenuItem>
 
-        <NavigationMenuItem>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()} href="#">
-              Login
-            </NavigationMenuLink>
-        </NavigationMenuItem>
-
       </NavigationMenuList>
+      <NavigationMenuLink className={navigationMenuTriggerStyle()} href="#">
+        Login
+      </NavigationMenuLink>
     </NavigationMenu>
   )
 }
