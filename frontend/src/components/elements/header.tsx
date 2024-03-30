@@ -75,15 +75,9 @@ function Header() {
           </NavigationMenuContent>
         </NavigationMenuItem>
 
-        <NavigationMenuItem>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()} href="#">
-              Latest changes
-            </NavigationMenuLink>
-        </NavigationMenuItem>
-
       </NavigationMenuList>
       <NavigationMenuLink className={navigationMenuTriggerStyle()} href="#">
-        Login
+        Latest changes
       </NavigationMenuLink>
     </NavigationMenu>
   )
