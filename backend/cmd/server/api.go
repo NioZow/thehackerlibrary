@@ -1,9 +1,9 @@
 package server
 
 import (
-	"empirelabs/pkg/training"
 	"encoding/json"
 	"net/http"
+	"thehackerlibrary/pkg/training"
 )
 
 func DummyFunction() http.HandlerFunc {

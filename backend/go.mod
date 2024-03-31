@@ -1,4 +1,4 @@
-module empirelabs
+module thehackerlibrary
 
 go 1.22.0
 

@@ -1,9 +1,9 @@
 package main
 
 import (
-	"empirelabs/cmd"
-	"empirelabs/pkg/training"
 	"fmt"
+	"thehackerlibrary/cmd"
+	"thehackerlibrary/pkg/training"
 	"time"
 )
 

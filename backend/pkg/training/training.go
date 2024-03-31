@@ -1,10 +1,10 @@
 package training
 
 import (
-	"empirelabs/pkg/utils"
 	"log"
 	"os"
 	"strings"
+	"thehackerlibrary/pkg/utils"
 
 	"gopkg.in/yaml.v2"
 )
