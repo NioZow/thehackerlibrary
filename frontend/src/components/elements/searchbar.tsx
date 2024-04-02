@@ -11,18 +11,8 @@ import {
 } from "@/components/ui/command";
 
 import { useState, useEffect } from 'react';
-import { Bug, Server, Globe } from 'lucide-react';
-import TrainingPopup from "@/components/elements/training";
-
-const TYPES_TRAINING: Record<number,string> = {
-  1 : "BLOGPOST",
-  2 : "COURSE",
-  3 : "WEBSITE",
-  4 : "LAB",
-  5 : "SOURCECODE",
-  6 : "CHEATSHEET",
-  7 : "VIDEO"
-}
+import { TrainingPopup, GetIcon } from "@/components/elements/training";
+import { Training } from "@/components/elements/types"
 
 function Searchbar() {
 
@@ -44,39 +34,17 @@ function Searchbar() {
           {
             // Sort the data, and iterate through it
             data.sort((a, b) => a.Name.localeCompare(b.Name)).map((training, i) => { 
-              let info: string = `${TYPES_TRAINING[training.Type]}`
+              let info: string = `${training.Type}`
               
-              if (training.Tags.includes("Malware Development")) {
-                return (
-                  <CommandItem key={i} onSelect={() => {
-                    setTraining(training)
-                  }}>
-                    <Bug color="red" className="mr-2 h-4 w-4" size={20} />
-                    <span>{training.Name}</span>
-                    <CommandShortcut>{info}</CommandShortcut>
-                  </CommandItem>
-                )
-              } else if (training.Tags.includes("Active Directory")) {
-                return (
-                  <CommandItem key={i} onSelect={() => {
-                    setTraining(training)
-                  }}>
-                    <Server color="white" className="mr-2 h-4 w-4" size={20} />
-                    <span>{training.Name}</span>
-                    <CommandShortcut>{info}</CommandShortcut>
-                  </CommandItem>
-                )
-              } else if (training.Tags.includes("Web")) {
-                return (
-                  <CommandItem key={i} onSelect={() => {
-                    setTraining(training)
-                  }}>
-                    <Globe color="#0099E6" className="mr-2 h-4 w-4" size={20} />
-                    <span>{training.Name}</span>
-                    <CommandShortcut>{info}</CommandShortcut>
-                  </CommandItem>
-                )
-              }
+              return (
+                <CommandItem key={i} onSelect={() => {
+                  setTraining(training)
+                }}>
+                  <GetIcon icon={training.Tags}/>
+                  <span>{training.Name}</span>
+                  <CommandShortcut>{info}</CommandShortcut>
+                </CommandItem>
+              )
             })
           }
         </CommandList>

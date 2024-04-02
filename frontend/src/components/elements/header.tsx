@@ -16,22 +16,22 @@ import {
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Active Directory",
-    href: "/docs/primitives/alert-dialog",
+    href: "/training",
     description: "All trainings about attacking Microsoft's Active Directory",
   },
   {
     title: "Malware Developpment",
-    href: "/docs/primitives/hover-card",
+    href: "/training",
     description: "Learn Malware Developpment to enhance your red-team skills",
   },
   {
     title: "Web",
-    href: "/docs/primitives/progress",
+    href: "/training",
     description: "All trainings about Web to start your web hacking journey",
   },
   {
     title: "Cloud",
-    href: "/docs/primitives/scroll-area",
+    href: "/training",
     description: "All trainings about cloud hacking",
   },
 ]

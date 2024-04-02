@@ -15,45 +15,11 @@ import {
   TableRow,
 } from "@/components/ui/table"
 
-const Difficulty: Record<number, string> = {
-    1 : "Easy",
-    2 : "Medium",
-    3 : "Hard",
-    4 : "Insane",
-}
+import { Bug, Server, Globe } from 'lucide-react';
+import { TrainingProps } from "@/components/elements/types"
+import { Checkbox } from "@/components/ui/checkbox" 
 
-const TYPES_TRAINING: Record<number,string> = {
-  1 : "BLOGPOST",
-  2 : "COURSE",
-  3 : "WEBSITE",
-  4 : "LAB",
-  5 : "SOURCECODE",
-  6 : "CHEATSHEET",
-  7 : "VIDEO"
-}
-
-interface Training {
-    Type: number;
-    Tags: Array<string>; 
-    Price: number;
-    Url: string;
-    Authors: Array<string>;
-    Name: string;
-    Time: number;
-    Date: string;
-    Difficulty: number;
-}
-
-interface WrapperProps {
-  children: React.ReactNode;
-}
-
-interface TrainingProps {
-    setTraining: React.Dispatch<React.SetStateAction<Training | undefined>>;
-    training: Training | undefined;
-}
-
-function TrainingPopup({ setTraining, training }: TrainingProps) { 
+export function TrainingPopup({ setTraining, training }: TrainingProps) { 
 
     if (training === undefined){
         return null;
@@ -64,7 +30,9 @@ function TrainingPopup({ setTraining, training }: TrainingProps) {
             <DialogContent onEscapeKeyDown={() => {setTraining(undefined)}} onInteractOutside={() => (setTraining(undefined))}> 
                 <DialogHeader>
                     <DialogTitle>
-                        {training.Name}
+                        <a href={training.Url} target="_blank">
+                            {training.Name}
+                        </a>
                     </DialogTitle>
                     <DialogDescription>
                         By {training.Authors.map((author, i) => {
@@ -86,22 +54,30 @@ function TrainingPopup({ setTraining, training }: TrainingProps) {
                                     {
                                         training.Time != 0 ? <TableHead>Time</TableHead> : null
                                     }
-                                    <TableCell>Read?</TableCell>
-                                    <TableHead className="text-right">Link</TableHead>
+                                    {
+                                        training.Date != "" ? <TableHead>Date</TableHead> : null
+                                    }
+                                    <TableHead className="text-right">
+                                    {
+                                        training.Type === "VIDEO" ? "Watched?" : "Read?"
+                                    }
+                                    </TableHead>
                                 </TableRow>
                             </TableHeader>
                             <TableBody>
                                 <TableRow>
-                                    <TableCell className="w-[100px]">{Difficulty[training.Difficulty]}</TableCell>
+                                    <TableCell className="w-[100px]">{training.Difficulty}</TableCell>
                                     {
                                         training.Price != 0 ? <TableCell>{training.Price + "€"}</TableCell>: null
                                     }
-                                    <TableCell>{TYPES_TRAINING[training.Type]}</TableCell>
+                                    <TableCell>{training.Type}</TableCell>
                                     {
                                         training.Time != 0 ? <TableCell>{training.Time} min</TableCell> : null
                                     }
-                                    <TableCell>Yes</TableCell>
-                                    <TableCell className="text-right"><a href={training.Url} target="_blank">Link</a></TableCell>
+                                    {
+                                        training.Date != "" ? <TableCell>{training.Date}</TableCell> : null
+                                    }
+                                    <TableCell className="text-right"><Checkbox id="done" /></TableCell>
                                 </TableRow>
                             </TableBody>
                         </Table>
@@ -110,7 +86,14 @@ function TrainingPopup({ setTraining, training }: TrainingProps) {
             </DialogContent>
         </Dialog>
     );
-
 }
 
-export default TrainingPopup
+export function GetIcon({ icon } : { icon: Array<string> }){
+    if (icon.includes("Malware Development")) {
+        return <Bug color="red" className="mr-2 h-4 w-4" size={20} />
+    } else if (icon.includes("Active Directory")) {
+        return <Server color="white" className="mr-2 h-4 w-4" size={20} />
+    } else if (icon.includes("Web")) {
+        return <Globe color="#0099E6" className="mr-2 h-4 w-4" size={20} />
+    }
+}
