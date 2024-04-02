@@ -1,13 +1,13 @@
-"use client"
+import { useState } from "react";
 
-import { useState, useEffect } from "react"
 import {
   CaretSortIcon,
   ChevronDownIcon,
   DotsHorizontalIcon,
-} from "@radix-ui/react-icons"
+} from "@radix-ui/react-icons";
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
+
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -16,7 +16,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu";
 
 import {
   Select,
@@ -26,9 +26,8 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
+} from "@/components/ui/select";
 
-import { Input } from "@/components/ui/input"
 import {
   Table,
   TableBody,
@@ -36,30 +35,65 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table"
+} from "@/components/ui/table";
 
-import { Training } from "@/components/elements/types";
-import { GetIcon } from "@/components/elements/training"
-import { GenRandomKey, CapitalizeFirstLetter, SortTraining, FilterTrainings } from "@/components/elements/utils"
+import { Input } from "@/components/ui/input";
 
-type column = '' | 'Type' | 'Name' | 'Tags' | 'Price' | 'Authors' | 'Time to read' | 'Date' | 'Difficulty' | 'Read' | 'Actions'
+import { Training } from "@/utils/types";
+import { RenderIcon } from "@/components/icons/icons";
 
-function TrainingTable() {
+import { sortTrainings, FilterTrainings } from "@/utils/training.utils";
 
-  const [data, setData] = useState<Training[]>([])
-  useEffect(() => {
-    fetch('http://localhost:8000/api/training')
-    .then(res => res.json())
-    .then(setData)
-  }, [])
+import { capitalizeFirstLetter } from "@/utils/utils";
 
-  const [columns, setColumns] = useState<column[]>(['', 'Type', 'Name', 'Tags', 'Authors', 'Date', 'Time to read', 'Difficulty', 'Price', 'Read', 'Actions'])
-  const [filterValue, setFilterValue] = useState("")
-  const [filterColumn, setFilterColumn] = useState<column>('Name')
-  const [sortColumn, setSortColumn] = useState<column>('Name')
-  const [sortAsc, setSortAsc] = useState(true)
+import { useTrainings } from "@/context/trainings-context";
 
-  const trainingsSorted: Array<Training> = FilterTrainings(data, filterColumn, filterValue)
+type column =
+  | ""
+  | "Type"
+  | "Name"
+  | "Tags"
+  | "Price"
+  | "Authors"
+  | "Time to read"
+  | "Date"
+  | "Difficulty"
+  | "Read"
+  | "Actions";
+
+const TrainingTable = () => {
+  const { trainings } = useTrainings();
+
+  const getStateFromLocalStorage = (key: string) => {
+    return window.localStorage.getItem(key) === null;
+  };
+
+  const [columns, setColumns] = useState<Record<column, boolean>>({
+    "": getStateFromLocalStorage(""),
+    Type: getStateFromLocalStorage("Type"),
+    Name: getStateFromLocalStorage("Name"),
+    Tags: getStateFromLocalStorage("Tags"),
+    Authors: getStateFromLocalStorage("Authors"),
+    Date: getStateFromLocalStorage("Date"),
+    "Time to read": getStateFromLocalStorage("Time to read"),
+    Difficulty: getStateFromLocalStorage("Difficulty"),
+    Price: getStateFromLocalStorage("Price"),
+    Read: getStateFromLocalStorage("Read"),
+    Actions: getStateFromLocalStorage("Actions"),
+  });
+
+  const [filterValue, setFilterValue] = useState("");
+  const [filterColumn, setFilterColumn] = useState<column>("Name");
+  const [sortColumn, setSortColumn] = useState<column>("Name");
+  const [sortAsc, setSortAsc] = useState(true);
+  const [openColumn, setColumnOpen] = useState(false);
+  const [dropboxHumanClosed, setDropboxHumanClosed] = useState(false);
+
+  const trainingsSorted: Array<Training> = FilterTrainings(
+    trainings,
+    filterColumn,
+    filterValue
+  );
 
   return (
     <div className="w-full">
@@ -67,52 +101,80 @@ function TrainingTable() {
         <Input
           placeholder={`Filter by ${filterColumn.toLowerCase()}...`}
           value={filterValue ?? ""}
-          onChange={(event) =>
-            setFilterValue(event.target.value)
-          }
+          onChange={(event) => setFilterValue(event.target.value)}
           className="max-w-sm"
         />
 
-        <Select onValueChange={(event) => {setFilterColumn(event as column)}}>
+        <Select
+          onValueChange={(event) => {
+            setFilterColumn(event as column);
+          }}
+        >
           <SelectTrigger className="w-[180px]">
             <SelectValue placeholder="Select a filter" />
           </SelectTrigger>
           <SelectContent>
             <SelectGroup>
               <SelectLabel>Filters</SelectLabel>
-              {
-                columns.map((column) => {
-                  return (column != "" && column != "Actions") ? <SelectItem 
-                   value={column}
-                   >
-                    {column}
-                   </SelectItem> : null
-                })
-              }
+              {Object.keys(columns).map((column) => {
+                return column != "" && column != "Actions" ? (
+                  <SelectItem value={column}>{column}</SelectItem>
+                ) : null;
+              })}
             </SelectGroup>
           </SelectContent>
         </Select>
 
-        <DropdownMenu>
+        <DropdownMenu
+          onOpenChange={() => {
+            if (!dropboxHumanClosed) {
+              console.log("dropbox has not been closed by a human");
+              setColumnOpen(true);
+            } else {
+              console.log("dropbox has been closed by a human");
+              setDropboxHumanClosed(false);
+            }
+          }}
+          open={openColumn}
+        >
           <DropdownMenuTrigger asChild>
             <Button variant="outline" className="ml-auto">
               Columns <ChevronDownIcon className="ml-2 h-4 w-4" />
             </Button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            {
-              columns.map((column) => {
-                return (column != "" && column != "Actions") ? (
-                  <DropdownMenuCheckboxItem
-                    key={GenRandomKey()}
-                    className="capitalize"
-                    checked={true}
-                    onCheckedChange={(value) => {console.log("test")}}>
-                    {column}
-                  </DropdownMenuCheckboxItem>
-                ) : null
-              })
-            }
+          <DropdownMenuContent
+            align="end"
+            onInteractOutside={() => {
+              setColumnOpen(false);
+              setDropboxHumanClosed(true);
+              console.log("outside");
+            }}
+            onEscapeKeyDown={() => {
+              setColumnOpen(false);
+              setDropboxHumanClosed(true);
+              console.log("escape key pressed");
+            }}
+          >
+            {Object.entries(columns).map(([column, value]) => {
+              return column != "" && column != "Actions" ? (
+                <DropdownMenuCheckboxItem
+                  className="capitalize"
+                  checked={value}
+                  onCheckedChange={() => {
+                    setColumns((prevState) => ({
+                      ...prevState, // Copy the previous state
+                      [column as column]: !prevState[column as column], // Toggle the value of the specified key
+                    }));
+
+                    value
+                      ? window.localStorage.setItem(column, "a")
+                      : window.localStorage.removeItem(column);
+                  }}
+                >
+                  {column}
+                </DropdownMenuCheckboxItem>
+              ) : null;
+            })}
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
@@ -120,119 +182,171 @@ function TrainingTable() {
       <div className="rounded-md border">
         <Table>
           <TableHeader>
-            <TableRow key="table-row"> 
-              {columns.map((column) => {
-                return (
-                  <TableHead key={column}>
-                    {
-                      (column != "" && column != "Actions") ? (
-                        <Button variant="ghost" value={column} onClick={(event) => {
-                          if (event.target.value == sortColumn){
-                            setSortAsc(!sortAsc)
-                          } else {
-                            setSortColumn(event.target.value)
-                            setSortAsc(true)
-                          }
-                        }}>
-                        {column}
-                        <CaretSortIcon className="ml-2 h-4 w-4" />
-                    </Button>) : `${column}`
-                    }
-                  </TableHead>
-                )
+            <TableRow key="table-row">
+              {Object.entries(columns).map(([column, value]) => {
+                if (value) {
+                  return (
+                    <TableHead key={column}>
+                      {column != "" && column != "Actions" ? (
+                        <Button
+                          variant="ghost"
+                          onClick={() => {
+                            if (column == sortColumn) {
+                              setSortAsc(!sortAsc);
+                            } else {
+                              setSortColumn(column as column);
+                              setSortAsc(true);
+                            }
+                          }}
+                        >
+                          {column}
+                          <CaretSortIcon className="ml-2 h-4 w-4" />
+                        </Button>
+                      ) : (
+                        `${column}`
+                      )}
+                    </TableHead>
+                  );
+                } else {
+                  return null;
+                }
               })}
             </TableRow>
           </TableHeader>
 
           <TableBody>
-            {
-              trainingsSorted.length != 0 ? SortTraining(trainingsSorted, sortColumn, sortAsc).map((training, i) => { 
-                return <TableRow key={training.Name + i}>
+            {trainingsSorted.length != 0 ? (
+              sortTrainings(trainingsSorted, sortColumn, sortAsc).map(
+                (training, i) => {
+                  return (
+                    <TableRow key={i}>
+                      <TableCell>
+                        <RenderIcon icon={training.Tags} />
+                      </TableCell>
 
-                  <TableCell key={GenRandomKey()}>
-                    <GetIcon icon={training.Tags}/>
-                  </TableCell> 
+                      {columns["Type"] ? (
+                        <TableCell>{training.Type}</TableCell>
+                      ) : null}
 
-                  <TableCell key={GenRandomKey()}>
-                    {training.Type}
-                  </TableCell> 
+                      {columns["Name"] ? (
+                        <TableCell>{training.Name}</TableCell>
+                      ) : null}
 
-                  <TableCell key={GenRandomKey()}>
-                    {training.Name} 
-                  </TableCell> 
+                      {columns["Tags"] ? (
+                        <TableCell>
+                          {training.Tags.map((tag, i) => {
+                            return i + 1 != training.Tags.length
+                              ? `${tag} - `
+                              : `${tag}`;
+                          })}
+                        </TableCell>
+                      ) : null}
 
-                  <TableCell key={GenRandomKey()}>
-                    {
-                      training.Tags.map((tag, i) => {
-                        return i + 1 != training.Tags.length ? `${tag} - ` : `${tag}`
-                      })
-                    }
-                  </TableCell>
+                      {columns["Authors"] ? (
+                        <TableCell>
+                          {training.Authors.map((author, i) => {
+                            return i + 1 != training.Authors.length
+                              ? `${author} - `
+                              : `${author}`;
+                          })}
+                        </TableCell>
+                      ) : null}
 
-                  <TableCell key={GenRandomKey()}>
-                    {
-                      training.Authors.map((author, i) => {
-                        return i + 1 != training.Authors.length ? `${author} - ` : `${author}`
-                      })
-                    }
-                  </TableCell>
+                      {columns["Date"] ? (
+                        <TableCell>{training.Date}</TableCell>
+                      ) : null}
 
-                  <TableCell key={GenRandomKey()}>
-                    {training.Date}
-                  </TableCell>
+                      {columns["Time to read"] ? (
+                        <TableCell>{training.Time}</TableCell>
+                      ) : null}
 
-                  <TableCell key={GenRandomKey()}>
-                    {training.Time}
-                  </TableCell>
+                      {columns["Difficulty"] ? (
+                        <TableCell>
+                          {capitalizeFirstLetter(training.Difficulty)}
+                        </TableCell>
+                      ) : null}
 
-                  <TableCell key={GenRandomKey()}>
-                    {CapitalizeFirstLetter(training.Difficulty)}
-                  </TableCell>
+                      {columns["Price"] ? (
+                        <TableCell>{training.Price}</TableCell>
+                      ) : null}
 
-                  <TableCell key={GenRandomKey()}>
-                    {training.Price}
-                  </TableCell>
+                      {columns["Read"] ? (
+                        <TableCell>
+                          {window.localStorage.getItem(training.Url) === null
+                            ? "No"
+                            : "Yes"}
+                        </TableCell>
+                      ) : null}
 
-                  <TableCell key={GenRandomKey()}>
-                    No
-                  </TableCell>
-
-                  <TableCell key={GenRandomKey()}>
-                    <DropdownMenu>
-                      <DropdownMenuTrigger asChild>
-                        <Button variant="ghost" className="h-8 w-8 p-0">
-                          <span className="sr-only">Open menu</span>
-                          <DotsHorizontalIcon className="h-4 w-4" />
-                        </Button>
-                      </DropdownMenuTrigger>
-                      <DropdownMenuContent align="end">
-                        <DropdownMenuLabel>Actions</DropdownMenuLabel>
-                        <DropdownMenuItem onClick={() => navigator.clipboard.writeText(training.Url)}>
-                          Copy training url
-                        </DropdownMenuItem>
-                        <DropdownMenuItem onClick={() => window.open(training.Url, "_blank")}>
-                          Open training in new tab
-                        </DropdownMenuItem>
-                        <DropdownMenuSeparator />
-                        <DropdownMenuItem>Mark as read</DropdownMenuItem>
-                      </DropdownMenuContent>
-                    </DropdownMenu>
-                  </TableCell>
-
-                </TableRow>
-              }) : <TableRow>
-                <TableCell colSpan={columns.length} className="h-24 text-center">
+                      <TableCell>
+                        <DropdownMenu>
+                          <DropdownMenuTrigger asChild>
+                            <Button variant="ghost" className="h-8 w-8 p-0">
+                              <span className="sr-only">Open menu</span>
+                              <DotsHorizontalIcon className="h-4 w-4" />
+                            </Button>
+                          </DropdownMenuTrigger>
+                          <DropdownMenuContent align="end">
+                            <DropdownMenuLabel>Actions</DropdownMenuLabel>
+                            <DropdownMenuItem
+                              onClick={() =>
+                                navigator.clipboard.writeText(training.Url)
+                              }
+                            >
+                              Copy training url
+                            </DropdownMenuItem>
+                            <DropdownMenuItem
+                              onClick={() =>
+                                window.open(training.Url, "_blank")
+                              }
+                            >
+                              Open training in new tab
+                            </DropdownMenuItem>
+                            <DropdownMenuSeparator />
+                            {window.localStorage.getItem(training.Url) ===
+                            null ? (
+                              <DropdownMenuItem
+                                onClick={() => {
+                                  window.localStorage.setItem(
+                                    training.Url,
+                                    "a"
+                                  );
+                                }}
+                              >
+                                Mark as read
+                              </DropdownMenuItem>
+                            ) : (
+                              <DropdownMenuItem
+                                onClick={() => {
+                                  window.localStorage.removeItem(training.Url);
+                                }}
+                              >
+                                Mark as not read
+                              </DropdownMenuItem>
+                            )}
+                          </DropdownMenuContent>
+                        </DropdownMenu>
+                      </TableCell>
+                    </TableRow>
+                  );
+                }
+              )
+            ) : (
+              <TableRow>
+                <TableCell
+                  colSpan={Object.keys(columns).length}
+                  className="h-24 text-center"
+                >
                   No results found.
                 </TableCell>
               </TableRow>
-            }
+            )}
           </TableBody>
         </Table>
       </div>
-
     </div>
-  )
-}
+  );
+};
 
 /*
 

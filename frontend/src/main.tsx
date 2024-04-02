@@ -9,6 +9,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import TrainingsProvider from './context/trainings-context.tsx';
 
 /*
 
@@ -57,5 +58,5 @@ const router = createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <RouterProvider router={router} />
+  <TrainingsProvider><RouterProvider router={router} /></TrainingsProvider>
 )
