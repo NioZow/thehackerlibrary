@@ -1,0 +1,31 @@
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Driver Development"
+  Url: "https://v3ded.github.io/redteam/red-team-tactics-writing-windows-kernel-drivers-for-advanced-persistence-part-2"
+  Authors:
+    - "V3ded"
+  Name: "Red Team Tactics: Writing Windows Kernel Drivers for Advanced Persistence (Part 2)"
+  Difficulty: 3
+  Date: "2023-06-20"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Driver Development"
+  Url: "https://training.zeropointsecurity.co.uk/courses/offensive-driver-development"
+  Authors:
+    - "Daniel Duggan (Rastamouse)"
+  Name: "Offensive Driver Development"
+  Difficulty: 3
+  Price: 60
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Driver Development"
+  Url: "https://alice.climent-pommeret.red/posts/process-killer-driver/"
+  Authors:
+    - "Alice Climent-Pommeret"
+  Name: "Finding and exploiting process killer drivers with LOL for 3000$"
+  Difficulty: 3
+  Date: "2023-06-19"
+  Time: 22

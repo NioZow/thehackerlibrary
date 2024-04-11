@@ -1,0 +1,32 @@
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos Delegations"
+  Url: "https://www.n00py.io/2023/01/exploiting-resource-based-constrained-delegation-rbcd-with-pure-metasploit/"
+  Authors:
+    - "n00py"
+  Name: "Exploiting Resource Based Constrained Delegation (RBCD) with Pure Metasploit"
+  Difficulty: 2
+  Date: "2023-01-30"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos Delegations"
+  Url: "https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html"
+  Authors:
+    - "Elad Shamir"
+  Name: "Wagging the Dog: Abusing Resource-Based Constrained Delegation to Attack Active Directory"
+  Difficulty: 2
+  Date: "2019-01-28"
+  Time: 41
+- Type: "video"
+  Tags:
+    - "Active Directory"
+    - "Kerberos Delegations"
+  Url: "https://www.youtube.com/watch?v=7_iv_eaAFyQ"
+  Authors:
+    - "Shutdown"
+  Name: "Déléguer kerberos pour contourner des limitations de la délégation kerberos"
+  Difficulty: 2
+  Date: "2022-08-12"
+  Time: 44

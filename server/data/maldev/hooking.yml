@@ -1,0 +1,12 @@
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Hooking"
+    - "IAT"
+  Url: "https://alice.climent-pommeret.red/posts/how-and-why-to-unhook-the-import-address-table/"
+  Authors:
+    - "Alice Climent-Pommeret"
+  Name: "EDR Bypass : How and Why to Unhook the Import Address Table"
+  Difficulty: 3
+  Date: "2022-05-07"
+  Time: 7

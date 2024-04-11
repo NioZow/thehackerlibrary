@@ -1,0 +1,10 @@
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "misc"
+  Url: "https://www.trustedsec.com/blog/diving-into-pre-created-computer-accounts/"
+  Authors:
+    - "Oddvar Moe"
+  Name: "Diving into Pre-Created Computer Accounts"
+  Difficulty: 2
+  Date: "2022-06-10"

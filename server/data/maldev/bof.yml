@@ -1,0 +1,81 @@
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "BOF"
+  Url: "https://www.cobaltstrike.com/blog/simplifying-bof-development"
+  Authors:
+    - "Henri Nurmi"
+  Name: "Simplifying BOF Development: Debug, Test, and Save Your B(e)acon"
+  Difficulty: 3
+  Date: "2023-08-10"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "BOF"
+    - "COFF"
+  Url: "https://www.trustedsec.com/blog/coffloader-building-your-own-in-memory-loader-or-how-to-run-bofs"
+  Authors:
+    - "Kevin Haubris"
+  Name: "COFFLoader: Building your own in memory loader or how to run BOFs"
+  Difficulty: 3
+  Date: "2021-02-22"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "BOF"
+  Url: "https://www.trustedsec.com/blog/changes-in-the-beacon-object-file-landscape"
+  Authors:
+    - "Christopher Paschen "
+  Name: "Changes in the Beacon Object File Landscape"
+  Difficulty: 3
+  Date: "2023-03-09"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "BOF"
+  Url: "https://trustedsec.com/blog/using-rpc-in-bofs"
+  Authors:
+    - "Christopher Paschen "
+  Name: "Using RPC in BOFs"
+  Difficulty: 3
+  Date: "2023-03-28"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "BOF"
+  Url: "https://www.trustedsec.com/blog/bofs-for-script-kiddies"
+  Authors:
+    - "TrustedSec"
+  Name: "BOFs for Script Kiddies"
+  Difficulty: 3
+  Date: "2023-02-16"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "BOF"
+  Url: "https://www.trustedsec.com/blog/a-developers-introduction-to-beacon-object-files"
+  Authors:
+    - "Christopher Paschen "
+  Name: "A Developer's Introduction to Beacon Object Files"
+  Difficulty: 3
+  Date: "2020-06-16"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "BOF"
+  Url: "https://www.trustedsec.com/blog/situational-awareness-bofs-for-script-kiddies"
+  Authors:
+    - "TrustedSec"
+  Name: "Situational Awareness BOFs for Script Kiddies"
+  Difficulty: 3
+  Date: "2023-03-21"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "BOF"
+  Url: "https://www.trustedsec.com/blog/operators-guide-to-the-meterpreter-bofloader"
+  Authors:
+    - "Kevin Clark"
+  Name: "Operator's Guide to the Meterpreter BOFLoader"
+  Difficulty: 3
+  Date: "2024-01-24"
