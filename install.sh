@@ -5,7 +5,7 @@ if [[ "$EUID" -ne "0" ]]; then
 	exit
 fi
 
-pacman -S mariadb
+#pacman -S mariadb
 mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 systemctl start mariadb
 mariadb -u root -p --execute "CREATE DATABASE thehackerlibrary;"

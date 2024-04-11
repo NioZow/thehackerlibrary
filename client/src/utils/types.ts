@@ -10,6 +10,11 @@ export interface Training {
   Difficulty: number;
 }
 
+export interface Resources {
+  resources: Array<Training>;
+  size: number;
+}
+
 export let transformDifficulty: Record<number, string> = {
   1: "Easy",
   2: "Medium",

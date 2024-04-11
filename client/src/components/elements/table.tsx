@@ -63,7 +63,7 @@ type column =
 
 const TrainingTable = () => {
   const {
-    trainings,
+    resources,
     page,
     setPage,
     pageSize,
@@ -77,6 +77,8 @@ const TrainingTable = () => {
     sortAsc,
     setSortAsc,
   } = useTrainings();
+
+  let trainings = resources.resources;
 
   const getStateFromLocalStorage = (key: string) => {
     return window.localStorage.getItem(key) === null;
@@ -389,11 +391,7 @@ const TrainingTable = () => {
         </Table>
       </div>
       <div className="flex items-center justify-end space-x-2 py-4">
-        Showing{" "}
-        {page * pageSize + pageSize > trainings.length
-          ? trainingsFiltered.length % pageSize
-          : pageSize}{" "}
-        resources out of {trainings.length}
+        Showing {trainings.length} (page {page}) resources out of {resources.size}
         <Input
           placeholder={`Number of trainings per page (${pageSize})`}
           onChange={(event) => {
@@ -422,7 +420,7 @@ const TrainingTable = () => {
                 setPage(page - 1);
               }
             }}
-            disabled={page === 0}
+            disabled={page === 1}
           >
             Previous
           </Button>
@@ -434,7 +432,7 @@ const TrainingTable = () => {
                 setPage(page + 1);
               }
             }}
-            disabled={page >= Math.floor(trainings.length / pageSize)}
+            disabled={page >= Math.floor(resources.size / pageSize)}
           >
             Next
           </Button>

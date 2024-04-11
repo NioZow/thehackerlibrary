@@ -1,4 +1,4 @@
-import { Training, column } from "@/utils/types";
+import { Resources, Training, column } from "@/utils/types";
 import {
   ReactNode,
   createContext,
@@ -8,7 +8,7 @@ import {
 } from "react";
 
 interface TrainingsContextType {
-  trainings: Training[];
+  resources: Resources;
   page: number;
   setPage: React.Dispatch<React.SetStateAction<number>> | undefined;
   pageSize: number;
@@ -35,7 +35,7 @@ let transformColumn: Record<string, string> = {
 };
 
 const defaultTrainingContext = {
-  trainings: [],
+  resources: {size: 0, resources: []},
   page: 1,
   setPage: undefined,
   pageSize: 20,
@@ -61,11 +61,11 @@ interface Props {
 }
 
 const TrainingsProvider = ({ children }: Props) => {
-  const [trainings, setTrainings] = useState<Training[]>([]);
+  const [resources, setResources] = useState<Resources>({size: 0, resources: []});
 
   let url: string = "http://localhost:8000/api/resources";
 
-  const [page, setPage] = useState<number>(0);
+  const [page, setPage] = useState<number>(1);
   const [pageSize, setPageSize] = useState<number>(
     Number(window.localStorage.getItem("pageSize")) !== 0
       ? Number(window.localStorage.getItem("pageSize"))
@@ -98,7 +98,7 @@ const TrainingsProvider = ({ children }: Props) => {
       : "/sort/" + transformColumn[sortColumn] + "/desc";
 
     // add the limit and page
-    url += "/limit/" + String(pageSize) + "/page/" + String(page + 1);
+    url += "/limit/" + String(pageSize) + "/page/" + String(page);
   }
 
   /*
@@ -108,6 +108,7 @@ const TrainingsProvider = ({ children }: Props) => {
       .then(setTrainings);
   }, [url]);
   */
+
   useEffect(() => {
     fetch(url)
       .then((res) => {
@@ -117,18 +118,18 @@ const TrainingsProvider = ({ children }: Props) => {
 
         return res.json();
       })
-      .then(setTrainings)
+      .then(setResources)
       .catch((error) => {
         console.error("There was a problem with the fetch operation: ", error);
       });
   }, [url]);
 
-  console.log(url, trainings, trainings.length);
+  console.log(url, resources, resources.size);
 
   return (
     <TrainingsContext.Provider
       value={{
-        trainings,
+        resources,
         page,
         setPage,
         pageSize,

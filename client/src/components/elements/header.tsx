@@ -31,45 +31,30 @@ const headerContent: { title: string; href: string; description: string }[] = [
   },
   {
     title: "Resources",
-    href: "/resources",
+    href: "/",
     description: "Complete view of all indexed hacking resources",
   },
   {
-    title: "Quicksearch",
-    href: "/",
-    description: "Quickly search for a resource",
-  },
+    title: "Latest changes",
+    href: "/changes",
+    description: "See the latest changes made to the library",
+  }
 ];
 
 function Header() {
   return (
-    <NavigationMenu className="p-4">
-      <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              {headerContent.map((content) => {
-                return (
-                  <ListItem
-                    href={content.href}
-                    title={content.title}
-                    key={content.title}
-                  >
-                    {content.description}
-                  </ListItem>
-                );
-              })}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-      </NavigationMenuList>
-      <NavigationMenuLink
-        className={navigationMenuTriggerStyle()}
-        href="/changes"
-      >
-        Latest changes
-      </NavigationMenuLink>
+    <NavigationMenu className="p-2">
+      {headerContent.map((content) => {
+        return (
+          <NavigationMenuLink
+            href={content.href}
+            key={content.title}
+            className={navigationMenuTriggerStyle()}
+          >
+            {content.title}
+          </NavigationMenuLink>
+        );
+      })}
     </NavigationMenu>
   );
 }
