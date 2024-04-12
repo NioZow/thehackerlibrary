@@ -101,14 +101,6 @@ const TrainingsProvider = ({ children }: Props) => {
     url += "/limit/" + String(pageSize) + "/page/" + String(page);
   }
 
-  /*
-  useEffect(() => {
-    fetch(url)
-      .then((res) => res.json())
-      .then(setTrainings);
-  }, [url]);
-  */
-
   useEffect(() => {
     fetch(url)
       .then((res) => {

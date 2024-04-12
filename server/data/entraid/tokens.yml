@@ -1,0 +1,12 @@
+- Type: "blogpost"
+  Tags:
+    - "Entra ID"
+    - "Token"
+    - "Phishing"
+  Url: "https://dirkjanm.io/phishing-for-microsoft-entra-primary-refresh-tokens/"
+  Authors:
+    - "Dirk-jan Mollema"
+  Name: "Phishing for Primary Refresh Tokens and Windows Hello keys"
+  Difficulty: 2
+  Date: "2023-10-10"
+  Time: 11

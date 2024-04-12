@@ -31,7 +31,7 @@ export const RenderIcon = ({ icon }: { icon: Array<string> }): JSX.Element => {
     return <ActiveDirectoryIcon />;
   } else if (icon.includes("Web")) {
     return <WebIcon />;
-  } else if (icon.includes("Cloud")) {
+  } else if (icon.includes("Entra ID") || icon.includes("AWS") || icon.includes("GCP")) {
     return <CloudIcon />;
   } else if (icon.includes("Hardware")) {
     return <HardwareIcon />;

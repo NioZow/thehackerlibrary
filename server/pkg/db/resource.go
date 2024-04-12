@@ -15,6 +15,9 @@ var (
 		"price" : "r.price",
 		"difficulty" : "r.difficulty",
 		"time" : "r.time",
+		// got problems sorting with those it panics
+		// because i use 2 sql queries instead of one
+		// TODO: fix this
 		"tag" : "t.name",
 		"author" : "a.name",
 	}
@@ -133,6 +136,13 @@ func GetIdsOfResources(filter string, filterColumn string, sortColumn string, so
 	// sort
 	// ORDER BY ?
 	if value, exists := Columns[sortColumn]; exists {
+
+		if sortColumn == "tag" && filterColumn != "tag" {
+			query += " LEFT JOIN (tags_link tl CROSS JOIN tags t) ON (tl.resource_id = r.id AND t.id = tl.tag_id)"
+		} else if sortColumn == "author" && filterColumn != "author" {
+			query += " LEFT JOIN (authors_link al CROSS JOIN authors a) ON (al.resource_id = r.id AND a.id = al.author_id)"
+		}
+
 		if sortAsc {
 			query += fmt.Sprintf(" ORDER BY %s ASC", value)
 		} else {

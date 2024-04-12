@@ -1,0 +1,11 @@
+- Type: "blogpost"
+  Tags:
+    - "Initial Access"
+    - "Persistence"
+    - "Lnk"
+  Url: "https://v3ded.github.io/redteam/abusing-lnk-features-for-initial-access-and-persistence"
+  Authors:
+    - "V3ded"
+  Name: "Abusing LNK \"Features\" for Initial Access and Persistence"
+  Difficulty: 2
+  Date: "2021-05-28"

@@ -1,0 +1,66 @@
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Token"
+  Url: "https://blog.xpnsec.com/becoming-system/"
+  Authors:
+    - "xpn"
+  Name: "Alternative methods of becoming SYSTEM"
+  Difficulty: 2
+  Date: "2017-11-20"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Token"
+  Url: "https://posts.specterops.io/understanding-and-defending-against-access-token-theft-finding-alternatives-to-winlogon-exe-80696c8a73b"
+  Authors:
+    - "Justin Bui"
+  Name: "Understanding and Defending Against Access Token Theft: Finding Alternatives to winlogon.exe"
+  Difficulty: 2
+  Date: "2019-10-01"
+  Time: 12
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Token"
+  Url: "https://specterops.io/blog/2022/07/07/koh-the-token-stealer/"
+  Authors:
+    - "Harmj0y"
+  Name: "Koh: The Token Stealer"
+  Difficulty: 2
+  Date: "2022-07-07"
+- Type: "video"
+  Tags:
+    - "Malware Development"
+    - "Token"
+  Url: "https://www.youtube.com/watch?v=K7bW4I7txa8"
+  Authors:
+    - "jaredcatkinson"
+    - "robwinchester13"
+  Name: "A Process is No One: Hunting for Token Manipulation"
+  Difficulty: 2
+  Date: "2020-01-08"
+  Time: 54
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Token"
+  Url: "https://research.nccgroup.com/2023/11/10/demystifying-cobalt-strikes-make_token-command/"
+  Authors:
+    - "Simone Salucci"
+    - "Daniel Lopez Jimenez"
+  Name: "Demystifying Cobalt Strike's \"make_token\" Command"
+  Difficulty: 2
+  Date: "2023-11-10"
+  Time: 9
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Token"
+  Url: "https://jsecurity101.medium.com/better-know-a-data-source-access-tokens-and-why-theyre-hard-to-get-7bc951eae0b9"
+  Authors:
+    - "Jonathan Johnson"
+  Name: "Better know a data source: Access tokens (and why they're hard to get)"
+  Difficulty: 2
+  Date: "2022-04-20"
+  Time: 12

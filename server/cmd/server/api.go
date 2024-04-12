@@ -18,19 +18,6 @@ const (
 	CORS string = "*"
 )
 
-var (
-	Columns = map[string]string{
-		"type" : "r.type",
-		"name" : "r.name",
-		"date" : "r.date",
-		"price" : "r.price",
-		"difficulty" : "r.difficulty",
-		"time" : "r.time",
-		"tag" : "t.name",
-		"author" : "a.name",
-	}
-)
-
 type (
 	Resources struct {
 		Resources []resource.Resource `json:"resources"`	
@@ -115,15 +102,18 @@ func getResources(filter bool, sort bool, sortAsc bool, limit bool, page bool) h
 		query += " GROUP BY r.name"
 		queryAuthors += " GROUP BY r.name"
 
-		if value, exists := Columns[sortColumn]; exists {
-			if sortAsc {
-				query += fmt.Sprintf(" ORDER BY %s ASC", value)
-				queryAuthors += fmt.Sprintf(" ORDER BY %s ASC", value)
+		// add order by
+		query += " ORDER BY FIELD(r.id, "
+		queryAuthors += " ORDER BY FIELD(r.id, "
+		for i, id := range ids {
+			if i != len(ids) - 1 {
+				query += fmt.Sprint(id) + ", "
+				queryAuthors += fmt.Sprint(id) + ", "
 			} else {
-				query += fmt.Sprintf(" ORDER BY %s DESC", value)
-				queryAuthors += fmt.Sprintf(" ORDER BY %s DESC", value)
+				query += fmt.Sprint(id) + ")"
+				queryAuthors += fmt.Sprint(id) + ")"
 			}
-		}
+		}	
 
 		// make the request to get most info
 		rows, err := db.DB.Query(query)	

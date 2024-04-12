@@ -1,0 +1,64 @@
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "ETW"
+  Url: "https://undev.ninja/introduction-to-threat-intelligence-etw/"
+  Authors:
+    - "NtRaiseHardError"
+  Name: "Introduction to Threat Intelligence ETW"
+  Difficulty: 2
+  Date: "2023-03-15"
+  Time: 8
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "ETW"
+  Url: "https://jsecurity101.medium.com/uncovering-windows-events-b4b9db7eac54"
+  Authors:
+    - "Jonathan Johnson"
+  Name: "Uncovering Windows Events"
+  Difficulty: 2
+  Date: "2019-10-01"
+  Time: 6
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "ETW"
+  Url: "https://blog.palantir.com/tampering-with-windows-event-tracing-background-offense-and-defense-4be7ac62ac63"
+  Authors:
+    - "Palantir"
+  Name: "Tampering with Windows Event Tracing: Background, Offense, and Defense"
+  Difficulty: 2
+  Date: "2018-12-24"
+  Time: 13
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "ETW"
+  Url: "https://medium.com/threat-hunters-forge/threat-hunting-with-etw-events-and-helk-part-1-installing-silketw-6eb74815e4a0"
+  Authors:
+    - "Roberto Rodriguez"
+  Name: "Threat Hunting with ETW events and HELK — Part 1: Installing SilkETW"
+  Difficulty: 2
+  Date: "2019-09-19"
+  Time: 14
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "ETW"
+  Url: "https://www.ired.team/miscellaneous-reversing-forensics/windows-kernel-internals/etw-event-tracing-for-windows-101"
+  Authors:
+    - "iredteam"
+  Name: "ETW: Event Tracing for Windows 101"
+  Difficulty: 2
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "ETW"
+  Url: "https://www.riskinsight-wavestone.com/en/2023/10/a-universal-edr-bypass-built-in-windows-10/"
+  Authors:
+    - "Maxime MEIGNAN"
+  Name: "A universal EDR bypass built in Windows 10"
+  Difficulty: 2
+  Date: "2023-10-11"
+  Time: 7

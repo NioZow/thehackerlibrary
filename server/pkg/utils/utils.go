@@ -6,7 +6,7 @@ import (
 )
 
 var (
-	CATEGORIES = []string{"Malware Development", "Active Directory", "Web", "Network", "Forensics", "Cryptography", "Miscellaneous", "Hardware"}
+	CATEGORIES = []string{"Malware Development", "Active Directory", "Web", "Network", "Forensics", "Cryptography", "Miscellaneous", "Hardware", "Entra ID", "AWS", "GCP"}
 )
 
 func IsStringInArray(array []string, element string) bool {

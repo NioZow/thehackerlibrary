@@ -2,6 +2,16 @@
   Tags:
     - "Malware Development"
     - "Driver Development"
+  Url: "https://v3ded.github.io/redteam/red-team-tactics-writing-windows-kernel-drivers-for-advanced-persistence-part-1"
+  Authors:
+    - "V3ded"
+  Name: "Red Team Tactics: Writing Windows Kernel Drivers for Advanced Persistence (Part 1)"
+  Difficulty: 3
+  Date: "2022-12-29"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Driver Development"
   Url: "https://v3ded.github.io/redteam/red-team-tactics-writing-windows-kernel-drivers-for-advanced-persistence-part-2"
   Authors:
     - "V3ded"

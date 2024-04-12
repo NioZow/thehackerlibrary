@@ -8,3 +8,21 @@
   Name: "The difference between signature-based and behavioural detections"
   Difficulty: 3
   Date: "2022-09-27"
+- Type: "website"
+  Tags:
+    - "Malware Development"
+    - "Detection"
+  Url: "https://www.virustotal.com/gui/home/upload"
+  Authors:
+    - "virustotal"
+  Name: "Virus Total"
+  Difficulty: 1
+- Type: "website"
+  Tags:
+    - "Malware Development"
+    - "Detection"
+  Url: "https://antiscan.me/"
+  Authors:
+    - "AntiScan.me"
+  Name: "AntiScan"
+  Difficulty: 1

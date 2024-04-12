@@ -10,11 +10,6 @@ import (
 
 var DB *sql.DB
 
-func ClearTables() error {
-	// DELETE * FROM lfdqm
-	return nil
-}
-
 func Setup(reset bool) error {
 
     var (
@@ -40,7 +35,7 @@ func Setup(reset bool) error {
     }
 
     // creating tags table
-    _, err = DB.Exec("CREATE TABLE IF NOT EXISTS tags (id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, name VARCHAR(25) UNIQUE)")
+    _, err = DB.Exec("CREATE TABLE IF NOT EXISTS tags (id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, name VARCHAR(40) UNIQUE)")
     if err != nil {
         return err
     }

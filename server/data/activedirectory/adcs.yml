@@ -1,7 +1,7 @@
 - Type: "blogpost"
   Tags:
     - "Active Directory"
-    - "adcs"
+    - "ADCS"
   Url: "https://posts.specterops.io/certified-pre-owned-d95910965cd2"
   Authors:
     - "Will Schroeder"
@@ -13,7 +13,7 @@
 - Type: "blogpost"
   Tags:
     - "Active Directory"
-    - "adcs"
+    - "ADCS"
   Url: "https://posts.specterops.io/certificates-and-pwnage-and-patches-oh-my-8ae0f4304c1d"
   Authors:
     - "Will Schroeder"
@@ -25,7 +25,7 @@
 - Type: "blogpost"
   Tags:
     - "Active Directory"
-    - "adcs"
+    - "ADCS"
   Url: "https://research.ifcr.dk/certipy-4-0-esc9-esc10-bloodhound-gui-new-authentication-and-request-methods-and-more-7237d88061f7"
   Authors:
     - "Oliver Lyak"

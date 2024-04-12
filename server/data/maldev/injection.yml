@@ -1,0 +1,72 @@
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Injection"
+  Url: "https://blog.sektor7.net/#!res/2018/pure-in-memory-linux.md"
+  Authors:
+    - "rb"
+  Name: "Pure In-Memory (Shell)Code Injection In Linux Userland"
+  Difficulty: 3
+  Date: "2018-12-14"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Injection"
+  Url: "https://www.ired.team/offensive-security/code-injection-process-injection/process-hollowing-and-pe-image-relocations"
+  Authors:
+    - "iredteam"
+  Name: "Process Hollowing and Portable Executable Relocations"
+  Difficulty: 3
+- Type: "repository"
+  Tags:
+    - "Malware Development"
+    - "Injection"
+    - "Process Ghosting"
+  Url: "https://www.elastic.co/blog/process-ghosting-a-new-executable-image-tampering-attack"
+  Authors:
+    - "Gabriel Landau"
+  Name: "What you need to know about Process Ghosting, a new executable image tampering attack"
+  Date: "2021-06-15"
+  Difficulty: 3
+- Type: "repository"
+  Tags:
+    - "Malware Development"
+    - "Injection"
+    - "Process Herpaderping"
+  Url: "https://github.com/jxy-s/herpaderping"
+  Authors:
+    - "jxy-s"
+  Name: "Process Herpaderping"
+  Difficulty: 3
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Injection"
+    - "Process Doppelganging"
+  Url: "https://github.com/hasherezade/process_doppelganging"
+  Authors:
+    - "hasherezade"
+  Name: "Process Doppelganging"
+  Difficulty: 3
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Injection"
+    - "Dll Notification Injection"
+  Url: "https://shorsec.io/blog/dll-notification-injection/"
+  Authors:
+    - "Mor Davidovich"
+  Name: "DLL Notification Injection"
+  Difficulty: 3
+  Date: "2023-08-14"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Injection"
+    - "Linux"
+  Url: "https://blog.sektor7.net/#!res/2018/pure-in-memory-linux.md"
+  Authors:
+    - "rb"
+  Name: "Pure In-Memory (Shell)Code Injection In Linux Userland"
+  Difficulty: 3
+  Date: "2018-12-14"

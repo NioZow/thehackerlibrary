@@ -1,0 +1,67 @@
+- Type: "website"
+  Tags:
+    - "Malware Development"
+  Url: "https://modexp.wordpress.com/"
+  Authors:
+    - "modexp"
+  Name: "modexp's blog"
+  Difficulty: 2
+- Type: "website"
+  Tags:
+    - "Malware Development"
+    - "Active Directory"
+  Url: "https://www.ired.team/"
+  Authors:
+    - "iredteam"
+  Name: "iredteam"
+  Difficulty: 2
+- Type: "website"
+  Tags:
+    - "Malware Development"
+  Url: "https://www.crow.rip/crows-nest/mal/dev"
+  Authors:
+    - "crow"
+  Name: "crow's blog"
+  Difficulty: 2
+- Type: "website"
+  Tags:
+    - "Malware Development"
+  Url: "https://github.com/chvancooten/maldev-for-dummies"
+  Authors:
+    - "Chvancooten"
+  Name: "Malware Development for Dummies"
+  Difficulty: 2
+- Type: "website"
+  Tags:
+    - "Malware Development"
+  Url: "https://maldevacademy.com/"
+  Authors:
+    - "mr.d0x"
+    - "NUL0x4C"
+  Name: "Maldev Academy"
+  Price: 250
+  Difficulty: 2
+- Type: "website"
+  Tags:
+    - "Malware Development"
+  Url: "https://alice.climent-pommeret.red/"
+  Authors:
+    - "Alice Climent-Pommeret"
+  Name: "Alice Climent-Pommeret's blog"
+  Difficulty: 2
+- Type: "website"
+  Tags:
+    - "Malware Development"
+  Url: "https://github.com/CodeXTF2/maldev-links"
+  Authors:
+    - "CodeXTF2"
+  Name: "redteam/maldev links"
+  Difficulty: 2
+- Type: "website"
+  Tags:
+    - "Malware Development"
+  Url: "https://ntdoc.m417z.com/"
+  Authors:
+    - "m417z"
+  Name: "NtDoc: Native API online documentation, based on the System Informer (formerly Process Hacker)"
+  Difficulty: 1
