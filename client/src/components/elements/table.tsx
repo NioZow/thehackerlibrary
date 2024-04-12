@@ -121,7 +121,7 @@ const TrainingTable = () => {
 
   return (
     <div className="w-full">
-      <div className="flex items-center py-4">
+      <div className="flex items-center py-6">
         <Input
           placeholder={`Filter by ${filterColumn.toLowerCase()}...`}
           value={filterValue ?? ""}
@@ -131,7 +131,7 @@ const TrainingTable = () => {
               window.localStorage.setItem("filter", event.target.value);
             }
           }}
-          className="max-w-sm"
+          className="max-w-sm mr-4"
         />
 
         <Select
@@ -299,7 +299,7 @@ const TrainingTable = () => {
                     ) : null}
 
                     {columns["Time to read"] ? (
-                      <TableCell>{training.Time}</TableCell>
+                      <TableCell>{training.Time != 0 ? training.Time : ""}</TableCell>
                     ) : null}
 
                     {columns["Difficulty"] ? (

@@ -35,8 +35,8 @@ const headerContent: { title: string; href: string; description: string }[] = [
     description: "Complete view of all indexed hacking resources",
   },
   {
-    title: "Latest changes",
-    href: "/changes",
+    title: "Latest posts",
+    href: "/latest",
     description: "See the latest changes made to the library",
   }
 ];

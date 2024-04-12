@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import Search from "@/components/modules/search";
+import Latest from "@/components/elements/latest";
 import Page404 from "@/components/modules/404";
 import Resources from "./components/modules/resources";
 import About from "@/components/modules/about";
@@ -21,6 +21,10 @@ const router = createBrowserRouter([
     path: "/about",
     element: <About />,
   },
+  {
+    path: "/latest",
+    element: <Latest />,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
