@@ -13,7 +13,11 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
-const headerContent: { title: string; href: string; description: string }[] = [
+const headerContentLeft: {
+  title: string;
+  href: string;
+  description: string;
+}[] = [
   {
     title: "Introduction",
     href: "/about",
@@ -24,38 +28,82 @@ const headerContent: { title: string; href: string; description: string }[] = [
     href: "https://github.com/NioZow/thehackerlibrary/wiki",
     description: "Read the documentation",
   },
+];
+
+const headerContentCenter: {
+  title: string;
+  href: string;
+  description: string;
+}[] = [
   {
-    title: "Roadmap / Path",
-    href: "/path",
-    description: "See some optimized path to gradually learn hacking",
+    title: "Roadmaps",
+    href: "/roadmaps",
+    description:
+      "See some optimized path to get started in hacking or learn new topics",
   },
+];
+
+const headerContentRight: {
+  title: string;
+  href: string;
+  description: string;
+}[] = [
   {
     title: "Resources",
     href: "/",
     description: "Complete view of all indexed hacking resources",
   },
-  {
-    title: "Latest posts",
-    href: "/latest",
-    description: "See the latest changes made to the library",
-  }
 ];
 
 function Header() {
   return (
-    <NavigationMenu className="p-2">
-      {headerContent.map((content) => {
-        return (
-          <NavigationMenuLink
-            href={content.href}
-            key={content.title}
-            className={navigationMenuTriggerStyle()}
-          >
-            {content.title}
-          </NavigationMenuLink>
-        );
-      })}
-    </NavigationMenu>
+    <div className="flex">
+      <NavigationMenu className="p-2 justify-normal">
+        {headerContentLeft.map((content) => {
+          return (
+            <div title={content.description}>
+              <NavigationMenuLink
+                href={content.href}
+                key={content.title}
+                className={`${navigationMenuTriggerStyle()}`}
+              >
+                {content.title}
+              </NavigationMenuLink>
+            </div>
+          );
+        })}
+      </NavigationMenu>
+      <NavigationMenu className="p-2 justify-center">
+        {headerContentCenter.map((content) => {
+          return (
+            <div title={content.description}>
+              <NavigationMenuLink
+                href={content.href}
+                key={content.title}
+                className={`${navigationMenuTriggerStyle()}`}
+              >
+                {content.title}
+              </NavigationMenuLink>
+            </div>
+          );
+        })}
+      </NavigationMenu>
+      <NavigationMenu className="p-2 justify-end">
+        {headerContentRight.map((content) => {
+          return (
+            <div title={content.description}>
+              <NavigationMenuLink
+                href={content.href}
+                key={content.title}
+                className={`${navigationMenuTriggerStyle()}`}
+              >
+                {content.title}
+              </NavigationMenuLink>
+            </div>
+          );
+        })}
+      </NavigationMenu>
+    </div>
   );
 }
 

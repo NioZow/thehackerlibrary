@@ -22,13 +22,20 @@ export let transformDifficulty: Record<number, string> = {
   4: "Insane",
 };
 
+export type filterInfo =
+  | "page"
+  | "pageSize"
+  | "filterColumn"
+  | "filterValue"
+  | "sortColumn"
+  | "sortAsc";
+
 export interface WrapperProps {
   children: React.ReactNode;
 }
 
 export type column =
   | ""
-  | "Type"
   | "Name"
   | "Tags"
   | "Price"
@@ -36,10 +43,11 @@ export type column =
   | "Time to read"
   | "Date"
   | "Difficulty"
-  | "Read"
   | "Actions";
+
+export type option = "bookmark" | "read" | "latest";
+
 export type columnStrict =
-  | "Type"
   | "Name"
   | "Tags"
   | "Price"

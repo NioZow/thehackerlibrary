@@ -75,8 +75,8 @@ func getResources(filter bool, sort bool, sortAsc bool, limit bool, page bool) h
 		// get the ids of resources
 		ids, resources.Size, err = db.GetIdsOfResources(filterValue, filterColumn, sortColumn, sortAsc, limitValue, pageValue)
 		if err != nil {
-			http.Error(w, "no ids matching this request", http.StatusInternalServerError)
-			log.Panic(err)
+			http.Error(w, "an error occured on the server side", http.StatusInternalServerError)
+			return
 		}
 
 		// no matches return empty resources

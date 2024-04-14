@@ -1,4 +1,4 @@
-import { Resources, Training, column } from "@/utils/types";
+import { Resources, filterInfo, column } from "@/utils/types";
 import {
   ReactNode,
   createContext,
@@ -9,6 +9,7 @@ import {
 
 interface TrainingsContextType {
   resources: Resources;
+  setResources: React.Dispatch<React.SetStateAction<Resources>> | undefined;
   page: number;
   setPage: React.Dispatch<React.SetStateAction<number>> | undefined;
   pageSize: number;
@@ -21,6 +22,8 @@ interface TrainingsContextType {
   setSortColumn: React.Dispatch<React.SetStateAction<column>> | undefined;
   sortAsc: boolean;
   setSortAsc: React.Dispatch<React.SetStateAction<boolean>> | undefined;
+  reloadMe: boolean;
+  setReloadMe: React.Dispatch<React.SetStateAction<boolean>> | undefined;
 }
 
 let transformColumn: Record<string, string> = {
@@ -35,7 +38,8 @@ let transformColumn: Record<string, string> = {
 };
 
 const defaultTrainingContext = {
-  resources: {size: 0, resources: []},
+  resources: { size: 0, resources: [] },
+  setResources: undefined,
   page: 1,
   setPage: undefined,
   pageSize: 20,
@@ -48,6 +52,8 @@ const defaultTrainingContext = {
   setSortColumn: undefined,
   sortAsc: true,
   setSortAsc: undefined,
+  reloadMe: false,
+  setReloadMe: undefined,
 } satisfies TrainingsContextType;
 
 export const TrainingsContext = createContext<TrainingsContextType>(
@@ -61,31 +67,58 @@ interface Props {
 }
 
 const TrainingsProvider = ({ children }: Props) => {
-  const [resources, setResources] = useState<Resources>({size: 0, resources: []});
+  const [resources, setResources] = useState<Resources>({
+    size: 0,
+    resources: [],
+  });
 
   let url: string = "http://localhost:8000/api/resources";
 
-  const [page, setPage] = useState<number>(1);
+  const getFiltersFromLocalStorage = (
+    key: string
+  ): Record<filterInfo, string | number | boolean> => {
+    let jsonString = window.localStorage.getItem(key);
+
+    if (jsonString !== null) {
+      return JSON.parse(jsonString);
+    } else {
+      return {
+        filterColumn: "Name",
+        filterValue: "",
+        sortColumn: "Name",
+        sortAsc: true,
+        page: 1,
+        pageSize: 9,
+      };
+    }
+  };
+
+  let localStorageFilters: Record<filterInfo, string | number | boolean> =
+    getFiltersFromLocalStorage("filters");
+
+  const [page, setPage] = useState<number>(
+    localStorageFilters["page"] as number
+  );
   const [pageSize, setPageSize] = useState<number>(
-    Number(window.localStorage.getItem("pageSize")) !== 0
-      ? Number(window.localStorage.getItem("pageSize"))
-      : 20
+    localStorageFilters["pageSize"] as number
   );
 
   const [filterValue, setFilterValue] = useState<string>(
-    window.localStorage.getItem("filter") !== null
-      ? (window.localStorage.getItem("filter") as string)
-      : ""
+    localStorageFilters["filterValue"] as string
   );
 
   const [filterColumn, setFilterColumn] = useState<column>(
-    window.localStorage.getItem("column_filter") !== null
-      ? (window.localStorage.getItem("column_filter") as column)
-      : "Name"
+    localStorageFilters["filterColumn"] as column
   );
 
-  const [sortColumn, setSortColumn] = useState<column>("Name");
-  const [sortAsc, setSortAsc] = useState(true);
+  const [sortColumn, setSortColumn] = useState<column>(
+    localStorageFilters["sortColumn"] as column
+  );
+  const [sortAsc, setSortAsc] = useState(
+    localStorageFilters["sortAsc"] as boolean
+  );
+
+  const [reloadMe, setReloadMe] = useState(false);
 
   if (filterValue != "" && filterColumn != "") {
     url += "/" + transformColumn[filterColumn] + "/" + filterValue;
@@ -101,10 +134,17 @@ const TrainingsProvider = ({ children }: Props) => {
     url += "/limit/" + String(pageSize) + "/page/" + String(page);
   }
 
+  console.log(url);
+
   useEffect(() => {
     fetch(url)
       .then((res) => {
+        // reset the page number
+        setPage(1);
+
         if (!res.ok) {
+          // there was an error set resources to empty
+          setResources({ resources: [], size: 0 });
           throw new Error(`HTTP error! status: ${res.status}`);
         }
 
@@ -112,16 +152,25 @@ const TrainingsProvider = ({ children }: Props) => {
       })
       .then(setResources)
       .catch((error) => {
-        console.error("There was a problem with the fetch operation: ", error);
+        if (error.message.includes("Failed to fetch")) {
+          console.error(
+            "There was a problem with the fetch operation, possibly due to a CORS issue: ",
+            error
+          );
+        } else {
+          console.error(
+            "There was a problem with the fetch operation: ",
+            error
+          );
+        }
       });
-  }, [url]);
-
-  console.log(url, resources, resources.size);
+  }, [url, reloadMe]);
 
   return (
     <TrainingsContext.Provider
       value={{
         resources,
+        setResources,
         page,
         setPage,
         pageSize,
@@ -134,6 +183,8 @@ const TrainingsProvider = ({ children }: Props) => {
         setSortColumn,
         sortAsc,
         setSortAsc,
+        reloadMe,
+        setReloadMe,
       }}
     >
       {children}

@@ -7,7 +7,7 @@ const Resources = () => {
     <div className="w-full flex flex-col">
       <Header />
 
-      <div className="h-full flex flex-col justify-center items-center">
+      <div className="h-full flex flex-col justify-center items-center ml-48 mr-48">
         <h1>The Hacker Library</h1>
         <p>Library of hacking learning resources, not sponsored</p>
         <TrainingTable />

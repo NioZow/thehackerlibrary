@@ -15,7 +15,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/",
-    element: <Resources />,
+    element: (
+      <TrainingsProvider>
+        <Resources />,
+      </TrainingsProvider>
+    ),
   },
   {
     path: "/about",
@@ -24,11 +28,9 @@ const router = createBrowserRouter([
   {
     path: "/latest",
     element: <Latest />,
-  }
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <TrainingsProvider>
-    <RouterProvider router={router} />
-  </TrainingsProvider>
+  <RouterProvider router={router} />
 );
