@@ -12,13 +12,14 @@ var (
 	DB_USERNAME = ""
 	DB_PASSWORD = ""
 	DB_PORT = ""
+	DB_HOST = ""
 )
 
 func init() {
 
 	// load the dotenv file
-	err := godotenv.Load(".env")
-	if err != nil {
+	// this will load overwrite any env variable
+	if err := godotenv.Load(".env"); err != nil {
 		log.Fatal(err)
 	}
 
@@ -27,4 +28,5 @@ func init() {
 	DB_USERNAME = os.Getenv("DB_USERNAME")
 	DB_PASSWORD = os.Getenv("DB_PASSWORD")
 	DB_PORT = os.Getenv("DB_PORT")
+	DB_HOST = os.Getenv("DB_HOST")
 }

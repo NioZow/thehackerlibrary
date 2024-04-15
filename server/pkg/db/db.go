@@ -16,7 +16,7 @@ func Setup(reset bool) error {
         err error
     )
 
-    DB, err = sql.Open("mysql", fmt.Sprintf("%s:%s@tcp(localhost:%s)/%s", env.DB_USERNAME, env.DB_PASSWORD, env.DB_PORT, env.DB_NAME))
+    DB, err = sql.Open("mysql", fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", env.DB_USERNAME, env.DB_PASSWORD, env.DB_HOST, env.DB_PORT, env.DB_NAME))
     if err != nil {
         return err
     }

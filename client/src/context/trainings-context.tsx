@@ -72,7 +72,9 @@ const TrainingsProvider = ({ children }: Props) => {
     resources: [],
   });
 
-  let url: string = "http://localhost:8000/api/resources";
+  let host: string = import.meta.env.VITE_API_HOST;
+  let port: string = import.meta.env.VITE_API_PORT;
+  let url: string = `http://${host}:${port}/api/resources`;
 
   const getFiltersFromLocalStorage = (
     key: string
@@ -137,11 +139,12 @@ const TrainingsProvider = ({ children }: Props) => {
   console.log(url);
 
   useEffect(() => {
+    setPage(1);
+  }, [sortAsc, sortColumn, filterValue]);
+
+  useEffect(() => {
     fetch(url)
       .then((res) => {
-        // reset the page number
-        setPage(1);
-
         if (!res.ok) {
           // there was an error set resources to empty
           setResources({ resources: [], size: 0 });

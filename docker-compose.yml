@@ -1,0 +1,46 @@
+version: "3"
+services:
+  db:
+    image: mariadb:latest
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: thehackerlibrary
+      MYSQL_DATABASE: thehackerlibrary
+      MYSQL_USER: thehackerlibrary
+      MYSQL_PASSWORD: thehackerlibrary
+  server:
+    image: golang:latest
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./server:/app
+    command: >
+      bash -c "cd /app && go mod download && go run main.go"
+    environment:
+      DB_NAME: thehackerlibrary
+      DB_USERNAME: thehackerlibrary
+      DB_PASSWORD: thehackerlibrary
+      DB_PORT: 3306
+      DB_HOST: db
+    restart: always
+  client:
+    image: node:latest
+    depends_on:
+      - server
+    volumes:
+      - ./client:/app
+    ports:
+      - "8080:5173"
+    command: >
+      bash -c "cd /app && npm install && npm run dev"
+    restart: always
+    environment:
+      VITE_API_HOST: localhost
+      VITE_API_PORT: 8000
+
+volumes:
+  db_data: {}
