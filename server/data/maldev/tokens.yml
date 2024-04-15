@@ -49,7 +49,7 @@
   Authors:
     - "Simone Salucci"
     - "Daniel Lopez Jimenez"
-  Name: "Demystifying Cobalt Strike's \"make_token\" Command"
+  Name: 'Demystifying Cobalt Strike''s "make_token" Command'
   Difficulty: 2
   Date: "2023-11-10"
   Time: 9
@@ -64,3 +64,14 @@
   Difficulty: 2
   Date: "2022-04-20"
   Time: 12
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Token"
+  Url: "https://eversinc33.com/posts/windows-access-tokens/"
+  Authors:
+    - "eversinc33"
+  Name: "Windows Access Tokens: Getting SYSTEM and demystifying Potato Exploits"
+  Difficulty: 2
+  Date: "2022-11-25"
+  Time: 7

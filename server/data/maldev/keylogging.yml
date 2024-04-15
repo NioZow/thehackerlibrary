@@ -1,0 +1,33 @@
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Keylogging"
+  Url: "https://www.synacktiv.com/en/publications/writing-a-decent-win32-keylogger-13.html"
+  Authors:
+    - "Martin Balc'h"
+  Name: "Writing a decent win32 keylogger [1/3]"
+  Difficulty: 3
+  Date: "2023-12-21"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Keylogging"
+    - "Linux"
+  Url: "https://linuxsecurity.com/features/complete-guide-to-keylogging-in-linux-part-1"
+  Authors:
+    - "Brittany Day"
+  Name: "Hacker's Corner: Complete Guide to Keylogging in Linux - Part 1"
+  Difficulty: 3
+  Date: "2022-05-23"
+  Time: 8
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Keylogging"
+  Url: "https://eversinc33.com/posts/kernel-mode-keylogging/"
+  Authors:
+    - "eversinc33"
+  Name: "Keylogging in the Windows kernel with undocumented data structures"
+  Difficulty: 3
+  Date: "2024-02-25"
+  Time: 7

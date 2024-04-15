@@ -60,3 +60,33 @@
   Name: "NTLM Relaying for gMSA Passwords"
   Difficulty: 2
   Time: 3
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "NTLM Relay"
+  Url: "https://github.com/LuemmelSec/ntlmrelayx.py_to_exe"
+  Authors:
+    - "LuemmelSec"
+  Name: "NTLMRelayx.py to exe"
+  Difficulty: 2
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos Relay"
+  Url: "https://exploit.ph/defending-the-three-headed-relay.html"
+  Authors:
+    - "Charlie Clark"
+  Name: "Defending the Three Headed Relay"
+  Difficulty: 2
+  Date: "2022-05-09"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos Relay"
+  Url: "https://dirkjanm.io/relaying-kerberos-over-dns-with-krbrelayx-and-mitm6/"
+  Authors:
+    - "Dirk-jan Mollema"
+  Name: "Relaying Kerberos over DNS using krbrelayx and mitm6"
+  Difficulty: 2
+  Date: "2022-02-22"
+  Time: 11

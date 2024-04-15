@@ -1,0 +1,11 @@
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Dotnet"
+    - "Obfuscation"
+  Url: "https://www.r-tec.net/r-tec-blog-net-assembly-obfuscation-for-memory-scanner-evasion.html"
+  Authors:
+    - "eversinc33"
+  Name: ".NET Assembly Obfuscation for Memory Scanner Evasion"
+  Difficulty: 2
+  Date: "2023-10"

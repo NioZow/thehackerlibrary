@@ -1,0 +1,63 @@
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Lateral Movement"
+  Url: "https://riccardoancarani.github.io/2019-10-04-lateral-movement-megaprimer/"
+  Authors:
+    - "Riccardo Ancarani"
+  Name: "Lateral Movement Windows and Active Directory"
+  Difficulty: 2
+  Date: "2019-10-04"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Lateral Movement"
+  Url: "https://attl4s.github.io/assets/pdf/Understanding_Windows_Lateral_Movements.pdf"
+  Authors:
+    - "ATTL4S"
+    - "ElephantSe4l"
+  Name: "Understanding Windows Lateral Movements"
+  Difficulty: 2
+- Type: "video"
+  Tags:
+    - "Active Directory"
+    - "Lateral Movement"
+  Url: "https://www.youtube.com/watch?v=hz_YPIMeBMI"
+  Authors:
+    - "Sagie Dulce"
+  Name: "Burning Bridges - Stopping Lateral Movement via the RPC Firewall"
+  Difficulty: 2
+  Date: "2022-01-31"
+  Time: 36
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Lateral Movement"
+  Url: "https://whiteknightlabs.com/2023/06/26/navigating-stealthy-wmi-lateral-movement/"
+  Authors:
+    - "Kleiton Kurti"
+  Name: "Navigating Stealthy WMI Lateral Movement"
+  Difficulty: 2
+  Date: "2023-06-26"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "SCCM"
+  Url: "https://specterops.io/blog/2023/07/11/performance-diagnostics-and-wmi/"
+  Authors:
+    - "Steven f"
+  Name: "Performance, Diagnostics, and WMI"
+  Difficulty: 2
+  Date: "2023-06-11"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "NTLM"
+    - "Lateral Movement"
+    - "Path The Hash (PTH)"
+  Url: "https://www.n00py.io/2020/12/alternative-ways-to-pass-the-hash-pth/"
+  Authors:
+    - "n00py"
+  Name: "Alternative ways to Pass the Hash (PtH)"
+  Difficulty: 2
+  Date: "2020-12-13"

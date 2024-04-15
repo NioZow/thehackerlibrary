@@ -8,3 +8,14 @@
   Name: "GMER - the art of exposing Windows rootkits in kernel mode"
   Difficulty: 4
   Date: "2024-04-05"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Rootkit"
+  Url: "https://eversinc33.com/posts/anti-anti-rootkit-part-i/"
+  Authors:
+    - "eversinc33"
+  Name: "(Anti-)Anti-Rootkit Techniques - Part I: UnKovering mapped rootkits"
+  Difficulty: 3
+  Date: "2024-03-23"
+  Time: 14

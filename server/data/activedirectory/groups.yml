@@ -1,7 +1,7 @@
 - Type: "blogpost"
   Tags:
     - "Active Directory"
-    - "groups"
+    - "Groups"
   Url: "https://www.whiteoaksecurity.com/blog/account-operators-privilege-escalation/"
   Authors:
     - "Talis Ozols"
@@ -19,10 +19,30 @@
 - Type: "blogpost"
   Tags:
     - "Active Directory"
-    - "groups"
+    - "Groups"
   Url: "https://cube0x0.github.io/Pocing-Beyond-DA/"
   Authors:
     - "cube0x0"
   Name: "Poc'ing Beyond Domain Admin - Part 1"
   Difficulty: 2
   Time: 6
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Groups"
+  Url: "https://www.youtube.com/watch?v=YaDBUfCQXW4"
+  Authors:
+    - "David Mayer"
+  Name: "The Backup Operators Guide To The Galaxy"
+  Difficulty: 2
+  Date: "2019-12-26"
+  Time: 39
+- Type: "repository"
+  Tags:
+    - "Active Directory"
+    - "Groups"
+  Url: "https://github.com/mpgn/BackupOperatorToDA"
+  Authors:
+    - "mpgn"
+  Name: "From Backup Operator To Domain Admin"
+  Difficulty: 2

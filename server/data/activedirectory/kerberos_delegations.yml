@@ -1,7 +1,7 @@
 - Type: "blogpost"
   Tags:
     - "Active Directory"
-    - "Kerberos Delegations"
+    - "Kerberos Delegation"
   Url: "https://www.n00py.io/2023/01/exploiting-resource-based-constrained-delegation-rbcd-with-pure-metasploit/"
   Authors:
     - "n00py"
@@ -11,7 +11,8 @@
 - Type: "blogpost"
   Tags:
     - "Active Directory"
-    - "Kerberos Delegations"
+    - "Kerberos Delegation"
+    - "RBCD"
   Url: "https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html"
   Authors:
     - "Elad Shamir"
@@ -22,7 +23,7 @@
 - Type: "video"
   Tags:
     - "Active Directory"
-    - "Kerberos Delegations"
+    - "Kerberos Delegation"
   Url: "https://www.youtube.com/watch?v=7_iv_eaAFyQ"
   Authors:
     - "Shutdown"
@@ -30,3 +31,47 @@
   Difficulty: 2
   Date: "2022-08-12"
   Time: 44
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos Delegation"
+    - "RBCD"
+  Url: "https://exploit.ph/revisiting-delegate-2-thyself.html"
+  Authors:
+    - "Charlie Clark"
+  Name: "Revisiting 'Delegate 2 Thyself'"
+  Difficulty: 2
+  Date: "2020-08-18"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos Delegation"
+    - "RBCD"
+  Url: "https://exploit.ph/delegate-2-thyself.html"
+  Authors:
+    - "Charlie Clark"
+  Name: "Delegate 2 Thyself"
+  Difficulty: 2
+  Date: "2020-03-17"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos Delegation"
+    - "RBCD"
+  Url: "https://blog.harmj0y.net/activedirectory/a-case-study-in-wagging-the-dog-computer-takeover/"
+  Authors:
+    - "Harmj0y"
+  Name: "A Case Study in Wagging the Dog: Computer Takeover"
+  Difficulty: 3
+  Date: "2019-02-28"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos Delegation"
+    - "Constrained Delegation"
+  Url: "https://blog.harmj0y.net/activedirectory/s4u2pwnage/"
+  Authors:
+    - "Harmj0y"
+  Name: "S4U2Pwnage"
+  Difficulty: 2
+  Date: "2017-01-05"

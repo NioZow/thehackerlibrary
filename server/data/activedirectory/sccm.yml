@@ -11,10 +11,95 @@
   Tags:
     - "Active Directory"
     - "SCCM"
+  Url: "https://www.hub.trimarcsecurity.com/post/push-comes-to-shove-exploring-the-attack-surface-of-sccm-client-push-accounts"
+  Authors:
+    - "Brandon Colley"
+  Name: "Push Comes To Shove: exploring the attack surface of SCCM Client Push Accounts"
+  Difficulty: 2
+  Date: "2022-07-01"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "SCCM"
+  Url: "https://www.hub.trimarcsecurity.com/post/push-comes-to-shove-bypassing-kerberos-authentication-of-sccm-client-push-accounts"
+  Authors:
+    - "Brandon Colley"
+  Name: "Push Comes To Shove: Bypassing Kerberos Authentication of SCCM Client Push Accounts."
+  Difficulty: 2
+  Date: "2022-12-09"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "SCCM"
   Url: "https://posts.specterops.io/the-phantom-credentials-of-sccm-why-the-naa-wont-die-332ac7aa1ab9"
   Authors:
     - "Duane Michael"
   Name: "The Phantom Credentials of SCCM: Why the NAA Won't Die"
   Difficulty: 2
   Date: "2022-06-28"
+  Time: 7
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "SCCM"
+  Url: "https://posts.specterops.io/sccm-site-takeover-via-automatic-client-push-installation-f567ec80d5b1"
+  Authors:
+    - "Chris Thompson (Mayyhem)"
+  Name: "SCCM Site Takeover via Automatic Client Push Installation"
+  Difficulty: 2
+  Date: "2023-01-12"
+  Time: 8
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "SCCM"
+  Url: "https://www.securesystems.de/blog/active-directory-spotlight-attacking-the-microsoft-configuration-manager/"
+  Authors:
+    - "Carsten Sandker"
+  Name: "Active Directory Spotlight: Attacking The Microsoft Configuration Manager (SCCM/MECM)"
+  Difficulty: 2
+  Date: "2023-05-17"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "SCCM"
+  Url: "https://posts.specterops.io/coercing-ntlm-authentication-from-sccm-e6e23ea8260a"
+  Authors:
+    - "Chris Thompson (Mayyhem)"
+  Name: "Coercing NTLM Authentication from SCCM"
+  Difficulty: 2
+  Date: "2022-04-13"
+  Time: 24
+- Type: "video"
+  Tags:
+    - "Active Directory"
+    - "SCCM"
+  Url: "https://www.youtube.com/watch?v=W9PC9erm_pI"
+  Authors:
+    - "Gabriel Prud'homme"
+  Name: "SCCM Exploitation: The First Cred Is the Deepest II w/ Gabriel Prud'homme | 1-Hour"
+  Difficulty: 2
+  Date: "2023-08-03"
+  Time: 77
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "SCCM"
+  Url: "https://medium.com/@dlomellini/lateral-movement-without-lateral-movement-brought-to-you-by-configmgr-9b79b04634c7"
+  Authors:
+    - "Diego lomellini"
+  Name: "Lateral Movement without Lateral Movement (Brought to you by ConfigMgr)"
+  Difficulty: 2
+  Date: "2023-08-05"
+  Time: 10
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "SCCM"
+  Url: "https://posts.specterops.io/site-takeover-via-sccms-adminservice-api-d932e22b2bf"
+  Authors:
+    - "Garrett Foster"
+  Name: "Site Takeover via SCCM's AdminService API"
+  Difficulty: 2
+  Date: "2023-08-10"
   Time: 7

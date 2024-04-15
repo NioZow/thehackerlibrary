@@ -1,0 +1,11 @@
+- Type: "blogpost"
+  Tags:
+    - "Windows"
+    - "LSASS"
+  Url: "https://research.ifcr.dk/pass-the-challenge-defeating-windows-defender-credential-guard-31a892eee22"
+  Authors:
+    - "Oliver Lyak"
+  Name: "Pass-the-Challenge: Defeating Windows Defender Credential Guard"
+  Difficulty: 3
+  Date: "2022-12-26"
+  Time: 17

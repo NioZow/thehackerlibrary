@@ -136,11 +136,9 @@ const TrainingsProvider = ({ children }: Props) => {
     url += "/limit/" + String(pageSize) + "/page/" + String(page);
   }
 
-  console.log(url);
-
   useEffect(() => {
     setPage(1);
-  }, [sortAsc, sortColumn, filterValue]);
+  }, [sortAsc, sortColumn, filterValue, pageSize]);
 
   useEffect(() => {
     fetch(url)
@@ -168,6 +166,8 @@ const TrainingsProvider = ({ children }: Props) => {
         }
       });
   }, [url, reloadMe]);
+
+  console.log(url, resources.size);
 
   return (
     <TrainingsContext.Provider

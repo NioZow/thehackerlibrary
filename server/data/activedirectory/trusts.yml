@@ -1,0 +1,68 @@
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Trusts"
+  Url: "https://improsec.com/tech-blog/sid-filter-as-security-boundary-between-domains-part-4-bypass-sid-filtering-research"
+  Authors:
+    - "Jonas Bulow Knudsen"
+    - "Martin Sohn Christensen"
+    - "Tobias Thorbjorn Munch Torp"
+  Name: "SID filter as security boundary between domains? (Part 4) - Bypass SID filtering research"
+  Difficulty: 2
+  Date: "2022-04-04"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Trusts"
+  Url: "https://exploit.ph/external-trusts-are-evil.html"
+  Authors:
+    - "Charlie Clark"
+  Name: "External Trusts Are Evil"
+  Difficulty: 2
+  Date: "2023-03-14"
+  Time: 7
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Trusts"
+    - "Machine Account"
+    - "DNS"
+  Url: "https://exploit.ph/strange-case-of-trusts-machines-dns.html"
+  Authors:
+    - "Charlie Clark"
+  Name: "A Strange Case of Trusts, Machine Accounts and DNS"
+  Difficulty: 2
+  Date: "2020-05-01"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Trusts"
+    - "Kerberos Delegation"
+    - "RBCD"
+  Url: "https://exploit.ph/crossing-trusts-4-delegation.html"
+  Authors:
+    - "Charlie Clark"
+  Name: "Crossing Trusts 4 Delegation"
+  Difficulty: 2
+  Date: "2020-04-04"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Trusts"
+  Url: "https://harmj0y.medium.com/a-guide-to-attacking-domain-trusts-ef5f8992bb9d"
+  Authors:
+    - "Harmj0y"
+  Name: "A Guide to Attacking Domain Trusts"
+  Difficulty: 2
+  Date: "2017-10-30"
+  Time: 36
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+  Url: "https://posts.specterops.io/not-a-security-boundary-breaking-forest-trusts-cd125829518d"
+  Authors:
+    - "Harmj0y"
+  Name: "Not A Security Boundary: Breaking Forest Trusts"
+  Difficulty: 2
+  Date: "2018-11-28"
+  Time: 14

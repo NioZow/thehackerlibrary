@@ -56,7 +56,7 @@ const CustomDropdownMenu = ({ columns, setColumns, buttonName }: Props) => {
         }}
       >
         {Object.entries(columns).map(([column, value]) => {
-          return column !== "" ? (
+          return column !== "" && column !== "Actions" ? (
             <DropdownMenuCheckboxItem
               className="capitalize"
               checked={value}

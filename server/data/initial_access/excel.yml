@@ -1,0 +1,11 @@
+- Type: "blogpost"
+  Tags:
+    - "Initial Access"
+    - "Macros"
+    - "Excel"
+  Url: "https://outflank.nl/blog/2023/04/25/so-you-think-you-can-block-macros/"
+  Authors:
+    - "Pieter Ceelen"
+  Name: "So you think you can block Macros?"
+  Difficulty: 2
+  Date: "2023-04-25"
