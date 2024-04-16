@@ -1,31 +1,4 @@
-import { Training, option, Resources, column } from "@/utils/types";
-import { BookUser } from "lucide-react";
-import { useEffect, Dispatch, SetStateAction } from "react";
-
-export const filterResources = (
-  resources: Resources,
-  resourcesBookmarked: string[],
-  resourcesRead: string[],
-  sortColumn: column,
-  setSortColumn: React.Dispatch<React.SetStateAction<column>> | undefined,
-  sortAsc: boolean,
-  setSortAsc: React.Dispatch<React.SetStateAction<boolean>> | undefined,
-  options: Record<option, boolean>
-) => {
-  if (
-    options["latest"] &&
-    setSortColumn !== undefined &&
-    setSortAsc !== undefined
-  ) {
-    if (sortColumn != "Date") {
-      setSortColumn("Date");
-    }
-
-    if (sortAsc) {
-      setSortAsc(false);
-    }
-  }
-};
+import { Training } from "@/utils/types";
 
 const getArrayOfResourcesFromLocalStorage = (key: string): Training[] => {
   let jsonString = window.localStorage.getItem(key);

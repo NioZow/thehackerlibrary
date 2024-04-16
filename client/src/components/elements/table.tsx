@@ -1,10 +1,6 @@
 import { useState, useEffect } from "react";
 
-import {
-  CaretSortIcon,
-  ChevronDownIcon,
-  DotsHorizontalIcon,
-} from "@radix-ui/react-icons";
+import { CaretSortIcon, DotsHorizontalIcon } from "@radix-ui/react-icons";
 
 import { Button } from "@/components/ui/button";
 
@@ -12,7 +8,6 @@ import CustomDropdownMenu from "@/components/elements/dropdown-menu";
 
 import {
   DropdownMenu,
-  DropdownMenuCheckboxItem,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuLabel,
@@ -45,12 +40,7 @@ import { RenderIcon } from "@/components/icons/icons";
 
 import { useTrainings } from "@/context/trainings-context";
 import { transformDifficulty, column, option, Training } from "@/utils/types";
-import {
-  filterResources,
-  getBookmarks,
-  getRead,
-  getReadBookmarks,
-} from "@/utils/utils";
+import { getBookmarks, getRead, getReadBookmarks } from "@/utils/utils";
 
 const TrainingTable = () => {
   const {
@@ -184,7 +174,7 @@ const TrainingTable = () => {
       setResources !== undefined
         ? setResources({
             resources: filteredResources,
-            size: filterResources.length,
+            size: filteredResources.length,
           })
         : null;
     } else if (options["read"]) {
@@ -206,7 +196,7 @@ const TrainingTable = () => {
       setResources !== undefined
         ? setResources({
             resources: filteredResources,
-            size: filterResources.length,
+            size: filteredResources.length,
           })
         : null;
     } else if (!options["latest"]) {
@@ -229,7 +219,7 @@ const TrainingTable = () => {
       setResources !== undefined
         ? setResources({
             resources: filteredResources,
-            size: filterResources.length,
+            size: filteredResources.length,
           })
         : null;
     } else if (options["bookmark"]) {
