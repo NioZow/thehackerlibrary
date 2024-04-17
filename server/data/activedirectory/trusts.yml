@@ -59,6 +59,7 @@
 - Type: "blogpost"
   Tags:
     - "Active Directory"
+    - "Trusts"
   Url: "https://posts.specterops.io/not-a-security-boundary-breaking-forest-trusts-cd125829518d"
   Authors:
     - "Harmj0y"
@@ -66,3 +67,25 @@
   Difficulty: 2
   Date: "2018-11-28"
   Time: 14
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Trusts"
+  Url: "https://dirkjanm.io/active-directory-forest-trusts-part-two-trust-transitivity/"
+  Authors:
+    - "Dirk-jan Mollema"
+  Name: "Active Directory forest trusts part 2 - Trust transitivity and finding a trust bypass"
+  Difficulty: 2
+  Date: "2021-06-10"
+  Time: 24
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Trusts"
+  Url: "https://dirkjanm.io/active-directory-forest-trusts-part-one-how-does-sid-filtering-work/"
+  Authors:
+    - "Dirk-jan Mollema"
+  Name: "Active Directory forest trusts part 1 - How does SID filtering work?"
+  Difficulty: 2
+  Date: "2018-09-24"
+  Time: 16

@@ -569,7 +569,12 @@ const TrainingTable = () => {
                 setPage(page + 1);
               }
             }}
-            disabled={page >= Math.floor(resources.size / pageSize)}
+            disabled={
+              page >=
+              (resources.size % pageSize == 0
+                ? Math.floor(resources.size / pageSize)
+                : Math.floor(resources.size / pageSize) + 1)
+            }
           >
             Next
           </Button>

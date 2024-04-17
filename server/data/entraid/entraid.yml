@@ -1,0 +1,115 @@
+- Type: "blogpost"
+  Tags:
+    - "Entra ID"
+    - "Kerberos"
+    - "Active Directory"
+    - "Azure Active Directory"
+  Url: "https://www.trustedsec.com/blog/azure-ad-kerberos-tickets-pivoting-to-the-cloud/"
+  Authors:
+    - "Edwin David"
+  Name: "Azure AD Kerberos Tickets: Pivoting to the Cloud"
+  Difficulty: 2
+  Date: "2023-02-09"
+- Type: "cheatsheet"
+  Tags:
+    - "Entra ID"
+  Url: "https://github.com/swisskyrepo/InternalAllTheThings/tree/main/docs/cloud/azure"
+  Authors:
+    - "InternalAllTheThings"
+  Name: "Azure Cheat-Sheet"
+  Difficulty: 2
+- Type: "cheatsheet"
+  Tags:
+    - "Entra ID"
+    - "Active Directory"
+    - "Azure Active Directory"
+  Url: "https://cloudbrothers.info/en/prem-global-admin-password-reset/"
+  Authors:
+    - "Fabian Bader"
+  Name: "From on-prem to Global Admin without password reset"
+  Difficulty: 2
+  Date: "2023-03-03"
+  Time: 13
+- Type: "video"
+  Tags:
+    - "Entra ID"
+    - "Azure Active Directory"
+  Url: "https://www.youtube.com/watch?v=ZPI2OB0g028"
+  Authors:
+    - "Mor Rubin"
+  Name: "AAD Joined Machines - The New Lateral Movement"
+  Difficulty: 2
+  Date: "2022-11-17"
+  Time: 36
+- Type: "blogpost"
+  Tags:
+    - "Entra ID"
+  Url: "https://jonyschats.nl/posts/Identifying-highly-privileged-identities-and-checking-MFA-status/"
+  Authors:
+    - "Jonh Schats"
+  Name: "Identifying highly privileged identities nd checking MFA status"
+  Difficulty: 2
+  Date: "2022-12-18"
+  Time: 11
+- Type: "cheatsheet"
+  Tags:
+    - "Entra ID"
+    - "Azure Active Directory"
+  Url: "https://github.com/rootsecdev/Azure-Red-Team"
+  Authors:
+    - "rootsecdev"
+  Name: "Azure Active Directory"
+  Difficulty: 2
+- Type: "blogpost"
+  Tags:
+    - "Entra ID"
+  Url: "https://posts.specterops.io/id-tap-that-pass-8f79fff839ac"
+  Authors:
+    - "hotnops"
+  Name: "I'd TAP That Pass"
+  Difficulty: 2
+  Date: "2023-03-29"
+- Type: "blogpost"
+  Tags:
+    - "Entra ID"
+    - "Azure Active Directory"
+    - "Kerberos"
+  Url: "https://dirkjanm.io/obtaining-domain-admin-from-azure-ad-via-cloud-kerberos-trust/"
+  Authors:
+    - "Dirk-jan Mollema"
+  Name: "Obtaining Domain Admin from Azure AD by abusing Cloud Kerberos Trust"
+  Difficulty: 2
+  Date: "2023-06-13"
+  Time: 19
+- Type: "blogpost"
+  Tags:
+    - "Entra ID"
+    - "Office 365"
+  Url: "https://dirkjanm.io/office-365-network-attacks-via-insecure-reply-url/"
+  Authors:
+    - "Dirk-jan Mollema"
+  Name: "Office 365 network attacks - Gaining access to emails and files via an insecure Reply URL"
+  Difficulty: 2
+  Date: "2019-10-14"
+  Time: 7
+- Type: "blogpost"
+  Tags:
+    - "Entra ID"
+  Url: "https://dirkjanm.io/azure-ad-privilege-escalation-application-admin/"
+  Authors:
+    - "Dirk-jan Mollema"
+  Name: "Azure AD privilege escalation - Taking over default application permissions as Application Admin"
+  Difficulty: 2
+  Date: "2019-09-16"
+  Time: 5
+- Type: "video"
+  Tags:
+    - "Entra ID"
+    - "User Enumeration"
+  Url: "https://www.youtube.com/watch?v=4AY5uS3yFjE"
+  Authors:
+    - "Nyxgeek"
+  Name: "DEF CON 31 - Track the Planet! Mapping IDs, Monitoring Presence in the Azure Ecosystem - nyxgeek"
+  Difficulty: 2
+  Date: "2023-09-15"
+  Time: 31

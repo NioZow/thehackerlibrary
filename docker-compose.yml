@@ -19,7 +19,7 @@ services:
     volumes:
       - ./server:/app
     command: >
-      bash -c "cd /app && go mod download && go run main.go"
+      bash -c "cd /app && go mod download && go run main.go --reset"
     environment:
       DB_NAME: thehackerlibrary
       DB_USERNAME: thehackerlibrary

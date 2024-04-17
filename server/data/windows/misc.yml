@@ -1,0 +1,10 @@
+- Type: "blogpost"
+  Tags:
+    - "Windows"
+    - "Potato"
+  Url: "https://jlajara.gitlab.io/Potatoes_Windows_Privesc"
+  Authors:
+    - "jlajara"
+  Name: "Potatoes - Windows Privilege Escalation"
+  Difficulty: 2
+  Date: "2020-11-22"

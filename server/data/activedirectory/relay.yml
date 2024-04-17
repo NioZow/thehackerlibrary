@@ -90,3 +90,41 @@
   Difficulty: 2
   Date: "2022-02-22"
   Time: 11
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "NTLM Relay"
+    - "ADCS"
+  Url: "https://dirkjanm.io/ntlm-relaying-to-ad-certificate-services/"
+  Authors:
+    - "Dirk-jan Mollema"
+  Name: "NTLM relaying to AD CS - On certificates, printers and a little hippo"
+  Difficulty: 2
+  Date: "2022-07-28"
+  Time: 14
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "NTLM Relay"
+    - "Kerberos"
+    - "RBCD"
+  Url: "https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/"
+  Authors:
+    - "Dirk-jan Mollema"
+  Name: "The worst of both worlds: Combining NTLM Relaying and Kerberos delegation"
+  Difficulty: 3
+  Date: "2019-03-04"
+  Time: 5
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos"
+    - "Unconstrained Delegation"
+    - "Kerberos Delegation"
+  Url: "https://dirkjanm.io/krbrelayx-unconstrained-delegation-abuse-toolkit/"
+  Authors:
+    - "Dirk-jan Mollema"
+  Name: '"Relaying" Kerberos - Having fun with unconstrained delegation'
+  Difficulty: 3
+  Date: "2019-02-18"
+  Time: 27

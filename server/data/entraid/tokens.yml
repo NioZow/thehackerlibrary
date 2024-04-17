@@ -10,3 +10,36 @@
   Difficulty: 2
   Date: "2023-10-10"
   Time: 11
+- Type: "blogpost"
+  Tags:
+    - "Entra ID"
+    - "Token"
+  Url: "https://dirkjanm.io/introducing-roadtools-token-exchange-roadtx/"
+  Authors:
+    - "Dirk-jan Mollema"
+  Name: "Introducing ROADtools Token eXchange (roadtx) - Automating Azure AD authentication, Primary Refresh Token (ab)use and device registration"
+  Difficulty: 2
+  Date: "2022-11-09"
+  Time: 16
+- Type: "blogpost"
+  Tags:
+    - "Entra ID"
+    - "Token"
+  Url: "https://dirkjanm.io/digging-further-into-the-primary-refresh-token/"
+  Authors:
+    - "Dirk-jan Mollema"
+  Name: "Digging further into the Primary Refresh Token"
+  Difficulty: 2
+  Date: "2020-08-05"
+  Time: 19
+- Type: "blogpost"
+  Tags:
+    - "Entra ID"
+    - "Token"
+  Url: "https://dirkjanm.io/abusing-azure-ad-sso-with-the-primary-refresh-token/"
+  Authors:
+    - "Dirk-jan Mollema"
+  Name: "Abusing Azure AD SSO with the Primary Refresh Token"
+  Difficulty: 2
+  Date: "2020-07-21"
+  Time: 21

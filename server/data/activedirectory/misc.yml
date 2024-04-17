@@ -28,3 +28,23 @@
   Name: "DES Is Useful... Sometimes"
   Difficulty: 2
   Date: "2023-08-08"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+  Url: "https://dirkjanm.io/abusing-forgotten-permissions-on-precreated-computer-objects-in-active-directory/"
+  Authors:
+    - "Dirk-jan Mollema"
+  Name: "Abusing forgotten permissions on computer objects in Active Directory"
+  Difficulty: 2
+  Date: "2022-07-11"
+  Time: 10
+- Type: "blogpost"
+  Tags:
+    - "Entra ID"
+  Url: "https://dirkjanm.io/getting-in-the-zone-dumping-active-directory-dns-with-adidnsdump/"
+  Authors:
+    - "Dirk-jan Mollema"
+  Name: "Getting in the Zone: dumping Active Directory DNS using adidnsdump"
+  Difficulty: 2
+  Date: "2019-04-25"
+  Time: 5
