@@ -1,0 +1,20 @@
+- Type: "blogpost"
+  Tags:
+    - "Web"
+    - "OAuth"
+  Url: "https://portswigger.net/research/hidden-oauth-attack-vectors"
+  Authors:
+    - "Michael Stepankin"
+  Name: "Hidden OAuth attack vectors"
+  Difficulty: 2
+  Date: "2021-03-24"
+- Type: "course"
+  Tags:
+    - "Web"
+    - "OAuth"
+  Url: "https://portswigger.net/web-security/oauth"
+  Authors:
+    - "PortSwigger Academy"
+  Name: "OAuth 2.0 authentication vulnerabilities"
+  Difficulty: 2
+  Date: "2021-03-24"
