@@ -54,6 +54,7 @@
   Tags:
     - "Active Directory"
     - "NTLM Relay"
+    - "gMSA"
   Url: "https://cube0x0.github.io/Relaying-for-gMSA/"
   Authors:
     - "cube0x0"
@@ -112,7 +113,7 @@
   Authors:
     - "Dirk-jan Mollema"
   Name: "The worst of both worlds: Combining NTLM Relaying and Kerberos delegation"
-  Difficulty: 3
+  Difficulty: 2
   Date: "2019-03-04"
   Time: 5
 - Type: "blogpost"
@@ -125,6 +126,49 @@
   Authors:
     - "Dirk-jan Mollema"
   Name: '"Relaying" Kerberos - Having fun with unconstrained delegation'
-  Difficulty: 3
+  Difficulty: 2
   Date: "2019-02-18"
   Time: 27
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "NTLM Relay"
+    - "NTLMv1"
+  Url: "https://www.r-tec.net/r-tec-blog-netntlmv1-downgrade-to-compromise.html"
+  Authors:
+    - "Alexander Wolf"
+  Name: "NetNTLMv1 Downgrade to compromise"
+  Difficulty: 2
+  Date: "2023-09"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "NTLM Relay"
+    - "GPO"
+  Url: "GPOddity: exploiting Active Directory GPOs through NTLM relaying, and more!"
+  Authors:
+    - "Quentin Roland"
+  Name: "GPOddity: exploiting Active Directory GPOs through NTLM relaying, and more!"
+  Difficulty: 2
+  Date: "2023-09-04"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "NTLM Relay"
+  Url: "https://en.hackndo.com/ntlm-relay/"
+  Authors:
+    - "hackndo"
+  Name: "NTLM Relay"
+  Difficulty: 2
+  Date: "2020-04-01"
+  Time: 46
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos Relay"
+  Url: "https://googleprojectzero.blogspot.com/2021/10/using-kerberos-for-authentication-relay.html"
+  Authors:
+    - "James Forshaw"
+  Name: "Using Kerberos for Authentication Relay Attacks"
+  Difficulty: 3
+  Date: "2021-10-20"

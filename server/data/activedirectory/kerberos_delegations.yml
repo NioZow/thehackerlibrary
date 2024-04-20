@@ -75,3 +75,14 @@
   Name: "S4U2Pwnage"
   Difficulty: 2
   Date: "2017-01-05"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos Delegation"
+  Url: "https://en.hackndo.com/constrained-unconstrained-delegation/"
+  Authors:
+    - "hackndo"
+  Name: "Kerberos Delegation"
+  Difficulty: 2
+  Date: "2020-04-18"
+  Time: 14

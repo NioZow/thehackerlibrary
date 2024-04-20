@@ -1,0 +1,11 @@
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberoast Unauthenticated"
+  Url: "https://www.semperis.com/blog/new-attack-paths-as-requested-sts/"
+  Authors:
+    - "Charlie Clark"
+  Name: "New Attack Paths? AS Requested Service Tickets"
+  Difficulty: 2
+  Date: "2022-09-27"
+  Time: 10

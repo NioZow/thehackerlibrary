@@ -55,3 +55,14 @@
   Name: "Protecting the Heap: Encryption & Hooks"
   Difficulty: 3
   Date: "2022"
+- Type: "video"
+  Tags:
+    - "Malware Development"
+    - "Stack Spoofing"
+  Url: "https://www.youtube.com/watch?v=dl-AuN2xsbg"
+  Authors:
+    - "klezVirus"
+  Name: "11. Demystifying Thread Call Stack Spoofing by Alessandro Magnosi"
+  Difficulty: 2
+  Date: "2023-08-21"
+  Time: 39

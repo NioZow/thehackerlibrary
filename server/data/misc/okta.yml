@@ -1,0 +1,10 @@
+- Type: "blogpost"
+  Tags:
+    - "Misc"
+    - "Okta"
+  Url: "https://trustedsec.com/blog/okta-for-red-teamers"
+  Authors:
+    - "Adam Chester"
+  Name: "Okta for Red Teamers"
+  Difficulty: 2
+  Date: "2023-09-18"

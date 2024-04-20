@@ -103,3 +103,14 @@
   Difficulty: 2
   Date: "2023-08-10"
   Time: 7
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "SCCM"
+  Url: "https://posts.specterops.io/sccm-hierarchy-takeover-41929c61e087"
+  Authors:
+    - "Chris Thompson"
+  Name: "SCCM Hierarchy Takeover"
+  Difficulty: 2
+  Date: "2023-09-25"
+  Time: 10

@@ -70,3 +70,47 @@
   Name: "Pure In-Memory (Shell)Code Injection In Linux Userland"
   Difficulty: 3
   Date: "2018-12-14"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Injection"
+  Url: "https://www.riskinsight-wavestone.com/en/2023/10/process-injection-using-ntsetinformationprocess/"
+  Authors:
+    - "Yoann Dequeker"
+  Name: "Process Injection using NtSetInformationProcess"
+  Difficulty: 2
+  Date: "2023-10"
+  Time: 7
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Injection"
+    - "Module Stomping"
+  Url: "https://klezvirus.github.io/RedTeaming/AV_Evasion/FromInjectionToHijacking/"
+  Authors:
+    - "klezVirus"
+  Name: "From Process Injection to Function Hijacking"
+  Difficulty: 2
+  Date: "2022-05-13"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Injection"
+    - "Module Stomping"
+  Url: "https://dtsec.us/2023-11-04-ModuleStompin/"
+  Authors:
+    - "Nigerald"
+  Name: "Module Stomping"
+  Difficulty: 2
+  Date: "2023-11-03"
+  Time: 11
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Injection"
+  Url: "https://www.safebreach.com/blog/process-injection-using-windows-thread-pools"
+  Authors:
+    - "Alon Leviev"
+  Name: "The Pool Party You Will Never Forget: New Process Injection Techniques Using Windows Thread Pools"
+  Difficulty: 2
+  Date: "2023-12-06"

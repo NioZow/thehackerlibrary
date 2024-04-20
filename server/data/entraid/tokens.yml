@@ -43,3 +43,14 @@
   Difficulty: 2
   Date: "2020-07-21"
   Time: 21
+- Type: "video"
+  Tags:
+    - "Entra ID"
+    - "Token"
+  Url: "https://www.youtube.com/watch?v=AFay_58QubY"
+  Authors:
+    - "Dirk-jan Mollema"
+  Name: "TROOPERS23: (Windows) Hello from the other side"
+  Difficulty: 2
+  Date: "2023-08-18"
+  Time: 57

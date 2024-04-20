@@ -1,0 +1,10 @@
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "LSASS"
+  Url: "https://modexp.wordpress.com/2019/08/30/minidumpwritedump-via-com-services-dll/"
+  Authors:
+    - "odzhan"
+  Name: "MiniDumpWriteDump via COM+ Services DLL"
+  Difficulty: 2
+  Date: "2019-08-30"

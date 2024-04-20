@@ -1,0 +1,11 @@
+- Type: "blogpost"
+  Tags:
+    - "Steganography"
+    - "GIF"
+  Url: "https://dtm.uk/gif-steganography/"
+  Authors:
+    - "DTM"
+  Name: "GIF Steganography from First Principles"
+  Difficulty: 3
+  Date: "2023-09-10"
+  Time: 26

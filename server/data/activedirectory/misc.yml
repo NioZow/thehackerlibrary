@@ -48,3 +48,36 @@
   Difficulty: 2
   Date: "2019-04-25"
   Time: 5
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "DCSync"
+    - "NetSync"
+  Url: "https://github.com/4ndr3w6/Presentations/tree/main/Texas_Cyber_Summit_2023/Slides"
+  Authors:
+    - "Charlie Clark"
+    - "Andrew Schwartz"
+  Name: "You (dis)liked DCSync Wait For NetSync"
+  Difficulty: 2
+  Date: "2022-03-24"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Pass the Hash"
+  Url: "https://en.hackndo.com/pass-the-hash/"
+  Authors:
+    - "hackndo"
+  Name: "Pass the Hash"
+  Difficulty: 2
+  Date: "2019-12-17"
+  Time: 21
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "LDAP"
+  Url: "https://offsec.almond.consulting/ldap-authentication-in-active-directory-environments.html"
+  Authors:
+    - "lowercase_drm"
+  Name: "LDAP authentication in Active Directory environments"
+  Difficulty: 2
+  Date: "2023-10-31"

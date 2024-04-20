@@ -1,0 +1,10 @@
+- Type: "blogpost"
+  Tags:
+    - "Linux"
+    - "Local Privilege Escalation"
+  Url: "https://www.elttam.com/blog/env/#content"
+  Authors:
+    - "Luke Hahnke"
+  Name: "Hacking with Environment Variables"
+  Difficulty: 1
+  Date: "2020-06-24"

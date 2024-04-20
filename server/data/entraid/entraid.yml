@@ -113,3 +113,66 @@
   Difficulty: 2
   Date: "2023-09-15"
   Time: 31
+- Type: "blogpost"
+  Tags:
+    - "Entra ID"
+    - "Graph API"
+  Url: "https://www.blackhillsinfosec.com/introducing-graphrunner/"
+  Authors:
+    - "Beau Bullock"
+    - "Steve Borosh"
+  Name: "Introducing GraphRunner: A Post-Exploitation Toolset for Microsoft 365"
+  Difficulty: 2
+  Date: "2023-10-19"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Entra ID"
+    - "Azure Active Directory"
+  Url: "https://www.sygnia.co/blog/guarding-the-bridge-new-attack-vectors-in-azure-ad-connect/"
+  Authors:
+    - "Noam Moshe"
+    - "Ofir Hamam"
+  Name: "Guarding the Bridge: New Attack Vectors in Azure AD Connect"
+  Difficulty: 2
+  Date: "2023-08-02"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "NetSync"
+  Url: "https://www.trustedsec.com/blog/the-tale-of-the-lost-but-not-forgotten-undocumented-netsync-part-1"
+  Authors:
+    - "Andrew Schwartz"
+  Name: "The Tale of the Lost, but not Forgotten, Undocumented NetSync: Part 1"
+  Difficulty: 2
+  Date: "2020-10-27"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "NetSync"
+  Url: "https://www.trustedsec.com/blog/the-tale-of-the-lost-but-not-forgotten-undocumented-netsync-part-2"
+  Authors:
+    - "Andrew Schwartz"
+  Name: "The Tale of the Lost, but not Forgotten, Undocumented NetSync: Part 2"
+  Difficulty: 2
+  Date: "2020-10-27"
+- Type: "blogpost"
+  Tags:
+    - "Entra ID"
+    - "Token"
+  Url: "https://www.youtube.com/watch?v=9EHYne9KqKs"
+  Authors:
+    - "Ruben Boonen"
+  Name: "(Ab)using the Microsoft Identity Platform: Exploring Azure AD Token Caching"
+  Difficulty: 2
+  Date: "2023-12-15"
+  Time: 28
+- Type: "blogpost"
+  Tags:
+    - "Entra ID"
+  Url: "https://www.netspi.com/blog/technical/cloud-penetration-testing/mistaken-identity-azure-function-apps/"
+  Authors:
+    - "Karl Fosaaen"
+  Name: "Mistaken Identity: Extracting Managed Identity Credentials from Azure Function Apps"
+  Difficulty: 2
+  Date: "2023-11-16"
