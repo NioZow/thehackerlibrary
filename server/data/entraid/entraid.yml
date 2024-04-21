@@ -176,3 +176,34 @@
   Name: "Mistaken Identity: Extracting Managed Identity Credentials from Azure Function Apps"
   Difficulty: 2
   Date: "2023-11-16"
+- Type: "blogpost"
+  Tags:
+    - "Entra ID"
+    - "Password Spraying"
+  Url: "https://www.synacktiv.com/en/publications/entra-id-banned-password-lists-password-spraying-optimizations-and-defenses"
+  Authors:
+    - "Matthieu Barjole"
+  Name: "Entra ID Banned Password Lists: password spraying optimizations and defenses"
+  Difficulty: 2
+  Date: "2024-04-17"
+- Type: "blogpost"
+  Tags:
+    - "Entra ID"
+    - "Azure Batch Service"
+  Url: "https://www.netspi.com/blog/technical/cloud-penetration-testing/extracting-sensitive-information-from-azure-batch-service/"
+  Authors:
+    - "Karl Fosaeen"
+  Name: "Extracting Sensitive Information from the Azure Batch Service"
+  Difficulty: 2
+  Date: "2024-02-28"
+- Type: "blogpost"
+  Tags:
+    - "Entra ID"
+    - "OAuth"
+  Url: "https://alice.climent-pommeret.red/posts/a-syscall-journey-in-the-windows-kernel/"
+  Authors:
+    - "Andy Robbins"
+  Name: "Browserless Entra Device Code Flow"
+  Difficulty: 2
+  Date: "2024-03-06"
+  Time: 6

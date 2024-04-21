@@ -9,3 +9,23 @@
   Name: ".NET Assembly Obfuscation for Memory Scanner Evasion"
   Difficulty: 2
   Date: "2023-10"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Dotnet"
+  Url: "https://blog.xpnsec.com/hiding-your-dotnet-etw/"
+  Authors:
+    - "xpn"
+  Name: "Hiding your .NET - ETW"
+  Difficulty: 2
+  Date: "2020-03-17"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Dotnet"
+  Url: "https://www.outflank.nl/blog/2024/02/01/unmanaged-dotnet-patching/"
+  Authors:
+    - "Kyle Avery"
+  Name: "Unmanaged .NET Patching"
+  Difficulty: 3
+  Date: "2024-02-01"

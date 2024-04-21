@@ -18,3 +18,12 @@
   Name: "Capturing RDP NetNTLMv2 Hashes: Attack details and a Technical How-To Guide"
   Difficulty: 2
   Date: "2022-01-17"
+- Type: "blogpost"
+  Tags:
+    - "Windows"
+    - "RDP"
+  Url: "https://red.c3r3br4t3.com/red-team-operations/lateral-movement/shadowrdp"
+  Authors:
+    - "c3r3br4t3"
+  Name: "ShadowRDP"
+  Difficulty: 2

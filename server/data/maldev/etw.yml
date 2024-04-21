@@ -62,3 +62,13 @@
   Difficulty: 2
   Date: "2023-10-11"
   Time: 7
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "ETW"
+  Url: "https://www.preludesecurity.com/blog/event-tracing-for-windows-etw-your-friendly-neighborhood-ipc-mechanism"
+  Authors:
+    - "Johny Johnson"
+  Name: "Event Tracing for Windows (ETW): Your Friendly Neighborhood IPC Mechanism"
+  Difficulty: 2
+  Date: "2024-03-05"

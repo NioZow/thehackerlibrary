@@ -114,3 +114,15 @@
   Name: "The Pool Party You Will Never Forget: New Process Injection Techniques Using Windows Thread Pools"
   Difficulty: 2
   Date: "2023-12-06"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Injection"
+    - "Process Hollowing"
+  Url: "https://red-team-sncf.github.io/complete-process-hollowing.html"
+  Authors:
+    - "ZkClown"
+  Name: "How to perform a Complete Process Hollowing"
+  Difficulty: 3
+  Date: "2024-01-24"
+  Time: 36

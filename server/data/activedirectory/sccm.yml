@@ -114,3 +114,90 @@
   Difficulty: 2
   Date: "2023-09-25"
   Time: 10
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - ""
+  Url: "https://alice.climent-pommeret.red/posts/a-syscall-journey-in-the-windows-kernel/"
+  Authors:
+    - "Alice Climent-Pommeret"
+  Name: "A Syscall Journey in the Windows Kernel"
+  Difficulty: 3
+  Date: "2022-03-24"
+  Time: 26
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "SCCM"
+  Url: "https://mayfly277.github.io/posts/SCCM-LAB-part0x0/"
+  Authors:
+    - "Mayfly"
+  Name: "SCCM / MECM LAB - Part 0x0"
+  Difficulty: 2
+  Date: "2024-03-23"
+  Time: 5
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "SCCM"
+  Url: "https://mayfly277.github.io/posts/SCCM-LAB-part0x1/"
+  Authors:
+    - "Mayfly"
+  Name: "SCCM / MECM LAB - Part 0x1 - Recon and PXE"
+  Difficulty: 2
+  Date: "2024-03-28"
+  Time: 4
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "SCCM"
+  Url: "https://mayfly277.github.io/posts/SCCM-LAB-part0x2/"
+  Authors:
+    - "Mayfly"
+  Name: "SCCM / MECM LAB - Part 0x2 - Low user"
+  Difficulty: 2
+  Date: "2024-03-28"
+  Time: 7
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "SCCM"
+  Url: "https://mayfly277.github.io/posts/SCCM-LAB-part0x3/"
+  Authors:
+    - "Mayfly"
+  Name: "SCCM / MECM LAB - Part 0x3 - Admin User"
+  Difficulty: 2
+  Date: "2024-04-03"
+  Time: 7
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "SCCM"
+  Url: "https://posts.specterops.io/rooting-out-risky-sccm-configs-with-misconfiguration-manager-0beecaab1af3"
+  Authors:
+    - "Chris Thompson"
+  Name: "Rooting out Risky SCCM Configs with Misconfiguration Manager"
+  Difficulty: 2
+  Date: "2024-04-11"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "SCCM"
+  Url: "https://posts.specterops.io/sccm-hierarchy-takeover-with-high-availability-7dcbd3696b43"
+  Authors:
+    - "Garrett Foster"
+  Name: "SCCM Hierarchy Takeover with High Availability"
+  Difficulty: 2
+  Date: "2024-02-21"
+  Time: 12
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "SCCM"
+  Url: "https://posts.specterops.io/misconfiguration-manager-overlooked-and-overprivileged-70983b8f350d"
+  Authors:
+    - "Duane Michael"
+  Name: "Misconfiguration Manager: Overlooked and Overprivileged"
+  Difficulty: 2
+  Date: "2024-03-05"
+  Time: 11

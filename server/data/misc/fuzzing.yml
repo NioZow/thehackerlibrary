@@ -1,0 +1,10 @@
+- Type: "blogpost"
+  Tags:
+    - "Fuzzing"
+    - "Vulnerability Research"
+  Url: "https://h0mbre.github.io/New_Fuzzer_Project/#"
+  Authors:
+    - "h0mbre"
+  Name: "Fuzzer Development 1: The Soul of a New Machine"
+  Difficulty: 3
+  Time: 34

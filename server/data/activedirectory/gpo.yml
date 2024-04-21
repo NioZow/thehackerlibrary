@@ -1,0 +1,10 @@
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "GPO"
+  Url: "https://decoder.cloud/2024/01/23/do-not-trust-this-group-policy/"
+  Authors:
+    - "Decoder"
+  Name: "Do not trust this Group Policy!"
+  Difficulty: 2
+  Date: "2024-01-23"

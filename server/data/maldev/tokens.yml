@@ -75,3 +75,35 @@
   Difficulty: 2
   Date: "2022-11-25"
   Time: 7
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Token"
+    - "LSASS"
+  Url: "https://sensepost.com/blog/2022/abusing-windows-tokens-to-compromise-active-directory-without-touching-lsass/"
+  Authors:
+    - "Aurelien Chalot"
+  Name: "Abusing Windows' tokens to compromise Active Directory without touching LSASS"
+  Difficulty: 3
+  Date: "2022-10-27"
+  Time: 34
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Token"
+  Url: "https://sokarepo.github.io/redteam/2024/04/18/monitor-cobaltstrike-windows-token-kerberos-persistence.html"
+  Authors:
+    - "soka"
+  Name: "Monitor Cobalt Strike beacon for Windows tokens and gain Kerberos persistence"
+  Difficulty: 2
+  Date: "2024-04-18"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Token"
+  Url: "https://www.tarlogic.com/blog/token-handles-abuse/"
+  Authors:
+    - "Kurosh Dabbagh"
+  Name: "One shell to HANDLE them all"
+  Difficulty: 2
+  Date: "2022-10-26"

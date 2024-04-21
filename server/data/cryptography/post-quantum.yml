@@ -1,0 +1,11 @@
+- Type: "blogpost"
+  Tags:
+    - "Cryptography"
+    - "Post Quantum"
+  Url: "https://www.synacktiv.com/en/publications/quantum-readiness-introduction-to-modern-cryptography"
+  Authors:
+    - "Alexandre Brenner"
+    - "Benjamin Sepe"
+  Name: "Quantum readiness: Introduction to Modern Cryptography"
+  Difficulty: 3
+  Date: "2024-04-18"

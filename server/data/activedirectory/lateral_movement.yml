@@ -42,7 +42,8 @@
 - Type: "blogpost"
   Tags:
     - "Active Directory"
-    - "SCCM"
+    - "WMI"
+    - "Lateral Movement"
   Url: "https://specterops.io/blog/2023/07/11/performance-diagnostics-and-wmi/"
   Authors:
     - "Steven f"

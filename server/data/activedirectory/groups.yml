@@ -46,3 +46,13 @@
     - "mpgn"
   Name: "From Backup Operator To Domain Admin"
   Difficulty: 2
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Groups"
+  Url: "https://www.akamai.com/blog/security-research/2024/feb/abusing-dhcp-administrators-group-for-privilege-escalation-in-windows-domains"
+  Authors:
+    - "Ori David"
+  Name: "Abusing the DHCP Administrators Group to Escalate Privileges in Windows Domains"
+  Difficulty: 2
+  Date: "2024-03-20"

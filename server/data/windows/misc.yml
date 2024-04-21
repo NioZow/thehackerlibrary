@@ -1,21 +1,10 @@
 - Type: "blogpost"
   Tags:
     - "Windows"
-    - "Potato"
-  Url: "https://jlajara.gitlab.io/Potatoes_Windows_Privesc"
+    - "Sudo"
+  Url: "https://www.tiraniddo.dev/2024/02/sudo-on-windows-quick-rundown.html"
   Authors:
-    - "jlajara"
-  Name: "Potatoes - Windows Privilege Escalation"
+    - "Tiraniddo"
+  Name: "Sudo On Windows a Quick Rundown"
   Difficulty: 2
-  Date: "2020-11-22"
-- Type: "blogpost"
-  Tags:
-    - "Windows"
-    - "Potato"
-  Url: "https://www.youtube.com/watch?v=9cpHlXEVQM4"
-  Authors:
-    - "Antonio Cocomazzi"
-  Name: "The Rise of Potatoes: Privilege Escalations in Windows Services"
-  Difficulty: 2
-  Date: "2021-09-01"
-  Time: 41
+  Date: "2024-02-09"

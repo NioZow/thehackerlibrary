@@ -1,0 +1,30 @@
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "WSUS"
+  Url: "https://j4s0nmo0n.github.io/belettetimoree.github.io/2023-12-01-WSUS-to-ESC8.html"
+  Authors:
+    - "Belette Timorée"
+  Name: "Abusing WSUS with MITM to perform ADCS ESC8 attack"
+  Difficulty: 3
+  Date: "2023-12-01"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "WSUS"
+  Url: "https://gosecure.ai/blog/2020/09/03/wsus-attacks-part-1-introducing-pywsus/"
+  Authors:
+    - "Julien Pineault"
+  Name: "WSUS Attacks Part 1: Introducing PyWSUS"
+  Difficulty: 2
+  Date: "2020-09-03"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "WSUS"
+  Url: "https://gosecure.ai/blog/2021/11/22/gosecure-investigates-abusing-windows-server-update-services-wsus-to-enable-ntlm-relaying-attacks/"
+  Authors:
+    - "Romain Carnus"
+  Name: "GoSecure Investigates Abusing Windows Server Update Services (WSUS) to Enable NTLM Relaying Attacks"
+  Difficulty: 2
+  Date: "2021-11-22"

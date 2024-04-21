@@ -81,3 +81,14 @@
   Name: "LDAP authentication in Active Directory environments"
   Difficulty: 2
   Date: "2023-10-31"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Exchange"
+  Url: "https://posts.specterops.io/pwned-by-the-mail-carrier-0750edfad43b"
+  Authors:
+    - "Jonas Bulow Knudsen"
+  Name: "Pwned by the Mail Carrier"
+  Difficulty: 2
+  Date: "2024-03-20"
+  Time: 24
