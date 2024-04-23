@@ -386,7 +386,10 @@ const TrainingTable = () => {
             {resources.resources.length != 0 ? (
               resources.resources.map((training, i) => {
                 return (
-                  <TableRow key={i}>
+                  <TableRow
+                    key={i}
+                    onClick={() => window.open(training.Url, "_blank")}
+                  >
                     <TableCell>
                       <RenderIcon
                         tags={training.Tags}
