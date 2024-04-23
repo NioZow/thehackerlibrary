@@ -117,17 +117,6 @@
 - Type: "blogpost"
   Tags:
     - "Active Directory"
-    - ""
-  Url: "https://alice.climent-pommeret.red/posts/a-syscall-journey-in-the-windows-kernel/"
-  Authors:
-    - "Alice Climent-Pommeret"
-  Name: "A Syscall Journey in the Windows Kernel"
-  Difficulty: 3
-  Date: "2022-03-24"
-  Time: 26
-- Type: "blogpost"
-  Tags:
-    - "Active Directory"
     - "SCCM"
   Url: "https://mayfly277.github.io/posts/SCCM-LAB-part0x0/"
   Authors:

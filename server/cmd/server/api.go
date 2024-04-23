@@ -25,10 +25,14 @@ type (
 	}
 )
 
-func getResources(filter bool, sort bool, sortAsc bool, limit bool, page bool) http.HandlerFunc {
+func getResources(debug bool, filter bool, sort bool, sortAsc bool, limit bool, page bool) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 
-		w.Header().Set("Access-Control-Allow-Origin", CORS)
+		// do not care about CORS if we are in debugging mode
+		if debug {
+			w.Header().Set("Access-Control-Allow-Origin", CORS)
+		}
+
 		w.Header().Set("Content-Type", "application/json")
 
 		var (

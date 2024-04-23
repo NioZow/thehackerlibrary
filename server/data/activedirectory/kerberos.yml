@@ -86,3 +86,15 @@
   Difficulty: 2
   Date: "2020-04-18"
   Time: 14
+- Type: "video"
+  Tags:
+    - "Active Directory"
+    - "Kerberos"
+  Url: "https://www.youtube.com/watch?v=GM1PxZPiLMk"
+  Authors:
+    - "James Forshaw"
+    - "Nick Landers"
+  Name: "Elevating Kerberos to the Next Level"
+  Difficulty: 2
+  Date: "2022-11-17"
+  Time: 40

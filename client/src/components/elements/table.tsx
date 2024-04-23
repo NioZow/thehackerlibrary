@@ -96,7 +96,7 @@ const TrainingTable = () => {
     let icons: Record<string, boolean> = {};
 
     for (let i = 0; i < resources.length; i++) {
-      icons[resources[i].Name] = true;
+      icons[resources[i].Url] = true;
     }
 
     return icons;
@@ -390,8 +390,8 @@ const TrainingTable = () => {
                     <TableCell>
                       <RenderIcon
                         tags={training.Tags}
-                        bookmarked={bookmarks_icons[training.Name]}
-                        read={read_icons[training.Name]}
+                        bookmarked={bookmarks_icons[training.Url]}
+                        read={read_icons[training.Url]}
                         type={training.Type}
                       />
                     </TableCell>
@@ -463,7 +463,7 @@ const TrainingTable = () => {
                             Open resource in new tab
                           </DropdownMenuItem>
                           <DropdownMenuSeparator />
-                          {read_icons[training.Name] === undefined ? (
+                          {read_icons[training.Url] === undefined ? (
                             <DropdownMenuItem
                               onClick={() => {
                                 setRead((prevState: Training[]) => [
@@ -479,7 +479,7 @@ const TrainingTable = () => {
                               onClick={() => {
                                 setRead((prevState: Training[]) =>
                                   prevState.filter(
-                                    (item) => item.Name !== training.Name
+                                    (item) => item.Url !== training.Url
                                   )
                                 );
                               }}
@@ -487,7 +487,7 @@ const TrainingTable = () => {
                               Mark as not read
                             </DropdownMenuItem>
                           )}
-                          {bookmarks_icons[training.Name] === undefined ? (
+                          {bookmarks_icons[training.Url] === undefined ? (
                             <DropdownMenuItem
                               onClick={() => {
                                 setBookmarks((prevState: Training[]) => [
@@ -503,7 +503,7 @@ const TrainingTable = () => {
                               onClick={() => {
                                 setBookmarks((prevState: Training[]) =>
                                   prevState.filter(
-                                    (item) => item.Name !== training.Name
+                                    (item) => item.Url !== training.Url
                                   )
                                 );
                               }}

@@ -17,6 +17,7 @@ type (
 		Reset bool
 		Update bool
 		Pull bool
+		Debug bool
 	}
 )
 
@@ -40,6 +41,7 @@ func init() {
 	Cli.Flags().BoolVar(&flags.Reset, "reset", false, "reset the db before launching")
 	Cli.Flags().BoolVar(&flags.Update, "update", false, "update the db, will not launch the server")
 	Cli.Flags().BoolVar(&flags.Pull, "pull", false, "use \"git pull\" to download the latest update")
+	Cli.Flags().BoolVar(&flags.Debug, "debug", false, "launch in debugging mode, remove CORS problems by setting a wildcard")
 }
 
 func start(cmd *cobra.Command, args []string) error {
@@ -75,7 +77,7 @@ func start(cmd *cobra.Command, args []string) error {
 	}
 
 	// Start the API
-	router := server.ServerStart()
+	router := server.ServerStart(flags.Debug)
 	err := http.ListenAndServe("0.0.0.0:8000", router)
 	if err != nil {
 		log.Fatalf("Failed to start http server: %v", err)

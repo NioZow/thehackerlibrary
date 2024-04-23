@@ -27,7 +27,7 @@ export const getReadBookmarks = (): Training[] => {
 
   bookmarks.map((bookmarked_resource) => {
     for (let i = 0; i < read.length; i++) {
-      if (read[i].Name == bookmarked_resource.Name) {
+      if (read[i].Url == bookmarked_resource.Url) {
         resources.push(bookmarked_resource);
         return;
       }

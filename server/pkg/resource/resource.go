@@ -72,13 +72,12 @@ func LoadResources(path string) error {
 
 		// Parse the input date with the specified layout
 		_, err = db.DB.Exec("INSERT IGNORE INTO resources (type, name, url, date, price, time, difficulty) VALUES (?, ?, ?, ?, ?, ?, ?)", strings.ToUpper(resource.Type), resource.Name, resource.Url, resource.Date, resource.Price, resource.Time, resource.Difficulty)
-
 		if err != nil {
 			return err
 		}
 
 		// get its id
-		if err = db.DB.QueryRow("SELECT id FROM resources WHERE name = ?", resource.Name).Scan(&resourceId); err != nil {
+		if err = db.DB.QueryRow("SELECT id FROM resources WHERE url = ?", resource.Url).Scan(&resourceId); err != nil {
 			return err
 		}
 
@@ -101,6 +100,7 @@ func LoadResources(path string) error {
 
 		// insert authors
 		for _, author := range resource.Authors {
+			
 			if _, err = db.DB.Exec("INSERT IGNORE INTO authors (name) VALUES (?)", author); err != nil {
 				return err
 			}

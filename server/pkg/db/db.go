@@ -41,7 +41,7 @@ func Setup(reset bool) error {
     }
 
     // creating resources table
-    _, err = DB.Exec("CREATE TABLE IF NOT EXISTS resources (id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, type VARCHAR(10), name VARCHAR(150) UNIQUE, date VARCHAR(11), url VARCHAR(150), price SMALLINT, difficulty TINYINT, Time SMALLINT)")
+    _, err = DB.Exec("CREATE TABLE IF NOT EXISTS resources (id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, type VARCHAR(10), name VARCHAR(150), date VARCHAR(11), url VARCHAR(150) UNIQUE, price SMALLINT, difficulty TINYINT, Time SMALLINT)")
     if err != nil {
         return err
     }
