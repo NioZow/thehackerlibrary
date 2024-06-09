@@ -87,3 +87,14 @@
   Difficulty: 2
   Date: "2024-02-28"
   Time: 31
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "ADCS"
+    - "PKINIT"
+  Url: "https://nickvourd.github.io/what-if-no-pkinit-still-the-same-fun/"
+  Authors:
+    - "Nickvourd"
+  Name: "What if no PKINIT? Still the same fun!"
+  Difficulty: 2
+  Date: "2024-05-18"

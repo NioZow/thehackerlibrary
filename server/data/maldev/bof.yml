@@ -79,3 +79,12 @@
   Name: "Operator's Guide to the Meterpreter BOFLoader"
   Difficulty: 3
   Date: "2024-01-24"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "BOF"
+  Url: "https://otterhacker.github.io/Malware/CoffLoader.html"
+  Authors:
+    - "OtterHacker"
+  Name: "CoffLoader"
+  Difficulty: 3

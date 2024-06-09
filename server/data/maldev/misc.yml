@@ -14,3 +14,14 @@
     - "Santiago Pecin"
   Name: "Running PEs Inline Without a Console"
   Difficulty: 3
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "CFG"
+    - "Misc"
+  Url: "https://ynwarcs.github.io/Win11-24H2-CFG"
+  Authors:
+    - "ynwarcs"
+  Name: "CFG in Windows 11 24H2"
+  Difficulty: 2
+  Date: "2024-05-02"

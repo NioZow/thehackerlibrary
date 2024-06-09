@@ -1,0 +1,22 @@
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "LDAP"
+  Url: "https://posts.specterops.io/manual-ldap-querying-part-2-8a65099e12e3"
+  Authors:
+    - "Hope Walker"
+  Name: "Manual LDAP Querying: Part 2"
+  Difficulty: 2
+  Date: "2024-05-02"
+  Time: 17
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "LDAP"
+  Url: "An Introduction to Manual Active Directory Querying with Dsquery and Ldapsearch"
+  Authors:
+    - "Hope Walker"
+  Name: "An Introduction to Manual Active Directory Querying with Dsquery and Ldapsearch"
+  Difficulty: 2
+  Date: "2021-06-02"
+  Time: 17

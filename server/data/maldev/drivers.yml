@@ -120,3 +120,13 @@
   Name: "Lord Of The Ring0 - Part 6 | Conclusion"
   Difficulty: 3
   Date: "2024-03-31"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Driver Development"
+  Url: "https://mdanilor.github.io/posts/hevd-0/"
+  Authors:
+    - "mdanilor"
+  Name: "[Cracking Windows Kernel with HEVD] Chapter 0: Where do I start?"
+  Difficulty: 2
+  Date: "2022-08-29"

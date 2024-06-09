@@ -99,3 +99,25 @@
   Difficulty: 2
   Date: "2022-11-17"
   Time: 40
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos"
+  Url: "https://labs.lares.com/fear-kerberos-pt2/"
+  Authors:
+    - "Raul Redondo"
+  Name: "Kerberos II - Credential Access"
+  Difficulty: 2
+  Date: "2024-03-06"
+  Time: 11
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos"
+  Url: "https://labs.lares.com/fear-kerberos-pt1/"
+  Authors:
+    - "Raul Redondo"
+  Name: "Kerberos I - Overview"
+  Difficulty: 2
+  Date: "2024-03-19"
+  Time: 13

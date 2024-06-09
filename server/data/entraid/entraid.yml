@@ -200,10 +200,20 @@
   Tags:
     - "Entra ID"
     - "OAuth"
-  Url: "https://alice.climent-pommeret.red/posts/a-syscall-journey-in-the-windows-kernel/"
+  Url: "https://posts.specterops.io/browserless-entra-device-code-flow-0802f3bbb91a"
   Authors:
     - "Andy Robbins"
   Name: "Browserless Entra Device Code Flow"
   Difficulty: 2
   Date: "2024-03-06"
   Time: 6
+- Type: "blogpost"
+  Tags:
+    - "Entra ID"
+  Url: "https://dirkjanm.io/lateral-movement-and-hash-dumping-with-temporary-access-passes-microsoft-entra/"
+  Authors:
+    - "Dirk-jan Mollema"
+  Name: "Lateral movement and on-prem NT hash dumping with Microsoft Entra Temporary Access Passes"
+  Difficulty: 2
+  Date: "2024-06-05"
+  Time: 10
