@@ -25,6 +25,7 @@
     - "Malware Development"
     - "Stack Spoofing"
     - "Memory Encryption"
+    - "Module Stomping"
   Url: "https://labs.cognisys.group/posts/Advanced-Module-Stomping-and-Heap-Stack-Encryption/"
   Authors:
     - "Cognisys Lab"
