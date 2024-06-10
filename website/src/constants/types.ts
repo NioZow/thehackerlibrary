@@ -19,3 +19,7 @@ export const status: Status[] = ['both', 'complete', 'uncomplete'];
 export type Difficulty = 'easy' | 'medium' | 'hard' | 'insane';
 
 export const difficulties: Difficulty[] = ['easy', 'medium', 'hard', 'insane'];
+
+export type Tag = 'bookmark' | 'favorite';
+
+export const tags: Tag[] = ['bookmark', 'favorite'];

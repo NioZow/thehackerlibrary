@@ -1,21 +1,18 @@
 import type { ReactElement } from 'react';
 
-import { Table, TableHeader, TableRow, TableHead } from '@/ui/table';
+import { Table, TableHead, TableHeader, TableRow } from '@/ui/table';
 
 import { columns } from '@/constant/types';
 
-interface IPropsSingle<T> {
-  element: T;
-}
 
 const ResourceTable = (): ReactElement => {
   return (
-    <div className="rounded-md border">
+    <div className="rounded-md border w-full">
       <Table>
         <TableHeader>
-          <TableRow key="table-row">
+          <TableRow className="hover:bg-indigo-900">
             {columns.map((value) => {
-              return <TableHead key={value}>{value}</TableHead>;
+              return <TableHead key={value}>{(value as string).toUpperCase()}</TableHead>;
             })}
           </TableRow>
         </TableHeader>

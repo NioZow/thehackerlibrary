@@ -11,6 +11,7 @@ import ResourceTable from '@/module/table';
 
 import { cn } from '@/util/style.util';
 
+
 const HomePage = (): ReactElement => {
   return (
     <div className={cn('min-h-screen font-sans bg-indigo-950')}>
@@ -20,10 +21,9 @@ const HomePage = (): ReactElement => {
 
       <Navbar />
 
-      <div className="h-full flex flex-col justify-center items-center ml-16 mr-16 mt-32">
+      <div className="h-full flex flex-col items-center ml-24 mr-24 py-48 space-y-4">
         <h1 className="text-5xl">The Hacker Library</h1>
         <p>Library of hacking learning resources, not sponsored</p>
-
         <ResourceFilter />
 
         <ResourceTable />

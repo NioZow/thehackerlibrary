@@ -1,27 +1,27 @@
 import { useState } from 'react';
 
-import { Button } from '@/ui/button';
-import { GearIcon } from '@radix-ui/react-icons';
+import AdvancedSearch from '@/element/advanced-search';
+import { DropdownMenuMultiple, DropdownMenuSingle } from '@/element/dropdown-menu';
 
-import { DropdownMenuSingle, DropdownMenuMultiple } from '@/element/dropdown-menu';
+import { Column, difficulties, Difficulty, Status, status, Tag, tags } from '@/constant/types';
 
-import { Column, Status, status, Difficulty, difficulties } from '@/constant/types';
 
 const ResourceFilter = () => {
   const columns: Column[] = ['name', 'tags', 'price', 'authors', 'time to read', 'date', 'difficulty'];
   const [currentColumns, setCurrentColumns] = useState<Column[]>(columns);
-  const [currentDifficulties, setCurrentDifficulties] = useState<Difficulty[]>(difficulties);
   const [currentStatus, setCurrentStatus] = useState<Status>('both');
-  const [advancedView, setAdvancedView] = useState<boolean>(false);
+  const [currentDifficulties, setCurrentDifficulties] = useState<Difficulty[]>(difficulties);
+  const [currentTags, setCurrentTags] = useState<Tag[]>([]);
 
   return (
     <>
       <div className="flex justify-end space-x-4">
         <DropdownMenuMultiple
-          elements={columns}
-          currentElements={currentColumns}
-          setCurrentElements={setCurrentColumns}
-          buttonName="columns"
+          elements={tags}
+          currentElements={currentTags}
+          setCurrentElements={setCurrentTags}
+          buttonName="tags"
+          className="w-[180px] hover:bg-indigo-900"
         />
 
         <DropdownMenuSingle
@@ -29,27 +29,27 @@ const ResourceFilter = () => {
           currentElement={currentStatus}
           setCurrentElement={setCurrentStatus}
           buttonName="status"
+          className="w-[180px] hover:bg-indigo-900"
         />
 
-        <Button
-          className="ml-auto w-[200px]"
-          onClick={() => {
-            setAdvancedView(!advancedView);
+        <DropdownMenuMultiple
+          elements={columns}
+          currentElements={currentColumns}
+          setCurrentElements={setCurrentColumns}
+          buttonName="columns"
+          className="w-[180px] hover:bg-indigo-900"
+        />
+
+        <AdvancedSearch
+          difficulty={{
+            elements: difficulties,
+            currentElements: currentDifficulties,
+            setCurrentElements: setCurrentDifficulties,
+            buttonName: 'Difficulty',
+            className: 'w-[200px] hover:bg-indigo-900',
           }}
-        >
-          <GearIcon /> &nbsp; Avanced
-        </Button>
+        />
       </div>
-      {advancedView ? (
-        <div>
-          <DropdownMenuMultiple
-            elements={difficulties}
-            currentElements={currentDifficulties}
-            setCurrentElements={setCurrentDifficulties}
-            buttonName="difficulty"
-          />
-        </div>
-      ) : null}
     </>
   );
 };

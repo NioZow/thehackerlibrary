@@ -4,21 +4,35 @@ import { Button } from '@/ui/button';
 import { DropdownMenu, DropdownMenuCheckboxItem, DropdownMenuContent, DropdownMenuTrigger } from '@/ui/dropdown-menu';
 import { ChevronDownIcon, DotIcon } from '@radix-ui/react-icons';
 
-interface IPropsSingle<T> {
+import { cn } from '@/util/style.util';
+
+
+export interface IPropsSingle<T> {
   elements: T[];
   currentElement: T;
   setCurrentElement: React.Dispatch<React.SetStateAction<T>>;
   buttonName: string;
+  className?: string;
+  border?: boolean;
 }
 
-interface IPropsMultiple<T> {
+export interface IPropsMultiple<T> {
   elements: T[];
   currentElements: T[];
   setCurrentElements: React.Dispatch<React.SetStateAction<T[]>>;
   buttonName: string;
+  className?: string;
+  border?: boolean;
 }
 
-export function DropdownMenuSingle<T>({ elements, currentElement, setCurrentElement, buttonName }: IPropsSingle<T>) {
+export function DropdownMenuSingle<T>({
+  elements,
+  currentElement,
+  setCurrentElement,
+  buttonName,
+  className,
+  border,
+}: IPropsSingle<T>) {
   const [openColumn, setColumnOpen] = useState(false);
   const [itemClicked, setItemClicked] = useState(false);
 
@@ -39,7 +53,7 @@ export function DropdownMenuSingle<T>({ elements, currentElement, setCurrentElem
       open={openColumn}
     >
       <DropdownMenuTrigger asChild>
-        <Button className="ml-auto w-[200px]">
+        <Button className={cn('w-[200px] hover:bg-indigo-900', border ? 'border' : null)}>
           {(buttonName as string).toUpperCase()}
           <DotIcon className="ml-2 h-4 w-4" />
           {(currentElement as string).toUpperCase()}
@@ -54,6 +68,7 @@ export function DropdownMenuSingle<T>({ elements, currentElement, setCurrentElem
         onEscapeKeyDown={() => {
           setColumnOpen(false);
         }}
+        className="bg-indigo-900"
       >
         {elements.map((value) => {
           return (
@@ -64,7 +79,7 @@ export function DropdownMenuSingle<T>({ elements, currentElement, setCurrentElem
                 setCurrentElement(value);
                 setItemClicked(true);
               }}
-              className="w-[200px]"
+              className={className}
             >
               {(value as string).toUpperCase()}
             </DropdownMenuCheckboxItem>
@@ -80,6 +95,8 @@ export function DropdownMenuMultiple<T>({
   currentElements,
   setCurrentElements,
   buttonName,
+  className,
+  border,
 }: IPropsMultiple<T>) {
   const [openColumn, setColumnOpen] = useState(false);
   const [itemClicked, setItemClicked] = useState(false);
@@ -101,7 +118,7 @@ export function DropdownMenuMultiple<T>({
       open={openColumn}
     >
       <DropdownMenuTrigger asChild>
-        <Button className="ml-auto w-[200px]">
+        <Button className={cn('w-[200px] hover:bg-indigo-900', border ? 'border' : null)}>
           {(buttonName as string).toUpperCase()}
           <DotIcon className="ml-2 h-4 w-4" />
           {currentElements.length as number}
@@ -116,6 +133,7 @@ export function DropdownMenuMultiple<T>({
         onEscapeKeyDown={() => {
           setColumnOpen(false);
         }}
+        className="bg-indigo-900"
       >
         {elements.map((value) => {
           return (
@@ -132,7 +150,7 @@ export function DropdownMenuMultiple<T>({
                 }
                 setItemClicked(true);
               }}
-              className="w-[200px]"
+              className={className}
             >
               {(value as string).toUpperCase()}
             </DropdownMenuCheckboxItem>
