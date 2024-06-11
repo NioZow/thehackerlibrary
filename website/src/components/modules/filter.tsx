@@ -1,10 +1,11 @@
+'use client';
+
 import { useState } from 'react';
 
 import AdvancedSearch from '@/element/advanced-search';
 import { DropdownMenuMultiple, DropdownMenuSingle } from '@/element/dropdown-menu';
 
 import { Column, difficulties, Difficulty, Status, status, Tag, tags } from '@/constant/types';
-
 
 const ResourceFilter = () => {
   const columns: Column[] = ['name', 'tags', 'price', 'authors', 'time to read', 'date', 'difficulty'];

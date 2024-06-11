@@ -32,16 +32,16 @@ const PopoverPrice = () => {
       <PopoverContent className="w-80 bg-indigo-900">
         <div className="grid gap-4">
           <div className="space-y-2">
-            <p className="font-medium leading-none">Price</p>
+            <p className="font-medium leading-none text-white">Price</p>
           </div>
           <div className="grid gap-2">
             <div className="grid grid-cols-3 items-center gap-4">
-              <Label>Minimum</Label>
-              <Input defaultValue="" className="col-span-2 h-8 bg-neutral-900" />
+              <Label className="text-white">Minimum</Label>
+              <Input defaultValue="" className="col-span-2 h-8 bg-neutral-900 text-white" />
             </div>
             <div className="grid grid-cols-3 items-center gap-4">
-              <Label>Maximum</Label>
-              <Input defaultValue="" className="col-span-2 h-8 bg-neutral-900" />
+              <Label className="text-white">Maximum</Label>
+              <Input defaultValue="" className="col-span-2 h-8 bg-neutral-900 text-white" />
             </div>
           </div>
         </div>
@@ -59,16 +59,16 @@ const PopoverDate = () => {
       <PopoverContent className="w-80 bg-indigo-900">
         <div className="grid gap-4">
           <div className="space-y-2">
-            <p className="font-medium leading-none">Date</p>
+            <p className="font-medium leading-none text-white">Date</p>
           </div>
           <div className="grid gap-2">
             <div className="grid grid-cols-3 items-center gap-4">
-              <Label>Minimum</Label>
-              <Input defaultValue="" className="col-span-2 h-8 bg-neutral-900" />
+              <Label className="text-white">Minimum</Label>
+              <Input defaultValue="" className="col-span-2 h-8 bg-neutral-900 text-white" />
             </div>
             <div className="grid grid-cols-3 items-center gap-4">
-              <Label>Maximum</Label>
-              <Input defaultValue="" className="col-span-2 h-8 bg-neutral-900" />
+              <Label className="text-white">Maximum</Label>
+              <Input defaultValue="" className="col-span-2 h-8 bg-neutral-900 text-white" />
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@ export const AdvancedSearch = ({ difficulty }: IProps) => {
       <DialogContent className="sm:max-w-[425px] bg-indigo-950">
         <DialogHeader>
           <DialogTitle>Advanced Search</DialogTitle>
-          <DialogDescription>Make advanced searches...</DialogDescription>
+          <DialogDescription className="text-white">Make advanced searches...</DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-4">
           <div className="grid grid-cols-4 items-center gap-4">

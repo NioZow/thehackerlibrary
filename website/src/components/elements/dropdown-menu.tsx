@@ -6,7 +6,6 @@ import { ChevronDownIcon, DotIcon } from '@radix-ui/react-icons';
 
 import { cn } from '@/util/style.util';
 
-
 export interface IPropsSingle<T> {
   elements: T[];
   currentElement: T;
@@ -79,7 +78,7 @@ export function DropdownMenuSingle<T>({
                 setCurrentElement(value);
                 setItemClicked(true);
               }}
-              className={className}
+              className={cn('text-white', className)}
             >
               {(value as string).toUpperCase()}
             </DropdownMenuCheckboxItem>
@@ -150,7 +149,7 @@ export function DropdownMenuMultiple<T>({
                 }
                 setItemClicked(true);
               }}
-              className={className}
+              className={cn('text-white', className)}
             >
               {(value as string).toUpperCase()}
             </DropdownMenuCheckboxItem>

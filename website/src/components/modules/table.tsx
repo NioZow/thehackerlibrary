@@ -4,7 +4,6 @@ import { Table, TableHead, TableHeader, TableRow } from '@/ui/table';
 
 import { columns } from '@/constant/types';
 
-
 const ResourceTable = (): ReactElement => {
   return (
     <div className="rounded-md border w-full">
@@ -12,7 +11,11 @@ const ResourceTable = (): ReactElement => {
         <TableHeader>
           <TableRow className="hover:bg-indigo-900">
             {columns.map((value) => {
-              return <TableHead key={value}>{(value as string).toUpperCase()}</TableHead>;
+              return (
+                <TableHead key={value} className="text-white">
+                  {(value as string).toUpperCase()}
+                </TableHead>
+              );
             })}
           </TableRow>
         </TableHeader>

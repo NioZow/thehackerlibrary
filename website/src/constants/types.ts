@@ -14,7 +14,7 @@ export const columns: Column[] = [
 
 export type Status = 'both' | 'complete' | 'uncomplete';
 
-export const status: Status[] = ['both', 'complete', 'uncomplete'];
+export const status: Status[] = ['complete', 'uncomplete', 'both'];
 
 export type Difficulty = 'easy' | 'medium' | 'hard' | 'insane';
 
