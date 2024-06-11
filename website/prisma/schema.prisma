@@ -33,7 +33,7 @@ model resources {
   url          String?        @unique(map: "url") @db.VarChar(150)
   price        Int?           @db.SmallInt
   difficulty   Int?           @db.TinyInt
-  Time         Int?           @db.SmallInt
+  time         Int?           @db.SmallInt
   authors_link authors_link[] @ignore
   tags_link    tags_link[]    @ignore
 }

@@ -1,0 +1,29 @@
+services:
+  db:
+    image: mariadb:latest
+    restart: always
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=thehackerlibrary
+      - MYSQL_DATABASE=thehackerlibrary
+      - MYSQL_USER=thehackerlibrary
+      - MYSQL_PASSWORD=thehackerlibrary
+      - MYSQL_ROOT_HOST=10.10.10.1
+    ports:
+      - "3306:3306"
+    networks:
+      custom_net:
+        ipv4_address: 10.10.10.10
+
+volumes:
+  db_data: {}
+
+networks:
+  custom_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.10.10.0/24
+          gateway: 10.10.10.1

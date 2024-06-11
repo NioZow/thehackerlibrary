@@ -1,15 +1,19 @@
-'use client';
-
-import { useState } from 'react';
+import { SetStateAction, Dispatch, useState } from 'react';
 
 import AdvancedSearch from '@/element/advanced-search';
 import { DropdownMenuMultiple, DropdownMenuSingle } from '@/element/dropdown-menu';
 
 import { Column, difficulties, Difficulty, Status, status, Tag, tags } from '@/constant/types';
 
-const ResourceFilter = () => {
-  const columns: Column[] = ['name', 'tags', 'price', 'authors', 'time to read', 'date', 'difficulty'];
-  const [currentColumns, setCurrentColumns] = useState<Column[]>(columns);
+interface IProps {
+  columns: {
+    columns: Column[];
+    currentColumns: Column[];
+    setColumns: Dispatch<SetStateAction<Column[]>>;
+  };
+}
+
+const ResourceFilter = ({ columns }: IProps) => {
   const [currentStatus, setCurrentStatus] = useState<Status>('both');
   const [currentDifficulties, setCurrentDifficulties] = useState<Difficulty[]>(difficulties);
   const [currentTags, setCurrentTags] = useState<Tag[]>([]);
@@ -34,9 +38,9 @@ const ResourceFilter = () => {
         />
 
         <DropdownMenuMultiple
-          elements={columns}
-          currentElements={currentColumns}
-          setCurrentElements={setCurrentColumns}
+          elements={columns.columns}
+          currentElements={columns.currentColumns}
+          setCurrentElements={columns.setColumns}
           buttonName="columns"
           className="w-[180px] hover:bg-indigo-900"
         />

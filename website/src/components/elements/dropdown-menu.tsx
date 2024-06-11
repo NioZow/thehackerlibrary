@@ -1,5 +1,8 @@
+'use client';
+
 import { useState } from 'react';
 
+import { saveData } from '@/src/utils/localstorage';
 import { Button } from '@/ui/button';
 import { DropdownMenu, DropdownMenuCheckboxItem, DropdownMenuContent, DropdownMenuTrigger } from '@/ui/dropdown-menu';
 import { ChevronDownIcon, DotIcon } from '@radix-ui/react-icons';
@@ -147,6 +150,7 @@ export function DropdownMenuMultiple<T>({
                     return [...prevState, value];
                   });
                 }
+
                 setItemClicked(true);
               }}
               className={cn('text-white', className)}
