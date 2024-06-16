@@ -37,9 +37,14 @@ export const fetchResources = async (sp: SearchParams) => {
   columns['difficulty'] = sp.columns.includes('difficulty');
   columns['name'] = sp.columns.includes('name');
 
-  return await prisma.resources.findMany({
-    take: 10,
-    select: columns,
-    where: where,
-  });
+  return await Promise.all([
+    prisma.resources.findMany({
+      take: 10,
+      select: columns,
+      where: where,
+    }),
+    prisma.resources.count({
+      where: where,
+    }),
+  ]);
 };

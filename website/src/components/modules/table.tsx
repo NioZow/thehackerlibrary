@@ -1,7 +1,10 @@
 'use client';
 
+import { useState } from 'react';
+
 import { Button } from '@/ui/button';
 import { Table, TableHead, TableHeader, TableRow, TableBody, TableCell } from '@/ui/table';
+import { Badge } from '@mantine/core';
 import {
   DropdownMenu,
   DropdownMenuSeparator,
@@ -11,18 +14,20 @@ import {
 } from '@radix-ui/react-dropdown-menu';
 import { DotsHorizontalIcon } from '@radix-ui/react-icons';
 
-import { NoIcon } from '@/icon/icons';
+import { RenderIcons } from '@/icon/icons';
 
 import { Resource } from '@/constant/types';
 import { columns } from '@/constant/types';
-import { SearchParams } from '@/constant/types';
+import { SearchParams, DifficultyColor } from '@/constant/types';
 
 interface IProps {
   resources: Resource[];
   searchParams: SearchParams;
 }
 
-const ResourceTable = ({ resources, searchParams }: IProps) => {
+export const ResourceTable = ({ resources, searchParams }: IProps) => {
+  console.log(searchParams);
+
   return (
     <div className="rounded-md border w-full">
       <Table>
@@ -41,15 +46,15 @@ const ResourceTable = ({ resources, searchParams }: IProps) => {
           {resources.length != 0 ? (
             resources.map((resource) => {
               return (
-                <TableRow key={resource.id} className="hover:bg-indigo-900">
+                <TableRow key={resource.id} className="hover:bg-indigo-900 text-white">
                   <TableCell>
-                    <NoIcon />
+                    <RenderIcons tags={resource.tags} />
                   </TableCell>
 
                   {searchParams.columns.includes('name') ? <TableCell>{resource.name}</TableCell> : null}
                   {searchParams.columns.includes('tags') && resource.tags !== undefined ? (
                     <TableCell>
-                      {resource.tags.map((tag) => {
+                      {resource.tags.slice(1).map((tag) => {
                         return <p key={tag.id}>{tag.name}</p>;
                       })}
                     </TableCell>
@@ -63,7 +68,21 @@ const ResourceTable = ({ resources, searchParams }: IProps) => {
                   ) : null}
                   {searchParams.columns.includes('date') ? <TableCell>{resource.date}</TableCell> : null}
                   {searchParams.columns.includes('time to read') ? <TableCell>{resource.time}</TableCell> : null}
-                  {searchParams.columns.includes('difficulty') ? <TableCell>{resource.difficulty}</TableCell> : null}
+                  {searchParams.columns.includes('difficulty') ? (
+                    <TableCell>
+                      <Badge
+                        fullWidth
+                        variant="light"
+                        color={
+                          resource.difficulty !== null && resource.difficulty !== undefined
+                            ? DifficultyColor[resource.difficulty]
+                            : 'white'
+                        }
+                      >
+                        {resource.difficulty}
+                      </Badge>
+                    </TableCell>
+                  ) : null}
                   {searchParams.columns.includes('price') ? <TableCell>{resource.price}</TableCell> : null}
 
                   <TableCell>
@@ -129,4 +148,38 @@ const ResourceTable = ({ resources, searchParams }: IProps) => {
   );
 };
 
-export default ResourceTable;
+export const ResourceTableFooter = ({ count }: { count: number }) => {
+  const [page, setPage] = useState(1);
+
+  return (
+    <div className="space-x-2 tex-white">
+      <Button className="w-30" variant="outline" disabled={true}>
+        {count} resources
+      </Button>
+      <Button
+        className="w-20"
+        variant="outline"
+        onClick={() => {
+          if (setPage !== undefined) {
+            setPage(page - 1);
+          }
+        }}
+        disabled={page === 1}
+      >
+        Previous
+      </Button>
+      <Button
+        variant="outline"
+        className="w-20"
+        onClick={() => {
+          if (setPage !== undefined) {
+            setPage(page + 1);
+          }
+        }}
+        disabled={page >= (count % 10 == 0 ? Math.floor(count / 10) : Math.floor(count / 10) + 1)}
+      >
+        Next
+      </Button>
+    </div>
+  );
+};

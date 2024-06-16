@@ -1,4 +1,7 @@
-import { Bug, Server, Globe, Cloud, Cpu, Check, Bookmark, Tv, Book, ShieldOff, Brain, Github } from 'lucide-react';
+import { IconBug, IconCloud, IconBrandWindows, IconBrandAzure, IconBrandAws } from '@tabler/icons-react';
+import { Globe, Cpu, Check, Bookmark, Tv, Book, ShieldOff, Brain, Github } from 'lucide-react';
+
+import { TagResource } from '@/constant/types';
 
 const SIZE: number = 24;
 
@@ -36,15 +39,31 @@ export const WebIcon = () => {
 export const ActiveDirectoryIcon = () => {
   return (
     <div title="Active Directory">
-      <Server color="white" className="mr-2 h-4 w-4" size={SIZE} />
+      <IconBrandWindows color="white" className="mr-2 h-4 w-4" size={SIZE} />
     </div>
   );
 };
 
-export const CloudIcon = () => {
+export const GcpIcon = () => {
   return (
-    <div title="Cloud">
-      <Cloud color="white" className="mr-2 h-4 w-4" size={SIZE} />
+    <div title="Google Cloud Platform">
+      <IconCloud color="white" className="mr-2 h-4 w-4" size={SIZE} />
+    </div>
+  );
+};
+
+export const AzureIcon = () => {
+  return (
+    <div title="Azure">
+      <IconBrandAzure color="white" className="mr-2 h-4 w-4" size={SIZE} />
+    </div>
+  );
+};
+
+export const AWSIcon = () => {
+  return (
+    <div title="Amazon Web Services">
+      <IconBrandAws color="white" className="mr-2 h-4 w-4" size={SIZE} />
     </div>
   );
 };
@@ -60,7 +79,7 @@ export const HardwareIcon = () => {
 export const MalwareDeveloppmentIcon = () => {
   return (
     <div title="Malware Development">
-      <Bug color="red" className="mr-2 h-4 w-4" size={SIZE} />
+      <IconBug color="red" className="mr-2 h-4 w-4" size={SIZE} />
     </div>
   );
 };
@@ -121,57 +140,36 @@ export const CheatsheetIcon = () => {
   );
 };
 
-export const RenderIcon = ({
-  tags,
-  read,
-  bookmarked,
-  type,
-}: {
-  tags: Array<string>;
-  read: boolean;
-  bookmarked: boolean;
-  type: string;
-}): JSX.Element => {
+interface IProps {
+  tags: TagResource[] | undefined;
+}
+
+export const RenderIcons = ({ tags }: IProps): JSX.Element => {
   const icons: JSX.Element[] = [];
 
-  // show type icons
-  switch (type.toLowerCase()) {
-    case 'blogpost':
-      icons.push(<BlogIcon />);
-      break;
-    case 'video':
-      icons.push(<VideoIcon />);
-      break;
-    case 'cheatsheet':
-      icons.push(<CheatsheetIcon />);
-      break;
-    default:
-      icons.push(<NoIcon />);
-  }
+  tags !== undefined
+    ? tags.map((tag) => {
+        if (tag.name === 'Malware Development') {
+          icons.push(<MalwareDeveloppmentIcon />);
+        } else if (tag.name === 'Active Directory') {
+          icons.push(<ActiveDirectoryIcon />);
+        } else if (tag.name === 'Web') {
+          icons.push(<WebIcon />);
+        } else if (tag.name === 'Entra ID' || tag.name === 'Azure') {
+          icons.push(<AzureIcon />);
+        } else if (tag.name === 'AWS') {
+          icons.push(<AWSIcon />);
+        } else if (tag.name === 'GCP') {
+          icons.push(<GcpIcon />);
+        } else if (tag.name === 'Initial Access') {
+          icons.push(<InitialAccessIcon />);
+        } else if (tag.name === 'Hardware') {
+          icons.push(<HardwareIcon />);
+        }
+      })
+    : null;
 
-  if (tags.includes('Malware Development')) {
-    icons.push(<MalwareDeveloppmentIcon />);
-  } else if (tags.includes('Active Directory')) {
-    icons.push(<ActiveDirectoryIcon />);
-  } else if (tags.includes('Web')) {
-    icons.push(<WebIcon />);
-  } else if (tags.includes('Entra ID') || tags.includes('AWS') || tags.includes('GCP')) {
-    icons.push(<CloudIcon />);
-  } else if (tags.includes('Initial Access')) {
-    icons.push(<InitialAccessIcon />);
-  } else if (tags.includes('Hardware')) {
-    icons.push(<HardwareIcon />);
-  } else {
-    icons.push(<NoIcon />);
-  }
-
-  if (read) {
-    icons.push(<ReadIcon />);
-  }
-
-  if (bookmarked) {
-    icons.push(<BookmarkIcon />);
-  }
+  icons.length === 0 ? icons.push(<NoIcon />) : null;
 
   return <div className="flex">{icons}</div>;
 };

@@ -40,7 +40,8 @@
   Time: 10
 - Type: "blogpost"
   Tags:
-    - "Entra ID"
+    - "Active Directory"
+    - "ADIDNS"
   Url: "https://dirkjanm.io/getting-in-the-zone-dumping-active-directory-dns-with-adidnsdump/"
   Authors:
     - "Dirk-jan Mollema"

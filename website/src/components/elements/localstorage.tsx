@@ -4,13 +4,14 @@ import { useEffect } from 'react';
 
 import { useRouter } from 'next/navigation';
 
-import { arrayToCommaSeparated } from '@/src/utils/array';
 import { getData } from '@/src/utils/localstorage';
+import { newParams } from '@/src/utils/params';
 
 import { Column } from '@/constant/types';
+import { SearchParams } from '@/constant/types';
 
 interface IProps {
-  searchParams: Record<string, string | undefined>;
+  searchParams: SearchParams;
 }
 
 const DumpLocalStorage = ({ searchParams }: IProps) => {
@@ -20,12 +21,14 @@ const DumpLocalStorage = ({ searchParams }: IProps) => {
   useEffect(() => {
     // using window obj under the hood
     // make sure it's rendered client
-    if (searchParams['reload'] === undefined) {
+    if (searchParams.reload) {
       const tmpColumns: Column[] = getData('columns');
 
-      const sp = new URLSearchParams();
-      sp.append('columns', arrayToCommaSeparated(tmpColumns.length != 0 ? tmpColumns : columns));
-      router.push(`/?${sp.toString()}&reload=t`);
+      searchParams.columns = tmpColumns.length != 0 ? tmpColumns : columns;
+      searchParams.reload = false;
+
+      const sp = newParams(searchParams);
+      router.push(`/?${sp.toString()}`);
     }
   }, []);
 

@@ -24,13 +24,20 @@ export type Tag = 'bookmark' | 'favorite';
 
 export const tags: Tag[] = ['bookmark', 'favorite'];
 
+export const DifficultyColor: Record<Difficulty, string> = {
+  easy: 'green',
+  medium: 'orange',
+  hard: 'red',
+  insane: 'gray',
+};
+
 export interface Author {
   id: number;
   name: string;
   resourcesId: number | null;
 }
 
-interface TagResource {
+export interface TagResource {
   id: number;
   name: string | null;
   resourcesId: number | null;
@@ -57,5 +64,7 @@ export interface Resource {
 
 export interface SearchParams {
   columns: Column[];
+  difficulty: Difficulty[];
   where: string | null;
+  reload: boolean;
 }

@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 import { useRouter } from 'next/navigation';
 
-import { arrayToCommaSeparated } from '@/src/utils/array';
+import { newParams } from '@/src/utils/params';
 import { Button } from '@/ui/button';
 import {
   Dialog,
@@ -21,13 +21,9 @@ import { Label } from '@/ui/label';
 import { Popover, PopoverContent, PopoverTrigger } from '@/ui/popover';
 import { GearIcon } from '@radix-ui/react-icons';
 
-import { DropdownMenuMultiple, IPropsMultiple } from '@/element/dropdown-menu';
+import { DropdownMenuMultiple } from '@/element/dropdown-menu';
 
-import { Difficulty } from '@/constant/types';
-
-interface IProps {
-  difficulty: IPropsMultiple<Difficulty>;
-}
+import { Difficulty, SearchParams, difficulties } from '@/constant/types';
 
 const PopoverPrice = () => {
   return (
@@ -83,13 +79,19 @@ const PopoverDate = () => {
   );
 };
 
-export const AdvancedSearch = ({ difficulty }: IProps) => {
-  const router = useRouter();
-  const sp = new URLSearchParams();
+interface IProps {
+  searchParams: SearchParams;
+}
 
-  const [filter, setFilter] = useState('');
+export const AdvancedSearch = ({ searchParams }: IProps) => {
+  let sp = new URLSearchParams();
+  const router = useRouter();
+
   const [open, setOpen] = useState(false);
   const [previousOpen, setPreviousOpen] = useState(false);
+
+  const [filter, setFilter] = useState('');
+  const [currentDifficulties, setCurrentDifficulties] = useState<Difficulty[]>(searchParams.difficulty);
 
   return (
     <Dialog
@@ -104,12 +106,12 @@ export const AdvancedSearch = ({ difficulty }: IProps) => {
       }}
     >
       <DialogTrigger asChild>
-        <Button className="hover:bg-indigo-900">
+        <Button className="hover:bg-indigo-900 text-white">
           <GearIcon /> &nbsp; Advanced Search
         </Button>
       </DialogTrigger>
       <DialogContent
-        className="sm:max-w-[425px] bg-indigo-950"
+        className="sm:max-w-[425px] bg-indigo-950 text-white"
         onInteractOutside={() => {
           setOpen(false);
         }}
@@ -149,11 +151,11 @@ export const AdvancedSearch = ({ difficulty }: IProps) => {
               Difficulty
             </Label>
             <DropdownMenuMultiple
-              elements={difficulty.elements}
-              currentElements={difficulty.currentElements}
-              setCurrentElements={difficulty.setCurrentElements}
-              buttonName={difficulty.buttonName}
-              className={difficulty.className}
+              elements={difficulties}
+              currentElements={currentDifficulties}
+              setCurrentElements={setCurrentDifficulties}
+              buttonName="Difficulty"
+              className="w-[200px] hover:bg-indigo-900"
               border={true}
             />
           </div>
@@ -162,8 +164,11 @@ export const AdvancedSearch = ({ difficulty }: IProps) => {
           <Button
             className="hover:bg-indigo-900 border"
             onClick={() => {
-              sp.append('difficulty', arrayToCommaSeparated(difficulty.currentElements));
-              filter !== '' ? sp.append('where', filter) : null;
+              searchParams.difficulty = currentDifficulties;
+              searchParams.where = filter;
+
+              sp = newParams(searchParams);
+
               router.push(`/?${sp.toString()}`);
               setOpen(false);
             }}
