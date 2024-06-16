@@ -2,7 +2,6 @@
 
 import { Button } from '@/ui/button';
 import { Table, TableHead, TableHeader, TableRow, TableBody, TableCell } from '@/ui/table';
-import { resources } from '@prisma/client';
 import {
   DropdownMenu,
   DropdownMenuSeparator,
@@ -14,21 +13,23 @@ import { DotsHorizontalIcon } from '@radix-ui/react-icons';
 
 import { NoIcon } from '@/icon/icons';
 
-import { columns, Column } from '@/constant/types';
+import { Resource } from '@/constant/types';
+import { columns } from '@/constant/types';
+import { SearchParams } from '@/constant/types';
 
 interface IProps {
-  resources: resources[];
-  selectedColumns: Column[];
+  resources: Resource[];
+  searchParams: SearchParams;
 }
 
-const ResourceTable = ({ resources, selectedColumns }: IProps) => {
+const ResourceTable = ({ resources, searchParams }: IProps) => {
   return (
     <div className="rounded-md border w-full">
       <Table>
         <TableHeader>
           <TableRow className="hover:bg-indigo-900">
             {columns.map((column) => {
-              return selectedColumns.includes(column) || ['actions', ''].includes(column) ? (
+              return searchParams.columns.includes(column) || ['actions', ''].includes(column) ? (
                 <TableHead key={column} className="text-white">
                   {(column as string).toUpperCase()}
                 </TableHead>
@@ -45,13 +46,25 @@ const ResourceTable = ({ resources, selectedColumns }: IProps) => {
                     <NoIcon />
                   </TableCell>
 
-                  {selectedColumns.includes('name') ? <TableCell>{resource.name}</TableCell> : null}
-                  {selectedColumns.includes('tags') ? <TableCell>{resource.name}</TableCell> : null}
-                  {selectedColumns.includes('authors') ? <TableCell>{resource.name}</TableCell> : null}
-                  {selectedColumns.includes('date') ? <TableCell>{resource.date}</TableCell> : null}
-                  {selectedColumns.includes('time to read') ? <TableCell>{resource.time}</TableCell> : null}
-                  {selectedColumns.includes('difficulty') ? <TableCell>{resource.difficulty}</TableCell> : null}
-                  {selectedColumns.includes('price') ? <TableCell>{resource.price}</TableCell> : null}
+                  {searchParams.columns.includes('name') ? <TableCell>{resource.name}</TableCell> : null}
+                  {searchParams.columns.includes('tags') && resource.tags !== undefined ? (
+                    <TableCell>
+                      {resource.tags.map((tag) => {
+                        return <p key={tag.id}>{tag.name}</p>;
+                      })}
+                    </TableCell>
+                  ) : null}
+                  {searchParams.columns.includes('authors') && resource.authors !== undefined ? (
+                    <TableCell>
+                      {resource.authors.map((author) => {
+                        return <p key={author.id}>{author.name}</p>;
+                      })}
+                    </TableCell>
+                  ) : null}
+                  {searchParams.columns.includes('date') ? <TableCell>{resource.date}</TableCell> : null}
+                  {searchParams.columns.includes('time to read') ? <TableCell>{resource.time}</TableCell> : null}
+                  {searchParams.columns.includes('difficulty') ? <TableCell>{resource.difficulty}</TableCell> : null}
+                  {searchParams.columns.includes('price') ? <TableCell>{resource.price}</TableCell> : null}
 
                   <TableCell>
                     <DropdownMenu>
@@ -64,7 +77,11 @@ const ResourceTable = ({ resources, selectedColumns }: IProps) => {
                       <DropdownMenuContent align="end" className="bg-indigo-900 border rounded-md">
                         <DropdownMenuItem
                           className="text-base"
-                          onClick={() => (resource.url !== null ? navigator.clipboard.writeText(resource.url) : null)}
+                          onClick={() =>
+                            resource.url !== null && resource.url !== undefined
+                              ? navigator.clipboard.writeText(resource.url)
+                              : null
+                          }
                         >
                           Copy resource url
                         </DropdownMenuItem>

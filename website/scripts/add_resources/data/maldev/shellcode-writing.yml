@@ -1,0 +1,23 @@
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Implant Design"
+    - "Shellcode writing"
+  Url: "https://steve-s.gitbook.io/0xtriboulet/just-malicious/from-c-with-inline-assembly-to-shellcode"
+  Authors:
+    - 0xTriboulet
+  Name: "From C, with inline assembly, to shellcode"
+  Difficulty: 3
+  Date: "2023-08-11"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Implant Design"
+    - "Shellcode writing"
+  Url: "https://5pider.net/blog/2024/01/27/modern-shellcode-implant-design/"
+  Authors:
+    - 5pider
+  Name: "Modern implant design: position independent malware development"
+  Difficulty: 3
+  Time: 20
+  Date: "2024-01-27"

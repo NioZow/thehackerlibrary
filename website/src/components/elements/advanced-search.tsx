@@ -1,5 +1,11 @@
-import React from 'react';
+'use client';
 
+import React from 'react';
+import { useState } from 'react';
+
+import { useRouter } from 'next/navigation';
+
+import { arrayToCommaSeparated } from '@/src/utils/array';
 import { Button } from '@/ui/button';
 import {
   Dialog,
@@ -78,14 +84,39 @@ const PopoverDate = () => {
 };
 
 export const AdvancedSearch = ({ difficulty }: IProps) => {
+  const router = useRouter();
+  const sp = new URLSearchParams();
+
+  const [filter, setFilter] = useState('');
+  const [open, setOpen] = useState(false);
+  const [previousOpen, setPreviousOpen] = useState(false);
+
   return (
-    <Dialog>
+    <Dialog
+      open={open}
+      onOpenChange={() => {
+        if (!previousOpen) {
+          setPreviousOpen(true);
+          setOpen(true);
+        } else {
+          setPreviousOpen(false);
+        }
+      }}
+    >
       <DialogTrigger asChild>
         <Button className="hover:bg-indigo-900">
           <GearIcon /> &nbsp; Advanced Search
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px] bg-indigo-950">
+      <DialogContent
+        className="sm:max-w-[425px] bg-indigo-950"
+        onInteractOutside={() => {
+          setOpen(false);
+        }}
+        onEscapeKeyDown={() => {
+          setOpen(false);
+        }}
+      >
         <DialogHeader>
           <DialogTitle>Advanced Search</DialogTitle>
           <DialogDescription className="text-white">Make advanced searches...</DialogDescription>
@@ -93,7 +124,13 @@ export const AdvancedSearch = ({ difficulty }: IProps) => {
         <div className="grid gap-4 py-4">
           <div className="grid grid-cols-4 items-center gap-4">
             <Label className="text-right">Search</Label>
-            <Input defaultValue="" className="col-span-3 bg-indigo-950 w-[200px] bg-neutral-900 hover:bg-indigo-900" />
+            <Input
+              className="col-span-3 bg-indigo-950 w-[200px] bg-neutral-900 hover:bg-indigo-900"
+              value={filter}
+              onChange={(event) => {
+                setFilter(event.target.value);
+              }}
+            />
           </div>
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="Price" className="text-right">
@@ -122,7 +159,17 @@ export const AdvancedSearch = ({ difficulty }: IProps) => {
           </div>
         </div>
         <DialogFooter>
-          <Button className="hover:bg-indigo-900 border">Save changes</Button>
+          <Button
+            className="hover:bg-indigo-900 border"
+            onClick={() => {
+              sp.append('difficulty', arrayToCommaSeparated(difficulty.currentElements));
+              filter !== '' ? sp.append('where', filter) : null;
+              router.push(`/?${sp.toString()}`);
+              setOpen(false);
+            }}
+          >
+            Save changes
+          </Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

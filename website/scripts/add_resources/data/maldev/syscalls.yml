@@ -1,0 +1,22 @@
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Syscalls"
+  Url: "https://alice.climent-pommeret.red/posts/a-syscall-journey-in-the-windows-kernel/"
+  Authors:
+    - "Alice Climent-Pommeret"
+  Name: "A Syscall Journey in the Windows Kernel"
+  Difficulty: 3
+  Date: "2022-03-24"
+  Time: 26
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Syscalls"
+  Url: "https://alice.climent-pommeret.red/posts/direct-syscalls-hells-halos-syswhispers2/"
+  Authors:
+    - "Alice Climent-Pommeret"
+  Name: "EDR Bypass : Retrieving Syscall ID with Hell's Gate, Halo's Gate, FreshyCalls and Syswhispers2"
+  Difficulty: 3
+  Date: "2022-01-29"
+  Time: 20

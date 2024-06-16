@@ -1,0 +1,9 @@
+- Type: "blogpost"
+  Tags:
+    - "Hardware"
+    - "Bitlocker"
+  Url: "https://www.errno.fr/BypassingBitlocker"
+  Authors:
+    - "Guillaume Quéré"
+  Name: "Bypassing Bitlocker using a cheap logic analyzer on a Lenovo laptop"
+  Difficulty: 2

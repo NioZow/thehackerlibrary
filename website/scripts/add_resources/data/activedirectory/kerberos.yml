@@ -1,0 +1,123 @@
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos Delegation"
+  Url: "https://www.n00py.io/2023/01/exploiting-resource-based-constrained-delegation-rbcd-with-pure-metasploit/"
+  Authors:
+    - "n00py"
+  Name: "Exploiting Resource Based Constrained Delegation (RBCD) with Pure Metasploit"
+  Difficulty: 2
+  Date: "2023-01-30"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos Delegation"
+    - "RBCD"
+  Url: "https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html"
+  Authors:
+    - "Elad Shamir"
+  Name: "Wagging the Dog: Abusing Resource-Based Constrained Delegation to Attack Active Directory"
+  Difficulty: 2
+  Date: "2019-01-28"
+  Time: 41
+- Type: "video"
+  Tags:
+    - "Active Directory"
+    - "Kerberos Delegation"
+  Url: "https://www.youtube.com/watch?v=7_iv_eaAFyQ"
+  Authors:
+    - "Shutdown"
+  Name: "Déléguer kerberos pour contourner des limitations de la délégation kerberos"
+  Difficulty: 2
+  Date: "2022-08-12"
+  Time: 44
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos Delegation"
+    - "RBCD"
+  Url: "https://exploit.ph/revisiting-delegate-2-thyself.html"
+  Authors:
+    - "Charlie Clark"
+  Name: "Revisiting 'Delegate 2 Thyself'"
+  Difficulty: 2
+  Date: "2020-08-18"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos Delegation"
+    - "RBCD"
+  Url: "https://exploit.ph/delegate-2-thyself.html"
+  Authors:
+    - "Charlie Clark"
+  Name: "Delegate 2 Thyself"
+  Difficulty: 2
+  Date: "2020-03-17"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos Delegation"
+    - "RBCD"
+  Url: "https://blog.harmj0y.net/activedirectory/a-case-study-in-wagging-the-dog-computer-takeover/"
+  Authors:
+    - "Harmj0y"
+  Name: "A Case Study in Wagging the Dog: Computer Takeover"
+  Difficulty: 3
+  Date: "2019-02-28"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos Delegation"
+    - "Constrained Delegation"
+  Url: "https://blog.harmj0y.net/activedirectory/s4u2pwnage/"
+  Authors:
+    - "Harmj0y"
+  Name: "S4U2Pwnage"
+  Difficulty: 2
+  Date: "2017-01-05"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos Delegation"
+  Url: "https://en.hackndo.com/constrained-unconstrained-delegation/"
+  Authors:
+    - "hackndo"
+  Name: "Kerberos Delegation"
+  Difficulty: 2
+  Date: "2020-04-18"
+  Time: 14
+- Type: "video"
+  Tags:
+    - "Active Directory"
+    - "Kerberos"
+    - "Token"
+  Url: "https://www.youtube.com/watch?v=GM1PxZPiLMk"
+  Authors:
+    - "James Forshaw"
+    - "Nick Landers"
+  Name: "Elevating Kerberos to the Next Level"
+  Difficulty: 2
+  Date: "2022-11-17"
+  Time: 40
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos"
+  Url: "https://labs.lares.com/fear-kerberos-pt2/"
+  Authors:
+    - "Raul Redondo"
+  Name: "Kerberos II - Credential Access"
+  Difficulty: 2
+  Date: "2024-03-06"
+  Time: 11
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos"
+  Url: "https://labs.lares.com/fear-kerberos-pt1/"
+  Authors:
+    - "Raul Redondo"
+  Name: "Kerberos I - Overview"
+  Difficulty: 2
+  Date: "2024-03-19"
+  Time: 13

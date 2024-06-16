@@ -1,0 +1,21 @@
+- Type: "blogpost"
+  Tags:
+    - "Misc"
+    - "Identity Provider"
+    - "Okta"
+  Url: "https://trustedsec.com/blog/okta-for-red-teamers"
+  Authors:
+    - "Adam Chester"
+  Name: "Okta for Red Teamers"
+  Difficulty: 2
+  Date: "2023-09-18"
+- Type: "blogpost"
+  Tags:
+    - "Misc"
+    - "Identity Provider"
+  Url: "https://blog.xpnsec.com/identity-providers-redteamers/"
+  Authors:
+    - "xpn"
+  Name: "Identity Providers for RedTeamers"
+  Difficulty: 2
+  Date: "2024-03-18"

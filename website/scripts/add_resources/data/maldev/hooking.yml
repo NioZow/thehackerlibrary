@@ -1,0 +1,22 @@
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Hooking"
+    - "IAT"
+  Url: "https://alice.climent-pommeret.red/posts/how-and-why-to-unhook-the-import-address-table/"
+  Authors:
+    - "Alice Climent-Pommeret"
+  Name: "EDR Bypass : How and Why to Unhook the Import Address Table"
+  Difficulty: 3
+  Date: "2022-05-07"
+  Time: 7
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Hooking"
+  Url: "https://www.unknowncheats.me/forum/general-programming-and-reversing/154643-different-ways-hooking.html"
+  Authors:
+    - "JD96"
+  Name: "The different ways of hooking"
+  Difficulty: 3
+  Date: "13/08/2015"

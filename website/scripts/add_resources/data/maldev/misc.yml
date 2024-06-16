@@ -1,0 +1,27 @@
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+  Url: "https://www.mdsec.co.uk/2021/06/bypassing-image-load-kernel-callbacks/"
+  Authors:
+    - "batsec"
+  Name: "Bypassing Image Load Kernel Callbacks"
+  Difficulty: 2
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+  Url: "https://www.coresecurity.com/core-labs/articles/running-pes-inline-without-console"
+  Authors:
+    - "Santiago Pecin"
+  Name: "Running PEs Inline Without a Console"
+  Difficulty: 3
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "CFG"
+    - "Misc"
+  Url: "https://ynwarcs.github.io/Win11-24H2-CFG"
+  Authors:
+    - "ynwarcs"
+  Name: "CFG in Windows 11 24H2"
+  Difficulty: 2
+  Date: "2024-05-02"

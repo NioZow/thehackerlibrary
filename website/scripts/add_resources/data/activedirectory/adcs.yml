@@ -1,0 +1,100 @@
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "ADCS"
+  Url: "https://posts.specterops.io/certified-pre-owned-d95910965cd2"
+  Authors:
+    - "Will Schroeder"
+    - "Lee Christensen"
+  Name: "Certified Pre-Owned"
+  Difficulty: 2
+  Date: "2021-06-17"
+  Time: 22
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "ADCS"
+  Url: "https://posts.specterops.io/certificates-and-pwnage-and-patches-oh-my-8ae0f4304c1d"
+  Authors:
+    - "Will Schroeder"
+    - "Lee Christensen"
+  Name: "Certificates and Pwnage and Patches, Oh My!"
+  Difficulty: 2
+  Date: "2022-11-09"
+  Time: 16
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "ADCS"
+  Url: "https://research.ifcr.dk/certipy-4-0-esc9-esc10-bloodhound-gui-new-authentication-and-request-methods-and-more-7237d88061f7"
+  Authors:
+    - "Oliver Lyak"
+  Name: "Certipy 4.0: ESC9 & ESC10, BloodHound GUI, New Authentication and Request Methods — and more!"
+  Difficulty: 2
+  Date: "2023-01-30"
+  Time: 20
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Groups"
+    - "ADCS"
+  Url: "https://decoder.cloud/2024/02/26/hello-im-your-adcs-server-and-i-want-to-authenticate-against-you/"
+  Authors:
+    - "Decoder"
+  Name: "Hello: I'm your ADCS server and I want to authenticate against you"
+  Difficulty: 2
+  Date: "2024-02-26"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Groups"
+    - "ADCS"
+  Url: "https://decoder.cloud/2023/11/20/a-deep-dive-in-cert-publishers-group/"
+  Authors:
+    - "Decoder"
+  Name: 'A "deep dive" in Cert Publishers Group'
+  Difficulty: 2
+  Date: "2023-11-20"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "ADCS"
+  Url: "https://posts.specterops.io/from-da-to-ea-with-esc5-f9f045aa105c"
+  Authors:
+    - "Andy Robins"
+  Name: "From DA to EA with ESC5"
+  Difficulty: 2
+  Date: "2023-05-16"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "ADCS"
+  Url: "https://posts.specterops.io/adcs-esc13-abuse-technique-fda4272fbd53"
+  Authors:
+    - "Jonas Dulow Knudsen"
+  Name: "ADCS ESC13 Abuse Technique"
+  Difficulty: 2
+  Date: "2024-02-14"
+  Time: 13
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "ADCS"
+  Url: "https://posts.specterops.io/adcs-esc14-abuse-technique-333a004dc2b9"
+  Authors:
+    - "Jonas Dulow Knudsen"
+  Name: "ADCS ESC14 Abuse Technique"
+  Difficulty: 2
+  Date: "2024-02-28"
+  Time: 31
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "ADCS"
+    - "PKINIT"
+  Url: "https://nickvourd.github.io/what-if-no-pkinit-still-the-same-fun/"
+  Authors:
+    - "Nickvourd"
+  Name: "What if no PKINIT? Still the same fun!"
+  Difficulty: 2
+  Date: "2024-05-18"

@@ -1,0 +1,10 @@
+- Type: "blogpost"
+  Tags:
+    - "Windows"
+    - "Sudo"
+  Url: "https://www.tiraniddo.dev/2024/02/sudo-on-windows-quick-rundown.html"
+  Authors:
+    - "Tiraniddo"
+  Name: "Sudo On Windows a Quick Rundown"
+  Difficulty: 2
+  Date: "2024-02-09"

@@ -59,17 +59,6 @@
     - "Malware Development"
     - "Driver Development"
     - "Rootkit"
-  Url: "https://idov31.github.io/posts/lord-of-the-ring0-p1"
-  Authors:
-    - "Ido Veltzman"
-  Name: "Lord Of The Ring0 - Part 1 | Introduction"
-  Difficulty: 3
-  Date: "2022-07-14"
-- Type: "blogpost"
-  Tags:
-    - "Malware Development"
-    - "Driver Development"
-    - "Rootkit"
   Url: "https://idov31.github.io/posts/lord-of-the-ring0-p2"
   Authors:
     - "Ido Veltzman"

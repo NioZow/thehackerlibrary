@@ -1,0 +1,8 @@
+- Type: "blogpost"
+  Tags:
+    - "AWS"
+  Url: "https://github.com/swisskyrepo/InternalAllTheThings/tree/main/docs/cloud/aws"
+  Authors:
+    - "InternalAllTheThings"
+  Name: "AWS Cheat-Sheet"
+  Difficulty: 2

@@ -1,19 +1,29 @@
-import { SetStateAction, Dispatch, useState } from 'react';
+'use client';
+
+import { useState } from 'react';
+
+import { useRouter } from 'next/navigation';
+
+import { newParams } from '@/src/utils/params';
 
 import AdvancedSearch from '@/element/advanced-search';
 import { DropdownMenuMultiple, DropdownMenuSingle } from '@/element/dropdown-menu';
 
+import { saveData } from '@/util/localstorage';
+
 import { Column, difficulties, Difficulty, Status, status, Tag, tags } from '@/constant/types';
+import { SearchParams } from '@/constant/types';
 
 interface IProps {
-  columns: {
-    columns: Column[];
-    currentColumns: Column[];
-    setColumns: Dispatch<SetStateAction<Column[]>>;
-  };
+  searchParams: SearchParams;
 }
 
-const ResourceFilter = ({ columns }: IProps) => {
+const ResourceFilter = ({ searchParams }: IProps) => {
+  const router = useRouter();
+
+  const columns: Column[] = ['name', 'tags', 'price', 'authors', 'time to read', 'date', 'difficulty'];
+  const [currentColumns, setColumns] = useState<Column[]>(searchParams.columns);
+
   const [currentStatus, setCurrentStatus] = useState<Status>('both');
   const [currentDifficulties, setCurrentDifficulties] = useState<Difficulty[]>(difficulties);
   const [currentTags, setCurrentTags] = useState<Tag[]>([]);
@@ -38,11 +48,17 @@ const ResourceFilter = ({ columns }: IProps) => {
         />
 
         <DropdownMenuMultiple
-          elements={columns.columns}
-          currentElements={columns.currentColumns}
-          setCurrentElements={columns.setColumns}
+          elements={columns}
+          currentElements={currentColumns}
+          setCurrentElements={setColumns}
           buttonName="columns"
           className="w-[180px] hover:bg-indigo-900"
+          onCloseCallback={(items: Column[]) => {
+            searchParams.columns = items;
+            const sp = newParams(searchParams);
+            saveData('columns', items);
+            router.push(`/?${sp.toString()}`);
+          }}
         />
 
         <AdvancedSearch

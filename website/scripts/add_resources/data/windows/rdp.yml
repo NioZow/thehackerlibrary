@@ -1,0 +1,29 @@
+- Type: "blogpost"
+  Tags:
+    - "Windows"
+    - "RDP"
+  Url: "https://gosecure.ai/blog/2023/04/26/never-connect-to-rdp-servers-over-untrusted-networks/"
+  Authors:
+    - "Olivier Bilodeau"
+  Name: "Never Connect to RDP Servers Over Untrusted Networks"
+  Difficulty: 2
+  Date: "2023-04-26"
+- Type: "blogpost"
+  Tags:
+    - "Windows"
+    - "RDP"
+  Url: "https://gosecure.ai/blog/2022/01/17/capturing-rdp-netntlmv2-hashes-attack-details-and-a-technical-how-to-guide/"
+  Authors:
+    - "Lisandro Ubiedo"
+  Name: "Capturing RDP NetNTLMv2 Hashes: Attack details and a Technical How-To Guide"
+  Difficulty: 2
+  Date: "2022-01-17"
+- Type: "blogpost"
+  Tags:
+    - "Windows"
+    - "RDP"
+  Url: "https://red.c3r3br4t3.com/red-team-operations/lateral-movement/shadowrdp"
+  Authors:
+    - "c3r3br4t3"
+  Name: "ShadowRDP"
+  Difficulty: 2

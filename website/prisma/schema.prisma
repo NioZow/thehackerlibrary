@@ -7,51 +7,36 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model authors {
-  id           Int            @id @default(autoincrement())
-  name         String?        @unique(map: "name") @db.VarChar(30)
-  authors_link authors_link[] @ignore
+enum Difficulty {
+  easy
+  medium
+  hard
+  insane
 }
 
-/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
-model authors_link {
+model authors {
   id          Int        @id @default(autoincrement())
-  author_id   Int?
-  resource_id Int?
-  authors     authors?   @relation(fields: [author_id], references: [id], onDelete: Restrict, onUpdate: Restrict, map: "authors_link_ibfk_1")
-  resources   resources? @relation(fields: [resource_id], references: [id], onDelete: Restrict, onUpdate: Restrict, map: "authors_link_ibfk_2")
-
-  @@index([author_id], map: "author_id")
-  @@index([resource_id], map: "resource_id")
+  name        String     @db.VarChar(30)
+  resources   resources? @relation(fields: [resourcesId], references: [id])
+  resourcesId Int?
 }
 
 model resources {
-  id           Int            @id @default(autoincrement())
-  type         String?        @db.VarChar(10)
-  name         String?        @db.VarChar(150)
-  date         String?        @db.VarChar(11)
-  url          String?        @unique(map: "url") @db.VarChar(150)
-  price        Int?           @db.SmallInt
-  difficulty   Int?           @db.TinyInt
-  time         Int?           @db.SmallInt
-  authors_link authors_link[] @ignore
-  tags_link    tags_link[]    @ignore
+  id         Int         @id @default(autoincrement())
+  type       String?     @db.VarChar(15)
+  name       String?     @db.VarChar(150)
+  date       String?     @db.VarChar(11)
+  url        String?     @unique(map: "url") @db.VarChar(150)
+  price      Int?        @db.SmallInt
+  difficulty Difficulty?
+  time       Int?        @db.SmallInt
+  authors    authors[]
+  tags       tags[]
 }
 
 model tags {
-  id        Int         @id @default(autoincrement())
-  name      String?     @unique(map: "name") @db.VarChar(40)
-  tags_link tags_link[] @ignore
-}
-
-/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
-model tags_link {
   id          Int        @id @default(autoincrement())
-  tag_id      Int?
-  resource_id Int?
-  tags        tags?      @relation(fields: [tag_id], references: [id], onDelete: Restrict, onUpdate: Restrict, map: "tags_link_ibfk_1")
-  resources   resources? @relation(fields: [resource_id], references: [id], onDelete: Restrict, onUpdate: Restrict, map: "tags_link_ibfk_2")
-
-  @@index([resource_id], map: "resource_id")
-  @@index([tag_id], map: "tag_id")
+  name        String?    @db.VarChar(40)
+  resources   resources? @relation(fields: [resourcesId], references: [id])
+  resourcesId Int?
 }

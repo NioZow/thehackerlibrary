@@ -1,0 +1,69 @@
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Stack Spoofing"
+  Url: "https://dtsec.us/2023-09-15-StackSpoofin/"
+  Authors:
+    - "Nigerald"
+  Name: "An Introduction into Stack Spoofing"
+  Difficulty: 3
+  Date: "2023-09-15"
+  Time: 20
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Stack Spoofing"
+  Url: "https://dtsec.us/2023-04-24-Sleep/"
+  Authors:
+    - "Nigerald"
+  Name: "An Introduction into Sleep Obfuscation"
+  Difficulty: 3
+  Date: "2023-04-24"
+  Time: 15
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Stack Spoofing"
+    - "Memory Encryption"
+    - "Module Stomping"
+  Url: "https://labs.cognisys.group/posts/Advanced-Module-Stomping-and-Heap-Stack-Encryption/"
+  Authors:
+    - "Cognisys Lab"
+  Name: "Advanced Module Stomping & Heap/Stack Encryption"
+  Difficulty: 3
+  Date: "2023-06-25"
+  Time: 19
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Stack Spoofing"
+  Url: "https://klezvirus.github.io/RedTeaming/AV_Evasion/StackSpoofing/"
+  Authors:
+    - "waldo-irc"
+    - "trickster0"
+    - "klezVirus"
+  Name: "SilentMoonwalk: Implementing a dynamic Call Stack Spoofer"
+  Difficulty: 3
+  Date: "2022-12-08"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Memory Encryption"
+  Url: "https://pre.empt.blog/2022/protecting-the-heap-encryption-and-hooks"
+  Authors:
+    - "Mez0"
+    - "Michael Ranaldo"
+  Name: "Protecting the Heap: Encryption & Hooks"
+  Difficulty: 3
+  Date: "2022"
+- Type: "video"
+  Tags:
+    - "Malware Development"
+    - "Stack Spoofing"
+  Url: "https://www.youtube.com/watch?v=dl-AuN2xsbg"
+  Authors:
+    - "klezVirus"
+  Name: "11. Demystifying Thread Call Stack Spoofing by Alessandro Magnosi"
+  Difficulty: 2
+  Date: "2023-08-21"
+  Time: 39

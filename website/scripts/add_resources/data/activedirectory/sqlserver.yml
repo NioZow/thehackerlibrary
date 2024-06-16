@@ -1,0 +1,21 @@
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "MSSQL"
+  Url: "https://www.tarlogic.com/blog/linked-servers-adsi-passwords/"
+  Authors:
+    - "Pablo Martínez"
+  Name: "MSSQL linked servers: abusing ADSI for password retrieval"
+  Difficulty: 2
+  Date: "2023-06-07"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "MSSQL"
+  Url: "https://securityintelligence.com/x-force/databases-beware-abusing-microsoft-sql-server-with-sqlrecon/"
+  Authors:
+    - "Sanjiv Kawa"
+  Name: "Databases beware: Abusing Microsoft SQL Server with SQLRecon"
+  Difficulty: 2
+  Date: "2023-08-07"
+  Time: 20

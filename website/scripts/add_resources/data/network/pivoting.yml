@@ -1,0 +1,10 @@
+- Type: "blogpost"
+  Tags:
+    - "Network"
+    - "Pivoting"
+  Url: "https://s3cur3th1ssh1t.github.io/On-how-to-access-protected-networks/"
+  Authors:
+    - "S3cur3Th1sSht1t"
+  Name: "On how to access (protected) networks"
+  Difficulty: 2
+  Date: "2021-06-09"

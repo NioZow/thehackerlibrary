@@ -1,0 +1,9 @@
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "C2"
+  Url: "https://pre.empt.blog/2023/maelstrom-1-an-introduction"
+  Authors:
+    - "pre.empt"
+  Name: "Maelstrom #1: An Introduction"
+  Difficulty: 2

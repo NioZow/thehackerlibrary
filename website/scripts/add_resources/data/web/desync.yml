@@ -1,0 +1,20 @@
+- Type: "blogpost"
+  Tags:
+    - "Web"
+    - "Desync"
+  Url: "https://portswigger.net/research/trace-desync-attack"
+  Authors:
+    - "Martin Doyhenard"
+  Name: "Making desync attacks easy with TRACE"
+  Difficulty: 3
+  Date: "2024-03-19"
+- Type: "blogpost"
+  Tags:
+    - "Web"
+    - "Desync"
+  Url: "https://mizu.re/post/abusing-client-side-desync-on-werkzeug"
+  Authors:
+    - "Mizu"
+  Name: "Abusing Client-Side Desync on Werkzeug"
+  Difficulty: 3
+  Date: "2023-06-07"

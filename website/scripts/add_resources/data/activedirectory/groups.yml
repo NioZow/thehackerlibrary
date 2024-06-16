@@ -1,0 +1,58 @@
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Groups"
+  Url: "https://www.whiteoaksecurity.com/blog/account-operators-privilege-escalation/"
+  Authors:
+    - "Talis Ozols"
+  Name: "Account Operators Privilege Escalation"
+  Difficulty: 2
+  Date: "2022-12-15"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+  Url: "https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse/from-dnsadmins-to-system-to-domain-compromise"
+  Authors:
+    - "iredteam"
+  Name: "From DnsAdmins to SYSTEM to Domain Compromise"
+  Difficulty: 2
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Groups"
+  Url: "https://cube0x0.github.io/Pocing-Beyond-DA/"
+  Authors:
+    - "cube0x0"
+  Name: "Poc'ing Beyond Domain Admin - Part 1"
+  Difficulty: 2
+  Time: 6
+- Type: "video"
+  Tags:
+    - "Active Directory"
+    - "Groups"
+  Url: "https://www.youtube.com/watch?v=YaDBUfCQXW4"
+  Authors:
+    - "David Mayer"
+  Name: "The Backup Operators Guide To The Galaxy"
+  Difficulty: 2
+  Date: "2019-12-26"
+  Time: 39
+- Type: "repository"
+  Tags:
+    - "Active Directory"
+    - "Groups"
+  Url: "https://github.com/mpgn/BackupOperatorToDA"
+  Authors:
+    - "mpgn"
+  Name: "From Backup Operator To Domain Admin"
+  Difficulty: 2
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Groups"
+  Url: "https://www.akamai.com/blog/security-research/2024/feb/abusing-dhcp-administrators-group-for-privilege-escalation-in-windows-domains"
+  Authors:
+    - "Ori David"
+  Name: "Abusing the DHCP Administrators Group to Escalate Privileges in Windows Domains"
+  Difficulty: 2
+  Date: "2024-03-20"
