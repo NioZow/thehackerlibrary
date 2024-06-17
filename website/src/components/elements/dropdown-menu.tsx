@@ -8,23 +8,25 @@ import { ChevronDownIcon, DotIcon } from '@radix-ui/react-icons';
 
 import { cn } from '@/util/style.util';
 
+export type DropdownItem<T> = { label: string; value: T };
+
 export interface IPropsSingle<T> {
-  elements: T[];
-  currentElement: T;
-  setCurrentElement: React.Dispatch<React.SetStateAction<T>>;
+  elements: DropdownItem<T>[];
+  currentElement: DropdownItem<T>;
+  setCurrentElement: React.Dispatch<React.SetStateAction<DropdownItem<T>>>;
   buttonName: string;
   className?: string;
   border?: boolean;
 }
 
 export interface IPropsMultiple<T> {
-  elements: T[];
-  currentElements: T[];
-  setCurrentElements: React.Dispatch<React.SetStateAction<T[]>>;
+  elements: DropdownItem<T>[];
+  currentElements: DropdownItem<T>[];
+  setCurrentElements: React.Dispatch<React.SetStateAction<DropdownItem<T>[]>>;
   buttonName: string;
   className?: string;
   border?: boolean;
-  onCloseCallback?: (items: T[]) => void;
+  onCloseCallback?: (items: { label: string; value: T }[]) => void;
 }
 
 export function DropdownMenuSingle<T>({
@@ -56,9 +58,9 @@ export function DropdownMenuSingle<T>({
     >
       <DropdownMenuTrigger asChild>
         <Button className={cn('w-[200px] hover:bg-indigo-900', border ? 'border' : null)}>
-          {(buttonName as string).toUpperCase()}
+          {buttonName.toUpperCase()}
           <DotIcon className="ml-2 h-4 w-4" />
-          {(currentElement as string).toUpperCase()}
+          {currentElement.label.toUpperCase()}
           <ChevronDownIcon className="ml-2 h-4 w-4" />
         </Button>
       </DropdownMenuTrigger>
@@ -72,18 +74,18 @@ export function DropdownMenuSingle<T>({
         }}
         className="bg-indigo-900"
       >
-        {elements.map((value) => {
+        {elements.map((element) => {
           return (
             <DropdownMenuCheckboxItem
-              checked={value === currentElement}
-              key={value as string}
+              checked={element.value === currentElement.value}
+              key={element.value as string}
               onCheckedChange={() => {
-                setCurrentElement(value);
+                setCurrentElement(element);
                 setItemClicked(true);
               }}
               className={cn('text-white', className)}
             >
-              {(value as string).toUpperCase()}
+              {element.label.toUpperCase()}
             </DropdownMenuCheckboxItem>
           );
         })}
@@ -141,25 +143,22 @@ export function DropdownMenuMultiple<T>({
           }}
           className="bg-indigo-900"
         >
-          {elements.map((value) => {
+          {elements.map((element) => {
+            const isChecked = currentElements.findIndex(({ value }) => value === element.value) !== -1;
+
             return (
               <DropdownMenuCheckboxItem
-                checked={currentElements.includes(value)}
-                key={value as string}
+                checked={isChecked}
+                key={element.value as string}
                 onCheckedChange={() => {
-                  if (currentElements.includes(value)) {
-                    setCurrentElements((prevState) => prevState.filter((d) => d !== value));
-                  } else {
-                    setCurrentElements((prevState) => {
-                      return [...prevState, value];
-                    });
-                  }
+                  if (isChecked) setCurrentElements((prevState) => prevState.filter((d) => d.value !== element.value));
+                  else setCurrentElements((prevState) => [...prevState, element]);
 
                   setItemClicked(true);
                 }}
                 className={cn('text-white', className)}
               >
-                {(value as string).toUpperCase()}
+                {element.label.toUpperCase()}
               </DropdownMenuCheckboxItem>
             );
           })}

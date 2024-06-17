@@ -1,16 +1,6 @@
-export type Column = '' | 'name' | 'tags' | 'price' | 'authors' | 'time to read' | 'date' | 'difficulty' | 'actions';
+//export type ColumnUi = '' | 'name' | 'tags' | 'price' | 'authors' | 'time to read' | 'date' | 'difficulty' | 'actions';
 
-export const columns: Column[] = [
-  '',
-  'name',
-  'tags',
-  'authors',
-  'date',
-  'time to read',
-  'difficulty',
-  'price',
-  'actions',
-];
+export type Column = 'name' | 'tags' | 'price' | 'authors' | 'time' | 'date' | 'difficulty';
 
 export type Status = 'both' | 'complete' | 'uncomplete';
 
@@ -21,8 +11,6 @@ export type Difficulty = 'easy' | 'medium' | 'hard' | 'insane';
 export const difficulties: Difficulty[] = ['easy', 'medium', 'hard', 'insane'];
 
 export type Tag = 'bookmark' | 'favorite';
-
-export const tags: Tag[] = ['bookmark', 'favorite'];
 
 export const DifficultyColor: Record<Difficulty, string> = {
   easy: 'green',
@@ -67,4 +55,5 @@ export interface SearchParams {
   difficulty: Difficulty[];
   where: string | null;
   reload: boolean;
+  page: number;
 }

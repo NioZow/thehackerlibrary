@@ -1,31 +1,61 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { useRouter } from 'next/navigation';
 
 import { newParams } from '@/src/utils/params';
 
 import AdvancedSearch from '@/element/advanced-search';
-import { DropdownMenuMultiple, DropdownMenuSingle } from '@/element/dropdown-menu';
+import { DropdownMenuMultiple, DropdownMenuSingle, DropdownItem } from '@/element/dropdown-menu';
 
 import { saveData } from '@/util/localstorage';
 
-import { Column, Status, status, Tag, tags } from '@/constant/types';
+import { Column, Status, Tag } from '@/constant/types';
 import { SearchParams } from '@/constant/types';
 
 interface IProps {
   searchParams: SearchParams;
 }
 
+type ColumnDropdownItem = DropdownItem<Column>;
+
+const columns: ColumnDropdownItem[] = [
+  { label: 'name', value: 'name' },
+  { label: 'tags', value: 'tags' },
+  { label: 'price', value: 'price' },
+  { label: 'authors', value: 'authors' },
+  { label: 'time to read', value: 'time' },
+  { label: 'date', value: 'date' },
+  { label: 'difficulty', value: 'difficulty' },
+];
+
+type TagDropdownItem = DropdownItem<Tag>;
+
+export const tags: TagDropdownItem[] = [
+  { label: 'bookmark', value: 'bookmark' },
+  { label: 'favorite', value: 'bookmark' },
+];
+
+type StatusDropdownItem = DropdownItem<Status>;
+
+export const status: StatusDropdownItem[] = [
+  { label: 'both', value: 'both' },
+  { label: 'complete', value: 'complete' },
+  { label: 'uncomplete', value: 'uncomplete' },
+];
+
 const ResourceFilter = ({ searchParams }: IProps) => {
   const router = useRouter();
 
-  const columns: Column[] = ['name', 'tags', 'price', 'authors', 'time to read', 'date', 'difficulty'];
-  const [currentColumns, setColumns] = useState<Column[]>(searchParams.columns);
+  const [currentColumns, setColumns] = useState<ColumnDropdownItem[]>([]);
 
-  const [currentStatus, setCurrentStatus] = useState<Status>('both');
-  const [currentTags, setCurrentTags] = useState<Tag[]>([]);
+  useEffect(() => {
+    setColumns(columns.filter(({ value }) => searchParams.columns.includes(value)));
+  }, [searchParams]);
+
+  const [currentStatus, setCurrentStatus] = useState<StatusDropdownItem>(status[0]);
+  const [currentTags, setCurrentTags] = useState<TagDropdownItem[]>([]);
 
   return (
     <>
@@ -52,12 +82,13 @@ const ResourceFilter = ({ searchParams }: IProps) => {
           setCurrentElements={setColumns}
           buttonName="columns"
           className="w-[180px] hover:bg-indigo-900"
-          onCloseCallback={(items: Column[]) => {
-            searchParams.columns = items;
+          onCloseCallback={(items: ColumnDropdownItem[]) => {
+            const columns = items.map(({ value }) => value);
+            searchParams.columns = columns;
 
-            const sp = newParams(searchParams);
+            const sp = newParams(searchParams, false);
 
-            saveData('columns', items);
+            saveData('columns', columns);
             router.push(`/?${sp.toString()}`);
           }}
         />

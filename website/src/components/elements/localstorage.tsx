@@ -15,7 +15,7 @@ interface IProps {
 }
 
 const DumpLocalStorage = ({ searchParams }: IProps) => {
-  const columns: Column[] = ['name', 'tags', 'price', 'authors', 'time to read', 'date', 'difficulty'];
+  const columns: Column[] = ['name', 'tags', 'price', 'authors', 'time', 'date', 'difficulty'];
   const router = useRouter();
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const DumpLocalStorage = ({ searchParams }: IProps) => {
       searchParams.columns = tmpColumns.length != 0 ? tmpColumns : columns;
       searchParams.reload = false;
 
-      const sp = newParams(searchParams);
+      const sp = newParams(searchParams, false);
       router.push(`/?${sp.toString()}`);
     }
   }, []);

@@ -1,5 +1,15 @@
-import { IconBug, IconCloud, IconBrandWindows, IconBrandAzure, IconBrandAws } from '@tabler/icons-react';
-import { Globe, Cpu, Check, Bookmark, Tv, Book, ShieldOff, Brain, Github } from 'lucide-react';
+import {
+  IconBug,
+  IconCloud,
+  IconBrandWindows,
+  IconBrandAzure,
+  IconBrandAws,
+  IconAccessPoint,
+  IconWorldWww,
+} from '@tabler/icons-react';
+import { Cpu, Check, Bookmark, Tv, Book, ShieldOff, Brain, Github } from 'lucide-react';
+
+import { isDefined } from '@/util/array';
 
 import { TagResource } from '@/constant/types';
 
@@ -31,7 +41,7 @@ export const NoIcon = () => {
 export const WebIcon = () => {
   return (
     <div title="Web">
-      <Globe color="#0099E6" className="mr-2 h-4 w-4" size={SIZE} />
+      <IconWorldWww color="#0099E6" className="mr-2 h-4 w-4" size={SIZE} />
     </div>
   );
 };
@@ -55,7 +65,7 @@ export const GcpIcon = () => {
 export const AzureIcon = () => {
   return (
     <div title="Azure">
-      <IconBrandAzure color="white" className="mr-2 h-4 w-4" size={SIZE} />
+      <IconBrandAzure color="#0099E6" className="mr-2 h-4 w-4" size={SIZE} />
     </div>
   );
 };
@@ -80,6 +90,14 @@ export const MalwareDeveloppmentIcon = () => {
   return (
     <div title="Malware Development">
       <IconBug color="red" className="mr-2 h-4 w-4" size={SIZE} />
+    </div>
+  );
+};
+
+export const WifiIcon = () => {
+  return (
+    <div title="Wifi">
+      <IconAccessPoint color="red" className="mr-2 h-4 w-4" size={SIZE} />
     </div>
   );
 };
@@ -144,32 +162,37 @@ interface IProps {
   tags: TagResource[] | undefined;
 }
 
+const getIconFromName = (name?: string | null) => {
+  switch (name) {
+    case 'Malware Development':
+      return MalwareDeveloppmentIcon;
+    case 'Wifi':
+      return WifiIcon;
+    case 'Active Directory':
+      return ActiveDirectoryIcon;
+    case 'Web':
+      return WebIcon;
+    case 'Entra ID':
+      return AzureIcon;
+    case 'Azure':
+      return AzureIcon;
+    case 'AWS':
+      return AWSIcon;
+    case 'GCP':
+      return GcpIcon;
+    case 'Initial Access':
+      return InitialAccessIcon;
+    case 'Hardware':
+      return HardwareIcon;
+  }
+};
+
 export const RenderIcons = ({ tags }: IProps): JSX.Element => {
-  const icons: JSX.Element[] = [];
+  const icons =
+    tags
+      ?.map(({ name }) => name)
+      .map(getIconFromName)
+      .filter(isDefined) ?? [];
 
-  tags !== undefined
-    ? tags.map((tag) => {
-        if (tag.name === 'Malware Development') {
-          icons.push(<MalwareDeveloppmentIcon />);
-        } else if (tag.name === 'Active Directory') {
-          icons.push(<ActiveDirectoryIcon />);
-        } else if (tag.name === 'Web') {
-          icons.push(<WebIcon />);
-        } else if (tag.name === 'Entra ID' || tag.name === 'Azure') {
-          icons.push(<AzureIcon />);
-        } else if (tag.name === 'AWS') {
-          icons.push(<AWSIcon />);
-        } else if (tag.name === 'GCP') {
-          icons.push(<GcpIcon />);
-        } else if (tag.name === 'Initial Access') {
-          icons.push(<InitialAccessIcon />);
-        } else if (tag.name === 'Hardware') {
-          icons.push(<HardwareIcon />);
-        }
-      })
-    : null;
-
-  icons.length === 0 ? icons.push(<NoIcon />) : null;
-
-  return <div className="flex">{icons}</div>;
+  return <div className="flex">{icons.length ? icons.map((Icon, i) => <Icon key={i} />) : <NoIcon />}</div>;
 };

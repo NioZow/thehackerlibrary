@@ -21,9 +21,18 @@ import { Label } from '@/ui/label';
 import { Popover, PopoverContent, PopoverTrigger } from '@/ui/popover';
 import { GearIcon } from '@radix-ui/react-icons';
 
-import { DropdownMenuMultiple } from '@/element/dropdown-menu';
+import { DropdownMenuMultiple, DropdownItem } from '@/element/dropdown-menu';
 
-import { Difficulty, SearchParams, difficulties } from '@/constant/types';
+import { Difficulty, SearchParams } from '@/constant/types';
+
+type DifficultyDropdownItem = DropdownItem<Difficulty>;
+
+export const difficulties: DifficultyDropdownItem[] = [
+  { label: 'medium', value: 'medium' },
+  { label: 'hard', value: 'hard' },
+  { label: 'insane', value: 'insane' },
+  { label: 'easy', value: 'easy' },
+];
 
 const PopoverPrice = () => {
   return (
@@ -91,7 +100,9 @@ export const AdvancedSearch = ({ searchParams }: IProps) => {
   const [previousOpen, setPreviousOpen] = useState(false);
 
   const [filter, setFilter] = useState('');
-  const [currentDifficulties, setCurrentDifficulties] = useState<Difficulty[]>(searchParams.difficulty);
+  const [currentDifficulties, setCurrentDifficulties] = useState<DifficultyDropdownItem[]>(
+    difficulties.filter(({ value }) => searchParams.difficulty.includes(value)) ?? [difficulties[0]],
+  );
 
   return (
     <Dialog
@@ -164,10 +175,10 @@ export const AdvancedSearch = ({ searchParams }: IProps) => {
           <Button
             className="hover:bg-indigo-900 border"
             onClick={() => {
-              searchParams.difficulty = currentDifficulties;
+              searchParams.difficulty = currentDifficulties.map(({ value }) => value);
               searchParams.where = filter;
 
-              sp = newParams(searchParams);
+              sp = newParams(searchParams, true);
 
               router.push(`/?${sp.toString()}`);
               setOpen(false);

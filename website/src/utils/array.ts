@@ -17,6 +17,10 @@ export const arrayToCommaSeparated = <T>(array: T[]): string => {
   return str.slice(0, -1);
 };
 
-export const commaSeparatedToArray = <T>(text: string): T[] => {
-  return text.split(',') as T[];
+export const isDefined = <T>(el: T | undefined | null): el is T => {
+  return !!el;
+};
+
+export const commaSeparatedToArray = (text: string): string[] => {
+  return text.split(',');
 };

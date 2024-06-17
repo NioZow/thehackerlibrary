@@ -37,7 +37,7 @@ const HomePage = async ({ searchParams }: IProps) => {
 
         <ResourceFilter searchParams={sp} />
         <ResourceTable resources={resources} searchParams={sp} />
-        <ResourceTableFooter count={count} />
+        <ResourceTableFooter searchParams={sp} count={count} />
       </div>
 
       <Footer />
