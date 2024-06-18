@@ -1,5 +1,3 @@
-//export type ColumnUi = '' | 'name' | 'tags' | 'price' | 'authors' | 'time to read' | 'date' | 'difficulty' | 'actions';
-
 export type Column = 'name' | 'tags' | 'price' | 'authors' | 'time' | 'date' | 'difficulty';
 
 export type Status = 'both' | 'complete' | 'uncomplete';
@@ -35,6 +33,7 @@ export enum EnumDifficulty {
   EASY = 'easy',
   MEDIUM = 'medium',
   HARD = 'hard',
+  INSANE = 'insane',
 }
 
 export interface Resource {
@@ -44,7 +43,7 @@ export interface Resource {
   date?: string | null;
   url?: string | null;
   price?: number | null;
-  difficulty?: EnumDifficulty | null;
+  difficulty?: Difficulty | null;
   time?: number | null;
   authors?: Author[];
   tags?: TagResource[];
@@ -56,4 +55,6 @@ export interface SearchParams {
   where: string | null;
   reload: boolean;
   page: number;
+  ids: number[];
+  status: Status;
 }

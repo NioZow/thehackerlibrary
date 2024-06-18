@@ -24,3 +24,7 @@ export const isDefined = <T>(el: T | undefined | null): el is T => {
 export const commaSeparatedToArray = (text: string): string[] => {
   return text.split(',');
 };
+
+export const Capitalize = (text: string): string => {
+  return text.charAt(0).toUpperCase() + text.slice(1);
+};

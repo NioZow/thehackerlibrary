@@ -17,6 +17,7 @@ export interface IPropsSingle<T> {
   buttonName: string;
   className?: string;
   border?: boolean;
+  onCloseCallback?: (items: { label: string; value: T }) => void;
 }
 
 export interface IPropsMultiple<T> {
@@ -36,6 +37,7 @@ export function DropdownMenuSingle<T>({
   buttonName,
   className,
   border,
+  onCloseCallback,
 }: IPropsSingle<T>) {
   const [openColumn, setColumnOpen] = useState(false);
   const [itemClicked, setItemClicked] = useState(false);
@@ -48,6 +50,7 @@ export function DropdownMenuSingle<T>({
           setItemClicked(false);
         } else {
           if (openColumn) {
+            onCloseCallback !== undefined ? onCloseCallback(currentElement) : null;
             setColumnOpen(false);
           } else {
             setColumnOpen(true);

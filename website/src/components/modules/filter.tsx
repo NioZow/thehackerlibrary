@@ -9,7 +9,7 @@ import { newParams } from '@/src/utils/params';
 import AdvancedSearch from '@/element/advanced-search';
 import { DropdownMenuMultiple, DropdownMenuSingle, DropdownItem } from '@/element/dropdown-menu';
 
-import { saveData } from '@/util/localstorage';
+import { saveData, getData } from '@/util/localstorage';
 
 import { Column, Status, Tag } from '@/constant/types';
 import { SearchParams } from '@/constant/types';
@@ -34,7 +34,7 @@ type TagDropdownItem = DropdownItem<Tag>;
 
 export const tags: TagDropdownItem[] = [
   { label: 'bookmark', value: 'bookmark' },
-  { label: 'favorite', value: 'bookmark' },
+  { label: 'favorite', value: 'favorite' },
 ];
 
 type StatusDropdownItem = DropdownItem<Status>;
@@ -54,7 +54,11 @@ const ResourceFilter = ({ searchParams }: IProps) => {
     setColumns(columns.filter(({ value }) => searchParams.columns.includes(value)));
   }, [searchParams]);
 
-  const [currentStatus, setCurrentStatus] = useState<StatusDropdownItem>(status[0]);
+  const [currentStatus, setCurrentStatus] = useState<StatusDropdownItem>({
+    label: searchParams.status,
+    value: searchParams.status,
+  });
+
   const [currentTags, setCurrentTags] = useState<TagDropdownItem[]>([]);
 
   return (
@@ -74,6 +78,23 @@ const ResourceFilter = ({ searchParams }: IProps) => {
           setCurrentElement={setCurrentStatus}
           buttonName="status"
           className="w-[180px] hover:bg-indigo-900"
+          onCloseCallback={(item: StatusDropdownItem) => {
+            searchParams.status = item.value;
+
+            console.log(searchParams.status);
+
+            if (searchParams.status === 'both') {
+              searchParams.ids = [];
+            } else {
+              searchParams.ids = getData<number>('read');
+            }
+
+            const sp = newParams(searchParams, true);
+            console.log(searchParams, sp);
+
+            window.localStorage.setItem('status', searchParams.status);
+            router.push(`?${sp.toString()}`);
+          }}
         />
 
         <DropdownMenuMultiple

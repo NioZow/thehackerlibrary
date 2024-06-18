@@ -1,9 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { useRouter } from 'next/navigation';
 
+import { getData, saveData } from '@/src/utils/localstorage';
 import { newParams } from '@/src/utils/params';
 import { Button } from '@/ui/button';
 import { Table, TableHead, TableHeader, TableRow, TableBody, TableCell } from '@/ui/table';
@@ -38,6 +39,18 @@ const COLUMNS = [
 ] satisfies { label: string; value: Column }[];
 
 export const ResourceTable = ({ resources, searchParams }: IProps) => {
+  const [read, setRead] = useState<number[]>([]);
+  const [bookmark, setBookmark] = useState<number[]>([]);
+
+  useEffect(() => {
+    setRead(getData<number>('read'));
+    setBookmark(getData<number>('bookmark'));
+  }, []);
+
+  useEffect(() => {
+    saveData<number>('bookmark', bookmark);
+  }, [bookmark]);
+
   return (
     <div className="rounded-md border w-full">
       <Table>
@@ -51,7 +64,6 @@ export const ResourceTable = ({ resources, searchParams }: IProps) => {
                 </TableHead>
               ) : null;
             })}
-
             <TableHead className="text-white">Actions</TableHead>
           </TableRow>
         </TableHeader>
@@ -103,46 +115,61 @@ export const ResourceTable = ({ resources, searchParams }: IProps) => {
                   <TableCell>
                     <DropdownMenu>
                       <DropdownMenuTrigger asChild>
-                        <Button variant="ghost" className="h-8 w-8 p-0">
+                        <Button variant="ghost" className="h-8 w-8 p-0 hover:bg-indigo-900 hover:text-white">
                           <span className="sr-only">Open menu</span>
                           <DotsHorizontalIcon className="h-4 w-4" />
                         </Button>
                       </DropdownMenuTrigger>
-                      <DropdownMenuContent align="end" className="bg-indigo-900 border rounded-md">
+                      <DropdownMenuContent align="end" className="bg-neutral-900 rounded-md border-solid w-[200px]">
                         <DropdownMenuItem
-                          className="text-base"
+                          className="text-base hover:bg-indigo-900 hover:cursor-default"
                           onClick={() =>
                             resource.url !== null && resource.url !== undefined
                               ? navigator.clipboard.writeText(resource.url)
                               : null
                           }
                         >
-                          Copy resource url
+                          Copy url
                         </DropdownMenuItem>
                         <DropdownMenuItem
                           onClick={() => (resource.url !== null ? window.open(resource.url, '_blank') : null)}
-                          className="text-base"
+                          className="text-base hover:bg-indigo-900 hover:cursor-default"
                         >
-                          Open resource in new tab
+                          Open in new tab
                         </DropdownMenuItem>
                         <DropdownMenuSeparator />
                         <DropdownMenuItem
-                          className="text-base"
+                          className="text-base hover:bg-indigo-900 hover:cursor-default"
                           onClick={() => {
-                            //setRead((prevState: Training[]) => [...prevState, training]);
-                            //setRead((prevState: Training[]) =>      prevState.filter((item) => item.Name !== training.Name),);
+                            if (resource.id) {
+                              if (!read.includes(resource.id)) {
+                                setRead([...read, resource.id]);
+                                saveData('read', [...read, resource.id]);
+                              } else {
+                                setRead(read.filter((item) => item !== resource.id));
+                                saveData(
+                                  'read',
+                                  read.filter((item) => item !== resource.id),
+                                );
+                              }
+                            }
                           }}
                         >
-                          Mark as read
+                          {resource.id && !read.includes(resource.id) ? 'Mark as read' : 'Mark as not read'}
                         </DropdownMenuItem>
                         <DropdownMenuItem
-                          className="text-base"
+                          className="text-base hover:bg-indigo-900 hover:cursor-default"
                           onClick={() => {
-                            //setBookmarks((prevState: Training[]) => [...prevState, training]);
-                            //setBookmarks((prevState: Training[]) => prevState.filter((item) => item.Name !== training.Name),);
+                            if (resource.id) {
+                              if (!bookmark.includes(resource.id)) {
+                                setBookmark([...bookmark, resource.id]);
+                              } else {
+                                setBookmark(bookmark.filter((item) => item !== resource.id));
+                              }
+                            }
                           }}
                         >
-                          Bookmark
+                          {resource.id && !bookmark.includes(resource.id) ? 'Bookmark' : 'Remove bookmark'}
                         </DropdownMenuItem>
                       </DropdownMenuContent>
                     </DropdownMenu>

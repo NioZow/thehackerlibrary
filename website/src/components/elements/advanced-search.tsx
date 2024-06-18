@@ -28,10 +28,10 @@ import { Difficulty, SearchParams } from '@/constant/types';
 type DifficultyDropdownItem = DropdownItem<Difficulty>;
 
 export const difficulties: DifficultyDropdownItem[] = [
+  { label: 'easy', value: 'easy' },
   { label: 'medium', value: 'medium' },
   { label: 'hard', value: 'hard' },
   { label: 'insane', value: 'insane' },
-  { label: 'easy', value: 'easy' },
 ];
 
 const PopoverPrice = () => {
@@ -144,18 +144,6 @@ export const AdvancedSearch = ({ searchParams }: IProps) => {
                 setFilter(event.target.value);
               }}
             />
-          </div>
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="Price" className="text-right">
-              Date
-            </Label>
-            <PopoverDate />
-          </div>
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="Price" className="text-right">
-              Price
-            </Label>
-            <PopoverPrice />
           </div>
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="difficulty" className="text-right">
