@@ -4,7 +4,6 @@ import prisma from '@/instance/prisma';
 
 import { Column, SearchParams } from '@/constant/types';
 
-
 const ITEMS_PER_PAGE = 8;
 
 export const fetchResources = async (searchParams: SearchParams) => {

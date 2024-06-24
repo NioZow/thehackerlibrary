@@ -20,13 +20,13 @@ export const DifficultyColor: Record<Difficulty, string> = {
 export interface Author {
   id: number;
   name: string;
-  resourcesId: number | null;
+  resource_id: number | null;
 }
 
 export interface TagResource {
   id: number;
   name: string | null;
-  resourcesId: number | null;
+  resource_id: number | null;
 }
 
 export enum EnumDifficulty {
