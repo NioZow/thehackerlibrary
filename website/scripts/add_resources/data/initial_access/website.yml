@@ -1,0 +1,9 @@
+- Type: "website"
+  Tags:
+    - "Initial Access"
+    - "DFIR"
+  Url: "https://thedfirreport.com/"
+  Authors:
+    - "thedfirreport"
+  Name: "The DFIR Report"
+  Difficulty: 2

@@ -1,0 +1,11 @@
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "gMSA"
+  Url: "https://www.semperis.com/blog/golden-gmsa-attack/"
+  Authors:
+    - "Yuval Gordon"
+  Name: "gMSA Active Directory Attacks"
+  Difficulty: 2
+  Date: "2022-03-01"
+  Time: 7

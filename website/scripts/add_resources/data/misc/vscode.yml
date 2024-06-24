@@ -1,0 +1,19 @@
+- Type: "blogpost"
+  Tags:
+    - "Misc"
+    - "Visual Studio Code"
+  Url: "https://www.mdsec.co.uk/2023/08/leveraging-vscode-extensions-for-initial-access/"
+  Authors:
+    - "Matt Johnson"
+  Name: "Leveraging VSCode Extensions for Initial Access"
+  Difficulty: 2
+- Type: "repository"
+  Tags:
+    - "Misc"
+    - "Visual Studio"
+  Url: "https://github.com/cjm00n/EvilSln"
+  Authors:
+    - "cjm00n"
+  Name: "EvilSln: Don't open .sln files"
+  Difficulty: 3
+  Date: "2023-09-11"

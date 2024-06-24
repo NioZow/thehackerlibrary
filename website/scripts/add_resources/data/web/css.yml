@@ -1,0 +1,10 @@
+- Type: "blogpost"
+  Tags:
+    - "Web"
+    - "CSS"
+  Url: "https://portswigger.net/research/blind-css-exfiltration"
+  Authors:
+    - "Gareth Heyes"
+  Name: "Blind CSS Exfiltration: exfiltrate unknown web pages"
+  Difficulty: 2
+  Date: "2023-12-05"

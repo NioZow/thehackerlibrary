@@ -1,0 +1,11 @@
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Reconnaissance"
+  Url: "https://medium.com/falconforce/soaphound-tool-to-collect-active-directory-data-via-adws-165aca78288c"
+  Authors:
+    - "Nikos Karouzos"
+  Name: "SOAPHound — tool to collect Active Directory data via ADWS"
+  Difficulty: 2
+  Date: "2024-01-26"
+  Time: 18

@@ -1,0 +1,10 @@
+- Type: "blogpost"
+  Tags:
+    - "AI"
+    - "LLM"
+  Url: "https://blog.miguelgrinberg.com/post/how-llms-work-explained-without-math"
+  Authors:
+    - "Miguel Griberg"
+  Name: "How LLMs Work, Explained Without Math"
+  Difficulty: 2
+  Date: "2024-05-05"

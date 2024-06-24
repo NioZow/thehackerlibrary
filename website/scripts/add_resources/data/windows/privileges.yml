@@ -1,0 +1,20 @@
+- Type: "repository"
+  Tags:
+    - "Windows"
+    - "Windows Privileges"
+    - "SeTcpPrivilege"
+  Url: "https://github.com/MzHmO/TGSThief"
+  Authors:
+    - "Michael Zhmaylo"
+  Name: "TGSThief (Abuse SeTcpPrivilege)"
+  Difficulty: 2
+- Type: "repository"
+  Tags:
+    - "Windows"
+    - "Windows Privileges"
+    - "SeTcpPrivilege"
+  Url: "https://github.com/foxlox/GIUDA"
+  Authors:
+    - "foxlox"
+  Name: "GIUDA (Abuse SeTcpPrilege)"
+  Difficulty: 2

@@ -1,0 +1,11 @@
+- Type: "blogpost"
+  Tags:
+    - "Container"
+    - "Kubernetes"
+  Url: "https://www.synacktiv.com/publications/so-i-became-a-node-exploiting-bootstrap-tokens-in-azure-kubernetes-service"
+  Authors:
+    - "Paul Barbé"
+    - "Kévin Schouteeten"
+  Name: "So I became a node: exploiting bootstrap tokens in Azure Kubernetes Service"
+  Difficulty: 2
+  Date: "2024-04-23"

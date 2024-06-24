@@ -1,0 +1,22 @@
+- Type: "blogpost"
+  Tags:
+    - "Initial Access"
+    - "Persistence"
+    - "Lnk"
+  Url: "https://v3ded.github.io/redteam/abusing-lnk-features-for-initial-access-and-persistence"
+  Authors:
+    - "V3ded"
+  Name: 'Abusing LNK "Features" for Initial Access and Persistence'
+  Difficulty: 2
+  Date: "2021-05-28"
+- Type: "blogpost"
+  Tags:
+    - "Initial Access"
+    - "Lnk"
+  Url: "https://assume-breach.medium.com/home-grown-red-team-lnk-phishing-in-2023-revisited-again-2b8c885b9836"
+  Authors:
+    - "Assume Breach"
+  Name: "Home Grown Red Team: LNK Phishing In 2023 Revisited…Again"
+  Difficulty: 3
+  Date: "2023-10-13"
+  Time: 14

@@ -1,0 +1,60 @@
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Poisoning"
+  Url: "https://www.netspi.com/blog/technical/network-penetration-testing/exploiting-adidns/"
+  Authors:
+    - "Kevin Robertson"
+  Name: "Beyond LLMNR/NBNS Spoofing - Exploiting Active Directory-Integrated DNS"
+  Difficulty: 2
+  Date: "2018-07-10"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Poisoning"
+  Url: "https://www.netspi.com/blog/technical/network-penetration-testing/adidns-revisited/"
+  Authors:
+    - "Kevin Robertson"
+  Name: "ADIDNS Revisited - WPAD, GQBL, and More"
+  Difficulty: 2
+  Date: "2018-12-05"
+- Type: "cheatsheet"
+  Tags:
+    - "Active Directory"
+    - "Poisoning"
+  Url: "https://www.thehacker.recipes/a-d/movement/mitm-and-coerced-authentications"
+  Authors:
+    - "Shutdown"
+  Name: "MITM and coerced auths"
+  Difficulty: 2
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Poisoning"
+  Url: "https://luemmelsec.github.io/Relaying-101"
+  Authors:
+    - "LuemmelSec"
+  Name: "Relaying 101"
+  Difficulty: 2
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Poisoning"
+  Url: "https://www.mdsec.co.uk/2021/02/farming-for-red-teams-harvesting-netntlm/"
+  Authors:
+    - "Domunic Chell"
+  Name: "Farming for Red Teams: Harvesting NetNTLM"
+  Difficulty: 2
+  Date: "2021-02-01"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Poisoning"
+    - "DNS"
+    - "DHCP"
+  Url: "https://www.akamai.com/blog/security-research/spoofing-dns-by-abusing-dhcp"
+  Authors:
+    - "Ori David"
+  Name: "Spoofing DNS Records by Abusing DHCP DNS Dynamic Updates"
+  Difficulty: 2
+  Date: "2023-12-07"

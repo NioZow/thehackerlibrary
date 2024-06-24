@@ -1,0 +1,11 @@
+- Type: "blogpost"
+  Tags:
+    - "Web"
+    - "LLM Prompt Injection"
+  Url: "https://www.landh.tech/blog/20240304-google-hack-50000/"
+  Authors:
+    - "Roni Carta (Lupin)"
+  Name: "We Hacked Google A.I. for $50,000"
+  Difficulty: 2
+  Date: "2024-03-04"
+  Time: 20

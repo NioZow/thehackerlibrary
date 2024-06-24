@@ -1,0 +1,22 @@
+- Type: "blogpost"
+  Tags:
+    - "Windows"
+    - "UAC"
+  Url: "https://www.elastic.co/security-labs/exploring-windows-uac-bypasses-techniques-and-detection-strategies"
+  Authors:
+    - "Samir Bousseaden"
+  Name: "Exploring Windows UAC Bypasses: Techniques and Detection Strategies"
+  Difficulty: 2
+  Date: "2023-05-15"
+  Time: 21
+- Type: "blogpost"
+  Tags:
+    - "Windows"
+    - "UAC"
+  Url: "https://posts.specterops.io/bypassing-uac-using-app-paths-9249d8cbe9c9"
+  Authors:
+    - "Matt Nelson"
+  Name: "Bypassing UAC using App Paths"
+  Difficulty: 2
+  Date: "2017-03-24"
+  Time: 4

@@ -1,0 +1,40 @@
+- Type: "cheatsheet"
+  Tags:
+    - "Active Directory"
+  Url: "https://github.com/0xJs/RedTeaming_CheatSheet"
+  Authors:
+    - "Jony Schats (0xJS)"
+  Name: "RedTeaming CheatSheet"
+  Difficulty: 2
+- Type: "cheatsheet"
+  Tags:
+    - "Active Directory"
+  Url: "https://0x4rt3mis.github.io/posts/OSEP-Cheat-Sheet/"
+  Authors:
+    - "0x4rt3mis"
+  Name: "OSEP Cheat Sheet"
+  Difficulty: 2
+- Type: "cheatsheet"
+  Tags:
+    - "Active Directory"
+  Url: "https://xmind.app/m/874LNH/"
+  Authors:
+    - "Youssef Saeed"
+  Name: "Active Directory"
+  Difficulty: 2
+- Type: "cheatsheet"
+  Tags:
+    - "Active Directory"
+  Url: "https://bloodhound.readthedocs.io/en/latest/data-analysis/edges.html#"
+  Authors:
+    - "Community"
+  Name: "Edges"
+  Difficulty: 2
+- Type: "cheatsheet"
+  Tags:
+    - "Active Directory"
+  Url: "https://hideandsec.sh/books/cheatsheets-82c/page/active-directory"
+  Authors:
+    - "BlackWasp"
+  Name: "Active Directory"
+  Difficulty: 2

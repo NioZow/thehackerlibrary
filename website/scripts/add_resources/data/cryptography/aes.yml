@@ -1,0 +1,11 @@
+- Type: "blogpost"
+  Tags:
+    - "Cryptography"
+    - "AES"
+  Url: "https://medium.com/@mrkarthik07/i-know-mag1k-a-padding-oracle-attack-745d3b0bb2b1"
+  Authors:
+    - "Karthik M Rao"
+  Name: "I know Mag1k a Padding Oracle attack"
+  Difficulty: 1
+  Date: "2019-09-11"
+  Time: 11

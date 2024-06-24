@@ -1,0 +1,42 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+enum Difficulty {
+  easy
+  medium
+  hard
+  insane
+}
+
+model authors {
+  id          Int        @id @default(autoincrement())
+  name        String     @db.VarChar(30)
+  resources   resources? @relation(fields: [resourcesId], references: [id])
+  resourcesId Int?
+}
+
+model resources {
+  id         Int         @id @default(autoincrement())
+  type       String?     @db.VarChar(15)
+  name       String?     @db.VarChar(150)
+  date       String?     @db.VarChar(11)
+  url        String?     @unique(map: "url") @db.VarChar(150)
+  price      Int?        @db.SmallInt
+  difficulty Difficulty?
+  time       Int?        @db.SmallInt
+  authors    authors[]
+  tags       tags[]
+}
+
+model tags {
+  id          Int        @id @default(autoincrement())
+  name        String?    @db.VarChar(40)
+  resources   resources? @relation(fields: [resourcesId], references: [id])
+  resourcesId Int?
+}

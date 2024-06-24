@@ -1,0 +1,10 @@
+- Type: "blogpost"
+  Tags:
+    - "Web"
+    - "PHP"
+  Url: "https://www.synacktiv.com/publications/php-filter-chains-file-read-from-error-based-oracle"
+  Authors:
+    - "Rémi Matasse"
+  Name: "PHP filter chains: file read from error-based oracle"
+  Difficulty: 2
+  Date: "2023-03-21"

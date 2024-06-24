@@ -1,0 +1,9 @@
+- Type: "cheatsheet"
+  Tags:
+    - "Malware Development"
+    - "AMSI"
+  Url: "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20AMSI%20Bypass.md"
+  Authors:
+    - "PayloadsAllTheThings"
+  Name: "AMSI Bypass"
+  Difficulty: 2

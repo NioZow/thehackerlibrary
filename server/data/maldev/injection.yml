@@ -63,17 +63,6 @@
   Tags:
     - "Malware Development"
     - "Injection"
-    - "Linux"
-  Url: "https://blog.sektor7.net/#!res/2018/pure-in-memory-linux.md"
-  Authors:
-    - "rb"
-  Name: "Pure In-Memory (Shell)Code Injection In Linux Userland"
-  Difficulty: 3
-  Date: "2018-12-14"
-- Type: "blogpost"
-  Tags:
-    - "Malware Development"
-    - "Injection"
   Url: "https://www.riskinsight-wavestone.com/en/2023/10/process-injection-using-ntsetinformationprocess/"
   Authors:
     - "Yoann Dequeker"

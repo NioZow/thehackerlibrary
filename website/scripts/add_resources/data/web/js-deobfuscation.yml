@@ -1,0 +1,9 @@
+- Type: "gist"
+  Tags:
+    - "Web"
+    - "Javascript De-Obfuscation"
+  Url: "https://gist.github.com/0xdevalias/d8b743efb82c0e9406fc69da0d6c6581"
+  Authors:
+    - "devalias"
+  Name: "Deobfuscating / Unminifying Obfuscated Web App Code"
+  Difficulty: 2

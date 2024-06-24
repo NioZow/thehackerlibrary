@@ -1,0 +1,21 @@
+- Type: "blogpost"
+  Tags:
+    - "Misc"
+    - "Github"
+    - "IP Address Spoofing"
+  Url: "https://research.aurainfosec.io/pentest/git-rotate/"
+  Authors:
+    - "Daniel Underhay"
+  Name: "Git-Rotate: Leveraging GitHub Actions to Bypass Microsoft Entra Smart lockout"
+  Difficulty: 1
+  Date: "2024-03-07"
+- Type: "blogpost"
+  Tags:
+    - "Misc"
+    - "Github"
+  Url: "https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/"
+  Authors:
+    - "adnanthekhan"
+  Name: "One Supply Chain Attack to Rule Them All - Poisoning GitHub's Runner Images"
+  Difficulty: 2
+  Date: "2023-12-20"

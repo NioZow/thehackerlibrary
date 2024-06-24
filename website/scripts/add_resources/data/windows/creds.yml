@@ -1,0 +1,10 @@
+- Type: "blogpost"
+  Tags:
+    - "Windows"
+    - "Credentials Dumping"
+  Url: "https://www.r-tec.net/r-tec-blog-wifi-credential-dumping.html"
+  Authors:
+    - "s3cur3th1ssh1t"
+  Name: "WIFI Credential Dumping"
+  Difficulty: 2
+  Date: "2024-04"

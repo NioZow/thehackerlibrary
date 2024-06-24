@@ -1,0 +1,94 @@
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Misc"
+  Url: "https://www.trustedsec.com/blog/diving-into-pre-created-computer-accounts/"
+  Authors:
+    - "Oddvar Moe"
+  Name: "Diving into Pre-Created Computer Accounts"
+  Difficulty: 2
+  Date: "2022-06-10"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Machine Account"
+  Url: "https://www.netspi.com/blog/technical/network-penetration-testing/machineaccountquota-is-useful-sometimes/"
+  Authors:
+    - "Kevin Robertson"
+  Name: "MachineAccountQuota is USEFUL Sometimes: Exploiting One of Active Directory's Oddest Settings"
+  Difficulty: 2
+  Date: "2019-03-06"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "DES"
+  Url: "https://exploit.ph/des-is-useful.html"
+  Authors:
+    - "Charlie Clark"
+  Name: "DES Is Useful... Sometimes"
+  Difficulty: 2
+  Date: "2023-08-08"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+  Url: "https://dirkjanm.io/abusing-forgotten-permissions-on-precreated-computer-objects-in-active-directory/"
+  Authors:
+    - "Dirk-jan Mollema"
+  Name: "Abusing forgotten permissions on computer objects in Active Directory"
+  Difficulty: 2
+  Date: "2022-07-11"
+  Time: 10
+- Type: "blogpost"
+  Tags:
+    - "Entra ID"
+  Url: "https://dirkjanm.io/getting-in-the-zone-dumping-active-directory-dns-with-adidnsdump/"
+  Authors:
+    - "Dirk-jan Mollema"
+  Name: "Getting in the Zone: dumping Active Directory DNS using adidnsdump"
+  Difficulty: 2
+  Date: "2019-04-25"
+  Time: 5
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "DCSync"
+    - "NetSync"
+  Url: "https://github.com/4ndr3w6/Presentations/tree/main/Texas_Cyber_Summit_2023/Slides"
+  Authors:
+    - "Charlie Clark"
+    - "Andrew Schwartz"
+  Name: "You (dis)liked DCSync Wait For NetSync"
+  Difficulty: 2
+  Date: "2022-03-24"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Pass the Hash"
+  Url: "https://en.hackndo.com/pass-the-hash/"
+  Authors:
+    - "hackndo"
+  Name: "Pass the Hash"
+  Difficulty: 2
+  Date: "2019-12-17"
+  Time: 21
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "LDAP"
+  Url: "https://offsec.almond.consulting/ldap-authentication-in-active-directory-environments.html"
+  Authors:
+    - "lowercase_drm"
+  Name: "LDAP authentication in Active Directory environments"
+  Difficulty: 2
+  Date: "2023-10-31"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Exchange"
+  Url: "https://posts.specterops.io/pwned-by-the-mail-carrier-0750edfad43b"
+  Authors:
+    - "Jonas Bulow Knudsen"
+  Name: "Pwned by the Mail Carrier"
+  Difficulty: 2
+  Date: "2024-03-20"
+  Time: 24

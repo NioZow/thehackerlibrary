@@ -1,0 +1,32 @@
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "LSASS"
+  Url: "https://modexp.wordpress.com/2019/08/30/minidumpwritedump-via-com-services-dll/"
+  Authors:
+    - "odzhan"
+  Name: "MiniDumpWriteDump via COM+ Services DLL"
+  Difficulty: 2
+  Date: "2019-08-30"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "LSASS"
+  Url: "https://posts.specterops.io/lsa-whisperer-20874277ea3b"
+  Authors:
+    - "Evan McBroom"
+  Name: "LSA Whisperer"
+  Difficulty: 3
+  Date: "2024-04-17"
+  Time: 27
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "LSASS"
+    - "Token"
+  Url: "https://splintercod3.blogspot.com/p/the-hidden-side-of-seclogon-part-2.html"
+  Authors:
+    - "Antonio Cocomazzi"
+  Name: "The hidden side of Seclogon part 2: Abusing leaked handles to dump LSASS memory "
+  Difficulty: 3
+  Date: "2021-12-07"
