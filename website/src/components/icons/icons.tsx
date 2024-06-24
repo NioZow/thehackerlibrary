@@ -1,13 +1,13 @@
 import {
+  IconAccessPoint,
+  IconBrandAws,
+  IconBrandAzure,
+  IconBrandWindows,
   IconBug,
   IconCloud,
-  IconBrandWindows,
-  IconBrandAzure,
-  IconBrandAws,
-  IconAccessPoint,
   IconWorldWww,
 } from '@tabler/icons-react';
-import { Cpu, Check, Bookmark, Tv, Book, ShieldOff, Brain, Github } from 'lucide-react';
+import { Book, Bookmark, Brain, Check, Cpu, Github, ShieldOff, Tv } from 'lucide-react';
 
 import { isDefined } from '@/util/array';
 
@@ -160,6 +160,8 @@ export const CheatsheetIcon = () => {
 
 interface IProps {
   tags: TagResource[] | undefined;
+  read: boolean;
+  bookmark: boolean;
 }
 
 const getIconFromName = (name?: string | null) => {
@@ -187,12 +189,30 @@ const getIconFromName = (name?: string | null) => {
   }
 };
 
-export const RenderIcons = ({ tags }: IProps): JSX.Element => {
+export const RenderIcons = ({ tags, read, bookmark }: IProps): JSX.Element => {
   const icons =
     tags
       ?.map(({ name }) => name)
       .map(getIconFromName)
       .filter(isDefined) ?? [];
 
-  return <div className="flex">{icons.length ? icons.map((Icon, i) => <Icon key={i} />) : <NoIcon />}</div>;
+  if (icons.length == 0) {
+    icons.push(NoIcon);
+  }
+
+  if (read) {
+    icons.push(ReadIcon);
+  }
+
+  if (bookmark) {
+    icons.push(BookmarkIcon);
+  }
+
+  return (
+    <div className="flex">
+      {icons.map((Icon, i) => (
+        <Icon key={i} />
+      ))}
+    </div>
+  );
 };

@@ -1,18 +1,18 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import { useRouter } from 'next/navigation';
 
 import { newParams } from '@/src/utils/params';
 
 import AdvancedSearch from '@/element/advanced-search';
-import { DropdownMenuMultiple, DropdownMenuSingle, DropdownItem } from '@/element/dropdown-menu';
+import { DropdownItem, DropdownMenuMultiple, DropdownMenuSingle } from '@/element/dropdown-menu';
 
-import { saveData, getData } from '@/util/localstorage';
+import { getData, saveData } from '@/util/localstorage';
 
-import { Column, Status, Tag } from '@/constant/types';
-import { SearchParams } from '@/constant/types';
+import { Column, SearchParams, Status, Tag } from '@/constant/types';
+
 
 interface IProps {
   searchParams: SearchParams;
@@ -32,17 +32,14 @@ const columns: ColumnDropdownItem[] = [
 
 type TagDropdownItem = DropdownItem<Tag>;
 
-export const tags: TagDropdownItem[] = [
-  { label: 'bookmark', value: 'bookmark' },
-  { label: 'favorite', value: 'favorite' },
-];
+export const tags: TagDropdownItem[] = [{ label: 'bookmark', value: 'bookmark' }];
 
 type StatusDropdownItem = DropdownItem<Status>;
 
 export const status: StatusDropdownItem[] = [
   { label: 'both', value: 'both' },
   { label: 'complete', value: 'complete' },
-  { label: 'uncomplete', value: 'uncomplete' },
+  { label: 'incomplete', value: 'incomplete' },
 ];
 
 const ResourceFilter = ({ searchParams }: IProps) => {
@@ -52,6 +49,7 @@ const ResourceFilter = ({ searchParams }: IProps) => {
 
   useEffect(() => {
     setColumns(columns.filter(({ value }) => searchParams.columns.includes(value)));
+    setCurrentTags(searchParams.bookmarks.length !== 0 ? [{ label: 'bookmark', value: 'bookmark' }] : []);
   }, [searchParams]);
 
   const [currentStatus, setCurrentStatus] = useState<StatusDropdownItem>({
@@ -70,6 +68,17 @@ const ResourceFilter = ({ searchParams }: IProps) => {
           setCurrentElements={setCurrentTags}
           buttonName="tags"
           className="w-[180px] hover:bg-indigo-900"
+          onCloseCallback={(items: TagDropdownItem[]) => {
+            if (items.map(({ value }) => value).includes('bookmark')) {
+              searchParams.bookmarks = getData<number>('bookmarks');
+            } else {
+              searchParams.bookmarks = [];
+            }
+
+            const sp = newParams(searchParams, true);
+
+            router.push(`?${sp.toString()}`);
+          }}
         />
 
         <DropdownMenuSingle
@@ -81,8 +90,6 @@ const ResourceFilter = ({ searchParams }: IProps) => {
           onCloseCallback={(item: StatusDropdownItem) => {
             searchParams.status = item.value;
 
-            console.log(searchParams.status);
-
             if (searchParams.status === 'both') {
               searchParams.ids = [];
             } else {
@@ -90,7 +97,6 @@ const ResourceFilter = ({ searchParams }: IProps) => {
             }
 
             const sp = newParams(searchParams, true);
-            console.log(searchParams, sp);
 
             window.localStorage.setItem('status', searchParams.status);
             router.push(`?${sp.toString()}`);

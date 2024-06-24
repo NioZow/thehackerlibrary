@@ -4,18 +4,29 @@ import prisma from '@/instance/prisma';
 
 import { Column, SearchParams } from '@/constant/types';
 
+
 const ITEMS_PER_PAGE = 8;
 
 export const fetchResources = async (searchParams: SearchParams) => {
   const where: Prisma.resourcesWhereInput[] = [];
 
-  console.log('got', searchParams.ids);
-
-  if (searchParams.ids.length !== 0 && searchParams.status === 'complete') {
+  if (searchParams.status === 'complete') {
     where.push({
       id: { in: searchParams.ids },
     });
-  } else if (searchParams.where !== null) {
+  } else if (searchParams.status === 'incomplete') {
+    where.push({
+      id: { notIn: searchParams.ids },
+    });
+  }
+
+  if (searchParams.bookmarks.length !== 0) {
+    where.push({
+      id: { in: searchParams.bookmarks },
+    });
+  }
+
+  if (searchParams.where !== null) {
     where.push({
       OR: [
         { name: { contains: searchParams.where } },
@@ -47,25 +58,4 @@ export const fetchResources = async (searchParams: SearchParams) => {
     }),
     prisma.resources.count({ where: { AND: where } }),
   ]);
-};
-
-export const fetchResourcesById = async (ids: number[]) => {
-  return await prisma.resources.findMany({
-    select: {
-      id: true,
-      price: true,
-      url: true,
-      difficulty: true,
-      time: true,
-      tags: true,
-      name: true,
-      authors: true,
-      date: true,
-    },
-    where: {
-      id: {
-        in: ids,
-      },
-    },
-  });
 };

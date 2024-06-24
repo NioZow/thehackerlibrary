@@ -1,11 +1,12 @@
 'use client';
 
-import { Anchor, Group, ActionIcon, rem } from '@mantine/core';
-import { IconBrandX, IconBrandGithub } from '@tabler/icons-react';
+import { ActionIcon, Anchor, Group, rem } from '@mantine/core';
+import { IconBrandGithub, IconBrandX } from '@tabler/icons-react';
 
 import classes from '@/style/footer.module.css';
 
 import { cn } from '@/util/style.util';
+
 
 const links = [{ link: 'https://github.com/NioZow/thehackerlibrary', label: 'Contribute on github' }];
 

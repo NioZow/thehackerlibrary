@@ -5,7 +5,7 @@ import Footer from '@/module/footer';
 import Navbar from '@/module/navbar';
 import { ResourceTable, ResourceTableFooter } from '@/module/table';
 
-import DumpLocalStorage from '@/element/localstorage';
+import { DumpLocalStorage } from '@/element/localstorage';
 
 import { parseParams } from '@/util/params';
 import { fetchResources } from '@/util/resources';

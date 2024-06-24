@@ -7,14 +7,16 @@ import { useRouter } from 'next/navigation';
 import { getData } from '@/src/utils/localstorage';
 import { newParams } from '@/src/utils/params';
 
-import { Column } from '@/constant/types';
-import { SearchParams } from '@/constant/types';
+import { arrayToCommaSeparated } from '@/util/array';
+
+import { Column, SearchParams } from '@/constant/types';
+
 
 interface IProps {
   searchParams: SearchParams;
 }
 
-const DumpLocalStorage = ({ searchParams }: IProps) => {
+export const DumpLocalStorage = ({ searchParams }: IProps) => {
   const columns: Column[] = ['name', 'tags', 'price', 'authors', 'time', 'date', 'difficulty'];
   const router = useRouter();
 
@@ -35,4 +37,28 @@ const DumpLocalStorage = ({ searchParams }: IProps) => {
   return null;
 };
 
-export default DumpLocalStorage;
+export const DumpPlaylistFromLocalStorage = ({
+  searchParams,
+}: {
+  searchParams: Record<string, string | undefined>;
+}) => {
+  const router = useRouter();
+
+  useEffect(() => {
+    // using window obj under the hood
+    // make sure it's rendered client
+    if (!searchParams.reload) {
+      const sp = new URLSearchParams();
+      const ids = getData<number>('read');
+      sp.append('reload', '0');
+
+      if (ids.length !== 0) {
+        sp.append('ids', arrayToCommaSeparated(ids));
+      }
+
+      router.push(`/playlists?${sp.toString()}`);
+    }
+  }, []);
+
+  return null;
+};

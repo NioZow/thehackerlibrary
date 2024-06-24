@@ -7,21 +7,20 @@ import { useRouter } from 'next/navigation';
 import { getData, saveData } from '@/src/utils/localstorage';
 import { newParams } from '@/src/utils/params';
 import { Button } from '@/ui/button';
-import { Table, TableHead, TableHeader, TableRow, TableBody, TableCell } from '@/ui/table';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/ui/table';
 import { Badge } from '@mantine/core';
 import {
   DropdownMenu,
-  DropdownMenuSeparator,
-  DropdownMenuItem,
   DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@radix-ui/react-dropdown-menu';
 import { DotsHorizontalIcon } from '@radix-ui/react-icons';
 
 import { RenderIcons } from '@/icon/icons';
 
-import { Resource, Column } from '@/constant/types';
-import { SearchParams, DifficultyColor } from '@/constant/types';
+import { Column, DifficultyColor, Resource, SearchParams } from '@/constant/types';
 
 interface IProps {
   resources: Resource[];
@@ -44,7 +43,7 @@ export const ResourceTable = ({ resources, searchParams }: IProps) => {
 
   useEffect(() => {
     setRead(getData<number>('read'));
-    setBookmark(getData<number>('bookmark'));
+    setBookmark(getData<number>('bookmarks'));
   }, []);
 
   useEffect(() => {
@@ -73,10 +72,21 @@ export const ResourceTable = ({ resources, searchParams }: IProps) => {
               return (
                 <TableRow key={resource.id} className="hover:bg-indigo-900 text-white">
                   <TableCell>
-                    <RenderIcons tags={resource.tags} />
+                    <RenderIcons
+                      tags={resource.tags}
+                      read={resource.id ? read.includes(resource.id) : false}
+                      bookmark={resource.id ? bookmark.includes(resource.id) : false}
+                    />
                   </TableCell>
 
-                  {searchParams.columns.includes('name') ? <TableCell>{resource.name}</TableCell> : null}
+                  {searchParams.columns.includes('name') ? (
+                    <TableCell
+                      className="hover:cursor-default"
+                      onClick={() => (resource.url !== null ? window.open(resource.url, '_blank') : null)}
+                    >
+                      {resource.name}
+                    </TableCell>
+                  ) : null}
                   {searchParams.columns.includes('tags') && resource.tags !== undefined ? (
                     <TableCell>
                       {resource.tags.slice(1).map((tag) => {
@@ -120,7 +130,7 @@ export const ResourceTable = ({ resources, searchParams }: IProps) => {
                           <DotsHorizontalIcon className="h-4 w-4" />
                         </Button>
                       </DropdownMenuTrigger>
-                      <DropdownMenuContent align="end" className="bg-neutral-900 rounded-md border-solid w-[200px]">
+                      <DropdownMenuContent align="end" className="bg-neutral-900 rounded-md w-[200px]">
                         <DropdownMenuItem
                           className="text-base hover:bg-indigo-900 hover:cursor-default"
                           onClick={() =>
@@ -163,8 +173,13 @@ export const ResourceTable = ({ resources, searchParams }: IProps) => {
                             if (resource.id) {
                               if (!bookmark.includes(resource.id)) {
                                 setBookmark([...bookmark, resource.id]);
+                                saveData('bookmarks', [...bookmark, resource.id]);
                               } else {
                                 setBookmark(bookmark.filter((item) => item !== resource.id));
+                                saveData(
+                                  'bookmarks',
+                                  bookmark.filter((item) => item !== resource.id),
+                                );
                               }
                             }
                           }}
@@ -178,7 +193,7 @@ export const ResourceTable = ({ resources, searchParams }: IProps) => {
               );
             })
           ) : (
-            <TableRow>
+            <TableRow className="hover:bg-indigo-900 text-white">
               <TableCell colSpan={Object.keys(COLUMNS).length} className="h-24 text-center">
                 No result was found.
               </TableCell>

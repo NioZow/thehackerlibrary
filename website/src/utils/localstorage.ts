@@ -1,3 +1,5 @@
+'use client';
+
 export function saveData<T>(name: string, elements: T[]) {
   window.localStorage.setItem(name, JSON.stringify(elements));
 }

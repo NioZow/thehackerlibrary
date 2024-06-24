@@ -1,14 +1,14 @@
 export type Column = 'name' | 'tags' | 'price' | 'authors' | 'time' | 'date' | 'difficulty';
 
-export type Status = 'both' | 'complete' | 'uncomplete';
+export type Status = 'both' | 'complete' | 'incomplete';
 
-export const status: Status[] = ['complete', 'uncomplete', 'both'];
+export const status: Status[] = ['complete', 'incomplete', 'both'];
 
 export type Difficulty = 'easy' | 'medium' | 'hard' | 'insane';
 
 export const difficulties: Difficulty[] = ['easy', 'medium', 'hard', 'insane'];
 
-export type Tag = 'bookmark' | 'favorite';
+export type Tag = 'bookmark';
 
 export const DifficultyColor: Record<Difficulty, string> = {
   easy: 'green',
@@ -57,4 +57,5 @@ export interface SearchParams {
   page: number;
   ids: number[];
   status: Status;
+  bookmarks: number[];
 }

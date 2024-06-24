@@ -21,8 +21,8 @@ const Navbar = ({ fixed = true }: IProps) => {
           </Link>
         </li>
         <li>
-          <Link className="hover:text-indigo-400 transition-all duration-300 ease-in-out" href="/playlists">
-            Playlists
+          <Link className="hover:text-indigo-400 transition-all duration-300 ease-in-out" href="/#">
+            Roadmaps
           </Link>
         </li>
       </ul>
