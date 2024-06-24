@@ -16,12 +16,12 @@ const Navbar = ({ fixed = true }: IProps) => {
     >
       <ul className="flex gap-8 text-indigo-300">
         <li>
-          <Link className="hover:text-indigo-400 transition-all duration-300 ease-in-out" href="/#">
+          <Link className="hover:text-indigo-400 transition-all duration-300 ease-in-out" href="/">
             Home
           </Link>
         </li>
         <li>
-          <Link className="hover:text-indigo-400 transition-all duration-300 ease-in-out" href="/#">
+          <Link className="hover:text-indigo-400 transition-all duration-300 ease-in-out" href="/roadmaps">
             Roadmaps
           </Link>
         </li>

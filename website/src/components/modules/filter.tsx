@@ -1,17 +1,17 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { useRouter } from 'next/navigation';
 
 import { newParams } from '@/src/utils/params';
 
-import AdvancedSearch from '@/element/advanced-search';
 import { DropdownItem, DropdownMenuMultiple, DropdownMenuSingle } from '@/element/dropdown-menu';
+import SearchInput from '@/element/search';
 
 import { getData, saveData } from '@/util/localstorage';
 
-import { Column, SearchParams, Status, Tag } from '@/constant/types';
+import { Column, Difficulty, SearchParams, Status, Tag } from '@/constant/types';
 
 
 interface IProps {
@@ -42,6 +42,15 @@ export const status: StatusDropdownItem[] = [
   { label: 'incomplete', value: 'incomplete' },
 ];
 
+type DifficultyDropdownItem = DropdownItem<Difficulty>;
+
+export const difficulties: DifficultyDropdownItem[] = [
+  { label: 'easy', value: 'easy' },
+  { label: 'medium', value: 'medium' },
+  { label: 'hard', value: 'hard' },
+  { label: 'insane', value: 'insane' },
+];
+
 const ResourceFilter = ({ searchParams }: IProps) => {
   const router = useRouter();
 
@@ -59,70 +68,87 @@ const ResourceFilter = ({ searchParams }: IProps) => {
 
   const [currentTags, setCurrentTags] = useState<TagDropdownItem[]>([]);
 
+  const [currentDifficulties, setCurrentDifficulties] = useState<DifficultyDropdownItem[]>(
+    difficulties.filter(({ value }) => searchParams.difficulty.includes(value)) ?? [difficulties[0]],
+  );
+
   return (
-    <>
-      <div className="flex justify-end space-x-4">
-        <DropdownMenuMultiple
-          elements={tags}
-          currentElements={currentTags}
-          setCurrentElements={setCurrentTags}
-          buttonName="tags"
-          className="w-[180px] hover:bg-indigo-900"
-          onCloseCallback={(items: TagDropdownItem[]) => {
-            if (items.map(({ value }) => value).includes('bookmark')) {
-              searchParams.bookmarks = getData<number>('bookmarks');
-            } else {
-              searchParams.bookmarks = [];
-            }
+    <div className="flex justify-end space-x-4">
+      <SearchInput searchParams={searchParams} />
 
-            const sp = newParams(searchParams, true);
+      <DropdownMenuMultiple
+        elements={tags}
+        currentElements={currentTags}
+        setCurrentElements={setCurrentTags}
+        buttonName="tags"
+        className="w-[180px] hover:bg-indigo-900"
+        onCloseCallback={(items: TagDropdownItem[]) => {
+          if (items.map(({ value }) => value).includes('bookmark')) {
+            searchParams.bookmarks = getData<number>('bookmarks');
+          } else {
+            searchParams.bookmarks = [];
+          }
 
-            router.push(`?${sp.toString()}`);
-          }}
-        />
+          const sp = newParams(searchParams, true);
 
-        <DropdownMenuSingle
-          elements={status}
-          currentElement={currentStatus}
-          setCurrentElement={setCurrentStatus}
-          buttonName="status"
-          className="w-[180px] hover:bg-indigo-900"
-          onCloseCallback={(item: StatusDropdownItem) => {
-            searchParams.status = item.value;
+          router.push(`?${sp.toString()}`);
+        }}
+      />
 
-            if (searchParams.status === 'both') {
-              searchParams.ids = [];
-            } else {
-              searchParams.ids = getData<number>('read');
-            }
+      <DropdownMenuSingle
+        elements={status}
+        currentElement={currentStatus}
+        setCurrentElement={setCurrentStatus}
+        buttonName="status"
+        className="w-[180px] hover:bg-indigo-900"
+        onCloseCallback={(item: StatusDropdownItem) => {
+          searchParams.status = item.value;
 
-            const sp = newParams(searchParams, true);
+          if (searchParams.status === 'both') {
+            searchParams.ids = [];
+          } else {
+            searchParams.ids = getData<number>('read');
+          }
 
-            window.localStorage.setItem('status', searchParams.status);
-            router.push(`?${sp.toString()}`);
-          }}
-        />
+          const sp = newParams(searchParams, true);
 
-        <DropdownMenuMultiple
-          elements={columns}
-          currentElements={currentColumns}
-          setCurrentElements={setColumns}
-          buttonName="columns"
-          className="w-[180px] hover:bg-indigo-900"
-          onCloseCallback={(items: ColumnDropdownItem[]) => {
-            const columns = items.map(({ value }) => value);
-            searchParams.columns = columns;
+          window.localStorage.setItem('status', searchParams.status);
+          router.push(`?${sp.toString()}`);
+        }}
+      />
 
-            const sp = newParams(searchParams, false);
+      <DropdownMenuMultiple
+        elements={columns}
+        currentElements={currentColumns}
+        setCurrentElements={setColumns}
+        buttonName="columns"
+        className="w-[180px] hover:bg-indigo-900"
+        onCloseCallback={(items: ColumnDropdownItem[]) => {
+          const columns = items.map(({ value }) => value);
+          searchParams.columns = columns;
 
-            saveData('columns', columns);
-            router.push(`/?${sp.toString()}`);
-          }}
-        />
+          const sp = newParams(searchParams, false);
 
-        <AdvancedSearch searchParams={searchParams} />
-      </div>
-    </>
+          saveData('columns', columns);
+          router.push(`/?${sp.toString()}`);
+        }}
+      />
+
+      <DropdownMenuMultiple
+        elements={difficulties}
+        currentElements={currentDifficulties}
+        setCurrentElements={setCurrentDifficulties}
+        buttonName="Difficulty"
+        className="w-[200px] hover:bg-indigo-900"
+        onCloseCallback={(items: DifficultyDropdownItem[]) => {
+          searchParams.difficulty = items.map(({ value }) => value);
+
+          const sp = newParams(searchParams, false);
+
+          router.push(`/?${sp.toString()}`);
+        }}
+      />
+    </div>
   );
 };
 
