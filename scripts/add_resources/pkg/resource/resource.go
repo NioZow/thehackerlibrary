@@ -84,28 +84,28 @@ func LoadResources(path string) error {
 			break
 		}
 
+
 		// Parse the input date with the specified layout
-		_, err = db.DB.Exec("INSERT INTO resources (type, name, url, date, price, time, difficulty) VALUES (?, ?, ?, ?, ?, ?, ?)", strings.ToUpper(resource.Type), resource.Name, resource.Url, resource.Date, resource.Price, resource.Time, difficulty)
+		_, err = db.DB.Exec("INSERT INTO resources (type, name, url, date, price, time, difficulty) VALUES ($1, $2, $3, $4, $5, $6, $7)", strings.ToUpper(resource.Type), resource.Name, resource.Url, resource.Date, resource.Price, resource.Time, difficulty)
 		if err != nil {
 			return err
 		}
 
 		// get its id
-		if err = db.DB.QueryRow("SELECT id FROM resources WHERE url = ?", resource.Url).Scan(&resourceId); err != nil {
+		if err = db.DB.QueryRow("SELECT id FROM resources WHERE url = $1", resource.Url).Scan(&resourceId); err != nil {
 			return err
 		}
 
 		// insert tags 
 		for _, tag := range resource.Tags {
-			if _, err = db.DB.Exec("INSERT INTO tags (name, resourcesId) VALUES (?, ?)", tag, resourceId); err != nil {
+			if _, err = db.DB.Exec("INSERT INTO tags (name, resource_id) VALUES ($1, $2)", tag, resourceId); err != nil {
 				return err
 			}
 		}
 
 		// insert authors
-		for _, author := range resource.Authors {		
-
-			if _, err = db.DB.Exec("INSERT INTO authors (name, resourcesId) VALUES (?, ?)", author, resourceId); err != nil {
+		for _, author := range resource.Authors {
+			if _, err = db.DB.Exec("INSERT INTO authors (name, resource_id) VALUES ($1, $2)", author, resourceId); err != nil {
 				return err
 			}
 		}

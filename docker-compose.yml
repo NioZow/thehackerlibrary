@@ -1,17 +1,15 @@
 services:
   db:
-    image: mariadb:latest
+    image: postgres:latest
     restart: always
     volumes:
-      - db_data:/var/lib/mysql
+      - db_data:/var/lib/postgresql/data
     environment:
-      - MYSQL_ROOT_PASSWORD=thehackerlibrary
-      - MYSQL_DATABASE=thehackerlibrary
-      - MYSQL_USER=thehackerlibrary
-      - MYSQL_PASSWORD=thehackerlibrary
-      - MYSQL_ROOT_HOST=10.10.10.1
+      - POSTGRES_DB=thehackerlibrary
+      - POSTGRES_USER=thehackerlibrary
+      - POSTGRES_PASSWORD=thehackerlibrary
     ports:
-      - "3306:3306"
+      - "5432:5432"
     networks:
       custom_net:
         ipv4_address: 10.10.10.10

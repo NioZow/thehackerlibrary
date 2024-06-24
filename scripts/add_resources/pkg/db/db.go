@@ -2,25 +2,24 @@ package db
 
 import (
 	"database/sql"
-	"fmt"
 	"log"
 	"thehackerlibrary/pkg/env"
 
-	_ "github.com/go-sql-driver/mysql"
+	_ "github.com/lib/pq"
 )
 
 var DB *sql.DB
 
 func init() {
-
     var (
         err error
     )
 
-    DB, err = sql.Open("mysql", fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", env.DB_USERNAME, env.DB_PASSWORD, env.DB_HOST, env.DB_PORT, env.DB_NAME))
+    DB, err = sql.Open("postgres", env.DATABASE_URL)
     if err != nil {
         log.Fatal(err)
     }
+
 }
 
 func Reset() error {

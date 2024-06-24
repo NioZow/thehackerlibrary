@@ -29,9 +29,9 @@ export const fetchResources = async (searchParams: SearchParams) => {
   if (searchParams.where !== null) {
     where.push({
       OR: [
-        { name: { contains: searchParams.where } },
-        { authors: { some: { name: { contains: searchParams.where } } } },
-        { tags: { some: { name: { contains: searchParams.where } } } },
+        { name: { contains: searchParams.where, mode: 'insensitive' } },
+        { authors: { some: { name: { contains: searchParams.where, mode: 'insensitive' } } } },
+        { tags: { some: { name: { contains: searchParams.where, mode: 'insensitive' } } } },
       ],
     });
   }
