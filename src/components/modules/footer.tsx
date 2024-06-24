@@ -2,6 +2,7 @@
 
 import { ActionIcon, Anchor, Group, rem } from '@mantine/core';
 import { IconBrandGithub, IconBrandX } from '@tabler/icons-react';
+import Link from 'next/link';
 
 import classes from '@/style/footer.module.css';
 
@@ -12,9 +13,9 @@ const links = [{ link: 'https://github.com/NioZow/thehackerlibrary', label: 'Con
 
 const Footer = () => {
   const items = links.map((link) => (
-    <Anchor c="dimmed" key={link.label} href={link.link} lh={1} onClick={(event) => event.preventDefault()} size="sm">
+    <a key={link.label} href={link.link} target="_blank" className="text-white hover:text-indigo-500">
       {link.label}
-    </Anchor>
+    </a>
   ));
 
   return (
