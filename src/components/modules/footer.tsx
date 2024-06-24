@@ -2,7 +2,6 @@
 
 import { ActionIcon, Anchor, Group, rem } from '@mantine/core';
 import { IconBrandGithub, IconBrandX } from '@tabler/icons-react';
-import Link from 'next/link';
 
 import classes from '@/style/footer.module.css';
 
