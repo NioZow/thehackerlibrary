@@ -7,7 +7,7 @@
   Authors:
     - "V3ded"
   Name: 'Abusing LNK "Features" for Initial Access and Persistence'
-  Difficulty: 2
+  Difficulty: medium
   Date: "2021-05-28"
 - Type: "blogpost"
   Tags:
@@ -17,6 +17,6 @@
   Authors:
     - "Assume Breach"
   Name: "Home Grown Red Team: LNK Phishing In 2023 Revisited…Again"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2023-10-13"
   Time: 14

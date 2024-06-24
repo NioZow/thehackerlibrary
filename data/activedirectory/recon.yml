@@ -6,6 +6,6 @@
   Authors:
     - "Nikos Karouzos"
   Name: "SOAPHound — tool to collect Active Directory data via ADWS"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2024-01-26"
   Time: 18

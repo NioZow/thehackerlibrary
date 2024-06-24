@@ -6,7 +6,7 @@
   Authors:
     - "jlajara"
   Name: "Potatoes - Windows Privilege Escalation"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2020-11-22"
 - Type: "blogpost"
   Tags:
@@ -16,7 +16,7 @@
   Authors:
     - "Antonio Cocomazzi"
   Name: "The Rise of Potatoes: Privilege Escalations in Windows Services"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2021-09-01"
   Time: 41
 - Type: "blogpost"
@@ -27,7 +27,7 @@
   Authors:
     - "Decoder"
   Name: "LocalPotato - When Swapping The Context Leads You To SYSTEM"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-02-13"
 - Type: "blogpost"
   Tags:
@@ -37,5 +37,5 @@
   Authors:
     - "Antonio Cocomazzi"
   Name: "Relaying Potatoes: Another Unexpected Privilege Escalation Vulnerability in Windows RPC Protocol"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2021-04-26"

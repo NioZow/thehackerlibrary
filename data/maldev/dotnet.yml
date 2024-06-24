@@ -7,7 +7,7 @@
   Authors:
     - "eversinc33"
   Name: ".NET Assembly Obfuscation for Memory Scanner Evasion"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-10"
 - Type: "blogpost"
   Tags:
@@ -17,7 +17,7 @@
   Authors:
     - "xpn"
   Name: "Hiding your .NET - ETW"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2020-03-17"
 - Type: "blogpost"
   Tags:
@@ -27,5 +27,5 @@
   Authors:
     - "Kyle Avery"
   Name: "Unmanaged .NET Patching"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2024-02-01"

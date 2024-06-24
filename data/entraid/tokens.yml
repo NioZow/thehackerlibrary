@@ -7,7 +7,7 @@
   Authors:
     - "Dirk-jan Mollema"
   Name: "Phishing for Primary Refresh Tokens and Windows Hello keys"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-10-10"
   Time: 11
 - Type: "blogpost"
@@ -18,7 +18,7 @@
   Authors:
     - "Dirk-jan Mollema"
   Name: "Introducing ROADtools Token eXchange (roadtx) - Automating Azure AD authentication, Primary Refresh Token (ab)use and device registration"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2022-11-09"
   Time: 16
 - Type: "blogpost"
@@ -29,7 +29,7 @@
   Authors:
     - "Dirk-jan Mollema"
   Name: "Digging further into the Primary Refresh Token"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2020-08-05"
   Time: 19
 - Type: "blogpost"
@@ -40,7 +40,7 @@
   Authors:
     - "Dirk-jan Mollema"
   Name: "Abusing Azure AD SSO with the Primary Refresh Token"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2020-07-21"
   Time: 21
 - Type: "video"
@@ -51,6 +51,6 @@
   Authors:
     - "Dirk-jan Mollema"
   Name: "TROOPERS23: (Windows) Hello from the other side"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-08-18"
   Time: 57

@@ -7,7 +7,7 @@
   Authors:
     - "Michael Zhmaylo"
   Name: "TGSThief (Abuse SeTcpPrivilege)"
-  Difficulty: 2
+  Difficulty: medium
 - Type: "repository"
   Tags:
     - "Windows"
@@ -17,4 +17,4 @@
   Authors:
     - "foxlox"
   Name: "GIUDA (Abuse SeTcpPrilege)"
-  Difficulty: 2
+  Difficulty: medium

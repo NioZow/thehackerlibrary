@@ -6,7 +6,7 @@
   Authors:
     - "Nigerald"
   Name: "An Introduction into Stack Spoofing"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2023-09-15"
   Time: 20
 - Type: "blogpost"
@@ -17,7 +17,7 @@
   Authors:
     - "Nigerald"
   Name: "An Introduction into Sleep Obfuscation"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2023-04-24"
   Time: 15
 - Type: "blogpost"
@@ -30,7 +30,7 @@
   Authors:
     - "Cognisys Lab"
   Name: "Advanced Module Stomping & Heap/Stack Encryption"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2023-06-25"
   Time: 19
 - Type: "blogpost"
@@ -43,7 +43,7 @@
     - "trickster0"
     - "klezVirus"
   Name: "SilentMoonwalk: Implementing a dynamic Call Stack Spoofer"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2022-12-08"
 - Type: "blogpost"
   Tags:
@@ -54,7 +54,7 @@
     - "Mez0"
     - "Michael Ranaldo"
   Name: "Protecting the Heap: Encryption & Hooks"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2022"
 - Type: "video"
   Tags:
@@ -64,6 +64,6 @@
   Authors:
     - "klezVirus"
   Name: "11. Demystifying Thread Call Stack Spoofing by Alessandro Magnosi"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-08-21"
   Time: 39

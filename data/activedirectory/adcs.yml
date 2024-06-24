@@ -7,7 +7,7 @@
     - "Will Schroeder"
     - "Lee Christensen"
   Name: "Certified Pre-Owned"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2021-06-17"
   Time: 22
 - Type: "blogpost"
@@ -19,7 +19,7 @@
     - "Will Schroeder"
     - "Lee Christensen"
   Name: "Certificates and Pwnage and Patches, Oh My!"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2022-11-09"
   Time: 16
 - Type: "blogpost"
@@ -30,7 +30,7 @@
   Authors:
     - "Oliver Lyak"
   Name: "Certipy 4.0: ESC9 & ESC10, BloodHound GUI, New Authentication and Request Methods — and more!"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-01-30"
   Time: 20
 - Type: "blogpost"
@@ -42,7 +42,7 @@
   Authors:
     - "Decoder"
   Name: "Hello: I'm your ADCS server and I want to authenticate against you"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2024-02-26"
 - Type: "blogpost"
   Tags:
@@ -53,7 +53,7 @@
   Authors:
     - "Decoder"
   Name: 'A "deep dive" in Cert Publishers Group'
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-11-20"
 - Type: "blogpost"
   Tags:
@@ -63,7 +63,7 @@
   Authors:
     - "Andy Robins"
   Name: "From DA to EA with ESC5"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-05-16"
 - Type: "blogpost"
   Tags:
@@ -73,7 +73,7 @@
   Authors:
     - "Jonas Dulow Knudsen"
   Name: "ADCS ESC13 Abuse Technique"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2024-02-14"
   Time: 13
 - Type: "blogpost"
@@ -84,7 +84,7 @@
   Authors:
     - "Jonas Dulow Knudsen"
   Name: "ADCS ESC14 Abuse Technique"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2024-02-28"
   Time: 31
 - Type: "blogpost"
@@ -96,5 +96,5 @@
   Authors:
     - "Nickvourd"
   Name: "What if no PKINIT? Still the same fun!"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2024-05-18"

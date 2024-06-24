@@ -7,7 +7,7 @@
   Authors:
     - "V3ded"
   Name: "Red Team Tactics: Writing Windows Kernel Drivers for Advanced Persistence (Part 1)"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2022-12-29"
 - Type: "blogpost"
   Tags:
@@ -18,7 +18,7 @@
   Authors:
     - "V3ded"
   Name: "Red Team Tactics: Writing Windows Kernel Drivers for Advanced Persistence (Part 2)"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2023-06-20"
 - Type: "blogpost"
   Tags:
@@ -29,7 +29,7 @@
   Authors:
     - "Daniel Duggan (Rastamouse)"
   Name: "Offensive Driver Development"
-  Difficulty: 3
+  Difficulty: hard
   Price: 60
 - Type: "blogpost"
   Tags:
@@ -40,7 +40,7 @@
   Authors:
     - "Alice Climent-Pommeret"
   Name: "Finding and exploiting process killer drivers with LOL for 3000$"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2023-06-19"
   Time: 22
 - Type: "blogpost"
@@ -52,7 +52,7 @@
   Authors:
     - "Ido Veltzman"
   Name: "Lord Of The Ring0 - Part 1 | Introduction"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2022-07-14"
 - Type: "blogpost"
   Tags:
@@ -63,7 +63,7 @@
   Authors:
     - "Ido Veltzman"
   Name: "Lord Of The Ring0 - Part 2 | A tale of routines, IOCTLs and IRPs"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2022-08-04"
 - Type: "blogpost"
   Tags:
@@ -74,7 +74,7 @@
   Authors:
     - "Ido Veltzman"
   Name: "Lord Of The Ring0 - Part 3 | Sailing to the land of the user (and debugging the ship)"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2022-10-30"
 - Type: "blogpost"
   Tags:
@@ -85,7 +85,7 @@
   Authors:
     - "Ido Veltzman"
   Name: "Lord Of The Ring0 - Part 4 | The call back home"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2023-02-24"
 - Type: "blogpost"
   Tags:
@@ -96,7 +96,7 @@
   Authors:
     - "Ido Veltzman"
   Name: "Lord Of The Ring0 - Part 5 | Saruman's Manipulation"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2023-07-19"
 - Type: "blogpost"
   Tags:
@@ -107,7 +107,7 @@
   Authors:
     - "Ido Veltzman"
   Name: "Lord Of The Ring0 - Part 6 | Conclusion"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2024-03-31"
 - Type: "blogpost"
   Tags:
@@ -117,5 +117,5 @@
   Authors:
     - "mdanilor"
   Name: "[Cracking Windows Kernel with HEVD] Chapter 0: Where do I start?"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2022-08-29"

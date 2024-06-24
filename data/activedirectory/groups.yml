@@ -6,7 +6,7 @@
   Authors:
     - "Talis Ozols"
   Name: "Account Operators Privilege Escalation"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2022-12-15"
 - Type: "blogpost"
   Tags:
@@ -15,7 +15,7 @@
   Authors:
     - "iredteam"
   Name: "From DnsAdmins to SYSTEM to Domain Compromise"
-  Difficulty: 2
+  Difficulty: medium
 - Type: "blogpost"
   Tags:
     - "Active Directory"
@@ -24,7 +24,7 @@
   Authors:
     - "cube0x0"
   Name: "Poc'ing Beyond Domain Admin - Part 1"
-  Difficulty: 2
+  Difficulty: medium
   Time: 6
 - Type: "video"
   Tags:
@@ -34,7 +34,7 @@
   Authors:
     - "David Mayer"
   Name: "The Backup Operators Guide To The Galaxy"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2019-12-26"
   Time: 39
 - Type: "repository"
@@ -45,7 +45,7 @@
   Authors:
     - "mpgn"
   Name: "From Backup Operator To Domain Admin"
-  Difficulty: 2
+  Difficulty: medium
 - Type: "blogpost"
   Tags:
     - "Active Directory"
@@ -54,5 +54,5 @@
   Authors:
     - "Ori David"
   Name: "Abusing the DHCP Administrators Group to Escalate Privileges in Windows Domains"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2024-03-20"

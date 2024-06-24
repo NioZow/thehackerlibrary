@@ -7,7 +7,7 @@
   Authors:
     - "Alice Climent-Pommeret"
   Name: "EDR Bypass : How and Why to Unhook the Import Address Table"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2022-05-07"
   Time: 7
 - Type: "blogpost"
@@ -18,5 +18,5 @@
   Authors:
     - "JD96"
   Name: "The different ways of hooking"
-  Difficulty: 3
+  Difficulty: hard
   Date: "13/08/2015"

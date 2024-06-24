@@ -6,7 +6,7 @@
   Authors:
     - "Riccardo Ancarani"
   Name: "Lateral Movement Windows and Active Directory"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2019-10-04"
 - Type: "blogpost"
   Tags:
@@ -17,7 +17,7 @@
     - "ATTL4S"
     - "ElephantSe4l"
   Name: "Understanding Windows Lateral Movements"
-  Difficulty: 2
+  Difficulty: medium
 - Type: "video"
   Tags:
     - "Active Directory"
@@ -26,7 +26,7 @@
   Authors:
     - "Sagie Dulce"
   Name: "Burning Bridges - Stopping Lateral Movement via the RPC Firewall"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2022-01-31"
   Time: 36
 - Type: "blogpost"
@@ -37,7 +37,7 @@
   Authors:
     - "Kleiton Kurti"
   Name: "Navigating Stealthy WMI Lateral Movement"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-06-26"
 - Type: "blogpost"
   Tags:
@@ -48,7 +48,7 @@
   Authors:
     - "Steven f"
   Name: "Performance, Diagnostics, and WMI"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-06-11"
 - Type: "blogpost"
   Tags:
@@ -60,5 +60,5 @@
   Authors:
     - "n00py"
   Name: "Alternative ways to Pass the Hash (PtH)"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2020-12-13"

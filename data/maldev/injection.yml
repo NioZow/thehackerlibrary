@@ -6,7 +6,7 @@
   Authors:
     - "rb"
   Name: "Pure In-Memory (Shell)Code Injection In Linux Userland"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2018-12-14"
 - Type: "blogpost"
   Tags:
@@ -16,7 +16,7 @@
   Authors:
     - "iredteam"
   Name: "Process Hollowing and Portable Executable Relocations"
-  Difficulty: 3
+  Difficulty: hard
 - Type: "repository"
   Tags:
     - "Malware Development"
@@ -27,7 +27,7 @@
     - "Gabriel Landau"
   Name: "What you need to know about Process Ghosting, a new executable image tampering attack"
   Date: "2021-06-15"
-  Difficulty: 3
+  Difficulty: hard
 - Type: "repository"
   Tags:
     - "Malware Development"
@@ -37,7 +37,7 @@
   Authors:
     - "jxy-s"
   Name: "Process Herpaderping"
-  Difficulty: 3
+  Difficulty: hard
 - Type: "blogpost"
   Tags:
     - "Malware Development"
@@ -47,7 +47,7 @@
   Authors:
     - "hasherezade"
   Name: "Process Doppelganging"
-  Difficulty: 3
+  Difficulty: hard
 - Type: "blogpost"
   Tags:
     - "Malware Development"
@@ -57,7 +57,7 @@
   Authors:
     - "Mor Davidovich"
   Name: "DLL Notification Injection"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2023-08-14"
 - Type: "blogpost"
   Tags:
@@ -67,7 +67,7 @@
   Authors:
     - "Yoann Dequeker"
   Name: "Process Injection using NtSetInformationProcess"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-10"
   Time: 7
 - Type: "blogpost"
@@ -79,7 +79,7 @@
   Authors:
     - "klezVirus"
   Name: "From Process Injection to Function Hijacking"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2022-05-13"
 - Type: "blogpost"
   Tags:
@@ -90,7 +90,7 @@
   Authors:
     - "Nigerald"
   Name: "Module Stomping"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-11-03"
   Time: 11
 - Type: "blogpost"
@@ -101,7 +101,7 @@
   Authors:
     - "Alon Leviev"
   Name: "The Pool Party You Will Never Forget: New Process Injection Techniques Using Windows Thread Pools"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-12-06"
 - Type: "blogpost"
   Tags:
@@ -112,6 +112,6 @@
   Authors:
     - "ZkClown"
   Name: "How to perform a Complete Process Hollowing"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2024-01-24"
   Time: 36

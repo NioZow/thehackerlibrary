@@ -7,7 +7,7 @@
   Authors:
     - "Adam Chester"
   Name: "Okta for Red Teamers"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-09-18"
 - Type: "blogpost"
   Tags:
@@ -17,5 +17,5 @@
   Authors:
     - "xpn"
   Name: "Identity Providers for RedTeamers"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2024-03-18"

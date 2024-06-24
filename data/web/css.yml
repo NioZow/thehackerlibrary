@@ -6,5 +6,5 @@
   Authors:
     - "Gareth Heyes"
   Name: "Blind CSS Exfiltration: exfiltrate unknown web pages"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-12-05"

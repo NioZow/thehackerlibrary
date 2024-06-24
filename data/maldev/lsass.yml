@@ -6,7 +6,7 @@
   Authors:
     - "odzhan"
   Name: "MiniDumpWriteDump via COM+ Services DLL"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2019-08-30"
 - Type: "blogpost"
   Tags:
@@ -16,7 +16,7 @@
   Authors:
     - "Evan McBroom"
   Name: "LSA Whisperer"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2024-04-17"
   Time: 27
 - Type: "blogpost"
@@ -28,5 +28,5 @@
   Authors:
     - "Antonio Cocomazzi"
   Name: "The hidden side of Seclogon part 2: Abusing leaked handles to dump LSASS memory "
-  Difficulty: 3
+  Difficulty: hard
   Date: "2021-12-07"

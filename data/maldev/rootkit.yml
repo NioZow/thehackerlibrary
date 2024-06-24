@@ -6,7 +6,7 @@
   Authors:
     - "Henri Nurmi"
   Name: "GMER - the art of exposing Windows rootkits in kernel mode"
-  Difficulty: 4
+  Difficulty: insane
   Date: "2024-04-05"
 - Type: "blogpost"
   Tags:
@@ -16,6 +16,6 @@
   Authors:
     - "eversinc33"
   Name: "(Anti-)Anti-Rootkit Techniques - Part I: UnKovering mapped rootkits"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2024-03-23"
   Time: 14

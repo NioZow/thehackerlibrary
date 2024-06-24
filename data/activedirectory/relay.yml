@@ -6,7 +6,7 @@
   Authors:
     - Shutdown
   Name: "Relay"
-  Difficulty: 2
+  Difficulty: medium
 - Type: "blogpost"
   Tags:
     - "Active Directory"
@@ -15,7 +15,7 @@
   Authors:
     - "Jean-François Maes"
   Name: "I'm bringing relaying back: A comprehensive guide on relaying anno 2022"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2022-02-03"
 - Type: "blogpost"
   Tags:
@@ -26,7 +26,7 @@
   Authors:
     - "n00py"
   Name: "Practical Attacks against NTLMv1"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2022-10-16"
 - Type: "blogpost"
   Tags:
@@ -37,7 +37,7 @@
   Authors:
     - "alexdhital"
   Name: "Stealing netNTLM hashes in windows"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-04-01"
 - Type: "video"
   Tags:
@@ -47,7 +47,7 @@
   Authors:
     - "Evil Mog"
   Name: "G1234! - Anatomy of NTLMv1/NTLMv1-SSP"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2018-08-07"
   Time: 26
 - Type: "blogpost"
@@ -59,7 +59,7 @@
   Authors:
     - "cube0x0"
   Name: "NTLM Relaying for gMSA Passwords"
-  Difficulty: 2
+  Difficulty: medium
   Time: 3
 - Type: "blogpost"
   Tags:
@@ -69,7 +69,7 @@
   Authors:
     - "LuemmelSec"
   Name: "NTLMRelayx.py to exe"
-  Difficulty: 2
+  Difficulty: medium
 - Type: "blogpost"
   Tags:
     - "Active Directory"
@@ -78,7 +78,7 @@
   Authors:
     - "Charlie Clark"
   Name: "Defending the Three Headed Relay"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2022-05-09"
 - Type: "blogpost"
   Tags:
@@ -88,7 +88,7 @@
   Authors:
     - "Dirk-jan Mollema"
   Name: "Relaying Kerberos over DNS using krbrelayx and mitm6"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2022-02-22"
   Time: 11
 - Type: "blogpost"
@@ -100,7 +100,7 @@
   Authors:
     - "Dirk-jan Mollema"
   Name: "NTLM relaying to AD CS - On certificates, printers and a little hippo"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2022-07-28"
   Time: 14
 - Type: "blogpost"
@@ -113,7 +113,7 @@
   Authors:
     - "Dirk-jan Mollema"
   Name: "The worst of both worlds: Combining NTLM Relaying and Kerberos delegation"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2019-03-04"
   Time: 5
 - Type: "blogpost"
@@ -126,7 +126,7 @@
   Authors:
     - "Dirk-jan Mollema"
   Name: '"Relaying" Kerberos - Having fun with unconstrained delegation'
-  Difficulty: 2
+  Difficulty: medium
   Date: "2019-02-18"
   Time: 27
 - Type: "blogpost"
@@ -138,7 +138,7 @@
   Authors:
     - "Alexander Wolf"
   Name: "NetNTLMv1 Downgrade to compromise"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-09"
 - Type: "blogpost"
   Tags:
@@ -149,7 +149,7 @@
   Authors:
     - "Quentin Roland"
   Name: "GPOddity: exploiting Active Directory GPOs through NTLM relaying, and more!"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-09-04"
 - Type: "blogpost"
   Tags:
@@ -159,7 +159,7 @@
   Authors:
     - "hackndo"
   Name: "NTLM Relay"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2020-04-01"
   Time: 46
 - Type: "blogpost"
@@ -170,5 +170,5 @@
   Authors:
     - "James Forshaw"
   Name: "Using Kerberos for Authentication Relay Attacks"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2021-10-20"

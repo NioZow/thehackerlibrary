@@ -5,7 +5,7 @@
   Authors:
     - "Jony Schats (0xJS)"
   Name: "RedTeaming CheatSheet"
-  Difficulty: 2
+  Difficulty: medium
 - Type: "cheatsheet"
   Tags:
     - "Active Directory"
@@ -13,7 +13,7 @@
   Authors:
     - "0x4rt3mis"
   Name: "OSEP Cheat Sheet"
-  Difficulty: 2
+  Difficulty: medium
 - Type: "cheatsheet"
   Tags:
     - "Active Directory"
@@ -21,7 +21,7 @@
   Authors:
     - "Youssef Saeed"
   Name: "Active Directory"
-  Difficulty: 2
+  Difficulty: medium
 - Type: "cheatsheet"
   Tags:
     - "Active Directory"
@@ -29,7 +29,7 @@
   Authors:
     - "Community"
   Name: "Edges"
-  Difficulty: 2
+  Difficulty: medium
 - Type: "cheatsheet"
   Tags:
     - "Active Directory"
@@ -37,4 +37,4 @@
   Authors:
     - "BlackWasp"
   Name: "Active Directory"
-  Difficulty: 2
+  Difficulty: medium

@@ -6,7 +6,7 @@
   Authors:
     - "Kevin Robertson"
   Name: "Beyond LLMNR/NBNS Spoofing - Exploiting Active Directory-Integrated DNS"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2018-07-10"
 - Type: "blogpost"
   Tags:
@@ -16,7 +16,7 @@
   Authors:
     - "Kevin Robertson"
   Name: "ADIDNS Revisited - WPAD, GQBL, and More"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2018-12-05"
 - Type: "cheatsheet"
   Tags:
@@ -26,7 +26,7 @@
   Authors:
     - "Shutdown"
   Name: "MITM and coerced auths"
-  Difficulty: 2
+  Difficulty: medium
 - Type: "blogpost"
   Tags:
     - "Active Directory"
@@ -35,7 +35,7 @@
   Authors:
     - "LuemmelSec"
   Name: "Relaying 101"
-  Difficulty: 2
+  Difficulty: medium
 - Type: "blogpost"
   Tags:
     - "Active Directory"
@@ -44,7 +44,7 @@
   Authors:
     - "Domunic Chell"
   Name: "Farming for Red Teams: Harvesting NetNTLM"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2021-02-01"
 - Type: "blogpost"
   Tags:
@@ -56,5 +56,5 @@
   Authors:
     - "Ori David"
   Name: "Spoofing DNS Records by Abusing DHCP DNS Dynamic Updates"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-12-07"

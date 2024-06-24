@@ -6,7 +6,7 @@
   Authors:
     - "Matt Johnson"
   Name: "Leveraging VSCode Extensions for Initial Access"
-  Difficulty: 2
+  Difficulty: medium
 - Type: "repository"
   Tags:
     - "Misc"
@@ -15,5 +15,5 @@
   Authors:
     - "cjm00n"
   Name: "EvilSln: Don't open .sln files"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2023-09-11"

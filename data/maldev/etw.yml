@@ -6,7 +6,7 @@
   Authors:
     - "NtRaiseHardError"
   Name: "Introduction to Threat Intelligence ETW"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-03-15"
   Time: 8
 - Type: "blogpost"
@@ -17,7 +17,7 @@
   Authors:
     - "Jonathan Johnson"
   Name: "Uncovering Windows Events"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2019-10-01"
   Time: 6
 - Type: "blogpost"
@@ -28,7 +28,7 @@
   Authors:
     - "Palantir"
   Name: "Tampering with Windows Event Tracing: Background, Offense, and Defense"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2018-12-24"
   Time: 13
 - Type: "blogpost"
@@ -39,7 +39,7 @@
   Authors:
     - "Roberto Rodriguez"
   Name: "Threat Hunting with ETW events and HELK — Part 1: Installing SilkETW"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2019-09-19"
   Time: 14
 - Type: "blogpost"
@@ -50,7 +50,7 @@
   Authors:
     - "iredteam"
   Name: "ETW: Event Tracing for Windows 101"
-  Difficulty: 2
+  Difficulty: medium
 - Type: "blogpost"
   Tags:
     - "Malware Development"
@@ -59,7 +59,7 @@
   Authors:
     - "Maxime MEIGNAN"
   Name: "A universal EDR bypass built in Windows 10"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-10-11"
   Time: 7
 - Type: "blogpost"
@@ -70,5 +70,5 @@
   Authors:
     - "Johny Johnson"
   Name: "Event Tracing for Windows (ETW): Your Friendly Neighborhood IPC Mechanism"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2024-03-05"

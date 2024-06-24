@@ -6,7 +6,7 @@
   Authors:
     - "Hope Walker"
   Name: "Manual LDAP Querying: Part 2"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2024-05-02"
   Time: 17
 - Type: "blogpost"
@@ -17,6 +17,6 @@
   Authors:
     - "Hope Walker"
   Name: "An Introduction to Manual Active Directory Querying with Dsquery and Ldapsearch"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2021-06-02"
   Time: 17

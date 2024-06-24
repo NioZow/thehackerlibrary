@@ -7,5 +7,5 @@
   Authors:
     - Portswigger
   Name: "Cross-site scripting"
-  Difficulty: 2
+  Difficulty: medium
   Time: 0

@@ -8,7 +8,7 @@
     - "Martin Sohn Christensen"
     - "Tobias Thorbjorn Munch Torp"
   Name: "SID filter as security boundary between domains? (Part 4) - Bypass SID filtering research"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2022-04-04"
 - Type: "blogpost"
   Tags:
@@ -18,7 +18,7 @@
   Authors:
     - "Charlie Clark"
   Name: "External Trusts Are Evil"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-03-14"
   Time: 7
 - Type: "blogpost"
@@ -31,7 +31,7 @@
   Authors:
     - "Charlie Clark"
   Name: "A Strange Case of Trusts, Machine Accounts and DNS"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2020-05-01"
 - Type: "blogpost"
   Tags:
@@ -43,7 +43,7 @@
   Authors:
     - "Charlie Clark"
   Name: "Crossing Trusts 4 Delegation"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2020-04-04"
 - Type: "blogpost"
   Tags:
@@ -53,7 +53,7 @@
   Authors:
     - "Harmj0y"
   Name: "A Guide to Attacking Domain Trusts"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2017-10-30"
   Time: 36
 - Type: "blogpost"
@@ -64,7 +64,7 @@
   Authors:
     - "Harmj0y"
   Name: "Not A Security Boundary: Breaking Forest Trusts"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2018-11-28"
   Time: 14
 - Type: "blogpost"
@@ -75,7 +75,7 @@
   Authors:
     - "Dirk-jan Mollema"
   Name: "Active Directory forest trusts part 2 - Trust transitivity and finding a trust bypass"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2021-06-10"
   Time: 24
 - Type: "blogpost"
@@ -86,6 +86,6 @@
   Authors:
     - "Dirk-jan Mollema"
   Name: "Active Directory forest trusts part 1 - How does SID filtering work?"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2018-09-24"
   Time: 16

@@ -6,7 +6,7 @@
   Authors:
     - "Samir Bousseaden"
   Name: "Exploring Windows UAC Bypasses: Techniques and Detection Strategies"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-05-15"
   Time: 21
 - Type: "blogpost"
@@ -17,6 +17,6 @@
   Authors:
     - "Matt Nelson"
   Name: "Bypassing UAC using App Paths"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2017-03-24"
   Time: 4

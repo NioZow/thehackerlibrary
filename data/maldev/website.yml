@@ -5,7 +5,7 @@
   Authors:
     - "modexp"
   Name: "modexp's blog"
-  Difficulty: 2
+  Difficulty: medium
 - Type: "website"
   Tags:
     - "Malware Development"
@@ -14,7 +14,7 @@
   Authors:
     - "iredteam"
   Name: "iredteam"
-  Difficulty: 2
+  Difficulty: medium
 - Type: "website"
   Tags:
     - "Malware Development"
@@ -22,7 +22,7 @@
   Authors:
     - "crow"
   Name: "crow's blog"
-  Difficulty: 2
+  Difficulty: medium
 - Type: "website"
   Tags:
     - "Malware Development"
@@ -30,7 +30,7 @@
   Authors:
     - "Chvancooten"
   Name: "Malware Development for Dummies"
-  Difficulty: 2
+  Difficulty: medium
 - Type: "website"
   Tags:
     - "Malware Development"
@@ -40,7 +40,7 @@
     - "NUL0x4C"
   Name: "Maldev Academy"
   Price: 250
-  Difficulty: 2
+  Difficulty: medium
 - Type: "website"
   Tags:
     - "Malware Development"
@@ -48,7 +48,7 @@
   Authors:
     - "Alice Climent-Pommeret"
   Name: "Alice Climent-Pommeret's blog"
-  Difficulty: 2
+  Difficulty: medium
 - Type: "website"
   Tags:
     - "Malware Development"
@@ -56,7 +56,7 @@
   Authors:
     - "CodeXTF2"
   Name: "redteam/maldev links"
-  Difficulty: 2
+  Difficulty: medium
 - Type: "documentation"
   Tags:
     - "Malware Development"
@@ -64,7 +64,7 @@
   Authors:
     - "m417z"
   Name: "NtDoc: Native API online documentation, based on the System Informer (formerly Process Hacker)"
-  Difficulty: 1
+  Difficulty: easy
 - Type: "documentation"
   Tags:
     - "Malware Development"
@@ -73,7 +73,7 @@
   Authors:
     - "Unknown"
   Name: "NTSTATUS to Win32 Error Mappings (as of WDK 19H1)"
-  Difficulty: 1
+  Difficulty: easy
 - Type: "documentation"
   Tags:
     - "Malware Development"
@@ -82,4 +82,4 @@
   Authors:
     - "mrd0x"
   Name: "MalAPI.io"
-  Difficulty: 1
+  Difficulty: easy

@@ -34,8 +34,8 @@ type (
 		Name string `yaml:"Name" json:"Name"`
 
 		// Difficulty of understanding
-		// Values can be EASY, MEDIUM, HARD, INSANE
-		Difficulty uint8 `yaml:"Difficulty" json:"Difficulty"`
+		// Values can be easy, medium, hard, insane
+		Difficulty string `yaml:"Difficulty" json:"Difficulty"`
 
 		// Time in minutes to go through
 		Time uint16 `yaml:"Time" json:"Time"`
@@ -52,7 +52,6 @@ func LoadResources(path string) error {
 	var (
 		resources []Resource
 		resourceId int
-		difficulty string
 	)
 
 	// Read YAML file
@@ -69,24 +68,8 @@ func LoadResources(path string) error {
 	// Loop through all trainings from that file
 	for _, resource := range resources {
 
-		switch resource.Difficulty {
-		case 1:
-			difficulty = "easy"
-			break
-		case 2:
-			difficulty = "medium"
-			break
-		case 3:
-			difficulty = "hard"
-			break
-		case 4:
-			difficulty = "insane"
-			break
-		}
-
-
 		// Parse the input date with the specified layout
-		_, err = db.DB.Exec("INSERT INTO resources (type, name, url, date, price, time, difficulty) VALUES ($1, $2, $3, $4, $5, $6, $7)", strings.ToUpper(resource.Type), resource.Name, resource.Url, resource.Date, resource.Price, resource.Time, difficulty)
+		_, err = db.DB.Exec("INSERT INTO resources (type, name, url, date, price, time, difficulty) VALUES ($1, $2, $3, $4, $5, $6, $7)", strings.ToUpper(resource.Type), resource.Name, resource.Url, resource.Date, resource.Price, resource.Time, resource.Difficulty)
 		if err != nil {
 			return err
 		}

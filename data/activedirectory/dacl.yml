@@ -7,7 +7,7 @@
     - "Megan Nilsen"
     - "Andrew Schwartz"
   Name: "A Hitch-hacker's Guide to DACL-Based Detections (Part 1A)"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-10-10"
 - Type: "blogpost"
   Tags:
@@ -17,7 +17,7 @@
   Authors:
     - "Decoder"
   Name: 'From NTAuthCertificates to "Silver" Certificate'
-  Difficulty: 2
+  Difficulty: medium
   Date: "2023-09-05"
 - Type: "blogpost"
   Tags:
@@ -28,5 +28,5 @@
   Authors:
     - "Quentin Roland"
   Name: "OUned.py: exploiting hidden Organizational Units ACL attack vectors in Active Directory"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2024-04-19"

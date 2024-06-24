@@ -7,5 +7,5 @@
     - "Paul Barbé"
     - "Kévin Schouteeten"
   Name: "So I became a node: exploiting bootstrap tokens in Azure Kubernetes Service"
-  Difficulty: 2
+  Difficulty: medium
   Date: "2024-04-23"

@@ -7,7 +7,7 @@
   Authors:
     - 0xTriboulet
   Name: "From C, with inline assembly, to shellcode"
-  Difficulty: 3
+  Difficulty: hard
   Date: "2023-08-11"
 - Type: "blogpost"
   Tags:
@@ -18,6 +18,6 @@
   Authors:
     - 5pider
   Name: "Modern implant design: position independent malware development"
-  Difficulty: 3
+  Difficulty: hard
   Time: 20
   Date: "2024-01-27"
