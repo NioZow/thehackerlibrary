@@ -1,27 +1,26 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
 
-import { ActionIcon, rem, TextInput } from '@mantine/core';
-import { IconArrowRight, IconSearch } from '@tabler/icons-react';
+import { ActionIcon, rem, TextInput } from "@mantine/core";
+import { IconArrowRight, IconSearch } from "@tabler/icons-react";
 
-import classes from '@/style/search.module.css';
+import classes from "@/style/search.module.css";
 
-import { newParams } from '@/util/params';
+import { newParams } from "@/util/params";
 
-import { SearchParams } from '@/constant/types';
-
+import { SearchParams } from "@/constant/types";
 
 interface IProps {
   searchParams: SearchParams;
 }
 
 const SearchInput = ({ searchParams }: IProps) => {
-  const [filter, setFilter] = useState('');
+  const [filter, setFilter] = useState("");
   const router = useRouter();
 
   useEffect(() => {
-    setFilter(searchParams.where ? searchParams.where : '');
+    setFilter(searchParams.where !== null ? searchParams.where : "");
   }, [searchParams]);
 
   return (
@@ -30,9 +29,12 @@ const SearchInput = ({ searchParams }: IProps) => {
       classNames={{
         input: classes.input,
       }}
+      value={filter}
       placeholder="Search resources..."
       rightSectionWidth={42}
-      leftSection={<IconSearch style={{ width: rem(18), height: rem(18) }} stroke={1.5} />}
+      leftSection={
+        <IconSearch style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+      }
       rightSection={
         <ActionIcon
           size={32}
@@ -45,7 +47,10 @@ const SearchInput = ({ searchParams }: IProps) => {
             router.push(`/?${sp.toString()}`);
           }}
         >
-          <IconArrowRight style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+          <IconArrowRight
+            style={{ width: rem(18), height: rem(18) }}
+            stroke={1.5}
+          />
         </ActionIcon>
       }
       onChange={(event) => setFilter(event.target.value)}
