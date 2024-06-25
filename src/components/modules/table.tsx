@@ -209,6 +209,10 @@ export const ResourceTableFooter = ({ searchParams, count }: { searchParams: Sea
   const [page, setPage] = useState(1);
   const router = useRouter();
 
+    useEffect(() => {
+        setPage(searchParams.page);
+    }, [searchParams]);
+
   return (
     <div className="space-x-2 tex-white">
       <Button
