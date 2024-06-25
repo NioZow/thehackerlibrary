@@ -1,20 +1,27 @@
-export type Column = 'name' | 'tags' | 'price' | 'authors' | 'time' | 'date' | 'difficulty';
+export type Column =
+  | "name"
+  | "tags"
+  | "price"
+  | "authors"
+  | "time"
+  | "date"
+  | "difficulty";
 
-export type Status = 'both' | 'complete' | 'incomplete';
+export type Status = "both" | "complete" | "incomplete";
 
-export const status: Status[] = ['complete', 'incomplete', 'both'];
+export const status: Status[] = ["complete", "incomplete", "both"];
 
-export type Difficulty = 'easy' | 'medium' | 'hard' | 'insane';
+export type Difficulty = "easy" | "medium" | "hard" | "insane";
 
-export const difficulties: Difficulty[] = ['easy', 'medium', 'hard', 'insane'];
+export const difficulties: Difficulty[] = ["easy", "medium", "hard", "insane"];
 
-export type Tag = 'bookmark';
+export type Tag = "bookmark";
 
 export const DifficultyColor: Record<Difficulty, string> = {
-  easy: 'green',
-  medium: 'orange',
-  hard: 'red',
-  insane: 'gray',
+  easy: "green",
+  medium: "orange",
+  hard: "red",
+  insane: "gray",
 };
 
 export interface Author {
@@ -30,10 +37,10 @@ export interface TagResource {
 }
 
 export enum EnumDifficulty {
-  EASY = 'easy',
-  MEDIUM = 'medium',
-  HARD = 'hard',
-  INSANE = 'insane',
+  EASY = "easy",
+  MEDIUM = "medium",
+  HARD = "hard",
+  INSANE = "insane",
 }
 
 export interface Resource {
@@ -59,3 +66,5 @@ export interface SearchParams {
   status: Status;
   bookmarks: number[];
 }
+
+export const ITEMS_PER_PAGE = 8;
