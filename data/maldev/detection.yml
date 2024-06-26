@@ -26,3 +26,16 @@
     - "AntiScan.me"
   Name: "AntiScan"
   Difficulty: easy
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Syscalls"
+    - "Detection"
+    - "Introduction"
+  Url: "https://medium.com/@IglensonSecurity/dodging-the-guardian-how-malware-evades-edr-detections-72ed61896406"
+  Authors:
+    - "d4skor"
+  Name: "Dodging the Guardian: How Malware Evades EDR Detections"
+  Difficulty: easy
+  Date: "2024-06-11"
+  Time: 17

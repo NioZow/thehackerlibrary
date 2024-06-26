@@ -52,6 +52,7 @@ func LoadResources(path string) error {
 	var (
 		resources []Resource
 		resourceId int
+		cnt int
 	)
 
 	// Read YAML file
@@ -68,28 +69,37 @@ func LoadResources(path string) error {
 	// Loop through all trainings from that file
 	for _, resource := range resources {
 
-		// Parse the input date with the specified layout
-		_, err = db.DB.Exec("INSERT INTO resources (type, name, url, date, price, time, difficulty) VALUES ($1, $2, $3, $4, $5, $6, $7)", strings.ToUpper(resource.Type), resource.Name, resource.Url, resource.Date, resource.Price, resource.Time, resource.Difficulty)
-		if err != nil {
-			return err
-		}
-
 		// get its id
-		if err = db.DB.QueryRow("SELECT id FROM resources WHERE url = $1", resource.Url).Scan(&resourceId); err != nil {
+		if err = db.DB.QueryRow("SELECT COUNT(*) FROM resources WHERE url = $1", resource.Url).Scan(&cnt); err != nil {
 			return err
 		}
 
-		// insert tags 
-		for _, tag := range resource.Tags {
-			if _, err = db.DB.Exec("INSERT INTO tags (name, resource_id) VALUES ($1, $2)", tag, resourceId); err != nil {
+		if cnt == 0 {
+			// only add if it does not exist
+
+			// Parse the input date with the specified layout
+			_, err = db.DB.Exec("INSERT INTO resources (type, name, url, date, price, time, difficulty) VALUES ($1, $2, $3, $4, $5, $6, $7)", strings.ToUpper(resource.Type), resource.Name, resource.Url, resource.Date, resource.Price, resource.Time, resource.Difficulty)
+			if err != nil {
 				return err
 			}
-		}
 
-		// insert authors
-		for _, author := range resource.Authors {
-			if _, err = db.DB.Exec("INSERT INTO authors (name, resource_id) VALUES ($1, $2)", author, resourceId); err != nil {
+			// get its id
+			if err = db.DB.QueryRow("SELECT id FROM resources WHERE url = $1", resource.Url).Scan(&resourceId); err != nil {
 				return err
+			}
+
+			// insert tags 
+			for _, tag := range resource.Tags {
+				if _, err = db.DB.Exec("INSERT INTO tags (name, resource_id) VALUES ($1, $2)", tag, resourceId); err != nil {
+					return err
+				}
+			}
+
+			// insert authors
+			for _, author := range resource.Authors {
+				if _, err = db.DB.Exec("INSERT INTO authors (name, resource_id) VALUES ($1, $2)", author, resourceId); err != nil {
+					return err
+				}
 			}
 		}
 	}
