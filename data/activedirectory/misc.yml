@@ -93,3 +93,81 @@
   Difficulty: medium
   Date: "2024-03-20"
   Time: 24
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "ACL"
+  Url: "https://www.tiraniddo.dev/2024/06/working-your-way-around-acl.html"
+  Authors:
+    - "James Forshaw"
+  Name: "Working your way Around an ACL"
+  Difficulty: medium
+  Date: "2024-06-03"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Misc"
+    - "Guest"
+  Url: "https://sensepost.com/blog/2024/guest-vs-null-session-on-windows/"
+  Authors:
+    - "Aurélien Chalot"
+  Name: "Guest vs Null session on Windows"
+  Difficulty: medium
+  Date: "2024-04-18"
+  Time: 9
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Misc"
+  Url: "https://decoder.cloud/2024/04/24/hello-im-your-domain-admin-and-i-want-to-authenticate-against-you/"
+  Authors:
+    - "Decoder"
+  Name: "Hello: I’m your Domain Admin and I want to authenticate against you"
+  Difficulty: hard
+  Date: "2024-04-24"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "AD CS"
+    - "Bloodhound"
+  Url: "https://posts.specterops.io/adcs-attack-paths-in-bloodhound-part-1-799f3d3b03cf"
+  Authors:
+    - "Jonas Bülow Knudsen"
+  Name: "ADCS Attack Paths in BloodHound — Part 1"
+  Difficulty: medium
+  Date: "2024-01-24"
+  Time: 14
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "AD CS"
+    - "Bloodhound"
+  Url: "https://posts.specterops.io/adcs-attack-paths-in-bloodhound-part-2-ac7f925d1547"
+  Authors:
+    - "Jonas Bülow Knudsen"
+  Name: "ADCS Attack Paths in BloodHound — Part 2"
+  Difficulty: medium
+  Date: "2024-05-01"
+  Time: 11
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "AD CS"
+    - "Bloodhound"
+  Url: "https://posts.specterops.io/adcs-attack-paths-in-bloodhound-part-3-33efb00856ac"
+  Authors:
+    - "Jonas Bülow Knudsen"
+  Name: "ADCS Attack Paths in BloodHound — Part 3"
+  Difficulty: medium
+  Date: "2024-09-11"
+  Time: 18
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Potato"
+  Url: "https://decoder.cloud/2024/08/02/the-fake-potato/"
+  Authors:
+    - "Decoder"
+  Name: "The 'Fake' Potato"
+  Difficulty: medium
+  Date: "2024-08-02"

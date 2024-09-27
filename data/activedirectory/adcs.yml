@@ -98,3 +98,53 @@
   Name: "What if no PKINIT? Still the same fun!"
   Difficulty: medium
   Date: "2024-05-18"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "AD CS"
+  Url: "https://logan-goins.com/2024-05-04-ADCS/"
+  Authors:
+    - "Logan"
+  Name: "Active Directory Certificate Services (AD CS) - A Beautifully Vulnerable and Mis-configurable Mess"
+  Difficulty: medium
+  Date: "2024-05-04"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "AD CS"
+  Url: "https://www.blackhillsinfosec.com/abusing-active-directory-certificate-services-part-one/"
+  Authors:
+    - "Alyssa Snow"
+  Name: "Abusing Active Directory Certificate Services (Part 1)"
+  Difficulty: medium
+  Date: "2023-10-05"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "AD CS"
+  Url: "https://www.blackhillsinfosec.com/abusing-active-directory-certificate-services-part-2/"
+  Authors:
+    - "Alyssa Snow"
+  Name: "Abusing Active Directory Certificate Services (Part 2)"
+  Difficulty: medium
+  Date: "2023-10-12"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "AD CS"
+  Url: "https://www.blackhillsinfosec.com/abusing-active-directory-certificate-services-part-3/"
+  Authors:
+    - "Alyssa Snow"
+  Name: "Abusing Active Directory Certificate Services (Part 3)"
+  Difficulty: medium
+  Date: "2023-11-09"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "AD CS"
+  Url: "https://www.blackhillsinfosec.com/abusing-active-directory-certificate-services-part-4/"
+  Authors:
+    - "Alyssa Snow"
+  Name: "Abusing Active Directory Certificate Services (Part 4)"
+  Difficulty: medium
+  Date: "2024-05-30"

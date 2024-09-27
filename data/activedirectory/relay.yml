@@ -172,3 +172,27 @@
   Name: "Using Kerberos for Authentication Relay Attacks"
   Difficulty: hard
   Date: "2021-10-20"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos"
+    - "Relay"
+    - "AD CS"
+  Url: "https://www.fortalicesolutions.com/posts/shadow-credentials-workstation-takeover-edition"
+  Authors:
+    - "Mathew Creel"
+  Name: "Shadow Credentials: Workstation Takeover Edition"
+  Difficulty: medium
+  Date: "2021-10-21"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos"
+    - "Relay"
+    - "DCOM"
+  Url: "https://www.tiraniddo.dev/2024/04/relaying-kerberos-authentication-from.html"
+  Authors:
+    - "James Forshaw"
+  Name: "Relaying Kerberos Authentication from DCOM OXID Resolving"
+  Difficulty: hard
+  Date: "2024-04-29"

@@ -1,0 +1,11 @@
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Linux"
+  Url: "https://gatari.dev/posts/the-art-of-exploiting-ad-from-linux/"
+  Authors:
+    - "Zavier"
+  Name: "The Art of Exploiting Active Directory from Linux"
+  Difficulty: medium
+  Date: "2024-09-06"
+  Time: 19

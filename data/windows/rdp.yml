@@ -27,3 +27,14 @@
     - "c3r3br4t3"
   Name: "ShadowRDP"
   Difficulty: medium
+- Type: "blogpost"
+  Tags:
+    - "Windows"
+    - "RDP"
+  Url: "https://blog.bitsadmin.com/spying-on-users-using-rdp-shadowing"
+  Authors:
+    - "Bitsadmin"
+  Name: "Spying on users using Remote Desktop Shadowing - Living off the Land"
+  Difficulty: medium
+  Date: "2021-03-26"
+  Time: 20
