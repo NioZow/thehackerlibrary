@@ -1,7 +1,7 @@
 - Type: "blogpost"
   Tags:
     - "Active Directory"
-    - "ADCS"
+    - "AD CS"
   Url: "https://posts.specterops.io/certified-pre-owned-d95910965cd2"
   Authors:
     - "Will Schroeder"
@@ -13,7 +13,7 @@
 - Type: "blogpost"
   Tags:
     - "Active Directory"
-    - "ADCS"
+    - "AD CS"
   Url: "https://posts.specterops.io/certificates-and-pwnage-and-patches-oh-my-8ae0f4304c1d"
   Authors:
     - "Will Schroeder"
@@ -25,7 +25,7 @@
 - Type: "blogpost"
   Tags:
     - "Active Directory"
-    - "ADCS"
+    - "AD CS"
   Url: "https://research.ifcr.dk/certipy-4-0-esc9-esc10-bloodhound-gui-new-authentication-and-request-methods-and-more-7237d88061f7"
   Authors:
     - "Oliver Lyak"
@@ -37,7 +37,7 @@
   Tags:
     - "Active Directory"
     - "Groups"
-    - "ADCS"
+    - "AD CS"
   Url: "https://decoder.cloud/2024/02/26/hello-im-your-adcs-server-and-i-want-to-authenticate-against-you/"
   Authors:
     - "Decoder"
@@ -48,7 +48,7 @@
   Tags:
     - "Active Directory"
     - "Groups"
-    - "ADCS"
+    - "AD CS"
   Url: "https://decoder.cloud/2023/11/20/a-deep-dive-in-cert-publishers-group/"
   Authors:
     - "Decoder"
@@ -58,7 +58,7 @@
 - Type: "blogpost"
   Tags:
     - "Active Directory"
-    - "ADCS"
+    - "AD CS"
   Url: "https://posts.specterops.io/from-da-to-ea-with-esc5-f9f045aa105c"
   Authors:
     - "Andy Robins"
@@ -68,7 +68,7 @@
 - Type: "blogpost"
   Tags:
     - "Active Directory"
-    - "ADCS"
+    - "AD CS"
   Url: "https://posts.specterops.io/adcs-esc13-abuse-technique-fda4272fbd53"
   Authors:
     - "Jonas Dulow Knudsen"
@@ -79,7 +79,7 @@
 - Type: "blogpost"
   Tags:
     - "Active Directory"
-    - "ADCS"
+    - "AD CS"
   Url: "https://posts.specterops.io/adcs-esc14-abuse-technique-333a004dc2b9"
   Authors:
     - "Jonas Dulow Knudsen"
@@ -90,7 +90,7 @@
 - Type: "blogpost"
   Tags:
     - "Active Directory"
-    - "ADCS"
+    - "AD CS"
     - "PKINIT"
   Url: "https://nickvourd.github.io/what-if-no-pkinit-still-the-same-fun/"
   Authors:
