@@ -22,6 +22,16 @@
   Tags:
     - "Active Directory"
     - "WSUS"
+  Url: "https://gosecure.ai/blog/2020/09/08/wsus-attacks-part-2-cve-2020-1013-a-windows-10-local-privilege-escalation-1-day/"
+  Authors:
+    - "Maxime Nadeau"
+  Name: "https://gosecure.ai/blog/2020/09/08/wsus-attacks-part-2-cve-2020-1013-a-windows-10-local-privilege-escalation-1-day/"
+  Difficulty: medium
+  Date: "2020-09-08"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "WSUS"
   Url: "https://gosecure.ai/blog/2021/11/22/gosecure-investigates-abusing-windows-server-update-services-wsus-to-enable-ntlm-relaying-attacks/"
   Authors:
     - "Romain Carnus"

@@ -148,3 +148,13 @@
   Name: "Abusing Active Directory Certificate Services (Part 4)"
   Difficulty: medium
   Date: "2024-05-30"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "AD CS"
+  Url: "https://sant0rryu.github.io/posts/CertPotato/"
+  Authors:
+    - "Sant0rryu"
+  Name: "CertPotato – Using ADCS to privesc from virtual and network service accounts to local system"
+  Difficulty: medium
+  Date: "2024-11-04"

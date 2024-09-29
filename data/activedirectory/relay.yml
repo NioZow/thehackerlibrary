@@ -95,7 +95,7 @@
   Tags:
     - "Active Directory"
     - "NTLM Relay"
-    - "ADCS"
+    - "AD CS"
   Url: "https://dirkjanm.io/ntlm-relaying-to-ad-certificate-services/"
   Authors:
     - "Dirk-jan Mollema"

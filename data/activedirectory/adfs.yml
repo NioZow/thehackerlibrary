@@ -1,7 +1,7 @@
 - Type: "blogpost"
   Tags:
     - "Active Directory"
-    - "ADFS"
+    - "AD FS"
   Url: "https://www.mandiant.com/resources/blog/abusing-replication-stealing-adfs-secrets-over-the-network"
   Authors:
     - "Douglas Bienstock"
