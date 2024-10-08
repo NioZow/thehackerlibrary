@@ -38,3 +38,13 @@
   Difficulty: medium
   Date: "2021-03-26"
   Time: 20
+- Type: "blogpost"
+  Tags:
+    - "Windows"
+    - "RDP"
+  Url: "https://gosecure.ai/blog/2020/10/20/announcing-pyrdp-1-0/"
+  Authors:
+    - "Alexandre Beaulieu"
+  Name: "Announcing PyRDP 1.0"
+  Difficulty: medium
+  Date: "2020-10-20"

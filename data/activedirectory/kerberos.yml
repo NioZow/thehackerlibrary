@@ -81,7 +81,7 @@
     - "Kerberos Delegation"
   Url: "https://en.hackndo.com/constrained-unconstrained-delegation/"
   Authors:
-    - "hackndo"
+    - "Pixis"
   Name: "Kerberos Delegation"
   Difficulty: medium
   Date: "2020-04-18"

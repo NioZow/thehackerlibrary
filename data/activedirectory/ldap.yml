@@ -13,7 +13,7 @@
   Tags:
     - "Active Directory"
     - "LDAP"
-  Url: "An Introduction to Manual Active Directory Querying with Dsquery and Ldapsearch"
+  Url: "https://posts.specterops.io/an-introduction-to-manual-active-directory-querying-with-dsquery-and-ldapsearch-84943c13d7ebh"
   Authors:
     - "Hope Walker"
   Name: "An Introduction to Manual Active Directory Querying with Dsquery and Ldapsearch"

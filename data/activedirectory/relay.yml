@@ -145,7 +145,7 @@
     - "Active Directory"
     - "NTLM Relay"
     - "GPO"
-  Url: "GPOddity: exploiting Active Directory GPOs through NTLM relaying, and more!"
+  Url: "https://www.synacktiv.com/publications/gpoddity-exploiting-active-directory-gpos-through-ntlm-relaying-and-more"
   Authors:
     - "Quentin Roland"
   Name: "GPOddity: exploiting Active Directory GPOs through NTLM relaying, and more!"
@@ -157,7 +157,7 @@
     - "NTLM Relay"
   Url: "https://en.hackndo.com/ntlm-relay/"
   Authors:
-    - "hackndo"
+    - "Pixis"
   Name: "NTLM Relay"
   Difficulty: medium
   Date: "2020-04-01"
@@ -196,3 +196,15 @@
   Name: "Relaying Kerberos Authentication from DCOM OXID Resolving"
   Difficulty: hard
   Date: "2024-04-29"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "Kerberos"
+    - "Relay"
+    - "DCOM"
+  Url: "https://googleprojectzero.blogspot.com/2021/10/windows-exploitation-tricks-relaying.html"
+  Authors:
+    - "James Forshaw"
+  Name: "Windows Exploitation Tricks: Relaying DCOM Authentication"
+  Difficulty: hard
+  Date: "2021-10-20"

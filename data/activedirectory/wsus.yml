@@ -25,7 +25,7 @@
   Url: "https://gosecure.ai/blog/2020/09/08/wsus-attacks-part-2-cve-2020-1013-a-windows-10-local-privilege-escalation-1-day/"
   Authors:
     - "Maxime Nadeau"
-  Name: "https://gosecure.ai/blog/2020/09/08/wsus-attacks-part-2-cve-2020-1013-a-windows-10-local-privilege-escalation-1-day/"
+  Name: "WSUS Attacks Part 2: CVE-2020-1013 a Windows 10 Local Privilege Escalation 1-Day"
   Difficulty: medium
   Date: "2020-09-08"
 - Type: "blogpost"
