@@ -158,3 +158,13 @@
   Name: "CertPotato – Using ADCS to privesc from virtual and network service accounts to local system"
   Difficulty: medium
   Date: "2024-11-04"
+- Type: "blogpost"
+  Tags:
+    - "Active Directory"
+    - "AD CS"
+  Url: "https://trustedsec.com/blog/ekuwu-not-just-another-ad-cs-esc"
+  Authors:
+    - "Justin Bollinger"
+  Name: "EKUwu: Not just another AD CS ESC"
+  Difficulty: medium
+  Date: "2024-10-09"
