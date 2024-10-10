@@ -29,3 +29,13 @@
   Name: "Unmanaged .NET Patching"
   Difficulty: hard
   Date: "2024-02-01"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Dotnet"
+  Url: "https://securityintelligence.com/x-force/net-execution-inlineexecute-assembly/"
+  Authors:
+    - "anthemtotheego"
+  Name: "Don't Be Rude, Stay: Avoiding Fork&Run .NET Execution With InlineExecute-Assembly"
+  Difficulty: medium
+  Date: "2021-07-08"
