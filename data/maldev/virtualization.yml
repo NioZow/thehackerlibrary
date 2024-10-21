@@ -1,0 +1,22 @@
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Virtualization"
+  Url: "https://secret.club/2023/12/24/riscy-business.html"
+  Authors:
+    - "mrexodia"
+    - "oopsmishap"
+  Name: "RISC-Y Business: Raging against the reduced machine"
+  Difficulty: insane
+  Date: "2023-12-24"
+- Type: "blogpost"
+  Tags:
+    - "Malware Development"
+    - "Virtualization"
+  Url: "https://blog.fox-it.com/2024/09/25/red-teaming-in-the-age-of-edr-evasion-of-endpoint-detection-through-malware-virtualisation/"
+  Authors:
+    - "Boudewijn Meijer"
+    - "Rick Veldhoven"
+  Name: "Red Teaming in the age of EDR: Evasion of Endpoint Detection Through Malware Virtualisation"
+  Difficulty: insane
+  Date: "2024-09-25"
