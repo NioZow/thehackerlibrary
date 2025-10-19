@@ -1,0 +1,34 @@
+services:
+  db:
+    image: postgres:17-alpine
+    container_name: postgres_db
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-thehackerlibrary}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nextjs_app
+    restart: always
+    env_file: .env
+    ports:
+      - "${PORT:-3000}:3000"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-thehackerlibrary}:${POSTGRES_PASSWORD:-thehackerlibrary}@db:5432/${POSTGRES_DB:-thehackerlibrary}
+
+volumes:
+  postgres_data:

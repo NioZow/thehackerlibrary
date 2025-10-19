@@ -1,0 +1,20 @@
+- name: Active Directory
+  id: 073d6286-93c2-404c-9e02-b6e1ed08178a
+- name: Artificial Intelligence
+  id: ff20f5ff-5284-4e9d-9c79-b2d974149a43
+- name: Cryptography
+  id: 48b6ed26-ada8-436e-989d-1c671ac263c6
+- name: Hardware
+  id: 21dfeeb9-e766-4a0f-a46d-ae0bbd08d4b0
+- name: Linux
+  id: 3d133ae0-1164-4394-8df4-c30c54e5d85e
+- name: Malware Development
+  id: 2dcb13fc-bfaf-481e-b879-9b73f3b5f336
+- name: Network Security
+  id: 3c333baf-648d-4548-9350-e1d9bdc375ac
+- name: Web
+  id: 60f125b7-604b-45da-80ad-4ba8dbe583b9
+- name: Wifi
+  id: 9f42f1fd-1185-4c92-9efa-ffafb93f5aee
+- name: Windows
+  id: b9e4c6a6-1239-4167-90e7-f178859278bb

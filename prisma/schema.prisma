@@ -1,0 +1,158 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model authors {
+  id        String      @id @default(uuid()) @db.Uuid
+  name      String      @unique(map: "author_name")
+  resources resources[] @relation("authorsToresources")
+}
+
+model resources {
+  id        String     @id @default(uuid()) @db.Uuid
+  type      String
+  title     String
+  url       String     @unique(map: "url")
+  accepted  Boolean?
+  date      DateTime?
+  time      Int?
+  bookmarks Bookmark[]
+  readPosts ReadPost[]
+  authors   authors[]  @relation("authorsToresources")
+  tags      tags[]     @relation("resourcesTotags")
+}
+
+model tags {
+  id        String      @id @default(uuid()) @db.Uuid
+  name      String      @unique(map: "tag_name")
+  sections  sections[]  @relation("SectionTag")
+  topics    topics[]    @relation("TopicTag")
+  resources resources[] @relation("resourcesTotags")
+}
+
+model paths {
+  id     String   @id @default(uuid()) @db.Uuid
+  name   String   @unique(map: "path_name")
+  topics topics[] @relation("TopicPath")
+}
+
+model topics {
+  id       String     @id @default(uuid()) @db.Uuid
+  tag_id   String     @db.Uuid
+  path_id  String     @db.Uuid
+  sections sections[] @relation("SectionTopic")
+  path     paths      @relation("TopicPath", fields: [path_id], references: [id], onDelete: Restrict)
+  tag      tags       @relation("TopicTag", fields: [tag_id], references: [id], onDelete: Restrict)
+}
+
+model sections {
+  id       String  @id @default(uuid()) @db.Uuid
+  tag_id   String  @db.Uuid
+  priority Int
+  topic_id String  @db.Uuid
+  tag      tags?   @relation("SectionTag", fields: [tag_id], references: [id], onDelete: Restrict)
+  topic    topics? @relation("SectionTopic", fields: [topic_id], references: [id], onDelete: Restrict)
+}
+
+model User {
+  id            String          @id @default(cuid())
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+  name          String?
+  role          String          @default("user") @db.VarChar
+  email         String?         @unique
+  emailVerified DateTime?
+  image         String?
+  accounts      Account[]
+  authenticator Authenticator[]
+  bookmarks     Bookmark[]
+  notifications Notification[]
+  readPosts     ReadPost[]
+  sessions      Session[]
+}
+
+model Account {
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([provider, providerAccountId])
+}
+
+model Session {
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String
+  expires    DateTime
+
+  @@id([identifier, token])
+}
+
+model Authenticator {
+  credentialID         String  @unique
+  userId               String
+  providerAccountId    String
+  credentialPublicKey  String
+  counter              Int
+  credentialDeviceType String
+  credentialBackedUp   Boolean
+  transports           String?
+  user                 User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, credentialID])
+}
+
+model Bookmark {
+  id         String     @id @default(uuid()) @db.Uuid
+  userId     String
+  resourceId String?    @db.Uuid
+  createdAt  DateTime   @default(now())
+  resource   resources? @relation(fields: [resourceId], references: [id], onDelete: Cascade)
+  user       User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, resourceId])
+}
+
+model ReadPost {
+  id         String     @id @default(uuid()) @db.Uuid
+  userId     String
+  resourceId String?    @db.Uuid
+  readAt     DateTime   @default(now())
+  resource   resources? @relation(fields: [resourceId], references: [id], onDelete: Cascade)
+  user       User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, resourceId])
+}
+
+model Notification {
+  id        String   @id @default(uuid()) @db.Uuid
+  userId    String
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}

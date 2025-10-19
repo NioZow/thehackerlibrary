@@ -1,0 +1,45 @@
+@top Query { expression }
+
+expression {
+  OrExpression
+}
+
+OrExpression {
+  AndExpression |
+  OrExpression "or" AndExpression
+}
+
+AndExpression {
+  Term |
+  AndExpression "and" Term
+}
+
+Term {
+  Comparison |
+  "(" expression ")"
+}
+
+Comparison {
+  Field "." Operator ":" Value
+}
+
+Field {
+  "id" | "date" | "time" | "author" | "tag" | "type" | "title" | "lang"
+}
+
+Operator {
+  "eq" | "ne" | "cont" | "ncont" | "gt" | "lt" | "gte" | "lte"
+}
+
+Value {
+  String | Number | Identifier
+}
+
+@tokens {
+  String { '"' (!["\\] | "\\" _)* '"' }
+  Number { $[0-9]+ ("-" $[0-9]+ ("-" $[0-9]+)?)? }
+  Identifier { $[a-zA-Z_] $[a-zA-Z0-9_]* }
+  space { $[ \t\n\r]+ }
+}
+
+@skip { space }
