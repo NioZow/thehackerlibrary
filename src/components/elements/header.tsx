@@ -28,8 +28,8 @@ import { MdArticle } from "react-icons/md";
 
 export default function Header({ fixed }: { fixed: boolean }) {
   const notifications = [];
-  const [dailyPath, setDailyPath] = useState<number | null>(null);
-  const [latestPath, setLatestPath] = useState<number | null>(null);
+  const [dailyPath, setDailyPath] = useState<string>("");
+  const [latestPath, setLatestPath] = useState<string>("");
   const [isSignInOpen, setIsSignInOpen] = useState(false);
 
   const isAdmin = useAdmin();
@@ -57,11 +57,13 @@ export default function Header({ fixed }: { fixed: boolean }) {
 
   useEffect(() => {
     const dailyPathString = localStorage.getItem("dailyPath");
-    setDailyPath(dailyPathString ? Number(dailyPathString) : null);
+    setDailyPath(dailyPathString ?? "");
 
     const latestPathString = localStorage.getItem("latestPath");
-    setLatestPath(latestPathString ? Number(latestPathString) : null);
+    setLatestPath(latestPathString ?? "");
   }, []);
+
+  console.log(pages);
 
   const handleUserIconClick = () => {
     if (status === "unauthenticated") {
@@ -102,7 +104,7 @@ export default function Header({ fixed }: { fixed: boolean }) {
               {pages.map((page) => {
                 return (
                   <Link
-                    key={page.link}
+                    key={page.label}
                     href={page.link}
                     className="relative px-4 py-2 text-gray-300 hover:text-cyan-400 transition-all duration-300 rounded-lg hover:bg-cyan-500/10 group"
                   >

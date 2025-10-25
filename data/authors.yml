@@ -48,6 +48,8 @@
   id: 1b0d205e-9774-41ab-90c1-cc493297136d
 - name: Andy Robins
   id: 202ef72c-5a5f-45c9-b94b-68fcf5724f20
+- name: Angel Hacker
+  id: 354dd0ea-b6ec-423b-8671-11d373002e0c
 - name: AntiScan.me
   id: 3cd4241c-b81e-4a5f-85b2-bb23100cc254
 - name: Antoine Gicquel
@@ -184,6 +186,8 @@
   id: 37c2810a-3201-46c8-b224-0f03093c2d63
 - name: Hope Walker
   id: ba14df93-6e6d-40ac-be96-d445d25f424c
+- name: Huli
+  id: b67a1788-dec1-4b3b-9d07-74f4f58b1b6c
 - name: Ido Veltzman
   id: 6673a6fd-635f-4296-b4c6-196c49dd0002
 - name: InternalAllTheThings
@@ -196,6 +200,8 @@
   id: fccab25b-7e8e-43ae-bbf5-c905b38982db
 - name: Jean-François Maes
   id: cf4bf298-9fc7-47bb-bb8e-cdec8cbc5b28
+- name: Joe Leon
+  id: ea699e09-f7fb-404e-a3ff-df7750f98869
 - name: Johan Carlsson
   id: 4df16442-d6e6-43ca-969a-b844160ecc35
 - name: Johny Johnson
@@ -254,6 +260,8 @@
   id: e37b4cba-bdff-4fd0-a13a-c5c11f230796
 - name: Lee Christensen
   id: b7c7b9c5-7c5c-4927-ae54-c436902eb42e
+- name: Legacyy
+  id: e2756881-e52c-4cf4-aff7-c5add9aedd5d
 - name: Lisandro Ubiedo
   id: f9c49bc4-4ec2-44dd-a2f1-caf1b36f35e9
 - name: Logan
@@ -292,6 +300,8 @@
   id: ddf85b86-c8f4-4cd7-9f37-7163104163a4
 - name: Maurizio Siddu
   id: 35fb922b-fd92-4e5a-921a-0e6786aee81d
+- name: Maxence Schmitt
+  id: dfbab8ae-6229-4873-979d-23c574f3fcaf
 - name: Maxime MEIGNAN
   id: e9866e21-a9a2-4177-a988-bfe7fed7312a
 - name: Maxime Nadeau
@@ -300,6 +310,8 @@
   id: c4a6ba80-191d-4f4a-9e94-ed7d0a900b39
 - name: Megan Nilsen
   id: 54a7c0a6-d17f-4f2f-8226-93fadba3762a
+- name: Meydi
+  id: f431d283-5683-46a9-937d-08a41d191d46
 - name: Mez0
   id: cbe90dca-d6fc-450a-b027-31154cb91859
 - name: Michael Ranaldo
@@ -350,6 +362,8 @@
   id: ca248174-a18c-4e9d-92c3-5678a78d5c18
 - name: Omid Rezaei
   id: 877adff2-5b53-4a89-921c-c484dec6e319
+- name: Orange Tsai
+  id: b71b53d6-372c-4ba8-95a4-5273723bdb49
 - name: Ori David
   id: 33dbd7a3-e959-4842-ad0f-03e422a50e4b
 - name: OtterHacker
@@ -360,6 +374,8 @@
   id: c87e5a32-c29c-4f5f-8b97-380b4478d8d5
 - name: Paul Barbé
   id: 1047ae69-2b9c-4d63-8e62-3383b6f93666
+- name: Pawel Haldrzynski
+  id: 3ff00140-4cde-4382-b7ab-e837fe3faa51
 - name: PayloadsAllTheThings
   id: 0ef4479f-a9c8-4598-9b04-626b60949dae
 - name: Pieter Ceelen
@@ -476,12 +492,18 @@
   id: 0ad4ef13-6c06-47df-aa54-59d7baccf897
 - name: Yuval Gordon
   id: 9f0a914e-2b13-4bb9-b324-31eced617832
+- name: Zakhar Fedotkin
+  id: 37cbc638-10a6-4729-908a-6218fe78ec90
 - name: Zavier
   id: a456a45e-b177-4952-a404-cd34ed06e0f8
+- name: Zhero
+  id: dfaa8616-a527-4ac4-a0a6-919b895b5dd8
 - name: ZkClown
   id: 694e6acd-246e-4dad-a385-3a1836d0cf25
 - name: adnanthekhan
   id: 191cddfc-70bd-4517-ba3e-19070d31673d
+- name: aituglo
+  id: 3518cd68-f4f1-4b6b-a862-47d7a37737f7
 - name: alexdhital
   id: d6fd54fc-e077-411c-8e89-b702f839cc1e
 - name: anthemtotheego
@@ -496,10 +518,14 @@
   id: 77f594ac-48bb-4736-8016-98544409def0
 - name: cube0x0
   id: 67e55cd3-aa60-4dd4-9f95-bbbe6a57f1ad
+- name: d0nut
+  id: 83a99d18-0986-4163-af51-f71f9633f705
 - name: d4skor
   id: a97fb64c-339b-41df-b79d-8a9f0353675e
 - name: eversinc33
   id: 3d22efcc-e413-4608-8af9-41806422ffba
+- name: fluxsec
+  id: de6452ab-20e8-4228-a4bc-40a44fa0e632
 - name: h0mbre
   id: eda1f734-c7af-457d-a8a4-aefba0f388e6
 - name: hotnops
@@ -508,6 +534,8 @@
   id: cbe91900-d433-4906-9d85-22e70db2a3dd
 - name: iredteam
   id: 3794ad5b-edd6-4918-93a9-b3b446692ce4
+- name: isec
+  id: af06fe5e-16ce-4ffb-b916-a54f4f8285d6
 - name: itm4n
   id: f54d9482-fa50-416e-b273-89f2125aaa21
 - name: jaredcatkinson
@@ -518,8 +546,12 @@
   id: 54ead71f-0261-423a-8510-01ac6ed9393c
 - name: koutto
   id: 864e6bf3-969c-4ebe-b1f2-4bd245cc44c2
+- name: kr0tt
+  id: 4facd189-375a-4dc2-b5c1-99c9cd019288
 - name: lowercase_drm
   id: 16aadf6d-74e2-415a-ac63-8ea302f72f52
+- name: m1tz
+  id: 7a8305da-7a2f-456d-8f7f-a72b631f0325
 - name: mdanilor
   id: 856f4198-15c7-48c1-ac2a-ac97f05e6639
 - name: modexp
@@ -536,6 +568,12 @@
   id: 025692d5-1988-45df-99ba-1b7bc8fd808b
 - name: pre.empt
   id: c27d015f-7363-4371-af1f-b5ba5ba6df42
+- name: pspaul
+  id: 28b65f1a-6943-4788-8d7b-6ab9de4c8de3
+- name: r0keb
+  id: e6ad1d59-ef59-4da1-8ace-43ff97010121
+- name: r1ru
+  id: 001fb056-09f9-4134-826f-526a24a313e4
 - name: rb
   id: 2a57edc8-f5ed-4a2e-8e42-9a3a694dc780
 - name: robwinchester13
@@ -546,8 +584,12 @@
   id: ed030ae6-86d1-408b-9095-2d2a6240bec1
 - name: skr1x
   id: 39be7f40-4464-4798-82f8-d1daee686601
+- name: slonser
+  id: ecee3f24-8188-412b-8b4a-14b7afacbff1
 - name: soka
   id: c0c985ea-595d-4bb1-aa9b-825767d8e34f
+- name: spaceraccoon
+  id: b05e0391-aa91-4ccb-993e-b46f0471c21e
 - name: thedfirreport
   id: 72908d7b-805b-428e-aec8-d2c2758406d5
 - name: trickster0
@@ -556,7 +598,13 @@
   id: 7fc789f0-2469-44ec-8620-24e106dcf2c5
 - name: waldo-irc
   id: 7e5651b1-cd76-4889-88e8-4157d6731da8
+- name: wilgibbs
+  id: 47b73e96-f070-4b56-88a4-03123bfb01b5
+- name: wunderwuzzi
+  id: 4fefead9-4575-4af2-9846-7644df3c52b5
 - name: xpn
   id: 00e50d44-6428-4da8-a38a-3dd82cd09be6
 - name: ynwarcs
   id: 4b738b3e-421b-4e3c-ad2e-56730c2b6707
+- name: zayne
+  id: 135c08ae-b42f-4195-8dfe-745afd6036a3

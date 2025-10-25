@@ -48,6 +48,19 @@
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
   - 219d3ac9-7eec-4956-8134-4732880a0dec
   date: null
+- id: 516db283-5df9-43e2-ace2-0f03e96569ae
+  type: Post
+  title: 0 Click ATO with the Sandwich Attack
+  url: https://www.landh.tech/blog/20230811-sandwich-attack
+  time: null
+  accepted: true
+  authors:
+  - edf03e97-6907-4cfc-802c-b1b98d7f58d0
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 706eaf11-1415-42fd-9e04-1b397173df77
+  - e25bce44-aafc-4849-aba7-42aad0ee79f2
+  date: '2023-08-11'
 - id: 360515d4-716c-430c-b9e2-0317911146ef
   type: Post
   title: A "deep dive" in Cert Publishers Group
@@ -75,18 +88,6 @@
   - 982b05c0-01cc-4f76-8aa4-732b085d0ff5
   - fd07969a-2ceb-4022-94f7-74229d1550b8
   date: '2019-02-28'
-- id: 369deafb-0e32-4cc7-ac9a-425de0d6fb5e
-  type: Post
-  title: A Developer's Introduction to Beacon Object Files
-  url: https://www.trustedsec.com/blog/a-developers-introduction-to-beacon-object-files
-  time: null
-  accepted: true
-  authors:
-  - b107b608-388e-4e44-b753-6de906b53022
-  tags:
-  - 4f7909b7-42d7-4838-82e9-d3510a1a9700
-  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
-  date: '2020-06-16'
 - id: eeb7bcfd-f599-4f20-b3ec-542c3756de25
   type: Post
   title: A Guide to Attacking Domain Trusts
@@ -99,6 +100,19 @@
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   - 4a18127f-7fa7-440f-a15f-fce6ad64490e
   date: '2017-10-30'
+- id: ab6b3573-18d8-4181-b362-2b55a556a8c5
+  type: Post
+  title: 'A Hands-On Edition: Will Supabase Be the Next Firebase (At Least in Terms
+    of Security)?'
+  url: https://blog.m1tz.com/posts/2025/10/a-hands-on-edition-will-supabase-be-the-next-firebase-at-least-in-terms-of-security/
+  time: 11
+  accepted: true
+  authors:
+  - 7a8305da-7a2f-456d-8f7f-a72b631f0325
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - c9cf2c0e-d6e6-4595-a4c3-4fd2b1bcc435
+  date: '2025-10-07'
 - id: 8467441e-552d-4224-ae15-aa46cffb8078
   type: Post
   title: A Hitch-hacker's Guide to DACL-Based Detections (Part 1A)
@@ -138,6 +152,32 @@
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   - 4a18127f-7fa7-440f-a15f-fce6ad64490e
   date: '2020-05-01'
+- id: b8c8c9a4-8b2d-4b8a-8d85-450c195e0e76
+  type: Post
+  title: A Syscall Journey in the Windows Kernel
+  url: https://alice.climent.red/posts/a-syscall-journey-in-the-windows-kernel/
+  time: 26
+  accepted: true
+  authors:
+  - b85840f4-2f4e-461d-963f-b7688c40fc78
+  tags:
+  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
+  - 89cf1043-e9c8-4b9b-9bbd-93abc2cb2f0f
+  date: '2022-03-24'
+- id: b43efb14-dde7-4e7a-af38-91816de1af98
+  type: Post
+  title: 'A smorgasbord of a bug chain: postMessage, JSONP, WAF bypass, DOM-based
+    XSS, CORS, CSRF...'
+  url: https://jub0bs.com/posts/2023-05-05-smorgasbord-of-a-bug-chain/
+  time: null
+  accepted: true
+  authors: []
+  tags:
+  - 7b90e12c-07dc-4b5e-bd52-18c78ba2d853
+  - 37a3352a-482b-4e46-a579-39bf4578dada
+  - 120812f0-4241-4b65-8f18-b91c5a4538e7
+  - c24e492c-47e3-4734-b71e-556854c231b6
+  date: '2023-05-05'
 - id: 396040ee-813a-4784-92a7-f860df1b1778
   type: Post
   title: A universal EDR bypass built in Windows 10
@@ -161,45 +201,6 @@
   tags:
   - 8265e2de-6339-4ef7-b1d3-bcea8ca55c1d
   date: '2022-11-17'
-- id: 817a101b-46c2-4ba1-be31-b1ddbd02bdd6
-  type: Post
-  title: ADCS Attack Paths in BloodHound — Part 1
-  url: https://posts.specterops.io/adcs-attack-paths-in-bloodhound-part-1-799f3d3b03cf
-  time: 14
-  accepted: true
-  authors:
-  - 79149498-a1d7-454e-a7d8-b0ca36d54695
-  tags:
-  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
-  - da809c20-1461-4221-bb06-447c78db9c52
-  - 8339878d-a337-4079-b360-b85b0b4a8744
-  date: '2024-01-24'
-- id: fc1154e4-7a46-44b2-b555-0c43ebfabb0a
-  type: Post
-  title: ADCS Attack Paths in BloodHound — Part 2
-  url: https://posts.specterops.io/adcs-attack-paths-in-bloodhound-part-2-ac7f925d1547
-  time: 11
-  accepted: true
-  authors:
-  - 79149498-a1d7-454e-a7d8-b0ca36d54695
-  tags:
-  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
-  - da809c20-1461-4221-bb06-447c78db9c52
-  - 8339878d-a337-4079-b360-b85b0b4a8744
-  date: '2024-05-01'
-- id: 292e4c25-f7f7-4bf4-9366-12f693f6593d
-  type: Post
-  title: ADCS Attack Paths in BloodHound — Part 3
-  url: https://posts.specterops.io/adcs-attack-paths-in-bloodhound-part-3-33efb00856ac
-  time: 18
-  accepted: true
-  authors:
-  - 79149498-a1d7-454e-a7d8-b0ca36d54695
-  tags:
-  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
-  - da809c20-1461-4221-bb06-447c78db9c52
-  - 8339878d-a337-4079-b360-b85b0b4a8744
-  date: '2024-09-11'
 - id: 33d91a3f-c8a0-4809-890a-56e7ef4f83e9
   type: Post
   title: ADCS ESC13 Abuse Technique
@@ -224,28 +225,19 @@
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   - da809c20-1461-4221-bb06-447c78db9c52
   date: '2024-02-28'
-- id: a97e9426-a0d0-4fc2-baf9-594d205a8fd7
-  type: Cheatsheet
-  title: AMSI Bypass
-  url: https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20AMSI%20Bypass.md
-  time: null
-  accepted: true
-  authors:
-  - 0ef4479f-a9c8-4598-9b04-626b60949dae
-  tags:
-  - 90914313-3643-4c06-b109-77ca793e654a
-  date: null
-- id: a7898f16-4739-4b97-8d4e-27e5731f7d87
+- id: 950a3b59-8a13-4cf7-af56-fa0ac62a0d28
   type: Post
-  title: AWS Cheat-Sheet
-  url: https://github.com/swisskyrepo/InternalAllTheThings/tree/main/docs/cloud/aws
+  title: ADIDNS Revisited - WPAD, GQBL, and More
+  url: https://www.netspi.com/blog/technical-blog/network-penetration-testing/adidns-revisited/
   time: null
   accepted: true
   authors:
-  - 71453d26-943c-45b1-98d2-1a5ffce7c001
+  - 8c57e58e-24d5-480c-812f-a55b2ff80ac0
   tags:
-  - ca1002db-fb82-46d8-8d29-668096cddf17
-  date: null
+  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
+  - 04a45ff8-9cf6-4950-a578-92e9f54569d9
+  - 12440afe-315b-4a49-915d-22f0b486064b
+  date: '2018-12-05'
 - id: 4ad9db60-1d71-4f24-a9a7-4982ed2485e4
   type: Post
   title: 'Abusing AD FS Replication: Stealing AD FS Secrets Over the Network'
@@ -258,54 +250,6 @@
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   - a95712b8-78ae-4885-b994-a9cda5c9e79b
   date: '2021-04-27'
-- id: 9bba1796-ae01-4fae-aaab-0429ae5026f1
-  type: Post
-  title: Abusing Active Directory Certificate Services (Part 1)
-  url: https://www.blackhillsinfosec.com/abusing-active-directory-certificate-services-part-one/
-  time: null
-  accepted: true
-  authors:
-  - 7c97cb7a-d0d4-47b6-8c92-d011e976b8ae
-  tags:
-  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
-  - da809c20-1461-4221-bb06-447c78db9c52
-  date: '2023-10-05'
-- id: ae555670-e151-4671-b94d-7ac7e6c66e61
-  type: Post
-  title: Abusing Active Directory Certificate Services (Part 2)
-  url: https://www.blackhillsinfosec.com/abusing-active-directory-certificate-services-part-2/
-  time: null
-  accepted: true
-  authors:
-  - 7c97cb7a-d0d4-47b6-8c92-d011e976b8ae
-  tags:
-  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
-  - da809c20-1461-4221-bb06-447c78db9c52
-  date: '2023-10-12'
-- id: 2cd991e7-b359-4178-920f-06cabf2943c3
-  type: Post
-  title: Abusing Active Directory Certificate Services (Part 3)
-  url: https://www.blackhillsinfosec.com/abusing-active-directory-certificate-services-part-3/
-  time: null
-  accepted: true
-  authors:
-  - 7c97cb7a-d0d4-47b6-8c92-d011e976b8ae
-  tags:
-  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
-  - da809c20-1461-4221-bb06-447c78db9c52
-  date: '2023-11-09'
-- id: 020cbab9-6c90-48b2-9cdf-b6c731e565de
-  type: Post
-  title: Abusing Active Directory Certificate Services (Part 4)
-  url: https://www.blackhillsinfosec.com/abusing-active-directory-certificate-services-part-4/
-  time: null
-  accepted: true
-  authors:
-  - 7c97cb7a-d0d4-47b6-8c92-d011e976b8ae
-  tags:
-  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
-  - da809c20-1461-4221-bb06-447c78db9c52
-  date: '2024-05-30'
 - id: 7d59dbf9-6088-4edc-a292-0f2cca5c49dd
   type: Post
   title: Abusing Azure AD SSO with the Primary Refresh Token
@@ -378,6 +322,53 @@
   tags:
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   date: '2022-07-11'
+- id: 7c532817-a929-4371-bcd6-76e3bbbfeafc
+  type: Post
+  title: Abusing forgotten permissions on computer objects in Active Directory
+  url: https://dirkjanm.io/abusing-forgotten-permissions-on-precreated-computer-objects-in-active-directory
+  time: 10
+  accepted: true
+  authors:
+  - 049dec5d-e31d-4f71-9d8b-b612729338e4
+  tags:
+  - f660f8a4-4582-4124-ab9b-ee3b845fa9ce
+  date: '2022-07-11'
+- id: 39e586eb-1233-4e5b-9b69-4bf25e7ed1f6
+  type: Post
+  title: Abusing the DHCP Administrators Group to Escalate Privileges in Windows Domains
+  url: https://www.akamai.com/blog/security-research/2024/feb/abusing-dhcp-administrators-group-for-privilege-escalation-in-windows-domains
+  time: null
+  accepted: true
+  authors:
+  - 33dbd7a3-e959-4842-ad0f-03e422a50e4b
+  tags:
+  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
+  - 82f580b9-8cd6-48e5-843f-e1a989f50595
+  date: '2024-03-20'
+- id: 00cc4c38-d862-46dd-8b28-6b3e406e7b58
+  type: Post
+  title: Account Takeover using SSO Logins
+  url: https://rikeshbaniya.medium.com/account-takeover-using-sso-logins-fa35f28a358b
+  time: 3
+  accepted: true
+  authors:
+  - 729173ee-b4e8-4565-8d54-1f69bfed3521
+  tags:
+  - c971d3ab-48d3-4f04-9f6d-f398787d6612
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  date: '2024-12-13'
+- id: 5a456dea-4e6d-484b-8f0b-be240fa6e9c1
+  type: Post
+  title: Account hijacking using "dirty dancing" in sign-in OAuth-flows
+  url: https://labs.detectify.com/writeups/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/
+  time: null
+  accepted: true
+  authors:
+  - 0a8ff467-d06b-4d29-b071-451efc0862f6
+  tags:
+  - c971d3ab-48d3-4f04-9f6d-f398787d6612
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  date: '2022-07-06'
 - id: 6d9dec3e-565d-4357-ae68-03b2102af385
   type: Post
   title: Active Directory Certificate Services (AD CS) - A Beautifully Vulnerable
@@ -443,6 +434,31 @@
   - ecd34322-1050-4ce6-9c06-5333844511b5
   - b7928631-d0ce-4a23-9ec4-a48c74143ba3
   date: '2023-06-25'
+- id: ba9097bf-1861-47db-a31c-c2a8fbac9f4a
+  type: Post
+  title: All You Need Is MCP - LLMs Solving a DEF CON CTF Finals Challenge
+  url: https://wilgibbs.com/blog/defcon-finals-mcp/
+  time: null
+  accepted: true
+  authors:
+  - 47b73e96-f070-4b56-88a4-03123bfb01b5
+  tags:
+  - 9e398375-d5d8-4ad3-97d3-d3df82e4a9ef
+  - 9ab0664e-2079-4d15-84fe-bc5a0bdf27f5
+  date: '2025-08-14'
+- id: 4d96378b-f253-424c-9c39-f7f48578a98a
+  type: Post
+  title: All is XSS that comes to the .NET
+  url: https://blog.isec.pl/all-is-xss-that-comes-to-the-net/
+  time: null
+  accepted: true
+  authors:
+  - 3ff00140-4cde-4382-b7ab-e837fe3faa51
+  tags:
+  - 30110fc7-5a97-48c5-9471-b7368e093c39
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 7b90e12c-07dc-4b5e-bd52-18c78ba2d853
+  date: '2019-11-08'
 - id: 7292db96-4666-4189-a738-dff52b108d73
   type: Post
   title: Alternative methods of becoming SYSTEM
@@ -505,30 +521,29 @@
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   - 06cc62f8-ca06-45e5-9a5b-ea5d395b97ec
   date: '2021-06-02'
-- id: 70420152-193d-46ab-bd9c-04cd550b604b
+- id: e3d6fbc4-b62e-4739-8fd4-a39ff2d1b19f
   type: Post
-  title: Announcing PyRDP 1.0
-  url: https://gosecure.ai/blog/2020/10/20/announcing-pyrdp-1-0/
+  title: Anyone can Access Deleted and Private Repository Data on GitHub
+  url: https://trufflesecurity.com/blog/anyone-can-access-deleted-and-private-repo-data-github
   time: null
   accepted: true
   authors:
-  - c6896c2a-d49f-4f93-9496-9378b26ce5bc
+  - ea699e09-f7fb-404e-a3ff-df7750f98869
   tags:
-  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
-  - ded7572e-83ec-4ac0-b75e-51f2486ee9f2
-  date: '2020-10-20'
-- id: 9a360a5a-c66c-40b0-960d-fad506843d70
-  type: Website
-  title: AntiScan
-  url: https://antiscan.me/
+  - b6d76a83-45b7-4ee6-a769-21e4f8cdb259
+  date: '2024-07-23'
+- id: e55f742c-4102-4bd0-924f-dfaf83ac5a79
+  type: Post
+  title: April King — Handling Cookies is a Minefield
+  url: https://grayduck.mn/2024/11/21/handling-cookies-is-a-minefield/
   time: null
   accepted: true
   authors:
-  - 3cd4241c-b81e-4a5f-85b2-bb23100cc254
+  - b2810638-313f-4a41-bd2c-6b58ee89e1b5
   tags:
-  - 362d0482-2621-4e81-86ac-cb14d586cbd1
-  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
-  date: null
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - cd02949d-181d-4bc7-a6f2-ce0cb1bdc4ea
+  date: '2024-11-21'
 - id: ef7463b8-6a6f-47ba-aa6f-1ad89dcce90b
   type: Post
   title: 'Azure AD Kerberos Tickets: Pivoting to the Cloud'
@@ -554,40 +569,32 @@
   tags:
   - 38368bde-deb6-4b27-b157-f71daf030bfa
   date: '2019-09-16'
-- id: 9fbea891-1838-4a5c-9af7-17b6e7cd107c
-  type: Cheatsheet
-  title: Azure Active Directory
-  url: https://github.com/rootsecdev/Azure-Red-Team
-  time: null
-  accepted: true
-  authors:
-  - 90973ed7-7d25-47e3-8503-cb98c514bdd7
-  tags:
-  - 8265e2de-6339-4ef7-b1d3-bcea8ca55c1d
-  date: null
-- id: 8f63bcbd-7aef-436a-817d-67079816d690
-  type: Cheatsheet
-  title: Azure Cheat-Sheet
-  url: https://github.com/swisskyrepo/InternalAllTheThings/tree/main/docs/cloud/azure
-  time: null
-  accepted: true
-  authors:
-  - 71453d26-943c-45b1-98d2-1a5ffce7c001
-  tags:
-  - 38368bde-deb6-4b27-b157-f71daf030bfa
-  date: null
-- id: 93ce9e11-772d-4fd3-ae70-743e2412ab95
+- id: ea962d77-3581-4ea3-9c0b-d5c90d7bb5a4
   type: Post
-  title: BOFs for Script Kiddies
-  url: https://www.trustedsec.com/blog/bofs-for-script-kiddies
+  title: 'Bench Press: Leaking Text Nodes with CSS'
+  url: https://blog.pspaul.de/posts/bench-press-leaking-text-nodes-with-css/
   time: null
   accepted: true
   authors:
-  - 6d3740f1-fad0-4ee3-bc4a-6857d7218e50
+  - 28b65f1a-6943-4788-8d7b-6ab9de4c8de3
   tags:
-  - 4f7909b7-42d7-4838-82e9-d3510a1a9700
-  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
-  date: '2023-02-16'
+  - 0332cfd8-51d4-46ab-923a-04ace265d7f5
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - fe0e947d-ce3c-400a-a54a-50a121c2f5d9
+  date: '2024-10-20'
+- id: f34d3277-761d-43f3-bc75-fdc8c7487236
+  type: Post
+  title: Better Exfiltration via HTML Injection
+  url: https://d0nut.medium.com/better-exfiltration-via-html-injection-31c72a2dae8b
+  time: 7
+  accepted: true
+  authors:
+  - 83a99d18-0986-4163-af51-f71f9633f705
+  tags:
+  - 0332cfd8-51d4-46ab-923a-04ace265d7f5
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - fe0e947d-ce3c-400a-a54a-50a121c2f5d9
+  date: '2019-04-11'
 - id: 12363bba-def4-4402-aef5-f118dd3682f5
   type: Post
   title: 'Better know a data source: Access tokens (and why they''re hard to get)'
@@ -601,6 +608,55 @@
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
   - 4045f727-c250-4b0f-bb8a-f4d53155805e
   date: '2022-04-20'
+- id: b168d718-a4c0-4552-8b78-bb86b4d7c241
+  type: Post
+  title: 'Beware the false false-positive: how to distinguish HTTP pipelining from
+    request smuggling'
+  url: https://portswigger.net/research/how-to-distinguish-http-pipelining-from-request-smuggling
+  time: null
+  accepted: true
+  authors:
+  - fccab25b-7e8e-43ae-bbf5-c905b38982db
+  tags:
+  - 70d976f4-beb8-45fd-a8c2-11c9abc16d97
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  date: '2025-08-19'
+- id: 76afbb7a-12d7-4d3d-a71e-afb24b6252de
+  type: Post
+  title: Beyond LLMNR/NBNS Spoofing - Exploiting Active Directory-Integrated DNS
+  url: https://www.netspi.com/blog/technical-blog/network-penetration-testing/exploiting-adidns/
+  time: null
+  accepted: true
+  authors:
+  - 8c57e58e-24d5-480c-812f-a55b2ff80ac0
+  tags:
+  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
+  - 04a45ff8-9cf6-4950-a578-92e9f54569d9
+  - 12440afe-315b-4a49-915d-22f0b486064b
+  date: '2018-07-10'
+- id: 045bbbb6-d821-4bd0-b85c-0edce02d91f2
+  type: Post
+  title: 'Beyond XSS: Explore the Web Front-end Security Universe'
+  url: https://aszx87410.github.io/beyond-xss/en/
+  time: null
+  accepted: true
+  authors:
+  - b67a1788-dec1-4b3b-9d07-74f4f58b1b6c
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 7b90e12c-07dc-4b5e-bd52-18c78ba2d853
+  date: null
+- id: 940579d9-8347-490f-ae3b-c2ce2705f0d3
+  type: Post
+  title: Binary Exploitation 101
+  url: https://r1ru.github.io/categories/binary-exploitation-101/
+  time: null
+  accepted: true
+  authors:
+  - 001fb056-09f9-4134-826f-526a24a313e4
+  tags:
+  - faf21a25-e470-4f5f-99a1-3753a049e024
+  date: '2025-09-02'
 - id: 92314503-4ab0-4fbb-b3be-f8588151d304
   type: Post
   title: 'Blind CSS Exfiltration: exfiltrate unknown web pages'
@@ -636,6 +692,30 @@
   tags:
   - cc66ded8-ebc5-4743-9c2a-d4d02cb61a70
   date: '2022-01-31'
+- id: b739b987-8bc5-43af-b1d4-51a22c79ac28
+  type: Post
+  title: Bypass CSP Using WordPress By Abusing Same Origin Method Execution – Blog
+  url: https://octagon.net/blog/2022/05/29/bypass-csp-using-wordpress-by-abusing-same-origin-method-execution/
+  time: null
+  accepted: true
+  authors: []
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 8ef1843e-8b9e-422e-b563-ae5eff93ec53
+  - b2a63a41-5102-4695-a6e0-bd46fa833941
+  date: '2022-05-29'
+- id: d53c0fb7-a634-4bdd-848f-83c09326a378
+  type: Post
+  title: Bypass Disk Encryption Linux
+  url: https://alice.climent.red/posts/bypass-disk-encryption-linux/
+  time: 4
+  accepted: true
+  authors:
+  - b85840f4-2f4e-461d-963f-b7688c40fc78
+  tags:
+  - f794aadb-bf97-478b-97fc-980d42ab6b16
+  - 050b6aae-6a77-43f5-a67f-efff04c85d59
+  date: '2021-12-04'
 - id: 977fc38b-e28b-4f06-95ab-2894f97901ff
   type: Post
   title: Bypassing Bitlocker using a cheap logic analyzer on a Lenovo laptop
@@ -648,6 +728,31 @@
   - 065ee0ba-04d3-4c81-8e4a-f48fbc4d8031
   - 44bfcc41-4990-4cba-bc93-fd4c692d962e
   date: null
+- id: 2110611a-2815-4e17-9a74-05d67f0847f9
+  type: Post
+  title: Bypassing CSP via DOM clobbering
+  url: https://portswigger.net/research/bypassing-csp-via-dom-clobbering
+  time: null
+  accepted: true
+  authors:
+  - 04278b75-0fe4-4f49-a1e3-d22f6ef378b0
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 8ef1843e-8b9e-422e-b563-ae5eff93ec53
+  - e627967b-b09b-47ef-aa61-93380c0dda63
+  date: '2023-06-05'
+- id: 54d09172-41e7-4a12-b442-39c2b9756036
+  type: Post
+  title: Bypassing File Upload Restrictions To Exploit Client-Side Path Traversal
+  url: https://blog.doyensec.com/2025/01/09/cspt-file-upload.html
+  time: null
+  accepted: true
+  authors:
+  - dfbab8ae-6229-4873-979d-23c574f3fcaf
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 757f3cef-2a3a-4b13-bfef-c530b0ba9306
+  date: '2025-01-09'
 - id: aa719d45-8a6c-4309-8e8f-f079165c09d9
   type: Post
   title: Bypassing Image Load Kernel Callbacks
@@ -672,6 +777,42 @@
   - f50e67ff-d73d-49a2-9eea-31ff7cdb9d94
   - 4045f727-c250-4b0f-bb8a-f4d53155805e
   date: '2017-03-24'
+- id: 9a248be5-867b-4708-8104-d029a6390b39
+  type: Post
+  title: 'Bypassing WAFs with the phantom $Version cookie '
+  url: https://portswigger.net/research/bypassing-wafs-with-the-phantom-version-cookie
+  time: null
+  accepted: true
+  authors:
+  - 37cbc638-10a6-4729-908a-6218fe78ec90
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - c24e492c-47e3-4734-b71e-556854c231b6
+  date: '2024-12-04'
+- id: 8549bfdf-cc24-4a8c-ba39-61fc0ca2cb9b
+  type: Post
+  title: Bypassing browser tracking protection for CORS misconfiguration abuse
+  url: https://swarm.ptsecurity.com/bypassing-browser-tracking-protection-for-cors-misconfiguration-abuse/
+  time: null
+  accepted: true
+  authors:
+  - c0dd378a-2844-4476-b23c-bc8b77953e1b
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 37a3352a-482b-4e46-a579-39bf4578dada
+  date: '2024-01-24'
+- id: b3d4ff01-e0d6-46a7-9265-0f65d0c1e896
+  type: Post
+  title: Bypassing character blocklists with unicode overflows
+  url: https://portswigger.net/research/bypassing-character-blocklists-with-unicode-overflows
+  time: null
+  accepted: true
+  authors:
+  - 04278b75-0fe4-4f49-a1e3-d22f6ef378b0
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - d7a507fc-1087-4ea7-8c2c-fb700ed09f9c
+  date: '2025-01-28'
 - id: 85184dcb-7217-4353-b43e-55df6d48b654
   type: Post
   title: CFG in Windows 11 24H2
@@ -696,6 +837,43 @@
   - 4f7909b7-42d7-4838-82e9-d3510a1a9700
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
   date: '2021-02-22'
+- id: 36f5b2ba-e5da-4a74-9167-455477493a47
+  type: Post
+  title: CSS Exfiltration under default-src 'self'
+  url: https://blog.babelo.xyz/posts/css-exfiltration-under-default-src-self/
+  time: 17
+  accepted: true
+  authors: []
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - fe0e947d-ce3c-400a-a54a-50a121c2f5d9
+  - 8ef1843e-8b9e-422e-b563-ae5eff93ec53
+  date: '2025-02-27'
+- id: 6ce6f4e6-23ee-4ff4-9243-92a133c55118
+  type: Post
+  title: 'Cache Deception + CSPT: Turning Non Impactful Findings into Account Takeover'
+  url: https://zere.es/posts/cache-deception-cspt-account-takeover/
+  time: 4
+  accepted: true
+  authors:
+  - 51080f8d-3720-4688-a8a9-16fa058ae90a
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 757f3cef-2a3a-4b13-bfef-c530b0ba9306
+  - 6f18f1f0-7e35-441a-a9d4-430eb2d1e92d
+  date: '2025-08-17'
+- id: 26d10f77-fd3a-4850-8ed0-7f9fe4b6022a
+  type: Post
+  title: 'Caido 101: How to master it'
+  url: https://aituglo.com/caido/
+  time: null
+  accepted: true
+  authors:
+  - 3518cd68-f4f1-4b6b-a862-47d7a37737f7
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 1e1691a7-b591-45d4-9359-88bdea09a68f
+  date: '2025-09-11'
 - id: 91bda219-7a86-4117-99d8-1705986056e8
   type: Post
   title: 'Capturing RDP NetNTLMv2 Hashes: Attack details and a Technical How-To Guide'
@@ -747,31 +925,19 @@
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   - da809c20-1461-4221-bb06-447c78db9c52
   date: '2021-06-17'
-- id: 04481f7d-2ab1-4ef7-a1bc-045dd013399f
+- id: 98b0a6de-bc95-4046-83b8-14e3f5ad9dfd
   type: Post
-  title: 'Certipy 4.0: ESC9 & ESC10, BloodHound GUI, New Authentication and Request
-    Methods — and more!'
-  url: https://research.ifcr.dk/certipy-4-0-esc9-esc10-bloodhound-gui-new-authentication-and-request-methods-and-more-7237d88061f7
-  time: 20
-  accepted: true
-  authors:
-  - d6300768-d7cc-4556-b94b-256708eb970f
-  tags:
-  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
-  - da809c20-1461-4221-bb06-447c78db9c52
-  date: '2023-01-30'
-- id: 7fa89457-793b-4f1f-a2b4-07fddfdec292
-  type: Post
-  title: Changes in the Beacon Object File Landscape
-  url: https://www.trustedsec.com/blog/changes-in-the-beacon-object-file-landscape
+  title: 'ChatGPT Operator: Prompt Injection Exploits & Defenses'
+  url: https://embracethered.com/blog/posts/2025/chatgpt-operator-prompt-injection-exploits/
   time: null
   accepted: true
   authors:
-  - b107b608-388e-4e44-b753-6de906b53022
+  - 4fefead9-4575-4af2-9846-7644df3c52b5
   tags:
-  - 4f7909b7-42d7-4838-82e9-d3510a1a9700
-  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
-  date: '2023-03-09'
+  - 9e398375-d5d8-4ad3-97d3-d3df82e4a9ef
+  - 57877f42-413f-457f-8307-2ce89f7ea309
+  - 980d0ea2-0ba8-4027-b075-79ef8212c6cf
+  date: '2025-02-17'
 - id: 531383ff-1951-4b37-bde4-f949615c41bc
   type: Post
   title: Coercing NTLM Authentication from SCCM
@@ -784,18 +950,6 @@
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   - 1e7b6f0a-e775-41b5-a3ad-73d2405442f2
   date: '2022-04-13'
-- id: d0a7fc4e-a172-4bf0-9dfc-d243e52b3f17
-  type: Post
-  title: CoffLoader
-  url: https://otterhacker.github.io/Malware/CoffLoader.html
-  time: null
-  accepted: true
-  authors:
-  - a6bf19ae-7523-43d9-bf1f-4be2b4d3bdcb
-  tags:
-  - 4f7909b7-42d7-4838-82e9-d3510a1a9700
-  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
-  date: null
 - id: 567d194f-3b7d-462d-97fc-954639459621
   type: Post
   title: Combining ARP poisoning and IP spoofing to bypass firewalls
@@ -809,6 +963,53 @@
   - 7a6f8017-fab2-4dba-9130-a2d884d90aa2
   - b950338f-f101-426f-9a78-6c8cfcb373fd
   date: '2019-09-28'
+- id: f7d5859a-dfdd-4066-97eb-7ac943f87f56
+  type: Post
+  title: Common OAuth Vulnerabilities
+  url: https://blog.doyensec.com/2025/01/30/oauth-common-vulnerabilities.html
+  time: null
+  accepted: true
+  authors: []
+  tags:
+  - c971d3ab-48d3-4f04-9f6d-f398787d6612
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  date: '2025-01-30'
+- id: 693d44dd-2df7-4c28-add5-c4a66cf38a92
+  type: Post
+  title: 'Confusion Attacks: Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!'
+  url: https://blog.orange.tw/posts/2024-08-confusion-attacks-en/
+  time: null
+  accepted: true
+  authors:
+  - b71b53d6-372c-4ba8-95a4-5273723bdb49
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 2df14cea-b7b3-4c58-913c-3be9c5f2e6bc
+  date: '2024-08-08'
+- id: 8a0bf054-2dc6-4864-af8f-57db0b36345a
+  type: Post
+  title: Control Flow Hijacking via Data Pointers
+  url: https://www.legacyy.xyz/defenseevasion/windows/2025/04/16/control-flow-hijacking-via-data-pointers.html
+  time: null
+  accepted: true
+  authors:
+  - e2756881-e52c-4cf4-aff7-c5add9aedd5d
+  tags:
+  - 243d2d96-2b59-4431-ac09-f34a07dbbbc3
+  - 03743a91-dc4f-42d2-be77-1917b4173349
+  date: '2025-04-16'
+- id: 014bd629-85d4-4804-91f6-493ea75648a0
+  type: Post
+  title: 'Cookie Chaos: How to bypass __Host and __Secure cookie prefixes'
+  url: https://portswigger.net/research/cookie-chaos-how-to-bypass-host-and-secure-cookie-prefixes
+  time: null
+  accepted: true
+  authors:
+  - 37cbc638-10a6-4729-908a-6218fe78ec90
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - cd02949d-181d-4bc7-a6f2-ce0cb1bdc4ea
+  date: '2025-09-03'
 - id: 5e585980-d583-4a8a-be7e-150f0f182d37
   type: Post
   title: Crossing Trusts 4 Delegation
@@ -885,6 +1086,30 @@
   - 5a52de2f-952d-4142-a207-b4a26299d097
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
   date: '2023-08-14'
+- id: 32347085-c1b1-4251-aff3-6ab634d9d89d
+  type: Post
+  title: DOM Purify - untrusted Node bypass
+  url: https://blog.slonser.info/posts/dompurify-node-type-confusion/
+  time: null
+  accepted: true
+  authors:
+  - ecee3f24-8188-412b-8b4a-14b7afacbff1
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 5e3124c5-1454-4dc6-9af6-034a561647ed
+  date: '2024-03-18'
+- id: a7cea78f-b523-4425-a009-b171a9d47fe0
+  type: Post
+  title: 'DOM-based Extension Clickjacking: Your Password Manager Data at Risk'
+  url: https://marektoth.com/blog/dom-based-extension-clickjacking/
+  time: null
+  accepted: true
+  authors:
+  - 36c96485-c1c9-4f3f-babc-97cddfe09792
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 19ce4934-d7a5-413a-a159-dc90df6d98ce
+  date: '2025-08-09'
 - id: 6b84679a-b887-468c-99a1-2f003edf4900
   type: Post
   title: 'Databases beware: Abusing Microsoft SQL Server with SQLRecon'
@@ -950,6 +1175,19 @@
   - 2f4d87bb-670d-40c0-a1ec-866b7367bdf8
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
   date: '2023-08-21'
+- id: 9097ce4a-8026-460f-a043-2fa56800565e
+  type: Post
+  title: 'Dependency Confusion: How I Hacked Into Apple, Microsoft and Dozens of Other
+    Companies'
+  url: https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610
+  time: 11
+  accepted: true
+  authors:
+  - 67a515b1-9bab-4652-9c53-80053cf5022c
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 5ac5ba7e-f33d-47a6-967b-29e2bd9aa850
+  date: '2023-09-29'
 - id: d73f6dca-e204-417a-a889-2a618bc7aa5d
   type: Post
   title: Digging further into the Primary Refresh Token
@@ -961,6 +1199,31 @@
   tags:
   - 38368bde-deb6-4b27-b157-f71daf030bfa
   date: '2020-08-05'
+- id: 17f6f270-e6ab-4dbf-8feb-7615ebf71a84
+  type: Post
+  title: Disguises Zip Past Path Traversal
+  url: https://blog.isec.pl/disguises-zip-past-path-traversal/
+  time: null
+  accepted: true
+  authors:
+  - af06fe5e-16ce-4ffb-b916-a54f4f8285d6
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - a16f6a04-e37a-4ad5-834f-2e0df1ff9ece
+  - 023b1b9e-e9c2-4b09-a6f1-76a591dd7887
+  date: '2025-08-05'
+- id: 33b94cd0-fe06-4703-a6ac-1a7c638065ad
+  type: Post
+  title: Dissecting DCOM part 1
+  url: https://www.synacktiv.com/en/publications/dissecting-dcom-part-1
+  time: null
+  accepted: true
+  authors:
+  - caa310fd-52d2-4c71-b6d6-341d1bb15645
+  tags:
+  - 5a82e225-852e-408e-8efe-d0c84dd5160c
+  - 4045f727-c250-4b0f-bb8a-f4d53155805e
+  date: '2025-09-15'
 - id: 71b9aa78-f566-43a3-a983-f7c8bb1a5e3f
   type: Post
   title: Diving into Pre-Created Computer Accounts
@@ -1009,19 +1272,43 @@
   - 30110fc7-5a97-48c5-9471-b7368e093c39
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
   date: '2021-07-08'
-- id: a4de9a1f-5f5b-4e78-8397-bde27d0279fd
-  type: Video
-  title: Déléguer kerberos pour contourner des limitations de la délégation kerberos
-  url: https://www.youtube.com/watch?v=7_iv_eaAFyQ
-  time: 44
+- id: 8e60f3d4-b7fc-40d6-b8c8-bf2d7c534e86
+  type: Post
+  title: Driver Reversing 101
+  url: https://eversinc33.com/posts/driver-reversing.html
+  time: null
   accepted: true
   authors:
-  - df4ddd93-f0d7-4b91-b96f-d77d84ee0b98
+  - 3d22efcc-e413-4608-8af9-41806422ffba
   tags:
-  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
-  - 4bf5cc5c-1de1-42f1-a3f4-4b73ce516354
-  - 982b05c0-01cc-4f76-8aa4-732b085d0ff5
-  date: '2022-08-12'
+  - 9a768306-b89e-40bc-bb3f-67f2969d4eea
+  - 4045f727-c250-4b0f-bb8a-f4d53155805e
+  date: '2025-08-14'
+- id: 849c990b-014e-4e10-b8bc-6a20f0d4530c
+  type: Post
+  title: 'EDR Bypass : How and Why to Unhook the Import Address Table'
+  url: https://alice.climent.red/posts/how-and-why-to-unhook-the-import-address-table/
+  time: 7
+  accepted: true
+  authors:
+  - b85840f4-2f4e-461d-963f-b7688c40fc78
+  tags:
+  - b1405e66-05e0-442e-b6fd-42b6b5da4cf5
+  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
+  date: '2022-05-07'
+- id: 249ce71c-0966-4651-8a91-6a22f1e33eea
+  type: Post
+  title: 'EDR Bypass : Retrieving Syscall ID with Hell''s Gate, Halo''s Gate, FreshyCalls
+    and Syswhispers2'
+  url: https://alice.climent.red/posts/direct-syscalls-hells-halos-syswhispers2/
+  time: 20
+  accepted: true
+  authors:
+  - b85840f4-2f4e-461d-963f-b7688c40fc78
+  tags:
+  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
+  - 89cf1043-e9c8-4b9b-9bbd-93abc2cb2f0f
+  date: '2022-01-29'
 - id: 8f28b622-7ff8-4cd1-8438-20a8e732061a
   type: Post
   title: 'EKUwu: Not just another AD CS ESC'
@@ -1046,17 +1333,18 @@
   - 10b2d2d5-340e-4ab0-8f4c-9032b01a7999
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
   date: null
-- id: 19b5997e-8af5-4960-92b5-b6c1a10c553f
-  type: Cheatsheet
-  title: Edges
-  url: https://bloodhound.readthedocs.io/en/latest/data-analysis/edges.html#
+- id: 72cf417f-c528-4989-8db5-07234e89d3e8
+  type: Post
+  title: Early Exception Handling
+  url: https://kr0tt.github.io/posts/early-exception-handling/
   time: null
   accepted: true
   authors:
-  - 3a1157ce-c8da-480f-b563-78182e24ac4e
+  - 4facd189-375a-4dc2-b5c1-99c9cd019288
   tags:
-  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
-  date: null
+  - b1405e66-05e0-442e-b6fd-42b6b5da4cf5
+  - 03743a91-dc4f-42d2-be77-1917b4173349
+  date: '2025-08-17'
 - id: 85cb4e7a-1ba0-429d-9f4d-001537101498
   type: Video
   title: Elevating Kerberos to the Next Level
@@ -1095,6 +1383,66 @@
   - 10b2d2d5-340e-4ab0-8f4c-9032b01a7999
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
   date: '2024-03-05'
+- id: cee3919c-112e-4eb3-a2c3-49428cb48c5e
+  type: Post
+  title: Every known way to get references to windows, in javascript
+  url: https://bluepnume.medium.com/every-known-way-to-get-references-to-windows-in-javascript-223778bede2d
+  time: null
+  accepted: true
+  authors:
+  - 44919405-97a6-4c92-b484-9387e0cafe07
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 69f8ef1b-cb18-4e61-a63a-7e7834553299
+  date: '2018-11-09'
+- id: 47b24259-91ff-435e-845a-f1caa5e5c460
+  type: Post
+  title: 'Exacerbating Cross-Site Scripting: The Iframe Sandwich'
+  url: https://coopergyoung.com/exacerbating-cross-site-scripting-the-iframe-sandwich/
+  time: null
+  accepted: true
+  authors:
+  - e925bd9c-5902-46e1-8b49-fa11292b9f78
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 7b90e12c-07dc-4b5e-bd52-18c78ba2d853
+  date: '2025-04-13'
+- id: 340f7b6d-f956-493e-815c-2ed3991102b7
+  type: Post
+  title: Executing arbitrary Python code from a comment
+  url: https://www.hacktron.ai/blog/python-zip-confusion
+  time: 20
+  accepted: true
+  authors:
+  - 135c08ae-b42f-4195-8dfe-745afd6036a3
+  tags:
+  - a16f6a04-e37a-4ad5-834f-2e0df1ff9ece
+  - 1dff377e-16b0-4fc6-b29d-387c5a45afbc
+  date: '2025-07-27'
+- id: d9548f64-0f19-4755-8cc5-1a17d602f209
+  type: Post
+  title: Explaining XSS without parentheses and semi-colons
+  url: https://blog.huli.tw/2025/09/15/en/xss-without-semicolon-and-parentheses/
+  time: null
+  accepted: true
+  authors:
+  - b67a1788-dec1-4b3b-9d07-74f4f58b1b6c
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 7b90e12c-07dc-4b5e-bd52-18c78ba2d853
+  date: '2025-09-15'
+- id: c92db3f5-ce1f-4d45-939b-fba8e3da25f7
+  type: Post
+  title: Exploit development for vulnerabilities in Windows over MS-RPC
+  url: https://www.incendium.rocks/posts/Exploit-Development-For-MSRPC/
+  time: null
+  accepted: true
+  authors:
+  - 33efd040-85fc-4463-8234-d41d1f806f11
+  tags:
+  - 4045f727-c250-4b0f-bb8a-f4d53155805e
+  - 15ec1d55-9073-4753-a03e-804716135663
+  date: '2025-07-31'
 - id: 877f54cc-4cfa-4b80-b401-d434f8d4d8a6
   type: Post
   title: Exploiting Resource Based Constrained Delegation (RBCD) with Pure Metasploit
@@ -1109,6 +1457,43 @@
   - 982b05c0-01cc-4f76-8aa4-732b085d0ff5
   - fd07969a-2ceb-4022-94f7-74229d1550b8
   date: '2023-01-30'
+- id: 5581e8e6-36c0-4c5c-a1b8-283bf6f2ef8d
+  type: Post
+  title: Exploiting Self-XSS Using Disk Cache
+  url: https://mey-d.github.io/posts/self-xss-disk-cache/
+  time: 5
+  accepted: true
+  authors:
+  - f431d283-5683-46a9-937d-08a41d191d46
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 7b90e12c-07dc-4b5e-bd52-18c78ba2d853
+  - 9e7c8053-b031-4271-a82c-7f55df30acca
+  date: '2025-07-13'
+- id: 4f2998a1-d4c1-430e-bdb3-605087725f5d
+  type: Post
+  title: Exploiting Web Worker XSS with Blobs
+  url: https://criticalthinkingpodcast.github.io/research/Exploiting-web-worker-XSS-with-blobs
+  time: null
+  accepted: true
+  authors:
+  - ce7717d3-b3dc-437b-ae2a-75c260e8cf4e
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 7b90e12c-07dc-4b5e-bd52-18c78ba2d853
+  date: '2025-08-08'
+- id: 417fcfc4-75e1-4d53-8922-482455ea97c3
+  type: Post
+  title: 'Exploring GrapheneOS secure allocator: Hardened Malloc'
+  url: https://www.synacktiv.com/en/publications/exploring-grapheneos-secure-allocator-hardened-malloc.html
+  time: null
+  accepted: true
+  authors:
+  - 6528c570-6f77-40ba-bf2e-a29c71a4538d
+  tags:
+  - 3d0ef27d-98dd-49d8-b9d3-d5cc8a280481
+  - 15b13323-5093-45bf-bf41-747b75b1807a
+  date: '2025-09-22'
 - id: 56704eba-d312-45b0-bc17-a287fde92bd2
   type: Post
   title: 'Exploring Windows UAC Bypasses: Techniques and Detection Strategies'
@@ -1149,6 +1534,18 @@
   - 7b90e12c-07dc-4b5e-bd52-18c78ba2d853
   - 5e3124c5-1454-4dc6-9af6-034a561647ed
   date: '2025-02-09'
+- id: d76e79c3-d948-43c2-99ac-81f2e49694c2
+  type: Post
+  title: Extending AD CS attack surface to the cloud with Intune certificates
+  url: https://dirkjanm.io/extending-ad-cs-attack-surface-intune-certs
+  time: null
+  accepted: true
+  authors:
+  - 049dec5d-e31d-4f71-9d8b-b612729338e4
+  tags:
+  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
+  - da809c20-1461-4221-bb06-447c78db9c52
+  date: '2025-07-30'
 - id: 4122e2dd-c59f-499b-acbd-a6a05f29518e
   type: Post
   title: External Trusts Are Evil
@@ -1161,6 +1558,17 @@
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   - 4a18127f-7fa7-440f-a15f-fce6ad64490e
   date: '2023-03-14'
+- id: d51182d9-6c39-4f33-9dce-65af59e3a969
+  type: Post
+  title: Extracting Sensitive Information from the Azure Batch Service
+  url: https://www.netspi.com/blog/technical-blog/cloud-penetration-testing/extracting-sensitive-information-from-azure-batch-service/
+  time: null
+  accepted: true
+  authors:
+  - 22a80251-a95c-4798-9ca5-4953593051f5
+  tags:
+  - 38368bde-deb6-4b27-b157-f71daf030bfa
+  date: '2024-02-28'
 - id: c4e1a693-1caa-4961-8cc2-0851c9ad7adc
   type: Post
   title: 'Farming for Red Teams: Harvesting NetNTLM'
@@ -1173,6 +1581,18 @@
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   - 12440afe-315b-4a49-915d-22f0b486064b
   date: '2021-02-01'
+- id: 4189526b-6b4f-4d28-a8a8-9d41c84472e3
+  type: Post
+  title: Finding and exploiting process killer drivers with LOL for 3000$
+  url: https://alice.climent.red/posts/process-killer-driver/
+  time: 22
+  accepted: true
+  authors:
+  - b85840f4-2f4e-461d-963f-b7688c40fc78
+  tags:
+  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
+  - 9a768306-b89e-40bc-bb3f-67f2969d4eea
+  date: '2023-06-19'
 - id: 2e7d2f2b-9944-4fc7-874e-f23a4088d645
   type: Post
   title: 'Finding pastures new: An alternate approach for implant design'
@@ -1185,6 +1605,31 @@
   - 72ad02af-12eb-46df-9694-7f4d4b872076
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
   date: '2024-03-17'
+- id: 35736bb1-91e4-4aee-b324-89983e9d708e
+  type: Post
+  title: 'Fontleak: exfiltrating text using CSS and Ligatures'
+  url: https://adragos.ro/fontleak/
+  time: null
+  accepted: true
+  authors:
+  - 9bf8ca17-f426-4a6f-8ffb-2583d2caaf95
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - fe0e947d-ce3c-400a-a54a-50a121c2f5d9
+  date: '2025-04-15'
+- id: 96ba7afc-ba61-4760-b387-58175e495c69
+  type: Post
+  title: Forcing Quirks Mode with PHP Warnings + CSS Exfiltration without Network
+    Requests
+  url: https://blog.arkark.dev/2025/09/08/asisctf-quals
+  time: 9
+  accepted: true
+  authors: []
+  tags:
+  - 625513bf-1062-40bf-99a5-366d42072174
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - fe0e947d-ce3c-400a-a54a-50a121c2f5d9
+  date: '2025-09-08'
 - id: 4973ee69-43ab-4cbe-9263-bef0539b7849
   type: Post
   title: From C, with inline assembly, to shellcode
@@ -1232,6 +1677,18 @@
   tags:
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   date: '2023-09-05'
+- id: c3562d4d-a263-4c9d-8702-bf04b24ab1f9
+  type: Post
+  title: From Process Injection to Function Hijacking
+  url: https://klezvirus.github.io/posts/From-stomping-to-hijacking/
+  time: null
+  accepted: true
+  authors:
+  - 54ead71f-0261-423a-8510-01ac6ed9393c
+  tags:
+  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
+  - b7928631-d0ce-4a23-9ec4-a48c74143ba3
+  date: '2022-05-13'
 - id: f946c83e-308f-4204-b3b9-20340ff64506
   type: Cheatsheet
   title: From on-prem to Global Admin without password reset
@@ -1269,17 +1726,6 @@
   - 12440afe-315b-4a49-915d-22f0b486064b
   - 61290f38-804e-4e1e-b25a-4c55e578b453
   date: '2018-08-07'
-- id: 2c86ca71-62d0-4eb7-9807-e5d3bbcbd232
-  type: Post
-  title: GIF Steganography from First Principles
-  url: https://dtm.uk/gif-steganography/
-  time: 26
-  accepted: true
-  authors:
-  - dceb2912-4baf-4582-8f5e-60ce6d600112
-  tags:
-  - 5cd32690-8e04-4d48-aca3-2bfd4249e12b
-  date: '2023-09-10'
 - id: 0803c813-0025-4ab7-9294-40ab8f963bf2
   type: Post
   title: GMER - the art of exposing Windows rootkits in kernel mode
@@ -1341,6 +1787,18 @@
   - 12440afe-315b-4a49-915d-22f0b486064b
   - 5b2fe6d6-0df4-45d3-a2bc-41122eedc3c0
   date: '2021-11-22'
+- id: 03e90975-c80a-4f48-beb7-2d2ed2980fd0
+  type: Post
+  title: 'Golden dMSA: What Is dMSA Authentication Bypass?'
+  url: https://www.semperis.com/blog/golden-dmsa-what-is-dmsa-authentication-bypass/
+  time: null
+  accepted: true
+  authors:
+  - b01dc093-e7e8-4d56-b1cf-e822f8c573c7
+  tags:
+  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
+  - 50214c4e-6651-4a73-8a37-ebf902083915
+  date: '2025-07-16'
 - id: 73bd593f-c1a5-4610-89d7-cbf7934898ab
   type: Post
   title: 'Guarding the Bridge: New Attack Vectors in Azure AD Connect'
@@ -1354,6 +1812,18 @@
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   - 8265e2de-6339-4ef7-b1d3-bcea8ca55c1d
   date: '2023-08-02'
+- id: 8551f745-5dba-4a21-b5e2-c09a353de59e
+  type: Post
+  title: 'Guest Post: How I Scanned all of GitHub''s "Oops Commits" for Leaked Secrets'
+  url: https://trufflesecurity.com/blog/guest-post-how-i-scanned-all-of-github-s-oops-commits-for-leaked-secrets
+  time: null
+  accepted: true
+  authors:
+  - f17c70ad-a2b9-45bf-a940-150972ff8664
+  tags:
+  - b6d76a83-45b7-4ee6-a769-21e4f8cdb259
+  - 3e31a08d-c49d-44a9-a7a1-ecc485da95ef
+  date: null
 - id: 2adb6ee3-fdbe-4994-b649-8226ea166dc5
   type: Post
   title: Guest vs Null session on Windows
@@ -1365,6 +1835,18 @@
   tags:
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   date: '2024-04-18'
+- id: 7ef0c8ad-5956-479e-aca4-808f0f8dbd96
+  type: Post
+  title: 'HTTP/1.1 must die: the desync endgame'
+  url: https://portswigger.net/research/http1-must-die
+  time: null
+  accepted: true
+  authors:
+  - fccab25b-7e8e-43ae-bbf5-c905b38982db
+  tags:
+  - 70d976f4-beb8-45fd-a8c2-11c9abc16d97
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  date: '2025-08-06'
 - id: 14f6641d-a5ec-421e-84d2-3c5f7389ec2a
   type: Post
   title: 'Hacker''s Corner: Complete Guide to Keylogging in Linux - Part 1'
@@ -1377,6 +1859,19 @@
   - 0138f149-a88b-4dbe-8ef0-65c40b71925b
   - f794aadb-bf97-478b-97fc-980d42ab6b16
   date: '2022-05-23'
+- id: 3f914291-d5a3-4530-95cf-d8b2ca54dddf
+  type: Post
+  title: Hacking Gemini's Memory with Prompt Injection and Delayed Tool Invocation
+  url: https://embracethered.com/blog/posts/2025/gemini-memory-persistence-prompt-injection/
+  time: null
+  accepted: true
+  authors:
+  - 4fefead9-4575-4af2-9846-7644df3c52b5
+  tags:
+  - 9e398375-d5d8-4ad3-97d3-d3df82e4a9ef
+  - 57877f42-413f-457f-8307-2ce89f7ea309
+  - 980d0ea2-0ba8-4027-b075-79ef8212c6cf
+  date: '2025-02-10'
 - id: 259e5ea7-d143-4df8-a1c8-fa9ced5c9e67
   type: Post
   title: Hacking with Environment Variables
@@ -1431,6 +1926,18 @@
   - 5a82e225-852e-408e-8efe-d0c84dd5160c
   - 4045f727-c250-4b0f-bb8a-f4d53155805e
   date: '2024-04-24'
+- id: ec415b64-bdcf-404d-95be-874d15cd70ee
+  type: Post
+  title: 'Hells Hollow: A new SSDT Hooking technique - 0xflux Red Team Manual'
+  url: https://fluxsec.red/hells-hollow-a-new-SSDT-hooking-technique-with-alt-syscalls-rootkit
+  time: null
+  accepted: true
+  authors:
+  - de6452ab-20e8-4228-a4bc-40a44fa0e632
+  tags:
+  - b1405e66-05e0-442e-b6fd-42b6b5da4cf5
+  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
+  date: null
 - id: 8ff33e51-fbae-4452-b1c8-0085a5774a3d
   type: Post
   title: Hidden OAuth attack vectors
@@ -1478,6 +1985,28 @@
   - 9e398375-d5d8-4ad3-97d3-d3df82e4a9ef
   - 57877f42-413f-457f-8307-2ce89f7ea309
   date: '2024-05-05'
+- id: a70667f5-4c1c-4f5b-8d32-ba17646c341e
+  type: Post
+  title: How to Hack AI Agents and Applications
+  url: https://josephthacker.com/hacking/2025/02/25/how-to-hack-ai-apps.html
+  time: null
+  accepted: true
+  authors: []
+  tags:
+  - 9e398375-d5d8-4ad3-97d3-d3df82e4a9ef
+  - 57877f42-413f-457f-8307-2ce89f7ea309
+  - 980d0ea2-0ba8-4027-b075-79ef8212c6cf
+  date: '2025-02-25'
+- id: 5388836e-2c62-4e5b-bd73-640665afc16f
+  type: Post
+  title: How to build an Android Bug Bounty lab for mobile hacking
+  url: https://www.yeswehack.com/learn-bug-bounty/android-lab-mobile-hacking-tools?utm_source=x&utm_medium=social&utm_campaign=android-lab-mobile
+  time: null
+  accepted: true
+  authors: []
+  tags:
+  - 2c6fcd46-fbd9-4654-ad33-f6bb0cfc0b01
+  date: '2025-08-26'
 - id: 209af9ca-5b20-4cdf-b7f3-f57edbbcdad4
   type: Post
   title: How to perform a Complete Process Hollowing
@@ -1490,6 +2019,41 @@
   - 5a52de2f-952d-4142-a207-b4a26299d097
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
   date: '2024-01-24'
+- id: c0bd1251-5c41-4756-bff8-270a643bae78
+  type: Post
+  title: Hunting postMessage Vulnerabilities – Part 1
+  url: https://blog.ryukudz.com/posts/postmessage-part-1/
+  time: null
+  accepted: true
+  authors:
+  - d87ccdc6-03b3-4157-ae67-14008d702f46
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 32052ddf-e564-4a66-bb5a-eae9b081f3ae
+  date: '2025-08-22'
+- id: dd2b6920-7ad5-4b5a-be37-1f82d66ac758
+  type: Post
+  title: Hunting postMessage Vulnerabilities – Part 2
+  url: https://blog.ryukudz.com/posts/postmessage-part-2/
+  time: null
+  accepted: true
+  authors:
+  - d87ccdc6-03b3-4157-ae67-14008d702f46
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 32052ddf-e564-4a66-bb5a-eae9b081f3ae
+  date: '2025-08-24'
+- id: 2491e9a1-0c1d-4fba-9659-abd6d40998dd
+  type: Post
+  title: Hyper-V Research
+  url: https://r0keb.github.io/posts/Hyper-V-Research/
+  time: 37
+  accepted: true
+  authors:
+  - e6ad1d59-ef59-4da1-8ace-43ff97010121
+  tags:
+  - 712be928-7e1f-4b0f-96a8-6a67d2e56830
+  date: '2025-08-09'
 - id: 8dabb428-0786-4db5-b3e7-68cf2360b63e
   type: Post
   title: I know Mag1k a Padding Oracle attack
@@ -1547,6 +2111,18 @@
   tags:
   - 53a58029-fc52-417f-bcd5-765fd7dd4a7e
   date: '2024-03-18'
+- id: 20b933c2-30c7-416f-bcbb-0357b78cb253
+  type: Post
+  title: 'Inline Style Exfiltration: leaking data with chained CSS conditionals'
+  url: https://portswigger.net/research/inline-style-exfiltration
+  time: null
+  accepted: true
+  authors:
+  - 04278b75-0fe4-4f49-a1e3-d22f6ef378b0
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - fe0e947d-ce3c-400a-a54a-50a121c2f5d9
+  date: '2025-08-26'
 - id: a6becaa1-ce55-463f-b57b-7fd6723d6101
   type: Post
   title: 'Introducing GraphRunner: A Post-Exploitation Toolset for Microsoft 365'
@@ -1720,6 +2296,19 @@
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
   - 4045f727-c250-4b0f-bb8a-f4d53155805e
   date: '2024-04-17'
+- id: d0318eea-6f76-48a2-b2de-1efd716a0479
+  type: Post
+  title: 'Laravel: APP_KEY leakage analysis'
+  url: https://www.synacktiv.com/en/publications/laravel-appkey-leakage-analysis
+  time: null
+  accepted: true
+  authors:
+  - c3215ae8-1ad6-4724-a65e-4c029e9247bf
+  tags:
+  - 625513bf-1062-40bf-99a5-366d42072174
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 22ffe53f-9b49-443a-bde9-b60e987df80f
+  date: '2025-07-09'
 - id: b3ba941e-1c6b-4028-8597-b80c271a0297
   type: Post
   title: Lateral Movement Windows and Active Directory
@@ -1851,18 +2440,19 @@
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
   - 9a768306-b89e-40bc-bb3f-67f2969d4eea
   date: '2024-03-31'
-- id: 9ae8e20b-6f77-4416-abd3-06ba59d95286
-  type: Cheatsheet
-  title: MITM and coerced auths
-  url: https://www.thehacker.recipes/a-d/movement/mitm-and-coerced-authentications
-  time: null
+- id: 0412f5eb-33d8-437f-a19f-cffbde03d397
+  type: Video
+  title: 'Lost in Translation: Exploiting Unicode Normalization'
+  url: https://www.youtube.com/watch?v=-b1sIZhOZbk
+  time: 27
   accepted: true
   authors:
-  - df4ddd93-f0d7-4b91-b96f-d77d84ee0b98
+  - c793bb54-a374-48e2-b9db-30c3b1580782
+  - 354dd0ea-b6ec-423b-8671-11d373002e0c
   tags:
-  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
-  - 12440afe-315b-4a49-915d-22f0b486064b
-  date: null
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 5c671239-59e0-42ac-b5f1-22d1fb53a25a
+  date: '2025-09-07'
 - id: 748f5a99-71c6-4ed2-8614-aae9ebeae997
   type: Post
   title: 'MSSQL linked servers: abusing ADSI for password retrieval'
@@ -1875,6 +2465,31 @@
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   - ccd4b98a-1de4-49ba-b481-9a4e6007bd35
   date: '2023-06-07'
+- id: 0d53550d-c603-454f-b095-787d49ca4a4e
+  type: Post
+  title: 'MachineAccountQuota is USEFUL Sometimes: Exploiting One of Active Directory''s
+    Oddest Settings'
+  url: https://www.netspi.com/blog/technical-blog/network-penetration-testing/machineaccountquota-is-useful-sometimes/
+  time: null
+  accepted: true
+  authors:
+  - 8c57e58e-24d5-480c-812f-a55b2ff80ac0
+  tags:
+  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
+  date: '2019-03-06'
+- id: a732796e-2a31-456a-bf47-5d4d17c026c8
+  type: Post
+  title: Make Self-XSS Great Again
+  url: https://blog.slonser.info/posts/make-self-xss-great-again/
+  time: null
+  accepted: true
+  authors:
+  - ecee3f24-8188-412b-8b4a-14b7afacbff1
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 7b90e12c-07dc-4b5e-bd52-18c78ba2d853
+  - 9e7c8053-b031-4271-a82c-7f55df30acca
+  date: '2025-06-12'
 - id: 9aabf795-b926-44ee-83fa-9a3bd0ed4de7
   type: Post
   title: Making desync attacks easy with TRACE
@@ -1886,29 +2501,6 @@
   tags:
   - 70d976f4-beb8-45fd-a8c2-11c9abc16d97
   date: '2024-03-19'
-- id: 32ca971e-e818-43cb-a067-4251d8c53133
-  type: Website
-  title: Maldev Academy
-  url: https://maldevacademy.com/
-  time: null
-  accepted: true
-  authors:
-  - 966d9893-fea9-47c1-8fc1-b24a8a9bc9c1
-  - 21c27e55-3e51-4f17-b945-a7f1a73ac07b
-  tags:
-  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
-  date: null
-- id: 2b924791-e5c1-46e3-a98b-099ef6127211
-  type: Website
-  title: Malware Development for Dummies
-  url: https://github.com/chvancooten/maldev-for-dummies
-  time: null
-  accepted: true
-  authors:
-  - ee80f925-0e4e-46df-b34e-5f1bdf3a8f1d
-  tags:
-  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
-  date: null
 - id: 9ca58db7-efd7-4b9d-ba24-94e0fdd1b160
   type: Post
   title: 'Manual LDAP Querying: Part 2'
@@ -1946,6 +2538,18 @@
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   - 1e7b6f0a-e775-41b5-a3ad-73d2405442f2
   date: '2024-03-05'
+- id: a1ce5518-6e55-4971-a769-2ac2deaf82b6
+  type: Post
+  title: 'Mistaken Identity: Extracting Managed Identity Credentials from Azure Function
+    Apps'
+  url: https://www.netspi.com/blog/technical-blog/cloud-penetration-testing/mistaken-identity-azure-function-apps/
+  time: null
+  accepted: true
+  authors:
+  - 5a7e3ab1-61c1-4826-a8b8-580807ba6d3a
+  tags:
+  - 38368bde-deb6-4b27-b157-f71daf030bfa
+  date: '2023-11-16'
 - id: 79310ed4-522b-47c1-8a33-30e751a02198
   type: Post
   title: 'Modern implant design: position independent malware development'
@@ -1971,6 +2575,19 @@
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
   - b7928631-d0ce-4a23-9ec4-a48c74143ba3
   date: '2023-11-03'
+- id: aa27f6bf-6eaa-4bb7-babc-47208b7fe7c3
+  type: Post
+  title: Monitor Cobalt Strike beacon for Windows tokens and gain Kerberos persistence
+  url: https://sokarepo.github.io/posts/monitor-cobaltstrike-windows-token-kerberos-persistence/
+  time: null
+  accepted: true
+  authors:
+  - c0c985ea-595d-4bb1-aa9b-825767d8e34f
+  tags:
+  - 83e3dab8-17b6-4d82-adbf-953d3262e8c7
+  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
+  - 4045f727-c250-4b0f-bb8a-f4d53155805e
+  date: '2024-04-18'
 - id: 1b4d1a82-c3fc-48b8-870a-0c72bb72e3d3
   type: Post
   title: NTLM Relay
@@ -2009,18 +2626,19 @@
   - da809c20-1461-4221-bb06-447c78db9c52
   - 12440afe-315b-4a49-915d-22f0b486064b
   date: '2022-07-28'
-- id: 56064c71-ca5b-4987-9b15-615efd062ce6
+- id: b032df68-ab5c-4141-b7f1-9c45aaf67678
   type: Post
-  title: NTLMRelayx.py to exe
-  url: https://github.com/LuemmelSec/ntlmrelayx.py_to_exe
+  title: NTLM relaying to AD CS - On certificates, printers and a little hippo
+  url: https://dirkjanm.io/ntlm-relaying-to-ad-certificate-services
   time: null
   accepted: true
   authors:
-  - 520e169e-e772-4c9a-b480-9d17c292b640
+  - 049dec5d-e31d-4f71-9d8b-b612729338e4
   tags:
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
+  - da809c20-1461-4221-bb06-447c78db9c52
   - 12440afe-315b-4a49-915d-22f0b486064b
-  date: null
+  date: '2021-07-28'
 - id: a142641e-3906-4529-bd3f-5a9eeac786fa
   type: Post
   title: Navigating Stealthy WMI Lateral Movement
@@ -2083,6 +2701,54 @@
   - e71e7dd3-9be5-4061-88bd-affb354d2f33
   - 4045f727-c250-4b0f-bb8a-f4d53155805e
   date: '2024-07-10'
+- id: 279f64ee-e9c9-4208-b935-3022ab2410d5
+  type: Post
+  title: 'Next.js and cache poisoning: a quest for the black hole'
+  url: https://zhero-web-sec.github.io/research-and-things/nextjs-and-cache-poisoning-a-quest-for-the-black-hole
+  time: null
+  accepted: true
+  authors: []
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 863a09ec-0940-47f5-87b6-0294fd62bd46
+  - e34c7aab-923e-4a7a-bf5e-24eacfb763ba
+  date: '2024-06-24'
+- id: a4d611f6-2412-426b-a3dc-feef72fffe5f
+  type: Post
+  title: 'Next.js and the corrupt middleware: the authorizing artifact'
+  url: https://zhero-web-sec.github.io/research-and-things/nextjs-and-the-corrupt-middleware
+  time: null
+  accepted: true
+  authors:
+  - dfaa8616-a527-4ac4-a0a6-919b895b5dd8
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 863a09ec-0940-47f5-87b6-0294fd62bd46
+  date: '2025-03-18'
+- id: 64256175-be16-4cce-b44f-d0aba200834a
+  type: Post
+  title: 'Next.js, cache, and chains: the stale elixir'
+  url: https://zhero-web-sec.github.io/research-and-things/nextjs-cache-and-chains-the-stale-elixir
+  time: null
+  accepted: true
+  authors:
+  - dfaa8616-a527-4ac4-a0a6-919b895b5dd8
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 863a09ec-0940-47f5-87b6-0294fd62bd46
+  date: '2025-01-21'
+- id: 872f15fd-d870-4285-b30b-79282a440229
+  type: Post
+  title: Nonce CSP bypass using Disk Cache
+  url: https://jorianwoltjer.com/blog/p/research/nonce-csp-bypass-using-disk-cache
+  time: null
+  accepted: true
+  authors:
+  - ce7717d3-b3dc-437b-ae2a-75c260e8cf4e
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 8ef1843e-8b9e-422e-b563-ae5eff93ec53
+  date: '2025-07-02'
 - id: 3f221def-43ee-4b22-9558-2ef91dfee7b7
   type: Post
   title: 'Not A Security Boundary: Breaking Forest Trusts'
@@ -2095,28 +2761,29 @@
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   - 4a18127f-7fa7-440f-a15f-fce6ad64490e
   date: '2018-11-28'
-- id: 26d03ab8-c877-4bfc-82b6-0a10d8b95058
-  type: Course
-  title: OAuth 2.0 authentication vulnerabilities
-  url: https://portswigger.net/web-security/oauth
+- id: 8e9586be-003a-456d-9370-32ac24cbb3dd
+  type: Post
+  title: OAuth Non-Happy Path to ATO
+  url: https://blog.voorivex.team/oauth-non-happy-path-to-ato
   time: null
   accepted: true
   authors:
-  - 9191bcb0-9bff-42b9-af51-b6467561b4ce
+  - 877adff2-5b53-4a89-921c-c484dec6e319
   tags:
   - c971d3ab-48d3-4f04-9f6d-f398787d6612
-  date: '2021-03-24'
-- id: 5ff00e83-2882-403b-8441-21b70729b8c5
-  type: Cheatsheet
-  title: OSEP Cheat Sheet
-  url: https://0x4rt3mis.github.io/posts/OSEP-Cheat-Sheet/
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  date: '2024-11-21'
+- id: 2d5b70e3-6f1f-4003-8b3e-c6ccddf96186
+  type: Post
+  title: OBS WebSocket to RCE
+  url: https://jorianwoltjer.com/blog/p/research/obs-websocket-rce
   time: null
   accepted: true
   authors:
-  - 8df6dbb8-609e-454f-b978-ecdf3553b2f8
+  - ce7717d3-b3dc-437b-ae2a-75c260e8cf4e
   tags:
-  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
-  date: null
+  - 28958e1a-b3f4-440c-8650-337a2c66407e
+  date: '2025-06-05'
 - id: 15dbfca4-87b2-444a-b739-e18c66e4612b
   type: Post
   title: 'OUned.py: exploiting hidden Organizational Units ACL attack vectors in Active
@@ -2144,18 +2811,18 @@
   - 8265e2de-6339-4ef7-b1d3-bcea8ca55c1d
   - 4bf5cc5c-1de1-42f1-a3f4-4b73ce516354
   date: '2023-06-13'
-- id: 78c44b07-e317-4a54-a19a-f6bc2b04b80d
+- id: ccba33d0-9e1a-4592-b913-801034975261
   type: Post
-  title: Offensive Driver Development
-  url: https://training.zeropointsecurity.co.uk/courses/offensive-driver-development
-  time: null
+  title: Obtaining Domain Admin from Azure AD by abusing Cloud Kerberos Trust
+  url: https://dirkjanm.io/obtaining-domain-admin-from-azure-ad-via-cloud-kerberos-trust
+  time: 19
   accepted: true
   authors:
-  - 9091e4f6-049c-44c3-8c16-e794462e2c4f
+  - 049dec5d-e31d-4f71-9d8b-b612729338e4
   tags:
-  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
-  - 9a768306-b89e-40bc-bb3f-67f2969d4eea
-  date: null
+  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
+  - 8265e2de-6339-4ef7-b1d3-bcea8ca55c1d
+  date: '2023-06-13'
 - id: b0abe24e-b41c-4312-af25-9115a6c00754
   type: Post
   title: Office 365 network attacks - Gaining access to emails and files via an insecure
@@ -2201,6 +2868,18 @@
   tags:
   - b6d76a83-45b7-4ee6-a769-21e4f8cdb259
   date: '2023-12-20'
+- id: d8a4069f-5031-4f6b-9d45-119a64bebc0e
+  type: Post
+  title: One Token to rule them all - obtaining Global Admin in every Entra ID tenant
+    via Actor tokens
+  url: https://dirkjanm.io/obtaining-global-admin-in-every-entra-id-tenant-with-actor-tokens
+  time: 17
+  accepted: true
+  authors:
+  - 049dec5d-e31d-4f71-9d8b-b612729338e4
+  tags:
+  - 38368bde-deb6-4b27-b157-f71daf030bfa
+  date: '2025-09-17'
 - id: 76f1d970-0e65-44a6-8987-ae5a300daa3c
   type: Post
   title: One shell to HANDLE them all
@@ -2214,18 +2893,6 @@
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
   - 4045f727-c250-4b0f-bb8a-f4d53155805e
   date: '2022-10-26'
-- id: 34d5621a-3e8e-43b0-b128-fc2f2663dbd8
-  type: Post
-  title: Operator's Guide to the Meterpreter BOFLoader
-  url: https://www.trustedsec.com/blog/operators-guide-to-the-meterpreter-bofloader
-  time: null
-  accepted: true
-  authors:
-  - 7ce384c3-2e40-4ccf-9b30-eb957489088e
-  tags:
-  - 4f7909b7-42d7-4838-82e9-d3510a1a9700
-  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
-  date: '2024-01-24'
 - id: a29eb980-a576-4d57-b5b1-d1b235c8315d
   type: Post
   title: 'PHP filter chains: file read from error-based oracle'
@@ -2238,6 +2905,18 @@
   - 625513bf-1062-40bf-99a5-366d42072174
   - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
   date: '2023-03-21'
+- id: e2ed9606-a040-4d4d-a93e-0170926fd454
+  type: Post
+  title: 'PHP filters chain: What is it and how to use it'
+  url: https://www.synacktiv.com/publications/php-filters-chain-what-is-it-and-how-to-use-it.html
+  time: null
+  accepted: true
+  authors:
+  - c3215ae8-1ad6-4724-a65e-4c029e9247bf
+  tags:
+  - 625513bf-1062-40bf-99a5-366d42072174
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  date: null
 - id: 5db26b6d-7d0e-4546-bff8-eeef864a2298
   type: Post
   title: Pass the Hash
@@ -2286,6 +2965,18 @@
   - cc66ded8-ebc5-4743-9c2a-d4d02cb61a70
   - ef39b75c-f98b-4d50-9577-8e2c46fefaf3
   date: '2023-06-11'
+- id: ca5620b4-0aa3-4641-8d27-cc4ddaf6e0c0
+  type: Post
+  title: Persisting on Entra ID applications and User Managed Identities with Federated
+    Credentials
+  url: https://dirkjanm.io/persisting-with-federated-credentials-entra-apps-managed-identities
+  time: 7
+  accepted: true
+  authors:
+  - 049dec5d-e31d-4f71-9d8b-b612729338e4
+  tags:
+  - 38368bde-deb6-4b27-b157-f71daf030bfa
+  date: '2024-07-31'
 - id: 7d3a0ca1-a06c-468e-a1c0-10acad80a1e7
   type: Post
   title: Phishing for Primary Refresh Tokens and Windows Hello keys
@@ -2297,6 +2988,17 @@
   tags:
   - 38368bde-deb6-4b27-b157-f71daf030bfa
   - 91ca65c6-47a8-43f4-9d69-b754df17986a
+  date: '2023-10-10'
+- id: d211804a-0667-4fce-9e9a-e1e9ae2055ea
+  type: Post
+  title: Phishing for Primary Refresh Tokens and Windows Hello keys
+  url: https://dirkjanm.io/phishing-for-microsoft-entra-primary-refresh-tokens
+  time: 12
+  accepted: true
+  authors:
+  - 049dec5d-e31d-4f71-9d8b-b612729338e4
+  tags:
+  - 38368bde-deb6-4b27-b157-f71daf030bfa
   date: '2023-10-10'
 - id: 7ca8cb6e-444d-4598-bd0f-68d0c39e3fc8
   type: Post
@@ -2397,6 +3099,30 @@
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   - 0bb39fe0-b93d-4755-9ebf-ed1ff04d0f9d
   date: '2024-03-20'
+- id: 47e7d744-5e12-491b-9793-d24d1bb7b71a
+  type: Post
+  title: 'Quantum readiness: Hybridizing key exchanges'
+  url: https://www.synacktiv.com/en/publications/quantum-readiness-hybridizing-key-exchanges.html
+  time: null
+  accepted: true
+  authors:
+  - 203b7123-92b1-4001-9bf1-2d2a5a97b163
+  tags:
+  - fbfdd30f-9c61-47fc-b316-af6ab1506fa1
+  - 2e25eaf0-068c-44ea-9165-9e38741f8420
+  date: '2025-10-16'
+- id: e58b170a-6690-465e-982a-0097d3764d8c
+  type: Post
+  title: 'Quantum readiness: Hybridizing signatures'
+  url: https://www.synacktiv.com/en/publications/quantum-readiness-hybridizing-signatures
+  time: null
+  accepted: true
+  authors:
+  - 203b7123-92b1-4001-9bf1-2d2a5a97b163
+  tags:
+  - fbfdd30f-9c61-47fc-b316-af6ab1506fa1
+  - 2e25eaf0-068c-44ea-9165-9e38741f8420
+  date: '2025-10-22'
 - id: 574a4f3f-5ba6-4ccb-b1e9-370f4df19bd7
   type: Post
   title: 'Quantum readiness: Introduction to Modern Cryptography'
@@ -2423,6 +3149,18 @@
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
   - 7171cf8b-bae6-4f22-874d-bff76eb15b0c
   date: '2023-12-24'
+- id: 6ffa9e8b-ea84-4248-ad23-ac2b544f527a
+  type: Post
+  title: Recutting the Kerberos Diamond Ticket
+  url: https://www.huntress.com/blog/recutting-the-kerberos-diamond-ticket
+  time: null
+  accepted: true
+  authors:
+  - 1a3aa684-d224-43ba-aefb-60cb14a055d7
+  tags:
+  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
+  - 4bf5cc5c-1de1-42f1-a3f4-4b73ce516354
+  date: '2025-06-24'
 - id: 811c7b56-e1f5-4463-80fa-fd28579cb4c8
   type: Post
   title: 'Red Team Tactics: Writing Windows Kernel Drivers for Advanced Persistence
@@ -2463,29 +3201,18 @@
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
   - 7171cf8b-bae6-4f22-874d-bff76eb15b0c
   date: '2024-09-25'
-- id: a07fa5d3-d434-4ea2-9291-2a8604fcdf9e
-  type: Cheatsheet
-  title: RedTeaming CheatSheet
-  url: https://github.com/0xJs/RedTeaming_CheatSheet
+- id: 641562fd-195a-4501-87a3-d660a3b8d02a
+  type: Post
+  title: Reinventing PowerShell in C/C++
+  url: https://itm4n.github.io/reinventing-powershell/
   time: null
   accepted: true
   authors:
-  - 0a441edb-473c-45dd-8b37-30fb93821e4c
+  - f54d9482-fa50-416e-b273-89f2125aaa21
   tags:
-  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
-  date: null
-- id: 61c92f78-e7fc-4140-95c9-c511b473c52e
-  type: Cheatsheet
-  title: Relay
-  url: https://www.thehacker.recipes/a-d/movement/ntlm/relay
-  time: null
-  accepted: true
-  authors:
-  - df4ddd93-f0d7-4b91-b96f-d77d84ee0b98
-  tags:
-  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
-  - 12440afe-315b-4a49-915d-22f0b486064b
-  date: null
+  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
+  - 9b3a27d2-5a3e-49b2-ba54-33240dc314ba
+  date: '2025-02-17'
 - id: ea4403b4-2c05-4476-8f7f-b5fcb5129b2f
   type: Post
   title: Relaying 101
@@ -2525,6 +3252,19 @@
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   - 4bf5cc5c-1de1-42f1-a3f4-4b73ce516354
   - 119e6ef5-b1ea-44ef-8341-08422d5bffa7
+  date: '2022-02-22'
+- id: b6ece700-8feb-4ea7-8e73-cec8b85285ef
+  type: Post
+  title: Relaying Kerberos over DNS using krbrelayx and mitm6
+  url: https://dirkjanm.io/relaying-kerberos-over-dns-with-krbrelayx-and-mitm6
+  time: 11
+  accepted: true
+  authors:
+  - 049dec5d-e31d-4f71-9d8b-b612729338e4
+  tags:
+  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
+  - 119e6ef5-b1ea-44ef-8341-08422d5bffa7
+  - 12440afe-315b-4a49-915d-22f0b486064b
   date: '2022-02-22'
 - id: 7e060ff8-a5f9-4097-bb8d-04b287ea16e6
   type: Post
@@ -2589,18 +3329,6 @@
   - 982b05c0-01cc-4f76-8aa4-732b085d0ff5
   - fd07969a-2ceb-4022-94f7-74229d1550b8
   date: '2017-01-05'
-- id: b9335eee-f51b-487d-975d-d33e96f295a3
-  type: Cheatsheet
-  title: SCCM / MECM
-  url: https://www.thehacker.recipes/ad/movement/sccm-mecm
-  time: null
-  accepted: true
-  authors:
-  - df4ddd93-f0d7-4b91-b96f-d77d84ee0b98
-  tags:
-  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
-  - 1e7b6f0a-e775-41b5-a3ad-73d2405442f2
-  date: null
 - id: 2e25e1bc-b083-4316-91ec-cc90d0a5c090
   type: Post
   title: SCCM / MECM LAB - Part 0x0
@@ -2748,18 +3476,20 @@
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   - ded7572e-83ec-4ac0-b75e-51f2486ee9f2
   date: null
-- id: 0e9b3267-decf-4291-be8a-4c8ffb0201da
+- id: e56615a3-b521-4d5b-b143-4943a4c9adcd
   type: Post
-  title: 'Simplifying BOF Development: Debug, Test, and Save Your B(e)acon'
-  url: https://www.cobaltstrike.com/blog/simplifying-bof-development
+  title: 'SilentMoonwalk: Implementing a dynamic Call Stack Spoofer'
+  url: https://klezvirus.github.io/posts/Stackmoonwalk/
   time: null
   accepted: true
   authors:
-  - 37c2810a-3201-46c8-b224-0f03093c2d63
+  - 54ead71f-0261-423a-8510-01ac6ed9393c
+  - 7e38cd29-f1f5-4045-bc4b-e884d7cbc4df
+  - 7e5651b1-cd76-4889-88e8-4157d6731da8
   tags:
-  - 4f7909b7-42d7-4838-82e9-d3510a1a9700
+  - 2f4d87bb-670d-40c0-a1ec-866b7367bdf8
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
-  date: '2023-08-10'
+  date: '2022-12-08'
 - id: 3cc6355e-f1fe-4f5b-af80-a6eb03347523
   type: Post
   title: Site Takeover via SCCM's AdminService API
@@ -2772,18 +3502,6 @@
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   - 1e7b6f0a-e775-41b5-a3ad-73d2405442f2
   date: '2023-08-10'
-- id: 787ec6f2-5d14-486f-9730-bda65a87dcfe
-  type: Post
-  title: Situational Awareness BOFs for Script Kiddies
-  url: https://www.trustedsec.com/blog/situational-awareness-bofs-for-script-kiddies
-  time: null
-  accepted: true
-  authors:
-  - 6d3740f1-fad0-4ee3-bc4a-6857d7218e50
-  tags:
-  - 4f7909b7-42d7-4838-82e9-d3510a1a9700
-  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
-  date: '2023-03-21'
 - id: c8eeeb7f-d56d-4387-a8f1-c6bba61f12df
   type: Post
   title: 'So I became a node: exploiting bootstrap tokens in Azure Kubernetes Service'
@@ -2796,6 +3514,29 @@
   tags:
   - 1e26b964-179a-4b04-b9a2-7f028ef023fa
   date: '2024-04-23'
+- id: 59355867-8304-4893-a438-03b389a9c7ac
+  type: Post
+  title: So you think you can block Macros?
+  url: https://www.outflank.nl/blog/2023/04/25/so-you-think-you-can-block-macros/
+  time: null
+  accepted: true
+  authors:
+  - 90ec7133-e54d-442b-aa99-031b3b3740f4
+  tags:
+  - 3a7ebd4b-620e-4e8a-8b11-47413558cbc9
+  date: '2023-04-25'
+- id: 3bfc05ce-47a3-4a6b-b76d-9e890482bab9
+  type: Post
+  title: Spoofing DNS Records by Abusing DHCP DNS Dynamic Updates
+  url: https://www.akamai.com/blog/security-research/spoofing-dns-by-abusing-dhcp
+  time: null
+  accepted: true
+  authors:
+  - 33dbd7a3-e959-4842-ad0f-03e422a50e4b
+  tags:
+  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
+  - 12440afe-315b-4a49-915d-22f0b486064b
+  date: '2023-12-07'
 - id: 6f020ede-02b5-4e21-b4f7-b0e4549755ed
   type: Post
   title: Spying on users using Remote Desktop Shadowing - Living off the Land
@@ -2877,17 +3618,6 @@
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   - 82f580b9-8cd6-48e5-843f-e1a989f50595
   date: '2019-12-26'
-- id: 4eb4d09f-fa87-4ef9-aee4-5b9b1067da0a
-  type: Website
-  title: The DFIR Report
-  url: https://thedfirreport.com/
-  time: null
-  accepted: true
-  authors:
-  - 72908d7b-805b-428e-aec8-d2c2758406d5
-  tags:
-  - ddf15ffb-8803-4f64-a82b-faebc4eee8b7
-  date: null
 - id: 5d497da8-a0b0-4c1a-9242-3fc0ea3aae6b
   type: Post
   title: 'The Phantom Credentials of SCCM: Why the NAA Won''t Die'
@@ -2900,6 +3630,17 @@
   - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
   - 1e7b6f0a-e775-41b5-a3ad-73d2405442f2
   date: '2022-06-28'
+- id: 69ada0d1-2e60-4989-aa97-49935cde0448
+  type: Post
+  title: 'The Phantom Extension: Backdooring chrome through uncharted pathways'
+  url: https://www.synacktiv.com/en/publications/the-phantom-extension-backdooring-chrome-through-uncharted-pathways.html
+  time: null
+  accepted: true
+  authors:
+  - a88a8de9-0aa0-4eb6-8d1e-3c4f929a8429
+  tags:
+  - d4f39227-c95f-4228-8c2b-cfd5714be68c
+  date: '2025-09-23'
 - id: e9e69f92-396f-4e49-a682-600ad6cafd26
   type: Post
   title: 'The Pool Party You Will Never Forget: New Process Injection Techniques Using
@@ -2947,6 +3688,18 @@
   tags:
   - f6e02f0c-b0ba-44b0-8680-277ce0bd2cbd
   date: '2020-10-27'
+- id: 0bab0e41-9190-4f79-84c9-abb51a28c25c
+  type: Post
+  title: The Ultimate Double-Clickjacking PoC
+  url: https://jorianwoltjer.com/blog/p/research/ultimate-doubleclickjacking-poc
+  time: null
+  accepted: true
+  authors:
+  - ce7717d3-b3dc-437b-ae2a-75c260e8cf4e
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 19ce4934-d7a5-413a-a159-dc90df6d98ce
+  date: '2025-05-22'
 - id: 8cd27338-58cf-4f05-b145-a40750134f17
   type: Post
   title: The difference between signature-based and behavioural detections
@@ -2989,20 +3742,6 @@
   - 12440afe-315b-4a49-915d-22f0b486064b
   - fd07969a-2ceb-4022-94f7-74229d1550b8
   date: '2019-03-04'
-- id: f4a1baf9-bd4d-476a-8b9e-098d890ddba3
-  type: Post
-  title: ThievingFox - Remotely retrieving credentials from password managers and
-    Windows utilities
-  url: https://blog.slowerzs.net/posts/thievingfox/
-  time: null
-  accepted: true
-  authors:
-  - 9a3e4a57-b4ba-4df1-991b-6dd2f0442628
-  tags:
-  - b1405e66-05e0-442e-b6fd-42b6b5da4cf5
-  - 780eb21c-257c-4dfe-823e-a3ec97c02005
-  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
-  date: '2022-03-24'
 - id: 7b8aa67d-cab7-406c-86af-e41e983549fa
   type: Post
   title: 'Threat Hunting with ETW events and HELK — Part 1: Installing SilkETW'
@@ -3015,30 +3754,6 @@
   - 10b2d2d5-340e-4ab0-8f4c-9032b01a7999
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
   date: '2019-09-19'
-- id: b55bc22b-8ef9-4810-9c14-100a3f5f3448
-  type: Post
-  title: Tunnelcrack
-  url: https://tunnelcrack.mathyvanhoef.com/details.html
-  time: null
-  accepted: true
-  authors:
-  - 436d6499-df79-48fc-b54f-7fd4e8d58495
-  tags:
-  - b950338f-f101-426f-9a78-6c8cfcb373fd
-  - 02b3e912-269f-4b75-beed-a825f8e75132
-  date: '2023-08-08'
-- id: 9bfb9019-b116-4985-aa71-d81506f8ca80
-  type: Post
-  title: Uncovering Adversarial LDAP Tradecraft
-  url: https://jsecurity101.medium.com/uncovering-adversarial-ldap-tradecraft-658b2deca384
-  time: 9
-  accepted: true
-  authors:
-  - 65954426-d43c-4d57-8ba6-6e6c568fee56
-  tags:
-  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
-  - 06cc62f8-ca06-45e5-9a5b-ea5d395b97ec
-  date: '2023-12-18'
 - id: 630b7f6c-74e8-4106-b8ad-40d857841064
   type: Post
   title: Uncovering Windows Events
@@ -3089,6 +3804,18 @@
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
   - 4045f727-c250-4b0f-bb8a-f4d53155805e
   date: '2019-10-01'
+- id: 4bc32117-7b98-4c15-8d9d-cb0055937997
+  type: Post
+  title: Universal Code Execution by Chaining Messages in Browser Extensions
+  url: https://spaceraccoon.dev/universal-code-execution-browser-extensions/
+  time: null
+  accepted: true
+  authors:
+  - b05e0391-aa91-4ccb-993e-b46f0471c21e
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - 7b90e12c-07dc-4b5e-bd52-18c78ba2d853
+  date: '2024-07-07'
 - id: bd671444-b74e-4605-9952-7ca6902517e0
   type: Post
   title: Unmanaged .NET Patching
@@ -3126,18 +3853,6 @@
   - 4f7909b7-42d7-4838-82e9-d3510a1a9700
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
   date: '2023-03-28'
-- id: e1d84635-2eda-42a5-bd3b-b8df4a1ca6a2
-  type: Website
-  title: Virus Total
-  url: https://www.virustotal.com/gui/home/upload
-  time: null
-  accepted: true
-  authors:
-  - 7fc789f0-2469-44ec-8620-24e106dcf2c5
-  tags:
-  - 362d0482-2621-4e81-86ac-cb14d586cbd1
-  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
-  date: null
 - id: 884c45d0-4237-4fe7-aff5-e27d61071d43
   type: Post
   title: WIFI Credential Dumping
@@ -3201,18 +3916,43 @@
   - 9e398375-d5d8-4ad3-97d3-d3df82e4a9ef
   - 57877f42-413f-457f-8307-2ce89f7ea309
   date: '2024-03-04'
-- id: 6bc223b1-b02b-4199-a325-68ae87f16855
-  type: Cheatsheet
-  title: WiFi Hacking CheatSheets
-  url: https://github.com/koutto/pi-pwnbox-rogueap/wiki
+- id: 2412aec3-7868-420e-92c0-4417e9286802
+  type: Post
+  title: We Hacked the npm Supply Chain of 36 Million Weekly Installs
+  url: https://www.landh.tech/blog/20251003-36m-installs/
   time: null
   accepted: true
   authors:
-  - 864e6bf3-969c-4ebe-b1f2-4bd245cc44c2
+  - edf03e97-6907-4cfc-802c-b1b98d7f58d0
   tags:
-  - 174145fe-3049-47c2-aede-7961dac5b46e
-  - fd4af2eb-6b9d-4fad-a884-27c47622faf9
-  date: null
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - f6432aae-c6a7-4266-aac0-8344887b1bae
+  date: '2025-10-03'
+- id: 4c311899-7e49-4294-8453-a6a121d00d79
+  type: Post
+  title: We hacked Google’s A.I Gemini and leaked its source code (at least some part)
+  url: https://www.landh.tech/blog/20250327-we-hacked-gemini-source-code
+  time: null
+  accepted: true
+  authors:
+  - edf03e97-6907-4cfc-802c-b1b98d7f58d0
+  tags:
+  - 9e398375-d5d8-4ad3-97d3-d3df82e4a9ef
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  date: '2025-03-27'
+- id: 3b259d64-f24b-4ff5-af12-3628b9d77c1d
+  type: Post
+  title: What could go wrong when MySQL strict SQL mode is off?
+  url: https://www.synacktiv.com/en/publications/what-could-go-wrong-when-mysql-strict-sql-mode-is-off.html
+  time: null
+  accepted: true
+  authors:
+  - 9953ab8e-ad90-4207-adb4-15dc8989ea50
+  tags:
+  - fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+  - dcdf9c66-2d20-43a2-9318-243c9d1ccbb2
+  - e93760c9-afe8-42aa-9f5b-f3ed038b7404
+  date: '2025-10-02'
 - id: 37298779-6654-4f52-ab82-f6b09a6495b2
   type: Post
   title: 'Windows Access Tokens: Getting SYSTEM and demystifying Potato Exploits'
@@ -3241,17 +3981,6 @@
   - 119e6ef5-b1ea-44ef-8341-08422d5bffa7
   - 4045f727-c250-4b0f-bb8a-f4d53155805e
   date: '2021-10-20'
-- id: aae15d6a-60ce-4a21-9c8b-1795f4b05c62
-  type: Book
-  title: Windows Security Internals
-  url: https://nostarch.com/windows-security-internals
-  time: null
-  accepted: true
-  authors:
-  - 825fc9d6-7fda-4990-9c0d-36e46ed04e68
-  tags:
-  - 4045f727-c250-4b0f-bb8a-f4d53155805e
-  date: '2024-04-01'
 - id: 393a34ba-85e2-4a11-8da0-6c7264c4b3fa
   type: Post
   title: Working your way Around an ACL
@@ -3299,17 +4028,6 @@
   - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
   - 9a768306-b89e-40bc-bb3f-67f2969d4eea
   date: '2022-08-29'
-- id: 4ea7d07f-6af9-44d7-95b9-191df9b2cf7f
-  type: Website
-  title: crow's blog
-  url: https://www.crow.rip/crows-nest/mal/dev
-  time: null
-  accepted: true
-  authors:
-  - 77f594ac-48bb-4736-8016-98544409def0
-  tags:
-  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
-  date: null
 - id: d5852dee-1498-43bd-aa06-4196ab5767b9
   type: Post
   title: gMSA Active Directory Attacks
@@ -3321,37 +4039,3 @@
   tags:
   - bd1e23b5-de5e-48f4-a0d3-5ad3b68c690f
   date: '2022-03-01'
-- id: 7f3f6eb2-4b6f-4c1e-95d7-39f0265f81b6
-  type: Website
-  title: iredteam
-  url: https://www.ired.team/
-  time: null
-  accepted: true
-  authors:
-  - 3794ad5b-edd6-4918-93a9-b3b446692ce4
-  tags:
-  - 68f1d5da-9062-478d-ad1c-ebfeac1acc8b
-  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
-  date: null
-- id: 8c0fceac-8f1e-412c-978b-67252eb9b12b
-  type: Website
-  title: modexp's blog
-  url: https://modexp.wordpress.com/
-  time: null
-  accepted: true
-  authors:
-  - 2d25e934-f1d3-4371-9702-b294cb5c70a3
-  tags:
-  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
-  date: null
-- id: 1ce931ef-f0d1-4dcf-89ee-af585eb50f5c
-  type: Website
-  title: redteam/maldev links
-  url: https://github.com/CodeXTF2/maldev-links
-  time: null
-  accepted: true
-  authors:
-  - d7df3b08-ec91-4f6a-8c08-aa1f4cb781c4
-  tags:
-  - 3dcfe77c-3021-4f7e-81b2-b64630607ee2
-  date: null

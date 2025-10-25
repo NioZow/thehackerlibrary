@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 
 import { useRouter } from "next/navigation";
-import { useState, useTransition } from "react";
+import { useId, useState, useTransition } from "react";
 import { MoreVertical, Bookmark, CheckCircle } from "lucide-react";
 import {
   DropdownMenu,
@@ -198,6 +198,8 @@ export const CardResource = ({
       setIsSignInOpen(true);
     }
   };
+
+  const dropdownId = useId();
 
   return (
     <article

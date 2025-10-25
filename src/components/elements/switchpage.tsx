@@ -20,13 +20,15 @@ export default function SwitchPage({
 
   const pageNumber = getPageNumber(useSearchParams().get("page"));
   const query = useSearchParams().get("query") || undefined;
+  const review = useSearchParams().get("review") || undefined;
+
   const numberOfPages =
     resourcesCount === 0
       ? Math.trunc(resourcesCount / RESOURCE_PER_PAGE)
       : Math.trunc(resourcesCount / RESOURCE_PER_PAGE) + 1;
 
   const switchPage = (page: number) => {
-    const params = constructParams(page, query);
+    const params = constructParams(page, query, review);
     router.push(`${pageName}?${params}`);
   };
 

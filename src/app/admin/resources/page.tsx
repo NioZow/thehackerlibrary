@@ -94,7 +94,7 @@ export default async function Home({ searchParams }: IProps) {
       </div>
       <SearchResources resources={resources} invalidQuery={invalidQuery} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
-        <SwitchPage resourcesCount={count} pageRoute="/search" />
+        <SwitchPage resourcesCount={count} pageRoute="/admin/resources" />
       </div>
     </div>
   );

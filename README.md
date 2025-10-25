@@ -8,7 +8,7 @@ TheHackerLibrary is a free, not sponsored library of hacking learning resources.
 
 ## Self-hosting
 
-This project is live [here](https://thehackerlibrary.niozow.re), however you can easily self-host it too using docker.
+This project is live [here](https://thehackerlibrary.nioz.fr), however you can easily self-host it too using docker.
 
 The first step is to clone the git repository:
 
