@@ -55,7 +55,7 @@ export default function Homepage({ posts, topics, paths }: IProps) {
         <div className="relative max-w-6xl mx-auto px-6 pt-20 pb-32">
           <div className="text-center space-y-8">
             <div className="space-y-6">
-              <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+               <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
                 The Hacker Library
               </h1>
 
@@ -70,7 +70,7 @@ export default function Homepage({ posts, topics, paths }: IProps) {
               </p>
             </div>
 
-            <div className="flex items-center justify-center space-x-4 pt-4">
+             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
               <a
                 href="/search"
                 className="group px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 flex items-center space-x-2"
@@ -87,7 +87,7 @@ export default function Homepage({ posts, topics, paths }: IProps) {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-8 max-w-3xl mx-auto mt-20">
+           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto mt-20">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
@@ -144,7 +144,7 @@ export default function Homepage({ posts, topics, paths }: IProps) {
             How It Works
           </h2>
 
-          <div className="grid md:grid-cols-4 gap-8">
+           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center space-y-3">
               <div className="w-16 h-16 bg-cyan-500/10 rounded-full flex items-center justify-center mx-auto border-2 border-cyan-500/30">
                 <Tag className="w-8 h-8 text-cyan-400" />

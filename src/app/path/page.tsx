@@ -79,7 +79,7 @@ export default async function Home() {
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl font-bold text-white">
+             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">
               Learning Paths
             </h1>
 
@@ -88,7 +88,7 @@ export default async function Home() {
               attack techniques and security domains.
             </p>
 
-            <div className="flex items-center justify-center space-x-8 pt-4">
+             <div className="flex flex-col sm:flex-row items-center justify-center sm:space-x-8 space-y-4 sm:space-y-0 pt-4">
               <div className="flex items-center space-x-2">
                 <BookOpen className="w-5 h-5 text-cyan-400" />
                 <span className="text-sm text-gray-400">

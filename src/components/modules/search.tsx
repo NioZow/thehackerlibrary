@@ -58,14 +58,14 @@ export default function SearchResources({ resources, invalidQuery }: IProps) {
   return (
     <>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 flex-1 space-y-6">
-        <div className="flex gap-2 items-center">
+         <div className="flex flex-col sm:flex-row gap-2 sm:items-center">
           <div className="flex-1">
             <SearchBar onSearch={onSearch} />
           </div>
           {isAdmin ? (
             <button
               onClick={() => setCreateDialogOpen(true)}
-              className="px-4 py-3 bg-slate-800/50 border border-gray-700 rounded-xl text-white hover:border-gray-600 hover:bg-slate-800/70 transition-all duration-200 font-medium flex items-center gap-2 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-cyan-500 hover:text-cyan-300"
+               className="w-full sm:w-auto px-4 py-3 bg-slate-800/50 border border-gray-700 rounded-xl text-white hover:border-gray-600 hover:bg-slate-800/70 transition-all duration-200 font-medium flex items-center justify-center gap-2 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-cyan-500 hover:text-cyan-300"
               title="Add a new resource"
             >
               <Plus className="h-5 w-5" />

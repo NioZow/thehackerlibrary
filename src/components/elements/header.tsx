@@ -9,6 +9,8 @@ import {
   LogOut,
   User,
   ScanEye,
+  Menu,
+  X,
 } from "lucide-react";
 import { useSession, signOut } from "next-auth/react";
 import Link from "next/link";
@@ -24,13 +26,13 @@ import { useEffect, useState } from "react";
 import SignInPopup from "@/components/elements/signin";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useAdmin } from "@/lib/useAdmin";
-import { MdArticle } from "react-icons/md";
 
 export default function Header({ fixed }: { fixed: boolean }) {
   const notifications = [];
   const [dailyPath, setDailyPath] = useState<string>("");
   const [latestPath, setLatestPath] = useState<string>("");
   const [isSignInOpen, setIsSignInOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const isAdmin = useAdmin();
 
@@ -63,12 +65,14 @@ export default function Header({ fixed }: { fixed: boolean }) {
     setLatestPath(latestPathString ?? "");
   }, []);
 
-  console.log(pages);
-
   const handleUserIconClick = () => {
     if (status === "unauthenticated") {
       setIsSignInOpen(true);
     }
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -81,18 +85,19 @@ export default function Header({ fixed }: { fixed: boolean }) {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center group">
+            {/* Logo */}
+            <div className="flex items-center group flex-shrink-0">
               <div className="relative">
-                <Link href="/" className="flex items-center gap-3">
+                <Link href="/" className="flex items-center gap-2 sm:gap-3">
                   <Image
                     src="/logo.png"
                     alt="The Hacker Library Logo"
-                    width={40}
-                    height={40}
-                    className="transition-transform duration-300 group-hover:scale-110"
+                    width={32}
+                    height={32}
+                    className="sm:w-10 sm:h-10 transition-transform duration-300 group-hover:scale-110"
                   />
-                  <div className="relative">
-                    <h1 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent transition-all duration-300 group-hover:scale-105">
+                  <div className="relative hidden sm:block">
+                    <h1 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent transition-all duration-300 group-hover:scale-105">
                       The Hacker Library
                     </h1>
                     <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-400 group-hover:w-full transition-all duration-300"></div>
@@ -100,31 +105,37 @@ export default function Header({ fixed }: { fixed: boolean }) {
                 </Link>
               </div>
             </div>
-            <div className="flex space-x-2">
+
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex space-x-2">
               {pages.map((page) => {
                 return (
                   <Link
                     key={page.label}
                     href={page.link}
-                    className="relative px-4 py-2 text-gray-300 hover:text-cyan-400 transition-all duration-300 rounded-lg hover:bg-cyan-500/10 group"
+                    className="relative px-4 py-2 text-gray-300 hover:text-cyan-400 transition-all duration-300 rounded-lg hover:bg-cyan-500/10 group whitespace-nowrap"
                   >
                     <span className="relative z-10">{page.label}</span>
                     <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-cyan-500/0 via-cyan-500/5 to-blue-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   </Link>
                 );
               })}
-            </div>
-            <div className="flex items-center space-x-4">
+            </nav>
+
+            {/* Right side actions */}
+            <div className="flex items-center space-x-2 sm:space-x-4">
+              {/* GitHub Link - Hidden on mobile */}
               <a
                 href="https://github.com/niozow/thehackerlibrary"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative p-2 rounded-lg transition-all duration-300 hover:bg-cyan-500/10 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 group"
+                className="hidden sm:block relative p-2 rounded-lg transition-all duration-300 hover:bg-cyan-500/10 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 group"
               >
                 <Github className="w-5 h-5 text-gray-300 group-hover:text-cyan-400 transition-colors duration-300 group-hover:scale-110" />
                 <span className="absolute inset-0 rounded-lg bg-cyan-400/0 group-hover:bg-cyan-400/5 transition-colors duration-300"></span>
               </a>
 
+              {/* Notifications */}
               <button
                 onClick={handleUserIconClick}
                 className="relative p-2 rounded-lg transition-all duration-300 hover:bg-cyan-500/10 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 group"
@@ -137,6 +148,7 @@ export default function Header({ fixed }: { fixed: boolean }) {
                 ) : null}
               </button>
 
+              {/* User Menu */}
               {status === "authenticated" ? (
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
@@ -190,8 +202,50 @@ export default function Header({ fixed }: { fixed: boolean }) {
                   <User className="w-5 h-5 text-gray-300 group-hover:text-cyan-400 transition-colors duration-300 group-hover:scale-110" />
                 </button>
               )}
+
+              {/* Mobile Menu Button */}
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="md:hidden relative p-2 rounded-lg transition-all duration-300 hover:bg-cyan-500/10 focus:outline-none focus:ring-2 focus:ring-cyan-400/50 group"
+              >
+                {isMobileMenuOpen ? (
+                  <X className="w-6 h-6 text-gray-300 group-hover:text-cyan-400 transition-colors duration-300" />
+                ) : (
+                  <Menu className="w-6 h-6 text-gray-300 group-hover:text-cyan-400 transition-colors duration-300" />
+                )}
+              </button>
             </div>
           </div>
+        </div>
+
+        {/* Mobile Navigation Menu */}
+        <div
+          className={cn(
+            "md:hidden overflow-hidden transition-all duration-300 ease-in-out border-t border-cyan-500/20",
+            isMobileMenuOpen ? "max-h-96" : "max-h-0",
+          )}
+        >
+          <nav className="px-4 py-4 space-y-2">
+            {pages.map((page) => (
+              <Link
+                key={page.label}
+                href={page.link}
+                onClick={closeMobileMenu}
+                className="block px-4 py-3 text-gray-300 hover:text-cyan-400 transition-all duration-300 rounded-lg hover:bg-cyan-500/10"
+              >
+                {page.label}
+              </Link>
+            ))}
+            <a
+              href="https://github.com/niozow/thehackerlibrary"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center px-4 py-3 text-gray-300 hover:text-cyan-400 transition-all duration-300 rounded-lg hover:bg-cyan-500/10"
+            >
+              <Github className="w-5 h-5 mr-2" />
+              <span>GitHub</span>
+            </a>
+          </nav>
         </div>
       </header>
 

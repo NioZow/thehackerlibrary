@@ -34,7 +34,7 @@ export function Paths({ path, pathResourceCount, topics }: IProps) {
       <Header fixed={true} />
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="mb-8">
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 space-y-4 sm:space-y-0">
             <div className="flex items-center">
               <div
                 className={`p-4 rounded-xl bg-gradient-to-r ${icon.color} text-white mr-6`}
@@ -54,7 +54,7 @@ export function Paths({ path, pathResourceCount, topics }: IProps) {
             {isAdmin ? (
               <button
                 onClick={() => setIsAddTopicDialogOpen(true)}
-                className="bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-500 hover:to-cyan-600 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-cyan-500/20 hover:scale-[1.02] active:scale-[0.98] group relative overflow-hidden border border-cyan-500/30"
+                className="w-full sm:w-auto bg-gradient-to-r from-cyan-600 to-cyan-700 hover:from-cyan-500 hover:to-cyan-600 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-cyan-500/20 hover:scale-[1.02] active:scale-[0.98] group relative overflow-hidden border border-cyan-500/30"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-600/0 via-cyan-600/30 to-cyan-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <Plus size={20} className="relative z-10" />
