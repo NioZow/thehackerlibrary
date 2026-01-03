@@ -45,7 +45,8 @@
     "overrides": {
       "@auth/core": "0.40.0",
       "next": ">=15.5.7",
-      "next-auth": ">=5.0.0-beta.30"
+      "next-auth": ">=5.0.0-beta.30",
+      "next@>=16.0.0-beta.0 <16.0.9": ">=16.0.9"
     }
   },
   "devDependencies": {
