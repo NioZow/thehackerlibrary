@@ -1,6 +1,4 @@
 import { parser } from "@/instances/lezer";
-import { PrismaClient } from "@prisma/client";
-import { Tree } from "@lezer/common";
 
 interface QueryNode {
   type: "or" | "and" | "comparison";
@@ -20,6 +18,11 @@ export class ThlqlToPrismaWhere {
   convert(thlqlQuery: string): any {
     if (!thlqlQuery || thlqlQuery.trim() === "") {
       return {};
+    }
+
+    // Check if it's a simple search term (no explicit field/operator)
+    if (!/[\s:()]|OR|AND|NOT|==|!=|=|>|<|>=|<=|cont|ncont/i.test(thlqlQuery)) {
+      return this.handleDefaultSearch(thlqlQuery);
     }
 
     // Parse THLQL query
@@ -43,11 +46,12 @@ export class ThlqlToPrismaWhere {
     const nodeType = cursor.type.name;
 
     switch (nodeType) {
-      case "Query":
+      case "Query": {
         cursor.firstChild();
         const result = this.nodeToAST(cursor, input);
         cursor.parent();
         return result;
+      }
 
       case "OrExpression":
         return this.parseBinaryExpression(cursor, input, "or");
@@ -55,18 +59,20 @@ export class ThlqlToPrismaWhere {
       case "AndExpression":
         return this.parseBinaryExpression(cursor, input, "and");
 
-      case "Term":
+      case "Term": {
         cursor.firstChild();
         const termResult = this.nodeToAST(cursor, input);
         cursor.parent();
         return termResult;
+      }
 
-      case "ParenthesizedExpression":
+      case "ParenthesizedExpression": {
         cursor.firstChild(); // Skip '('
         cursor.nextSibling(); // Go to expression
         const exprResult = this.nodeToAST(cursor, input);
         cursor.parent();
         return exprResult;
+      }
 
       case "Comparison":
         return this.parseComparison(cursor, input);
@@ -239,13 +245,15 @@ export class ThlqlToPrismaWhere {
   ): any {
     switch (operator) {
       case "eq":
-        return { [fieldName]: value };
+        return { [fieldName]: { equals: value, mode: "insensitive" } };
       case "ne":
-        return { [fieldName]: { not: value } };
+        return { [fieldName]: { not: { equals: value, mode: "insensitive" } } };
       case "cont":
-        return { [fieldName]: { contains: value } };
+        return { [fieldName]: { contains: value, mode: "insensitive" } };
       case "ncont":
-        return { [fieldName]: { not: { contains: value } } };
+        return {
+          [fieldName]: { not: { contains: value, mode: "insensitive" } },
+        };
       default:
         throw new Error(
           `Invalid operator ${operator} for string field ${fieldName}`,
@@ -324,6 +332,24 @@ export class ThlqlToPrismaWhere {
       tags: {
         some: tagCondition,
       },
+    };
+  }
+
+  private handleDefaultSearch(searchTerm: string): any {
+    return {
+      OR: [
+        { title: { contains: searchTerm, mode: "insensitive" } },
+        {
+          authors: {
+            some: { name: { contains: searchTerm, mode: "insensitive" } },
+          },
+        },
+        {
+          tags: {
+            some: { name: { contains: searchTerm, mode: "insensitive" } },
+          },
+        },
+      ],
     };
   }
 
