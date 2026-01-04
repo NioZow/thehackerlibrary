@@ -96,6 +96,8 @@
   id: 58092510-1d39-4e62-b09a-edc6558dd745
 - name: entra-id
   id: 38368bde-deb6-4b27-b157-f71daf030bfa
+- name: esi
+  id: c8e88cd8-a3ee-42c4-8b4c-3f34d2d75df3
 - name: etw
   id: 10b2d2d5-340e-4ab0-8f4c-9032b01a7999
 - name: excel
@@ -128,6 +130,8 @@
   id: 70d976f4-beb8-45fd-a8c2-11c9abc16d97
 - name: hyper-v
   id: 712be928-7e1f-4b0f-96a8-6a67d2e56830
+- name: hyperliquid
+  id: e3968461-39d3-40cd-98da-ad4e22a2aee7
 - name: implant-design
   id: 72ad02af-12eb-46df-9694-7f4d4b872076
 - name: initial-access
@@ -242,6 +246,8 @@
   id: faf21a25-e470-4f5f-99a1-3753a049e024
 - name: python
   id: 1dff377e-16b0-4fc6-b29d-387c5a45afbc
+- name: random
+  id: 5c75af0e-cbc8-45f1-bcaa-4687b33f5fbc
 - name: rdp
   id: ded7572e-83ec-4ac0-b75e-51f2486ee9f2
 - name: resource-based-constrained-delegation
@@ -286,6 +292,8 @@
   id: c24e492c-47e3-4734-b71e-556854c231b6
 - name: web
   id: fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+- name: web3
+  id: f3f29333-1e81-463d-82b7-df3c80226f75
 - name: wifi
   id: 174145fe-3049-47c2-aede-7961dac5b46e
 - name: windows
