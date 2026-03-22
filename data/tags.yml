@@ -22,12 +22,26 @@
   id: 2c6fcd46-fbd9-4654-ad33-f6bb0cfc0b01
 - name: apache
   id: 2df14cea-b7b3-4c58-913c-3be9c5f2e6bc
+- name: api
+  id: b243ef1f-7ecf-406f-97c3-e482ba39a4e5
+- name: appdomain-hijacking
+  id: d57b92e3-b209-4825-9f4b-1535f5068c67
+- name: arm64
+  id: f6b18b21-e317-422c-ad69-abc6f37e9e00
 - name: arp-poisoning
   id: 0f88cf5b-1281-488e-bc40-6aeaa289e298
+- name: authentication-bypass
+  id: 3d53c10a-90b6-48d5-82a5-16bcebd01f6d
+- name: automation
+  id: 656fbf60-6b6f-4c9c-a459-6ed2dccec47f
 - name: aws
   id: ca1002db-fb82-46d8-8d29-668096cddf17
+- name: azure
+  id: a31e7785-5584-41b8-b605-e80b5d2e4e14
 - name: azure-ad
   id: 8265e2de-6339-4ef7-b1d3-bcea8ca55c1d
+- name: bash
+  id: 7267258c-5f5b-4d51-b195-dfb4bec87a5e
 - name: bitlocker
   id: 065ee0ba-04d3-4c81-8e4a-f48fbc4d8031
 - name: bloodhound
@@ -36,6 +50,18 @@
   id: 4f7909b7-42d7-4838-82e9-d3510a1a9700
 - name: boot
   id: 050b6aae-6a77-43f5-a67f-efff04c85d59
+- name: browser-security
+  id: acecb1c4-1118-4784-a8da-5c092184c7bb
+- name: burp-suite
+  id: 461f0a29-aa31-41f3-b3a4-337cf3a3093b
+- name: bypass
+  id: 6df3dc41-bcca-411d-b517-f27eebfc4926
+- name: bytecode-injection
+  id: 6e1550b3-5f64-499a-a410-57f4fc663f42
+- name: c
+  id: 9d6c2358-89a2-4556-8a7d-d0715a96bdd0
+- name: c#
+  id: cce94492-bc69-4062-b1fe-8de3c4cc1509
 - name: c2
   id: f9e7ff94-5863-46ef-bc01-1c0dad35b8e9
 - name: cache-deception
@@ -46,20 +72,36 @@
   id: 1e1691a7-b591-45d4-9359-88bdea09a68f
 - name: callstack-spoofing
   id: 2f4d87bb-670d-40c0-a1ec-866b7367bdf8
+- name: chrome
+  id: d62ffc80-c3d5-42c7-81aa-d0b553a5acef
 - name: chromium
   id: d4f39227-c95f-4228-8c2b-cfd5714be68c
+- name: ci-cd
+  id: f1f6894e-c1f7-42c0-812c-13e5344602d9
 - name: clickjacking
   id: 19ce4934-d7a5-413a-a159-dc90df6d98ce
+- name: code-injection
+  id: cda9cebb-0ee4-4532-9248-100574fc7270
+- name: com
+  id: 95e1b2d1-0bb4-4595-b836-27359a1ddd04
 - name: control-flow-guard
   id: 243d2d96-2b59-4431-ac09-f34a07dbbbc3
 - name: cookies
   id: cd02949d-181d-4bc7-a6f2-ce0cb1bdc4ea
 - name: cors
   id: 37a3352a-482b-4e46-a579-39bf4578dada
+- name: cpdos
+  id: 5a41389d-fae1-4f8b-abb2-a676981283c3
 - name: credentials
   id: 79368d33-65a1-4d8c-871a-d59c267ba859
+- name: crime
+  id: 33b655d2-ca00-4503-a9eb-6a49fe90b754
+- name: crlf-injection
+  id: fccde8a2-be02-420c-85bc-9fe379e7102c
 - name: cryptography
   id: fbfdd30f-9c61-47fc-b316-af6ab1506fa1
+- name: csharp
+  id: 38cf3a06-1589-4e5c-af02-0387e7c639dc
 - name: csp
   id: 8ef1843e-8b9e-422e-b563-ae5eff93ec53
 - name: cspt
@@ -68,8 +110,12 @@
   id: 120812f0-4241-4b65-8f18-b91c5a4538e7
 - name: css-exfiltration
   id: fe0e947d-ce3c-400a-a54a-50a121c2f5d9
+- name: ctf
+  id: 1c25c916-dac6-4aad-9012-9165eb67b0df
 - name: dacl
   id: f660f8a4-4582-4124-ab9b-ee3b845fa9ce
+- name: data-exfiltration
+  id: fad2d027-5637-4517-99ea-1fd4c0d82a06
 - name: dcom
   id: 5a82e225-852e-408e-8efe-d0c84dd5160c
 - name: dcsync
@@ -78,6 +124,8 @@
   id: 5ac5ba7e-f33d-47a6-967b-29e2bd9aa850
 - name: des
   id: 14e649ff-4dd8-4465-aeef-36bc983de71f
+- name: deserialization
+  id: 382b784c-c74e-4786-b570-7dcc05e282a6
 - name: detection
   id: 362d0482-2621-4e81-86ac-cb14d586cbd1
 - name: dfir
@@ -86,12 +134,26 @@
   id: cf7f67bf-85cc-4be2-af94-6770b43d1542
 - name: dmsa
   id: 50214c4e-6651-4a73-8a37-ebf902083915
+- name: dns
+  id: faba8a7c-05e2-4e1d-a423-137d5ea87a12
+- name: dns-rebinding
+  id: b6381095-e02c-43be-90e9-bc620f53c1f7
+- name: docker
+  id: c528a1a2-8ce4-433f-a0c0-d7952febe2cf
 - name: dom-clobbering
   id: e627967b-b09b-47ef-aa61-93380c0dda63
 - name: dompurify
   id: 5e3124c5-1454-4dc6-9af6-034a561647ed
 - name: dotnet
   id: 30110fc7-5a97-48c5-9471-b7368e093c39
+- name: dpapi
+  id: f5729a33-2c70-4b7b-8b7b-8372b814d49e
+- name: ebpf
+  id: df628c59-3036-448f-8341-4bc26317b2a5
+- name: edr
+  id: 460569be-3066-4019-8fa4-175b73731af6
+- name: edr-evasion
+  id: b5a569ba-8eaf-45d9-8094-7c7cff96c1be
 - name: email
   id: 58092510-1d39-4e62-b09a-edc6558dd745
 - name: entra-id
@@ -100,46 +162,84 @@
   id: c8e88cd8-a3ee-42c4-8b4c-3f34d2d75df3
 - name: etw
   id: 10b2d2d5-340e-4ab0-8f4c-9032b01a7999
+- name: evasion
+  id: 5239bb34-a6f6-4285-94b3-b72f07af1813
 - name: excel
   id: 3a7ebd4b-620e-4e8a-8b11-47413558cbc9
 - name: exchange
   id: 0bb39fe0-b93d-4755-9ebf-ed1ff04d0f9d
 - name: exploit-development
   id: 3f2449d6-060f-44e3-a3ef-f89cf0f20156
+- name: express
+  id: 0f3cb4e2-8856-4f5c-b8ab-467ad3a69800
+- name: firefox
+  id: 29bee317-bac8-4bbb-aac6-c6eb007f671d
 - name: firewall
   id: 7a6f8017-fab2-4dba-9130-a2d884d90aa2
+- name: frida
+  id: ac4ffce1-90b2-4fe9-a8e2-02dc6382fa64
 - name: fuzzing
   id: d85fdeb6-560a-4e41-a26c-351968fadecd
 - name: git
   id: 3e31a08d-c49d-44a9-a7a1-ecc485da95ef
 - name: github
   id: b6d76a83-45b7-4ee6-a769-21e4f8cdb259
+- name: gitlab
+  id: 256a5765-668f-422e-b984-7d82492fe27a
+- name: glpi
+  id: ad8dd026-6737-4c6d-a77b-90b3d06b3af5
 - name: gmsa
   id: bd1e23b5-de5e-48f4-a0d3-5ad3b68c690f
 - name: gpo
   id: 543b2a39-8911-478c-a998-5e61774abd50
+- name: gpu
+  id: c40641e5-e652-4496-8841-812327ba6c3a
 - name: grapheneos
   id: 15b13323-5093-45bf-bf41-747b75b1807a
+- name: graphql
+  id: 3a543813-0785-4b2c-a6f8-aa6f3ca8fdbe
+- name: grpc
+  id: a6788924-4591-4b35-b875-8f16d7a2b48e
 - name: hardware
   id: 44bfcc41-4990-4cba-bc93-fd4c692d962e
 - name: hooking
   id: b1405e66-05e0-442e-b6fd-42b6b5da4cf5
 - name: html-injection
   id: 0332cfd8-51d4-46ab-923a-04ace265d7f5
+- name: http
+  id: aeb0450e-a153-4e46-9a77-3f23cb953456
 - name: http-request-smuggling
   id: 70d976f4-beb8-45fd-a8c2-11c9abc16d97
+- name: http2
+  id: ef75ba9a-b890-4d6b-bf48-da673b2bd1de
 - name: hyper-v
   id: 712be928-7e1f-4b0f-96a8-6a67d2e56830
 - name: hyperliquid
   id: e3968461-39d3-40cd-98da-ad4e22a2aee7
+- name: hypervisor
+  id: 8269f5cb-43e5-4596-838f-7dbbc2d4131a
+- name: iis
+  id: 8d8d9963-1d20-46b9-9ee1-fbcb681f8983
+- name: impacket
+  id: 5a66bf74-a6a8-479c-a0bc-8f7fa3f2f477
 - name: implant-design
   id: 72ad02af-12eb-46df-9694-7f4d4b872076
 - name: initial-access
   id: 7a4930a0-30b2-46eb-8a0f-40e67ca38fba
 - name: injection
   id: 5a52de2f-952d-4142-a207-b4a26299d097
+- name: ios
+  id: a2738d21-8ca6-4731-b6dd-5bd04ddbe554
+- name: ipc
+  id: ade55e16-5b1b-47da-9dc2-8cd78eb02008
+- name: java
+  id: 18b655c6-46fc-49a3-91b3-d0780f4203f6
 - name: javascript
   id: 69f8ef1b-cb18-4e61-a63a-7e7834553299
+- name: jenkins
+  id: 3f88f4e5-d52c-405e-a034-0d057234a17a
+- name: jwt
+  id: 243dd1ad-05fc-4b88-9a59-d5b3caa58bdc
 - name: keepass
   id: 780eb21c-257c-4dfe-823e-a3ec97c02005
 - name: kerberoast
@@ -148,12 +248,18 @@
   id: 4bf5cc5c-1de1-42f1-a3f4-4b73ce516354
 - name: kerberos-delegation
   id: 982b05c0-01cc-4f76-8aa4-732b085d0ff5
+- name: kerberos-des
+  id: 4d4b45a7-6bb0-4235-b1c6-57ab85e3b6ee
 - name: kerberos-relay
   id: 119e6ef5-b1ea-44ef-8341-08422d5bffa7
+- name: kernel
+  id: bb6e65a8-96e1-44f3-9b12-515437733be7
 - name: kernel-callbacks
   id: ccb79559-77ff-4a08-8811-4c86a89ace07
 - name: keylogging
   id: 0138f149-a88b-4dbe-8ef0-65c40b71925b
+- name: kotlin
+  id: 5763c8b7-6b40-4c1f-b09e-7949cbd71095
 - name: kubernetes
   id: 1e26b964-179a-4b04-b9a2-7f028ef023fa
 - name: laps
@@ -170,20 +276,42 @@
   id: 57877f42-413f-457f-8307-2ce89f7ea309
 - name: lnk
   id: 7fa67c02-f4d7-45c9-bfcd-a81182fd9fdc
+- name: lolbin
+  id: 043e9970-02f1-4435-9a3b-ded4036881ed
 - name: lsass
   id: e3124d82-4f1f-4589-a9cf-88804572018d
+- name: macos
+  id: 6c1253e7-00a2-4084-a388-160126c0df5b
+- name: magisk
+  id: 65cc0241-682c-491c-b0a4-fcfc98f8f478
 - name: maldev
   id: 03743a91-dc4f-42d2-be77-1917b4173349
 - name: malware-development
   id: 3dcfe77c-3021-4f7e-81b2-b64630607ee2
 - name: mcp
   id: 9ab0664e-2079-4d15-84fe-bc5a0bdf27f5
+- name: memory-corruption
+  id: 480f73b3-ec2a-453d-9548-9039233e34d9
+- name: memory-dumping
+  id: e34036e3-ab98-4f36-a26b-120ddb0a710f
 - name: memory-encryption
   id: ecd34322-1050-4ce6-9c06-5333844511b5
+- name: mfa
+  id: 63a4cf7b-0a90-4ecc-83fa-4283230e0933
+- name: mimikatz
+  id: bdf58e8b-b6da-42c6-813b-ffcfe88a562a
+- name: mitm
+  id: a486b0af-c5c7-4e9d-89f8-0baa99f467fa
+- name: mitmproxy
+  id: a1bda4f5-abd1-46e9-beb8-1061c0c20044
 - name: mobile
   id: 3d0ef27d-98dd-49d8-b9d3-d5cc8a280481
+- name: model-editing
+  id: 2ff4fa47-2591-48e8-abe7-c466c8c954ff
 - name: module-stomping
   id: b7928631-d0ce-4a23-9ec4-a48c74143ba3
+- name: mongodb
+  id: 7c8e7963-de1c-4c14-81f1-b2ea8ba28de9
 - name: mssql
   id: ccd4b98a-1de4-49ba-b481-9a4e6007bd35
 - name: mxss
@@ -194,6 +322,18 @@
   id: b950338f-f101-426f-9a78-6c8cfcb373fd
 - name: nextjs
   id: 863a09ec-0940-47f5-87b6-0294fd62bd46
+- name: nginx
+  id: 21c2b678-8603-405e-8fdf-412286fe27fb
+- name: node
+  id: 8a9027e1-7895-4a38-96fa-3fb36c14e882
+- name: node.js
+  id: d339f416-1d9e-43b2-a6d7-77e385b3ac2d
+- name: nosql-injection
+  id: 77a058f5-6481-4bfe-a567-42dec2359889
+- name: ntdll
+  id: 0dc5ee43-4f4d-4c76-9be5-2605cfefced8
+- name: ntlm
+  id: 84df159b-f11e-4ab9-941d-b512928c159a
 - name: ntlm-relay
   id: 12440afe-315b-4a49-915d-22f0b486064b
 - name: ntlmv1
@@ -214,6 +354,8 @@
   id: bb9627c2-3f20-45f4-b0b4-e4733f9c67e7
 - name: password-reset
   id: e25bce44-aafc-4849-aba7-42aad0ee79f2
+- name: password-spraying
+  id: 032c5611-8db4-4dc3-965f-eefe4491d61f
 - name: path-traversal
   id: 023b1b9e-e9c2-4b09-a6f1-76a591dd7887
 - name: persistence
@@ -226,38 +368,84 @@
   id: 4184371f-ee60-473d-bfce-1855eb246b20
 - name: pkinit
   id: 2c1dad59-ad2f-45bd-9f9f-ae2509eeb2db
+- name: post-exploitation
+  id: c7b36740-66e1-4736-86fd-7e00bc4313d5
 - name: post-quantum
   id: 2e25eaf0-068c-44ea-9165-9e38741f8420
+- name: postgresql
+  id: d331d3dc-533b-468e-909c-7d4dfaea2a5d
 - name: postmessage
   id: 32052ddf-e564-4a66-bb5a-eae9b081f3ae
 - name: potato
   id: 82490078-a9ea-44b3-8d90-cacf882a1961
 - name: powershell
   id: 9b3a27d2-5a3e-49b2-ba54-33240dc314ba
+- name: ppl
+  id: 4bffb53f-5518-42f0-8994-8135aca46949
+- name: ppl-bypass
+  id: 0bf612d1-f747-4653-942c-23f1261c9fd7
 - name: precreated-computer-accounts
   id: 76549a71-8e5f-46e6-94ed-147a8218556f
 - name: privilege-escalation
   id: b8678229-1949-4b0a-987f-c7bf02f13132
+- name: process-injection
+  id: 10aa61bf-2b69-4d9c-ae00-d1c76f7f906f
 - name: prompt-injection
   id: 980d0ea2-0ba8-4027-b075-79ef8212c6cf
+- name: protobuf
+  id: 0ec6ff52-b3ca-490a-b658-24a8446435a5
+- name: prototype-pollution
+  id: 470eea6d-7bd7-415e-b984-6ec4be4983df
 - name: pth
   id: e71e7dd3-9be5-4061-88bd-affb354d2f33
 - name: pwn
   id: faf21a25-e470-4f5f-99a1-3753a049e024
 - name: python
   id: 1dff377e-16b0-4fc6-b29d-387c5a45afbc
+- name: race-condition
+  id: d9e2f972-8a44-4697-8030-4fa514f512f2
 - name: random
   id: 5c75af0e-cbc8-45f1-bcaa-4687b33f5fbc
+- name: rbcd
+  id: 3ac9c01c-c0cb-4198-a3c6-da00202ed87a
+- name: rce
+  id: c440239e-162c-429e-868f-e23539a391df
 - name: rdp
   id: ded7572e-83ec-4ac0-b75e-51f2486ee9f2
+- name: recon
+  id: f9d118a7-9d0f-4ec5-a9ee-3beecb0fb711
+- name: reconnaissance
+  id: 77d03ac3-f1d3-42cd-8ddb-5b5adc7fa59f
+- name: red-teaming
+  id: 7c36f206-5364-422a-9d72-775bee2c588c
+- name: redis
+  id: b5cf2619-9d22-4111-b98f-c3c86bf2ed33
 - name: resource-based-constrained-delegation
   id: fd07969a-2ceb-4022-94f7-74229d1550b8
+- name: reverse-engineering
+  id: ef7137b3-e2a5-4b75-8358-772a13d93743
 - name: rootkit
   id: 9a768306-b89e-40bc-bb3f-67f2969d4eea
+- name: rop
+  id: b601a905-bb69-4a3d-990a-97955ae0f621
 - name: rpc
   id: 15ec1d55-9073-4753-a03e-804716135663
+- name: rsa
+  id: 0cfc2c23-5f67-42dc-ba33-4d3077060b9c
+- name: ruby
+  id: 2e7adf6c-d3e4-4ab2-8be5-e5ab0f86e81d
+- name: ruby-on-rails
+  id: c1f1418b-c3f6-44de-87fd-ccadc050a4ee
+- name: rust
+  id: 6879f409-4981-45b4-b64c-dba436f0c9cb
+- name: saml
+  id: c5908afe-9335-4159-bf84-88f020fa2b99
 - name: sccm
   id: 1e7b6f0a-e775-41b5-a3ad-73d2405442f2
+- name: scep
+  id: 793c259f-6d4a-4cf2-a303-98ca0016ad40
+- name: secrets
+  id: 7e6b8117-0aa9-4e33-a379-deeba426d5eb
 - name: self-xss
   id: 9e7c8053-b031-4271-a82c-7f55df30acca
 - name: shellcode
@@ -266,6 +454,8 @@
   id: be905101-2641-4778-9197-54e6b93524a9
 - name: sql-injection
   id: e93760c9-afe8-42aa-9f5b-f3ed038b7404
+- name: ssrf
+  id: 88c25a23-83d6-4ebb-8e8f-ccf2e4555aea
 - name: steganography
   id: 5cd32690-8e04-4d48-aca3-2bfd4249e12b
 - name: supabase
@@ -274,8 +464,16 @@
   id: f6432aae-c6a7-4266-aac0-8344887b1bae
 - name: syscall
   id: 89cf1043-e9c8-4b9b-9bbd-93abc2cb2f0f
+- name: terminal
+  id: 3d4011a9-dc6f-47b8-8d99-09a5a118eb6c
+- name: threat-modeling
+  id: 783c72f3-3020-4bb5-9529-2aa63ea56ab8
+- name: tls
+  id: 81615213-0e2f-41c6-83a4-abd65576db53
 - name: uac
   id: f50e67ff-d73d-49a2-9eea-31ff7cdb9d94
+- name: uefi
+  id: 7b2fc21d-3c52-4f3e-b6e1-43d8e331ec56
 - name: unconstrained-delegation
   id: 702d1c54-ec30-4acb-9b69-91d827e56928
 - name: unicode
@@ -284,20 +482,36 @@
   id: d7a507fc-1087-4ea7-8c2c-fb700ed09f9c
 - name: uuid
   id: 706eaf11-1415-42fd-9e04-1b397173df77
+- name: viewstate-exploitation
+  id: fcc72314-244d-47f1-a02d-667bebf4b872
 - name: virtualization
   id: 7171cf8b-bae6-4f22-874d-bff76eb15b0c
 - name: vpn
   id: 02b3e912-269f-4b75-beed-a825f8e75132
+- name: vulnerability
+  id: 4b49133e-98fa-4117-8d31-186c004f1d3e
+- name: vulnerability-analysis
+  id: 1b620d7c-17cf-4939-953e-08805a0de9e9
+- name: vulnerability-research
+  id: e099e4a6-ac0b-4170-b916-2e1a91e28b06
+- name: vulnerability-scanner
+  id: 360e5e88-881b-49e1-839b-00c776c28b0a
 - name: waf
   id: c24e492c-47e3-4734-b71e-556854c231b6
 - name: web
   id: fccfffff-1d11-4c4a-a4e6-b60705bb2b1d
+- name: web-security
+  id: e9e91186-99e1-41b0-be8e-babc953459f8
 - name: web3
   id: f3f29333-1e81-463d-82b7-df3c80226f75
+- name: webshell
+  id: b6be2d0c-37c9-4a65-85cf-9d8a6583dff8
 - name: wifi
   id: 174145fe-3049-47c2-aede-7961dac5b46e
 - name: windows
   id: 4045f727-c250-4b0f-bb8a-f4d53155805e
+- name: winrm
+  id: 38ff94b0-4205-400f-b3e5-92d7c64b7ab9
 - name: wmi
   id: ef39b75c-f98b-4d50-9577-8e2c46fefaf3
 - name: wordpress
@@ -308,7 +522,17 @@
   id: c384ceff-2a82-4654-92fe-8bad436e096a
 - name: wsus
   id: 5b2fe6d6-0df4-45d3-a2bc-41122eedc3c0
+- name: xml
+  id: 021e69d5-6040-435a-94fa-d23a5f6e442a
+- name: xml-signature-wrapping
+  id: 705724e1-36a3-4f8b-8d14-98dbcdb54188
+- name: xs-leak
+  id: 19593137-8304-498a-af57-85ce4e955ec9
+- name: xsleaks
+  id: ff32da65-34ea-41f0-92f7-55e38310b82e
 - name: xss
   id: 7b90e12c-07dc-4b5e-bd52-18c78ba2d853
+- name: xxe
+  id: 1cde7562-4617-4752-92a5-728d60567fb3
 - name: zip
   id: a16f6a04-e37a-4ad5-834f-2e0df1ff9ece

@@ -6,14 +6,14 @@
   id: 48b6ed26-ada8-436e-989d-1c671ac263c6
 - name: Hardware
   id: 21dfeeb9-e766-4a0f-a46d-ae0bbd08d4b0
-- name: Linux
-  id: 3d133ae0-1164-4394-8df4-c30c54e5d85e
 - name: Malware Development
   id: 2dcb13fc-bfaf-481e-b879-9b73f3b5f336
 - name: Network Security
   id: 3c333baf-648d-4548-9350-e1d9bdc375ac
 - name: Web
   id: 60f125b7-604b-45da-80ad-4ba8dbe583b9
+- name: Web3
+  id: c0448dd2-b3e3-4759-a0d1-b88be1b7177d
 - name: Wifi
   id: 9f42f1fd-1185-4c92-9efa-ffafb93f5aee
 - name: Windows
